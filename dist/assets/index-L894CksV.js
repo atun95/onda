@@ -1,0 +1,471 @@
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const l of a.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&r(l)}).observe(document,{childList:!0,subtree:!0});function h(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function r(e){if(e.ep)return;e.ep=!0;const a=h(e);fetch(e.href,a)}})();function C(){return`
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo" id="nav-logo-link">
+          <img src="/logo tach nen.png" alt="Ondata Logo" class="logo-img" id="logo-main" />
+        </a>
+        <nav class="nav-links" id="nav-links">
+          <a href="#about" class="nav-link" id="nav-about">Về Chúng Tôi</a>
+          <a href="#services" class="nav-link" id="nav-services">Sản Phẩm & Dịch Vụ</a>
+          <a href="#why-us" class="nav-link" id="nav-why">Tại Sao Chọn Chúng Tôi</a>
+          <a href="#contact" class="nav-link" id="nav-contact">Liên Hệ</a>
+          <a href="tel:0867036698" class="nav-cta" id="nav-cta-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0867 036 698
+          </a>
+        </nav>
+        <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+  `}function L(){return`
+    <section class="hero" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-particles" id="hero-particles"></div>
+      <div class="hero-content" id="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          Thương hiệu được bảo hộ tại Việt Nam từ 2026
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Nối Nguồn<br/>
+          <span class="hero-title-accent">Công Nghệ</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          Phân phối thiết bị công nghệ chất lượng cao — máy tính All-in-One, màn hình, linh kiện từ thương hiệu Onda (Trung Quốc) với hơn <strong>35 năm kinh nghiệm</strong> toàn cầu.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <a href="#services" class="btn-primary" id="hero-cta-primary">Khám Phá Sản Phẩm</a>
+          <a href="#contact" class="btn-outline" id="hero-cta-secondary">Liên Hệ Ngay</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num">35+</span>
+            <span class="stat-label">Năm kinh nghiệm</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">1989</span>
+            <span class="stat-label">Năm thành lập</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Chất lượng bảo đảm</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <div class="hero-img-frame">
+          <img src="/office.jpg" alt="Ondata Showroom" class="hero-office-img" id="hero-office-img" />
+        </div>
+      </div>
+      <div class="hero-scroll-hint" id="hero-scroll-hint">
+        <span>Cuộn xuống</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+  `}function T(){return`
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text" id="about-text">
+            <div class="section-label">Về Chúng Tôi</div>
+            <h2 class="section-title">Ondata Việt Nam – Đại Diện Chính Thức Onda</h2>
+            <p class="about-desc">
+              <strong>Ondata</strong> là thương hiệu con thuộc thương hiệu <strong>Onda</strong> đến từ Trung Quốc, được thành lập từ năm <strong>1989</strong> với trụ sở chính tại Quảng Châu.
+            </p>
+            <p class="about-desc">
+              Onda cung cấp đa dạng các sản phẩm liên quan đến máy tính như linh kiện, màn hình và máy tính <strong>All-in-One</strong>. Năm 2026, Ondata chính thức được bảo hộ thương hiệu tại Việt Nam.
+            </p>
+            <div class="about-values" id="about-values">
+              <div class="value-item" id="value-vision">
+                <div class="value-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+                </div>
+                <div>
+                  <h4>Tầm nhìn</h4>
+                  <p>Trở thành nền tảng phân phối công nghệ hàng đầu, xây dựng hệ sinh thái đối tác phát triển bền vững tại Việt Nam.</p>
+                </div>
+              </div>
+              <div class="value-item" id="value-mission">
+                <div class="value-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <h4>Sứ mệnh</h4>
+                  <p>Kết nối nguồn công nghệ chất lượng, tạo giá trị và đồng hành cùng đối tác trên hành trình phát triển bền vững.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual" id="about-visual">
+            <div class="about-card-stack">
+              <div class="about-card about-card-main" id="about-card-main">
+                <div class="about-card-icon">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3>Máy tính All-in-One</h3>
+                <p>Thiết kế tích hợp, hiệu năng cao</p>
+              </div>
+              <div class="about-card about-card-2" id="about-card-2">
+                <div class="about-card-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg>
+                </div>
+                <h3>Linh Kiện Máy Tính</h3>
+                <p>Nhập khẩu chính hãng</p>
+              </div>
+              <div class="about-card about-card-3" id="about-card-3">
+                <div class="about-card-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 13s3-8 10-8 10 8 10 8"/><path d="M2 13s3 8 10 8 10-8 10-8"/><circle cx="12" cy="13" r="3"/></svg>
+                </div>
+                <h3>Màn Hình</h3>
+                <p>Full HD & 2K chất lượng cao</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `}function M(){return`
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header" id="services-header">
+          <div class="section-label light">Sản Phẩm & Dịch Vụ</div>
+          <h2 class="section-title light">Giải Pháp Công Nghệ Toàn Diện</h2>
+          <p class="section-subtitle light">Cung cấp đầy đủ thiết bị và linh kiện công nghệ chất lượng cao, phù hợp với mọi nhu cầu.</p>
+        </div>
+        <div class="services-grid" id="services-grid">
+          <div class="service-card" id="service-aio">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Máy Tính All-in-One</h3>
+            <p>Thiết kế tích hợp màn hình và máy tính trong một, tiết kiệm không gian, thẩm mỹ cao, phù hợp văn phòng và gia đình.</p>
+            <div class="service-tag">Sản phẩm chủ lực</div>
+          </div>
+          <div class="service-card service-card-featured" id="service-monitor">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+            </div>
+            <h3>Màn Hình Máy Tính</h3>
+            <p>Màn hình Full HD và 2K với độ phân giải cao, màu sắc chân thực, tần số quét cao cho trải nghiệm hình ảnh vượt trội.</p>
+            <div class="service-tag">Phổ biến</div>
+          </div>
+          <div class="service-card" id="service-parts">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Linh Kiện Máy Tính</h3>
+            <p>RAM, SSD, bo mạch chủ và các linh kiện chính hãng với giá cạnh tranh, nhập khẩu trực tiếp.</p>
+            <div class="service-tag">Đa dạng</div>
+          </div>
+          <div class="service-card" id="service-distribute">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <h3>Phân Phối Sỉ</h3>
+            <p>Đối tác phân phối chính thức tại Việt Nam, cung cấp sản phẩm số lượng lớn cho đại lý và doanh nghiệp.</p>
+            <div class="service-tag">B2B</div>
+          </div>
+          <div class="service-card" id="service-consult">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Tư Vấn & Hỗ Trợ</h3>
+            <p>Đội ngũ chuyên gia sẵn sàng tư vấn lựa chọn thiết bị phù hợp với ngân sách và nhu cầu sử dụng.</p>
+            <div class="service-tag">Miễn phí</div>
+          </div>
+          <div class="service-card" id="service-warranty">
+            <div class="service-icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Bảo Hành Chính Hãng</h3>
+            <p>Toàn bộ sản phẩm được bảo hành chính hãng, hỗ trợ kỹ thuật nhanh chóng và cam kết chất lượng tuyệt đối.</p>
+            <div class="service-tag">Bảo hành</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `}function B(){return`
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-text" id="why-text">
+            <div class="section-label">Tại Sao Chọn Ondata</div>
+            <h2 class="section-title">Đối Tác Công Nghệ Tin Cậy Hàng Đầu</h2>
+            <div class="why-list" id="why-list">
+              <div class="why-item" id="why-1">
+                <div class="why-num">01</div>
+                <div class="why-content">
+                  <h4>Nguồn gốc chính hãng</h4>
+                  <p>Sản phẩm nhập khẩu trực tiếp từ Onda – thương hiệu uy tín 35 năm tại Trung Quốc, đảm bảo 100% chính hãng.</p>
+                </div>
+              </div>
+              <div class="why-item" id="why-2">
+                <div class="why-num">02</div>
+                <div class="why-content">
+                  <h4>Giá cạnh tranh</h4>
+                  <p>Nhập khẩu trực tiếp từ nhà sản xuất giúp tối ưu chi phí, mang lại mức giá tốt nhất trên thị trường.</p>
+                </div>
+              </div>
+              <div class="why-item" id="why-3">
+                <div class="why-num">03</div>
+                <div class="why-content">
+                  <h4>Hệ sinh thái đối tác</h4>
+                  <p>Xây dựng mạng lưới đại lý và đối tác rộng khắp, tạo cơ hội kinh doanh và phát triển bền vững cùng nhau.</p>
+                </div>
+              </div>
+              <div class="why-item" id="why-4">
+                <div class="why-num">04</div>
+                <div class="why-content">
+                  <h4>Hỗ trợ tận tâm</h4>
+                  <p>Đội ngũ kỹ thuật và kinh doanh chuyên nghiệp, sẵn sàng đồng hành trong suốt quá trình hợp tác.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="why-stats-panel" id="why-stats-panel">
+            <div class="stats-card" id="stat-1">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="stat-body">
+                <div class="stat-num-row">
+                  <span class="stat-big" data-target="500">0</span><span class="stat-unit">+</span>
+                </div>
+                <p>Đối tác &amp; Đại lý</p>
+              </div>
+            </div>
+            <div class="stats-card" id="stat-2">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <div class="stat-body">
+                <div class="stat-num-row">
+                  <span class="stat-big" data-target="10000">0</span><span class="stat-unit">+</span>
+                </div>
+                <p>Sản phẩm đã bàn giao</p>
+              </div>
+            </div>
+            <div class="stats-card" id="stat-3">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="stat-body">
+                <div class="stat-num-row">
+                  <span class="stat-big" data-target="98">0</span><span class="stat-unit">%</span>
+                </div>
+                <p>Khách hàng hài lòng</p>
+              </div>
+            </div>
+            <div class="stats-card" id="stat-4">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="stat-body">
+                <div class="stat-num-row">
+                  <span class="stat-big" data-target="35">0</span><span class="stat-unit">+</span>
+                </div>
+                <p>Năm kinh nghiệm toàn cầu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `}function N(){return`
+    <section class="cta-banner" id="cta-banner">
+      <div class="cta-bg-overlay"></div>
+      <div class="container cta-container" id="cta-container">
+        <div class="cta-content">
+          <h2>Sẵn Sàng Hợp Tác Cùng Ondata?</h2>
+          <p>Trở thành đại lý hoặc đối tác phân phối để tiếp cận nguồn hàng công nghệ chất lượng cao với giá tốt nhất.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary btn-large" id="cta-main-btn">Liên Hệ Ngay</a>
+          <a href="tel:0867036698" class="btn-outline-white" id="cta-phone-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0867 036 698
+          </a>
+        </div>
+      </div>
+    </section>
+  `}function O(){return`
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header" id="contact-header">
+          <div class="section-label">Liên Hệ</div>
+          <h2 class="section-title">Kết Nối Với Chúng Tôi</h2>
+          <p class="section-subtitle">Hãy để lại thông tin và chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.</p>
+        </div>
+        <div class="contact-grid" id="contact-grid">
+          <div class="contact-info" id="contact-info">
+            <div class="contact-info-item" id="contact-addr">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Địa Chỉ</h4>
+                <p>167 Louis I, LK34, KĐT mới Hoàng Văn Thụ, Hoàng Mai, Hà Nội</p>
+              </div>
+            </div>
+            <div class="contact-info-item" id="contact-phone">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Hotline</h4>
+                <a href="tel:0867036698">0867 036 698</a>
+              </div>
+            </div>
+            <div class="contact-info-item" id="contact-email">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:nchieu@xinchen.vn">nchieu@xinchen.vn</a>
+              </div>
+            </div>
+            <div class="contact-map" id="contact-map">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.5!2d105.849!3d20.980!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac!2zSG_DoG5nIE1haQ!5e0!3m2!1svi!2svn!4v1"
+                width="100%" height="200" style="border:0; border-radius:12px;" allowfullscreen loading="lazy"
+                title="Ondata Vietnam Location">
+              </iframe>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Họ và tên *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Nguyễn Văn A" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-company">Công ty / Doanh nghiệp</label>
+                <input type="text" id="contact-company" name="company" placeholder="Tên công ty" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-phone-input">Số điện thoại *</label>
+                <input type="tel" id="contact-phone-input" name="phone" placeholder="0xxx xxx xxx" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email-input">Email</label>
+                <input type="email" id="contact-email-input" name="email" placeholder="email@example.com" />
+              </div>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="contact-interest">Nhu cầu</label>
+              <select id="contact-interest" name="interest">
+                <option value="">-- Chọn nhu cầu --</option>
+                <option value="aio">Máy tính All-in-One</option>
+                <option value="monitor">Màn hình máy tính</option>
+                <option value="parts">Linh kiện máy tính</option>
+                <option value="distribute">Đại lý / Phân phối sỉ</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="contact-message">Lời nhắn</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Mô tả nhu cầu của bạn..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="contact-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Gửi Thông Tin
+            </button>
+            <div class="form-success" id="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm nhất.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  `}function E(){return`
+    <footer class="footer" id="footer">
+      <div class="footer-top">
+        <div class="container footer-top-grid">
+          <div class="footer-brand" id="footer-brand">
+            <img src="/logo tach nen.png" alt="Ondata" class="footer-logo" />
+            <p class="footer-slogan">ONDATA – Nối Nguồn Công Nghệ</p>
+            <p class="footer-desc">Phân phối và kinh doanh thiết bị công nghệ, máy tính All-in-One và linh kiện chất lượng cao tại Việt Nam.</p>
+          </div>
+          <div class="footer-col" id="footer-links">
+            <h5>Liên Kết</h5>
+            <ul>
+              <li><a href="#about">Về Chúng Tôi</a></li>
+              <li><a href="#services">Sản Phẩm &amp; Dịch Vụ</a></li>
+              <li><a href="#why-us">Tại Sao Chọn Chúng Tôi</a></li>
+              <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" id="footer-products">
+            <h5>Sản Phẩm</h5>
+            <ul>
+              <li><a href="#services">Máy tính All-in-One</a></li>
+              <li><a href="#services">Màn hình máy tính</a></li>
+              <li><a href="#services">Linh kiện &amp; phụ kiện</a></li>
+              <li><a href="#contact">Phân phối sỉ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" id="footer-contact-col">
+            <h5>Liên Hệ</h5>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                167 Louis I, LK34, Hoàng Mai, HN
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:0867036698">0867 036 698</a>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:nchieu@xinchen.vn">nchieu@xinchen.vn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" id="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 Ondata Việt Nam. Bảo lưu mọi quyền. Thương hiệu được bảo hộ tại Việt Nam từ 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  `}const S=document.querySelector("#app");S.innerHTML=`
+  ${C()}
+  <main>
+    ${L()}
+    ${T()}
+    ${M()}
+    ${B()}
+    ${N()}
+    ${O()}
+  </main>
+  ${E()}
+`;function A(){const p=document.getElementById("navbar");window.addEventListener("scroll",()=>{window.scrollY>40?p.classList.add("scrolled"):p.classList.remove("scrolled")});const o=document.getElementById("hamburger-btn"),h=document.getElementById("nav-links");o.addEventListener("click",()=>{o.classList.toggle("open"),h.classList.toggle("open")}),h.querySelectorAll("a").forEach(t=>{t.addEventListener("click",()=>{o.classList.remove("open"),h.classList.remove("open")})}),document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",function(n){const i=document.querySelector(this.getAttribute("href"));if(i){n.preventDefault();const s=parseInt(getComputedStyle(document.documentElement).getPropertyValue("--nav-h")||"72"),c=i.getBoundingClientRect().top+window.scrollY-s;window.scrollTo({top:c,behavior:"smooth"})}})});const r=document.getElementById("back-to-top");window.addEventListener("scroll",()=>{window.scrollY>400?r.classList.add("visible"):r.classList.remove("visible")}),r.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});const e=new IntersectionObserver(t=>{t.forEach(n=>{n.isIntersecting&&(n.target.classList.add("revealed"),e.unobserve(n.target))})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});document.querySelectorAll(".service-card, .stats-card, .why-item, .value-item, .about-card, .contact-info-item").forEach((t,n)=>{t.classList.add("reveal"),t.style.transitionDelay=`${n*.07}s`,e.observe(t)}),document.querySelectorAll(".about-text, .why-text, .section-header, .about-visual, .why-stats-panel, .contact-form").forEach(t=>{t.classList.add("reveal"),e.observe(t)});function a(t,n,i=1600){const s=n>=1e3;let c=null;const d=0;function v(g){c||(c=g);const u=Math.min((g-c)/i,1),k=1-Math.pow(1-u,3),y=Math.floor(k*(n-d)+d);t.textContent=s?y.toLocaleString("vi-VN"):y,u<1?requestAnimationFrame(v):t.textContent=s?n.toLocaleString("vi-VN"):n}requestAnimationFrame(v)}const l=new IntersectionObserver(t=>{t.forEach(n=>{if(n.isIntersecting){const i=n.target,s=parseInt(i.dataset.target);a(i,s),l.unobserve(i)}})},{threshold:.5});document.querySelectorAll(".stat-big[data-target]").forEach(t=>{l.observe(t)});const f=document.getElementById("hero-particles");if(f){const t=window.innerWidth<768?12:25;for(let n=0;n<t;n++){const i=document.createElement("div");i.className="particle";const s=Math.random()*4+2;i.style.cssText=`
+        width: ${s}px;
+        height: ${s}px;
+        left: ${Math.random()*100}%;
+        --dur: ${Math.random()*10+8}s;
+        --delay: ${Math.random()*8}s;
+        opacity: 0;
+      `,f.appendChild(i)}}const w=document.querySelectorAll("section[id]"),b=document.querySelectorAll(".nav-link"),x=new IntersectionObserver(t=>{t.forEach(n=>{if(n.isIntersecting){const i=n.target.id;b.forEach(s=>{s.style.color="",s.style.background="",s.getAttribute("href")===`#${i}`&&(s.style.color="var(--primary-xlight)",s.style.background="var(--primary-ghost)")})}})},{threshold:.4});w.forEach(t=>x.observe(t));const m=document.getElementById("contact-form");m&&m.addEventListener("submit",t=>{t.preventDefault();const n=document.getElementById("form-success"),i=document.getElementById("contact-submit");i.textContent="Đang gửi...",i.style.opacity="0.7",i.disabled=!0,setTimeout(()=>{m.reset(),i.innerHTML=`
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Đã Gửi!`,i.style.background="#4a7c3f",i.style.opacity="1",n.classList.add("show"),setTimeout(()=>{i.innerHTML=`
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Gửi Thông Tin`,i.style.background="",i.disabled=!1},4e3)},1200)}),document.querySelectorAll(".service-card").forEach(t=>{t.addEventListener("mousemove",n=>{const i=t.getBoundingClientRect(),s=n.clientX-i.left,c=n.clientY-i.top,d=i.width/2,v=i.height/2,g=(c-v)/v*4,u=(d-s)/d*4;t.style.transform=`translateY(-6px) rotateX(${g}deg) rotateY(${u}deg)`,t.style.transformOrigin="center center"}),t.addEventListener("mouseleave",()=>{t.style.transform=""})})}A();
