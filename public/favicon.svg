@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="488" height="488" x="12" y="12" rx="112" fill="#8a9b4e" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+  <path fill="#ffffff" fill-rule="evenodd" d="M 256 180 C 190 180 140 214 140 256 C 140 298 190 332 256 332 C 322 332 372 298 372 256 C 372 214 322 180 256 180 Z M 256 220 C 302 220 330 236 330 256 C 330 276 302 292 256 292 C 210 292 182 276 182 256 C 182 236 210 220 256 220 Z"/>
+</svg>
