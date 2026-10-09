@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
-
 /* ============================================================
    ONDATA VIETNAM – Main Stylesheet
    Brand color: Olive Green #8B9B52  (from mau.png)
@@ -98,13 +96,13 @@ input, textarea, select { font-family: inherit; }
 .section-label.light { background: rgba(138,155,78,0.15); color: var(--primary-xlight); }
 
 .section-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(1.75rem, 4vw, 2.6rem);
-  font-weight: 800;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
   line-height: 1.25;
   color: var(--white);
   margin-bottom: 16px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .section-title.light { color: var(--white); }
 
@@ -361,13 +359,13 @@ input, textarea, select { font-family: inherit; }
 }
 
 .hero-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: clamp(2.6rem, 5.5vw, 4.2rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--white);
   margin-bottom: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .hero-title-accent {
@@ -850,9 +848,9 @@ input, textarea, select { font-family: inherit; }
 }
 
 .cta-content h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--white);
   margin-bottom: 12px;
   letter-spacing: -0.01em;
