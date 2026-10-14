@@ -11,19 +11,19 @@ export function renderFooter() {
           <div class="footer-col" id="footer-links">
             <h5>Liên Kết</h5>
             <ul>
-              <li><a href="#about">Về Chúng Tôi</a></li>
-              <li><a href="#services">Sản Phẩm &amp; Dịch Vụ</a></li>
-              <li><a href="#why-us">Tại Sao Chọn Chúng Tôi</a></li>
-              <li><a href="#contact">Liên Hệ</a></li>
+              <li><a href="#" data-page="about">Về Chúng Tôi</a></li>
+              <li><a href="#" data-page="products">Sản Phẩm</a></li>
+              <li><a href="#" data-page="blog">Tin Tức</a></li>
+              <li><a href="#" data-page="contact">Liên Hệ</a></li>
             </ul>
           </div>
           <div class="footer-col" id="footer-products">
             <h5>Sản Phẩm</h5>
             <ul>
-              <li><a href="#services">Máy tính All-in-One</a></li>
-              <li><a href="#services">Màn hình máy tính</a></li>
-              <li><a href="#services">Linh kiện &amp; phụ kiện</a></li>
-              <li><a href="#contact">Phân phối sỉ</a></li>
+              <li><a href="#" data-page="products">Máy tính All-in-One</a></li>
+              <li><a href="#" data-page="products">Màn hình máy tính</a></li>
+              <li><a href="#" data-page="products">Linh kiện & phụ kiện</a></li>
+              <li><a href="#" data-page="support">Hỗ trợ</a></li>
             </ul>
           </div>
           <div class="footer-col" id="footer-contact-col">
@@ -51,9 +51,5 @@ export function renderFooter() {
         </div>
       </div>
     </footer>
-
-    <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-    </button>
   `;
 }
