@@ -11,6 +11,11 @@ export function renderFooter() {
             <p style="color: #9aa89b; font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
               Thương hiệu công nghệ tiên phong cung cấp giải pháp máy tính All-in-one, màn hình và linh kiện phần cứng chính hãng tại Việt Nam.
             </p>
+            <div style="margin-top: 10px; font-size: 0.84rem; color: #b5c2b6; line-height: 1.6;">
+              <p>📍 167 Louis I, LK34, KĐT mới Hoàng Văn Thụ, Hoàng Mai</p>
+              <p>📞 Hotline: <a href="tel:0867036698" style="color: #a8bb68; font-weight: 600;">0867036698</a></p>
+              <p>✉️ Email: <a href="mailto:nchieu@xinchen.vn" style="color: #a8bb68;">nchieu@xinchen.vn</a></p>
+            </div>
             <div style="margin-top: 12px;">
               <a href="/ve-ondata" style="color: #a8bb68; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px;">
                 Về Ondata Vietnam →

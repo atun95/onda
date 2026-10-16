@@ -324,7 +324,7 @@ export function renderSubBaoHanh() {
                 <span class="sp-step-num">1</span>
                 <div>
                   <strong>Liên hệ trung tâm bảo hành hoặc hotline</strong>
-                  <p>Gọi 1800 1234 hoặc nhắn Zalo hỗ trợ để được nhân viên tiếp nhận và tư vấn.</p>
+                  <p>Gọi <a href="tel:0867036698" style="color:inherit;font-weight:600;">0867036698</a> hoặc nhắn Zalo hỗ trợ để được nhân viên tiếp nhận và tư vấn.</p>
                 </div>
               </div>
               <div class="sp-step-item">
@@ -608,7 +608,7 @@ export function renderSubLienHe() {
             </div>
             <div>
               <strong>Hotline</strong>
-              <div class="sp-ch-val" style="color:#527d24;font-weight:800;font-size:1.1rem;">1800 1234</div>
+              <div class="sp-ch-val" style="color:#527d24;font-weight:800;font-size:1.1rem;"><a href="tel:0867036698" style="color:inherit;">0867036698</a></div>
               <small>8:00 - 22:00 (Tất cả các ngày)</small>
             </div>
           </div>

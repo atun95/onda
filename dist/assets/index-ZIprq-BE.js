@@ -467,6 +467,11 @@
             <p style="color: #9aa89b; font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
               Thương hiệu công nghệ tiên phong cung cấp giải pháp máy tính All-in-one, màn hình và linh kiện phần cứng chính hãng tại Việt Nam.
             </p>
+            <div style="margin-top: 10px; font-size: 0.84rem; color: #b5c2b6; line-height: 1.6;">
+              <p>📍 167 Louis I, LK34, KĐT mới Hoàng Văn Thụ, Hoàng Mai</p>
+              <p>📞 Hotline: <a href="tel:0867036698" style="color: #a8bb68; font-weight: 600;">0867036698</a></p>
+              <p>✉️ Email: <a href="mailto:nchieu@xinchen.vn" style="color: #a8bb68;">nchieu@xinchen.vn</a></p>
+            </div>
             <div style="margin-top: 12px;">
               <a href="/ve-ondata" style="color: #a8bb68; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px;">
                 Về Ondata Vietnam →
@@ -1064,11 +1069,11 @@
                   <span>Liên hệ báo giá</span>
                 </a>
 
-                <a href="tel:18001234" class="pd-btn-hotline" id="pd-btn-hotline">
+                <a href="tel:0867036698" class="pd-btn-hotline" id="pd-btn-hotline">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
-                  <span>Hotline: 1800 1234</span>
+                  <span>Hotline: 0867036698</span>
                 </a>
               </div>
 
@@ -1265,7 +1270,7 @@
       <p>Khi build PC hoặc nâng cấp laptop, người dùng thường băn khoăn liệu DDR5 đã thực sự cần thiết hay DDR4 vẫn còn đủ dùng:</p>
       <p>• <strong>Băng thông và tốc độ:</strong> DDR5 khởi điểm ở mức 4800MHz - 6400MHz, gần gấp đôi so với chuẩn DDR4 3200MHz, giúp giải quyết các tác vụ render video 4K và nạp texture game nhanh hơn đáng kể.</p>
       <p>• <strong>Mức giá và độ tương thích:</strong> Hiện nay giá RAM DDR5 đã hạ nhiệt rất nhiều và tiệm cận với DDR4, khiến đây trở thành sự lựa chọn đầu tư dài hạn thông minh cho các dàn máy mới thế hệ 13 và 14.</p>
-    `}];function N(n,t=!1){if(t)return`
+    `}];function K(n,t=!1){if(t)return`
       <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" class="news-art-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
         <defs>
           <!-- Room background -->
@@ -1425,7 +1430,7 @@
   `).join(""),e=n==="all"?i:i.filter(l=>l.category===n),c=n==="all"||t.category===n,r=e.length>0?e.map(l=>`
         <article class="news-list-card" data-article-id="${l.id}" id="news-card-${l.id}">
           <div class="news-list-thumb">
-            ${N(l.id,!1)}
+            ${K(l.id,!1)}
           </div>
           <div class="news-list-content">
             <h3 class="news-list-title">${l.title}</h3>
@@ -1469,7 +1474,7 @@
         ${c?`
           <article class="news-hero-card" data-article-id="${t.id}" id="news-hero-article">
             <div class="news-hero-image-wrap">
-              ${N(t.id,!0)}
+              ${K(t.id,!0)}
             </div>
             <div class="news-hero-footer">
               <div class="news-hero-info">
@@ -1544,7 +1549,7 @@
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Hotline</h3>
-              <p class="contact-card-val contact-card-val--highlight">1800 1234</p>
+              <p class="contact-card-val contact-card-val--highlight"><a href="tel:0867036698" style="color:inherit;">0867036698</a></p>
               <p class="contact-card-sub">(8:00 - 22:00)</p>
             </div>
           </div>
@@ -1559,7 +1564,7 @@
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Email</h3>
-              <p class="contact-card-val">support@onda.vn</p>
+              <p class="contact-card-val"><a href="mailto:nchieu@xinchen.vn" style="color:inherit;">nchieu@xinchen.vn</a></p>
               <p class="contact-card-sub">(Phản hồi trong 24h)</p>
             </div>
           </div>
@@ -1574,8 +1579,8 @@
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Địa chỉ</h3>
-              <p class="contact-card-val contact-card-val--addr">Số 10 Nguyễn Văn Cừ,</p>
-              <p class="contact-card-sub">Long Biên, Hà Nội</p>
+              <p class="contact-card-val contact-card-val--addr">167 Louis I, LK34,</p>
+              <p class="contact-card-sub">KĐT mới Hoàng Văn Thụ, Hoàng Mai</p>
             </div>
           </div>
         </div>
@@ -1918,7 +1923,7 @@
                 <span class="sp-step-num">1</span>
                 <div>
                   <strong>Liên hệ trung tâm bảo hành hoặc hotline</strong>
-                  <p>Gọi 1800 1234 hoặc nhắn Zalo hỗ trợ để được nhân viên tiếp nhận và tư vấn.</p>
+                  <p>Gọi <a href="tel:0867036698" style="color:inherit;font-weight:600;">0867036698</a> hoặc nhắn Zalo hỗ trợ để được nhân viên tiếp nhận và tư vấn.</p>
                 </div>
               </div>
               <div class="sp-step-item">
@@ -2158,7 +2163,7 @@
             </div>
             <div>
               <strong>Hotline</strong>
-              <div class="sp-ch-val" style="color:#527d24;font-weight:800;font-size:1.1rem;">1800 1234</div>
+              <div class="sp-ch-val" style="color:#527d24;font-weight:800;font-size:1.1rem;"><a href="tel:0867036698" style="color:inherit;">0867036698</a></div>
               <small>8:00 - 22:00 (Tất cả các ngày)</small>
             </div>
           </div>
@@ -2513,7 +2518,7 @@
         </div>
       </section>
     </div>
-  `}let V=0,K="all";const S={aio:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao"},keyboard:{label:"Bàn phím",sub:"Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo"},mouse:{label:"Chuột",sub:"Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm bền bỉ"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện góc làm việc và trải nghiệm đỉnh cao"},laptop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},desktop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function H(n){let t=document.querySelector(".toast-container");t||(t=document.createElement("div"),t.className="toast-container",document.body.appendChild(t));const i=document.createElement("div");i.className="toast-alert",i.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${n}</span>`,t.appendChild(i),setTimeout(()=>{i.style.opacity="0",i.style.transform="translateY(10px)",setTimeout(()=>i.remove(),300)},3e3)}function Tn(){if(window.location.hash&&window.location.hash.startsWith("#/")){const t=window.location.hash.slice(1);window.history.replaceState({},"",t)}let n=window.location.pathname.replace(/\/+$/,"")||"/";if(n.startsWith("/dist")&&(n=n.replace(/^\/dist/,"")||"/"),n.startsWith("/san-pham")){const t=n.split("/").filter(Boolean),i=t[1]||"all",a=t[2]||null;if(a)return{page:"detail",cat:i,id:a};if(i!=="all"){const e=z(i);if(e)return{page:"detail",cat:e.cat,id:e.id}}return{page:"catalog",cat:i}}return n.startsWith("/ve-ondata")||n.startsWith("/gioi-thieu")?{page:"about"}:n.startsWith("/tin-tuc")?{page:"news"}:n.startsWith("/lien-he")?{page:"contact"}:n.startsWith("/ho-tro")?{page:"support",sub:n.split("/").filter(Boolean)[1]||null}:{page:"home"}}function b(n){const t=n.startsWith("#/")?n.slice(1):n;window.location.pathname!==t&&window.history.pushState({},"",t),C(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=b;function Dn(){return`
+  `}let V=0,N="all";const S={aio:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao"},keyboard:{label:"Bàn phím",sub:"Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo"},mouse:{label:"Chuột",sub:"Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm bền bỉ"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện góc làm việc và trải nghiệm đỉnh cao"},laptop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},desktop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function H(n){let t=document.querySelector(".toast-container");t||(t=document.createElement("div"),t.className="toast-container",document.body.appendChild(t));const i=document.createElement("div");i.className="toast-alert",i.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${n}</span>`,t.appendChild(i),setTimeout(()=>{i.style.opacity="0",i.style.transform="translateY(10px)",setTimeout(()=>i.remove(),300)},3e3)}function Tn(){if(window.location.hash&&window.location.hash.startsWith("#/")){const t=window.location.hash.slice(1);window.history.replaceState({},"",t)}let n=window.location.pathname.replace(/\/+$/,"")||"/";if(n.startsWith("/dist")&&(n=n.replace(/^\/dist/,"")||"/"),n.startsWith("/san-pham")){const t=n.split("/").filter(Boolean),i=t[1]||"all",a=t[2]||null;if(a)return{page:"detail",cat:i,id:a};if(i!=="all"){const e=z(i);if(e)return{page:"detail",cat:e.cat,id:e.id}}return{page:"catalog",cat:i}}return n.startsWith("/ve-ondata")||n.startsWith("/gioi-thieu")?{page:"about"}:n.startsWith("/tin-tuc")?{page:"news"}:n.startsWith("/lien-he")?{page:"contact"}:n.startsWith("/ho-tro")?{page:"support",sub:n.split("/").filter(Boolean)[1]||null}:{page:"home"}}function b(n){const t=n.startsWith("#/")?n.slice(1):n;window.location.pathname!==t&&window.history.pushState({},"",t),C(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=b;function Dn(){return`
     ${U()}
     ${X()}
     ${Z()}
@@ -2556,7 +2561,7 @@
       ${a?Mn():""}
       ${e?Sn(t.cat):""}
       ${c?rn(s):""}
-      ${r?gn(K):""}
+      ${r?gn(N):""}
       ${l?vn():""}
       ${h?Bn(t.sub):""}
     </main>
@@ -2564,4 +2569,4 @@
     <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
-  `,window.scrollTo({top:0}),Pn(),i&&Ln(),e&&An(t.cat),c&&Hn(s),r&&un(k=>{K=k,C()}),l&&mn(H),h&&Cn(t.sub,H),(d=document.getElementById("menu-home"))==null||d.classList.toggle("active",i),(v=document.getElementById("menu-about"))==null||v.classList.toggle("active",a),(y=document.getElementById("menu-products"))==null||y.classList.toggle("active",e||c),(o=document.getElementById("menu-news"))==null||o.classList.toggle("active",r),(m=document.getElementById("menu-contact"))==null||m.classList.toggle("active",l),(f=document.getElementById("menu-support"))==null||f.classList.toggle("active",h)}window.addEventListener("popstate",C);window.addEventListener("hashchange",C);document.addEventListener("click",n=>{const t=n.target.closest("a");if(!t)return;const i=t.getAttribute("href");if(i){if(i.startsWith("#")&&!i.startsWith("#/")){const a=document.querySelector(i);a&&(n.preventDefault(),a.scrollIntoView({behavior:"smooth"}));return}if(i.startsWith("/")&&!i.startsWith("//")){n.preventDefault(),b(i);return}if(i.startsWith("#/")){n.preventDefault(),b(i.slice(1));return}}});C();
+  `,window.scrollTo({top:0}),Pn(),i&&Ln(),e&&An(t.cat),c&&Hn(s),r&&un(k=>{N=k,C()}),l&&mn(H),h&&Cn(t.sub,H),(d=document.getElementById("menu-home"))==null||d.classList.toggle("active",i),(v=document.getElementById("menu-about"))==null||v.classList.toggle("active",a),(y=document.getElementById("menu-products"))==null||y.classList.toggle("active",e||c),(o=document.getElementById("menu-news"))==null||o.classList.toggle("active",r),(m=document.getElementById("menu-contact"))==null||m.classList.toggle("active",l),(f=document.getElementById("menu-support"))==null||f.classList.toggle("active",h)}window.addEventListener("popstate",C);window.addEventListener("hashchange",C);document.addEventListener("click",n=>{const t=n.target.closest("a");if(!t)return;const i=t.getAttribute("href");if(i){if(i.startsWith("#")&&!i.startsWith("#/")){const a=document.querySelector(i);a&&(n.preventDefault(),a.scrollIntoView({behavior:"smooth"}));return}if(i.startsWith("/")&&!i.startsWith("//")){n.preventDefault(),b(i);return}if(i.startsWith("#/")){n.preventDefault(),b(i.slice(1));return}}});C();

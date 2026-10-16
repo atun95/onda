@@ -33,7 +33,7 @@ export function renderContactPage() {
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Hotline</h3>
-              <p class="contact-card-val contact-card-val--highlight">1800 1234</p>
+              <p class="contact-card-val contact-card-val--highlight"><a href="tel:0867036698" style="color:inherit;">0867036698</a></p>
               <p class="contact-card-sub">(8:00 - 22:00)</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export function renderContactPage() {
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Email</h3>
-              <p class="contact-card-val">support@onda.vn</p>
+              <p class="contact-card-val"><a href="mailto:nchieu@xinchen.vn" style="color:inherit;">nchieu@xinchen.vn</a></p>
               <p class="contact-card-sub">(Phản hồi trong 24h)</p>
             </div>
           </div>
@@ -63,8 +63,8 @@ export function renderContactPage() {
             </div>
             <div class="contact-card-info">
               <h3 class="contact-card-label">Địa chỉ</h3>
-              <p class="contact-card-val contact-card-val--addr">Số 10 Nguyễn Văn Cừ,</p>
-              <p class="contact-card-sub">Long Biên, Hà Nội</p>
+              <p class="contact-card-val contact-card-val--addr">167 Louis I, LK34,</p>
+              <p class="contact-card-sub">KĐT mới Hoàng Văn Thụ, Hoàng Mai</p>
             </div>
           </div>
         </div>
