@@ -1,53 +1,77 @@
 export function renderFooter() {
   return `
     <footer class="footer" id="footer">
-      <div class="footer-top">
-        <div class="container footer-top-grid">
-          <div class="footer-brand" id="footer-brand">
-            <img src="/logo tach nen.png" alt="Ondata" class="footer-logo" />
-            <p class="footer-slogan">ONDATA – Nối Nguồn Công Nghệ</p>
-            <p class="footer-desc">Phân phối và kinh doanh thiết bị công nghệ, máy tính All-in-One và linh kiện chất lượng cao tại Việt Nam.</p>
+      <div class="container">
+        <div class="footer-main-grid">
+          <!-- Col 1: Brand -->
+          <div class="footer-col-brand">
+            <a href="#" class="footer-brand-logo">
+              <img src="/logo tach nen.png" alt="ONDATA" class="footer-logo-img" style="height: 34px; width: auto; filter: brightness(0) invert(1);" />
+            </a>
           </div>
-          <div class="footer-col" id="footer-links">
-            <h5>Liên Kết</h5>
-            <ul>
-              <li><a href="#" data-page="about">Về Chúng Tôi</a></li>
-              <li><a href="#" data-page="products">Sản Phẩm</a></li>
-              <li><a href="#" data-page="blog">Tin Tức</a></li>
-              <li><a href="#" data-page="contact">Liên Hệ</a></li>
+
+          <!-- Col 2: Sản phẩm -->
+          <div class="footer-col-nav">
+            <h4 class="footer-col-heading">Sản phẩm</h4>
+            <ul class="footer-link-list">
+              <li><a href="#products">Máy tính xách tay</a></li>
+              <li><a href="#products">Máy tính để bàn</a></li>
+              <li><a href="#products">Màn hình</a></li>
+              <li><a href="#products">RAM</a></li>
+              <li><a href="#products">Bàn phím</a></li>
+              <li><a href="#products">Chuột</a></li>
+              <li><a href="#products">Phụ kiện</a></li>
             </ul>
           </div>
-          <div class="footer-col" id="footer-products">
-            <h5>Sản Phẩm</h5>
-            <ul>
-              <li><a href="#" data-page="products">Máy tính All-in-One</a></li>
-              <li><a href="#" data-page="products">Màn hình máy tính</a></li>
-              <li><a href="#" data-page="products">Linh kiện & phụ kiện</a></li>
-              <li><a href="#" data-page="support">Hỗ trợ</a></li>
+
+          <!-- Col 3: Hỗ trợ khách hàng -->
+          <div class="footer-col-nav">
+            <h4 class="footer-col-heading">Hỗ trợ khách hàng</h4>
+            <ul class="footer-link-list">
+              <li><a href="#support">Chính sách bảo hành</a></li>
+              <li><a href="#support">Đổi trả - Hoàn tiền</a></li>
+              <li><a href="#support">Hướng dẫn mua hàng</a></li>
+              <li><a href="#support">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="#support">FAQ</a></li>
             </ul>
           </div>
-          <div class="footer-col" id="footer-contact-col">
-            <h5>Liên Hệ</h5>
-            <ul>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                167 Louis I, LK34, Hoàng Mai, HN
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <a href="tel:0867036698">0867 036 698</a>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <a href="mailto:nchieu@xinchen.vn">nchieu@xinchen.vn</a>
-              </li>
-            </ul>
+
+          <!-- Col 4: Kết nối với Ondata & Đăng ký nhận tin -->
+          <div class="footer-col-connect">
+            <h4 class="footer-col-heading">Kết nối với Ondata</h4>
+            <div class="social-links-row">
+              <a href="#" class="social-circle-btn" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-circle-btn" aria-label="Zalo / Messenger">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </a>
+              <a href="#" class="social-circle-btn" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-circle-btn" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#000"/></svg>
+              </a>
+            </div>
+
+            <div class="newsletter-box">
+              <div class="newsletter-label">Đăng ký nhận tin</div>
+              <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Nhập email của bạn" id="newsletter-email" required />
+                <button type="submit" class="btn-newsletter-action">Đăng ký</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom" id="footer-bottom">
-        <div class="container footer-bottom-inner">
-          <p>© 2026 Ondata Việt Nam. Bảo lưu mọi quyền. Thương hiệu được bảo hộ tại Việt Nam từ 2026</p>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+          <p>© 2025 Ondata. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <a href="#">Chính sách bảo mật</a>
+            <span>|</span>
+            <a href="#">Điều khoản sử dụng</a>
+          </div>
         </div>
       </div>
     </footer>

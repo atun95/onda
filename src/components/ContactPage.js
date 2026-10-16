@@ -1,96 +1,194 @@
+/* ============================================================
+   CONTACT PAGE COMPONENT (MATCHING USER MOCKUP)
+   ============================================================ */
+
+
+
 export function renderContactPage() {
   return `
-    <div class="page-content">
-      <section class="contact-page">
-        <div class="container-sm">
-          <div class="breadcrumb">
-            <a href="#" data-page="home">Trang chủ</a>
-            <span class="separator">›</span>
-            <span class="current">Liên hệ</span>
-          </div>
-          
-          <div class="contact-page-header">
-            <h1>Liên hệ với Ondata</h1>
-            <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
-          </div>
-          
-          <div class="contact-info-cards" id="contact-info-cards">
-            <div class="contact-info-card">
-              <div class="ci-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 8 8l1-1a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div class="ci-text">
-                <h4>Hotline</h4>
-                <a href="tel:18001234">1800 1234</a>
-                <p style="font-size:0.72rem;color:var(--text-muted);font-weight:400;">(8:00 - 22:00)</p>
-              </div>
+    <section class="contact-page" id="contact-page">
+      <div class="contact-container">
+
+        <!-- 1. BREADCRUMB -->
+        <nav class="catalog-breadcrumb contact-breadcrumb" aria-label="Breadcrumb">
+          <a href="#/" class="crumb-link" id="contact-crumb-home">Trang chủ</a>
+          <span class="crumb-sep">›</span>
+          <span class="crumb-current">Liên hệ</span>
+        </nav>
+
+        <!-- 2. PAGE HEADER -->
+        <div class="contact-header">
+          <h1 class="contact-title">Liên hệ với Ondata</h1>
+          <p class="contact-subtitle">Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+        </div>
+
+        <!-- 3. THREE CONTACT INFO CARDS -->
+        <div class="contact-cards-grid">
+          <!-- Card 1: Hotline -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
             </div>
-            
-            <div class="contact-info-card">
-              <div class="ci-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div class="ci-text">
-                <h4>Email</h4>
-                <a href="mailto:support@onda.vn">support@onda.vn</a>
-                <p style="font-size:0.72rem;color:var(--text-muted);font-weight:400;">(Phản hồi trong 24h)</p>
-              </div>
-            </div>
-            
-            <div class="contact-info-card">
-              <div class="ci-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div class="ci-text">
-                <h4>Địa chỉ</h4>
-                <p>Số 10 Nguyễn Văn Cừ, Long Biên, Hà Nội</p>
-              </div>
+            <div class="contact-card-info">
+              <h3 class="contact-card-label">Hotline</h3>
+              <p class="contact-card-val contact-card-val--highlight">1800 1234</p>
+              <p class="contact-card-sub">(8:00 - 22:00)</p>
             </div>
           </div>
-          
-          <div class="contact-form-section" id="contact-form-section">
-            <h2>Gửi tin nhắn cho chúng tôi</h2>
-            <form class="contact-form" id="contact-form" style="border:none;padding:0;border-radius:0;">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="contact-name">Họ và tên *</label>
-                  <input type="text" id="contact-name" name="name" placeholder="" required />
-                </div>
-                <div class="form-group">
-                  <label for="contact-phone-input">Số điện thoại *</label>
-                  <input type="tel" id="contact-phone-input" name="phone" placeholder="" required />
-                </div>
-              </div>
-              <div class="form-group form-group-full">
-                <label for="contact-email-input">Email *</label>
-                <input type="email" id="contact-email-input" name="email" placeholder="" required />
-              </div>
-              <div class="form-group form-group-full">
-                <label for="contact-message">Nội dung *</label>
-                <textarea id="contact-message" name="message" rows="4" placeholder="Nhập nội dung..." required></textarea>
-              </div>
-              <button type="submit" class="btn-outline btn-full" id="contact-submit">
-                Gửi liên hệ
-              </button>
-              <div class="form-success" id="form-success">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                Cảm ơn! Chúng tôi sẽ liên hệ bạn sớm nhất.
-              </div>
-            </form>
-          </div>
-          
-          <div class="partner-cta" id="partner-cta">
-            <div class="partner-cta-text">
-              <h3>Hợp tác đại lý</h3>
-              <p>Cùng Ondata phát triển bền vững, khai thác nhiều cơ hội kinh doanh hấp dẫn.</p>
-              <a class="btn-primary" data-page="contact">Đăng ký ngay</a>
+
+          <!-- Card 2: Email -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
             </div>
-            <div class="partner-cta-img">
-              <img src="/office.jpg" alt="Hợp tác đại lý Ondata" style="border-radius:var(--radius);width:100%;height:140px;object-fit:cover;" />
+            <div class="contact-card-info">
+              <h3 class="contact-card-label">Email</h3>
+              <p class="contact-card-val">support@onda.vn</p>
+              <p class="contact-card-sub">(Phản hồi trong 24h)</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Address -->
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <h3 class="contact-card-label">Địa chỉ</h3>
+              <p class="contact-card-val contact-card-val--addr">Số 10 Nguyễn Văn Cừ,</p>
+              <p class="contact-card-sub">Long Biên, Hà Nội</p>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+
+        <!-- 4. CONTACT FORM SECTION -->
+        <div class="contact-form-section">
+          <h2 class="contact-form-title">Gửi tin nhắn cho chúng tôi</h2>
+
+          <form class="contact-form" id="contact-form">
+            <!-- Row 1: Họ tên + SĐT -->
+            <div class="contact-form-row">
+              <div class="contact-field-group">
+                <label for="contact-name" class="contact-field-label">Họ và tên *</label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  class="contact-input" 
+                  required 
+                  placeholder="Nhập họ và tên..."
+                />
+              </div>
+
+              <div class="contact-field-group">
+                <label for="contact-phone" class="contact-field-label">Số điện thoại *</label>
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  class="contact-input" 
+                  required 
+                  placeholder="Nhập số điện thoại..."
+                />
+              </div>
+            </div>
+
+            <!-- Row 2: Email -->
+            <div class="contact-field-group">
+              <label for="contact-email" class="contact-field-label">Email *</label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                class="contact-input" 
+                required 
+                placeholder="Nhập địa chỉ email..."
+              />
+            </div>
+
+            <!-- Row 3: Nội dung -->
+            <div class="contact-field-group">
+              <label for="contact-message" class="contact-field-label">Nội dung *</label>
+              <textarea 
+                id="contact-message" 
+                class="contact-textarea" 
+                rows="4" 
+                required 
+                placeholder="Nhập nội dung..."
+              ></textarea>
+            </div>
+
+            <!-- Row 4: Submit Button -->
+            <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+              Gửi liên hệ
+            </button>
+          </form>
+        </div>
+
+        <!-- 5. PARTNER / DEALER BANNER -->
+        <div class="contact-partner-card">
+          <div class="contact-partner-content">
+            <h2 class="contact-partner-title">Hợp tác đại lý</h2>
+            <p class="contact-partner-desc">
+              Cùng Ondata phát triển bền vững, khai thác nhiều cơ hội kinh doanh hấp dẫn.
+            </p>
+            <button type="button" class="contact-partner-btn" id="btn-partner-register">
+              Đăng ký ngay
+            </button>
+          </div>
+
+          <div class="contact-partner-visual">
+            <div class="partner-img-placeholder">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>Khung hình ảnh (thêm ảnh sau)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   `;
+}
+
+export function initContactPageInteractions(showToast) {
+  // Breadcrumb home link
+  document.getElementById('contact-crumb-home')?.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.hash = '#/';
+  });
+
+  // Contact form submission
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('contact-name')?.value;
+      const phone = document.getElementById('contact-phone')?.value;
+
+      if (showToast) {
+        showToast(`Cảm ơn ${name || 'bạn'}! Tin nhắn liên hệ đã được gửi thành công.`);
+      }
+
+      form.reset();
+    });
+  }
+
+  // Partner register button
+  const partnerBtn = document.getElementById('btn-partner-register');
+  if (partnerBtn) {
+    partnerBtn.addEventListener('click', () => {
+      if (showToast) {
+        showToast('Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.');
+      }
+    });
+  }
 }
