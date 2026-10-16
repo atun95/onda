@@ -48,41 +48,62 @@ function showToast(message) {
   }, 3000);
 }
 
-/* ── Router ─────────────────────────────────────────────── */
+/* ── Router (Clean URLs without #) ───────────────────────── */
 function getRoute() {
-  // hash format:  #/                          → home
-  //               #/san-pham                  → catalog (all)
-  //               #/san-pham/laptop           → catalog (category)
-  //               #/san-pham/laptop/laptop-pro-15 → product detail
-  //               #/tin-tuc                   → news page
-  //               #/lien-he                   → contact page
-  //               #/ho-tro                    → support hub
-  //               #/ho-tro/:sub               → support subpage
-  const hash = window.location.hash || '#/';
-  if (hash.startsWith('#/san-pham')) {
-    const parts = hash.split('/');
-    const cat = parts[2] || 'all';
-    const id  = parts[3] || null;
-    if (id) return { page: 'detail', cat, id };
-    return { page: 'catalog', cat };
+  // Gracefully upgrade legacy hash URLs e.g. #/san-pham to /san-pham
+  if (window.location.hash && window.location.hash.startsWith('#/')) {
+    const clean = window.location.hash.slice(1);
+    window.history.replaceState({}, '', clean);
   }
-  if (hash.startsWith('#/tin-tuc')) {
+
+  let path = window.location.pathname.replace(/\/+$/, '') || '/';
+  if (path.startsWith('/dist')) {
+    path = path.replace(/^\/dist/, '') || '/';
+  }
+
+  if (path.startsWith('/san-pham')) {
+    const parts = path.split('/').filter(Boolean); // ['san-pham', ...]
+    const catOrId = parts[1] || 'all';
+    const id = parts[2] || null;
+
+    if (id) {
+      return { page: 'detail', cat: catOrId, id };
+    }
+    if (catOrId !== 'all') {
+      const prod = getProductById(catOrId);
+      if (prod) {
+        return { page: 'detail', cat: prod.cat, id: prod.id };
+      }
+    }
+    return { page: 'catalog', cat: catOrId };
+  }
+
+  if (path.startsWith('/tin-tuc')) {
     return { page: 'news' };
   }
-  if (hash.startsWith('#/lien-he')) {
+
+  if (path.startsWith('/lien-he')) {
     return { page: 'contact' };
   }
-  if (hash.startsWith('#/ho-tro')) {
-    const parts = hash.split('/');
-    const sub = parts[2] || null;
+
+  if (path.startsWith('/ho-tro')) {
+    const parts = path.split('/').filter(Boolean);
+    const sub = parts[1] || null;
     return { page: 'support', sub };
   }
+
   return { page: 'home' };
 }
 
-function navigate(path) {
-  window.location.hash = path;
+export function navigate(path) {
+  const target = path.startsWith('#/') ? path.slice(1) : path;
+  if (window.location.pathname !== target) {
+    window.history.pushState({}, '', target);
+  }
+  renderApp();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+window.navigate = navigate;
 
 /* ── Page: Home ─────────────────────────────────────────── */
 function renderHome() {
@@ -99,15 +120,15 @@ function initHomeInteractions() {
   document.querySelectorAll('.sidebar-item a[data-cat]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      navigate(`#/san-pham/${link.dataset.cat}`);
+      navigate(`/san-pham/${link.dataset.cat}`);
     });
   });
 
   // "Xem tất cả" links → catalog
-  document.querySelectorAll('a[href="#featured-products"]').forEach(a => {
+  document.querySelectorAll('a[href="#featured-products"], a[href="/san-pham/all"]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/san-pham/all');
+      navigate('/san-pham/all');
     });
   });
 
@@ -130,9 +151,9 @@ function initHomeInteractions() {
       const id  = card.dataset.id;
       const cat = card.dataset.cat;
       if (id && cat) {
-        navigate(`#/san-pham/${cat}/${id}`);
+        navigate(`/san-pham/${cat}/${id}`);
       } else {
-        navigate('#/san-pham/all');
+        navigate('/san-pham/all');
       }
     };
   });
@@ -146,7 +167,7 @@ function initDetailPageInteractions(product) {
   document.querySelectorAll('.catsidebar-link[data-cat]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      navigate(`#/san-pham/${link.dataset.cat}`);
+      navigate(`/san-pham/${link.dataset.cat}`);
     });
   });
 }
@@ -164,7 +185,7 @@ function initCatalogPageInteractions(activeCat) {
   document.querySelectorAll('.catsidebar-link[data-cat]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      navigate(`#/san-pham/${link.dataset.cat}`);
+      navigate(`/san-pham/${link.dataset.cat}`);
     });
   });
 }
@@ -264,7 +285,7 @@ function initSharedInteractions() {
     const goToProduct = (cat, id) => {
       searchDropdown.classList.remove('show');
       searchInput.blur();
-      navigate(`#/san-pham/${cat}/${id}`);
+      navigate(`/san-pham/${cat}/${id}`);
     };
 
     const executeSearch = () => {
@@ -356,7 +377,7 @@ function initSharedInteractions() {
   if (menuHome) {
     menuHome.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/');
+      navigate('/');
     });
   }
 
@@ -365,7 +386,7 @@ function initSharedInteractions() {
   if (menuProducts) {
     menuProducts.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/san-pham/all');
+      navigate('/san-pham/all');
     });
   }
 
@@ -374,7 +395,7 @@ function initSharedInteractions() {
   if (menuNews) {
     menuNews.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/tin-tuc');
+      navigate('/tin-tuc');
     });
   }
 
@@ -383,7 +404,7 @@ function initSharedInteractions() {
   if (menuContact) {
     menuContact.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/lien-he');
+      navigate('/lien-he');
     });
   }
 
@@ -392,7 +413,7 @@ function initSharedInteractions() {
   if (menuSupport) {
     menuSupport.addEventListener('click', e => {
       e.preventDefault();
-      navigate('#/ho-tro');
+      navigate('/ho-tro');
     });
   }
 
@@ -464,5 +485,39 @@ function renderApp() {
 }
 
 /* ── Boot ────────────────────────────────────────────────── */
+window.addEventListener('popstate', renderApp);
 window.addEventListener('hashchange', renderApp);
+
+// Global Link Interceptor for clean SPA navigation
+document.addEventListener('click', e => {
+  const link = e.target.closest('a');
+  if (!link) return;
+  const href = link.getAttribute('href');
+  if (!href) return;
+
+  // Hash-only internal anchors e.g. #promo-banner
+  if (href.startsWith('#') && !href.startsWith('#/')) {
+    const el = document.querySelector(href);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+    return;
+  }
+
+  // Internal clean route paths: /..., /san-pham, /lien-he
+  if (href.startsWith('/') && !href.startsWith('//')) {
+    e.preventDefault();
+    navigate(href);
+    return;
+  }
+
+  // Legacy hash paths: #/...
+  if (href.startsWith('#/')) {
+    e.preventDefault();
+    navigate(href.slice(1));
+    return;
+  }
+});
+
 renderApp();
