@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Chuyển hướng truy cập trang chủ vào thư mục dist/
+  RewriteRule ^$ dist/ [L]
+
+  # Chuyển tiếp các file tĩnh và đường dẫn chưa tồn tại vào dist/
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ dist/$1 [L]
+</IfModule>
