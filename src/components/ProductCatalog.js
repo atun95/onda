@@ -2,14 +2,12 @@ import { getProductsByCat, formatPrice } from '../data/products.js';
 
 export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản phẩm', sub: 'Tất cả sản phẩm chính hãng Ondata' }) {
   const categories = [
-    { id: 'laptop',      label: 'Máy tính xách tay', icon: laptopIcon() },
-    { id: 'desktop',     label: 'Máy tính để bàn',   icon: desktopIcon() },
+    { id: 'aio',         label: 'Máy tính All-in-one', icon: aioIcon() },
     { id: 'monitor',     label: 'Màn hình',           icon: monitorIcon() },
-    { id: 'ram',         label: 'RAM',                icon: ramIcon() },
     { id: 'keyboard',    label: 'Bàn phím',           icon: keyboardIcon() },
     { id: 'mouse',       label: 'Chuột',              icon: mouseIcon() },
+    { id: 'ram',         label: 'RAM',                icon: ramIcon() },
     { id: 'accessories', label: 'Phụ kiện',           icon: accessoriesIcon() },
-    { id: 'other',       label: 'Thiết bị khác',      icon: otherIcon() },
   ];
 
   const tabs = ['Tất cả', 'Văn phòng', 'Gaming', 'Đồ họa', 'Ultrabook'];
@@ -252,6 +250,9 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
 }
 
 /* ── SVG Icon helpers ────────────────────────────────── */
+function aioIcon() {
+  return `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="16" x2="12" y2="21"/></svg>`;
+}
 function laptopIcon() {
   return `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`;
 }

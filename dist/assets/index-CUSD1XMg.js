@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const o of n)if(o.type==="childList")for(const d of o.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&i(d)}).observe(document,{childList:!0,subtree:!0});function s(n){const o={};return n.integrity&&(o.integrity=n.integrity),n.referrerPolicy&&(o.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?o.credentials="include":n.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(n){if(n.ep)return;n.ep=!0;const o=s(n);fetch(n.href,o)}})();function V(t=0){return`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const c of e)if(c.type==="childList")for(const r of c.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function i(e){const c={};return e.integrity&&(c.integrity=e.integrity),e.referrerPolicy&&(c.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?c.credentials="include":e.crossOrigin==="anonymous"?c.credentials="omit":c.credentials="same-origin",c}function a(e){if(e.ep)return;e.ep=!0;const c=i(e);fetch(e.href,c)}})();function q(n=0){return`
     <header class="navbar" id="navbar">
       <div class="nav-container">
         <!-- Top Row: Logo, Search Bar, Icons -->
@@ -47,14 +47,41 @@
           </div>
         </div>
 
-        <!-- Subrow Menu: Trang chủ, Sản phẩm, Khuyến mãi, Tin tức, Liên hệ, Hỗ trợ -->
+        <!-- Subrow Menu: Trang chủ, Về Ondata, Sản phẩm, Khuyến mãi, Tin tức, Liên hệ, Hỗ trợ -->
         <nav class="nav-menu" id="nav-menu">
           <a href="/" class="nav-menu-link active" id="menu-home">Trang chủ</a>
+          <a href="/ve-ondata" class="nav-menu-link" id="menu-about">Về Ondata</a>
           <div class="nav-dropdown-wrap">
             <a href="/san-pham/all" class="nav-menu-link" id="menu-products">
               Sản phẩm
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
+            <div class="nav-dropdown-menu">
+              <a href="/san-pham/aio" class="nav-dropdown-item">
+                <span class="ndi-icon">🖥️</span>
+                <span>Máy tính All-in-one</span>
+              </a>
+              <a href="/san-pham/monitor" class="nav-dropdown-item">
+                <span class="ndi-icon">📺</span>
+                <span>Màn hình</span>
+              </a>
+              <a href="/san-pham/keyboard" class="nav-dropdown-item">
+                <span class="ndi-icon">⌨️</span>
+                <span>Bàn phím</span>
+              </a>
+              <a href="/san-pham/mouse" class="nav-dropdown-item">
+                <span class="ndi-icon">🖱️</span>
+                <span>Chuột</span>
+              </a>
+              <a href="/san-pham/ram" class="nav-dropdown-item">
+                <span class="ndi-icon">💾</span>
+                <span>RAM</span>
+              </a>
+              <a href="/san-pham/accessories" class="nav-dropdown-item">
+                <span class="ndi-icon">🔌</span>
+                <span>Phụ kiện</span>
+              </a>
+            </div>
           </div>
           <a href="#promo-banner" class="nav-menu-link" id="menu-promo">Khuyến mãi</a>
           <a href="/tin-tuc" class="nav-menu-link" id="menu-news">Tin tức</a>
@@ -63,7 +90,7 @@
         </nav>
       </div>
     </header>
-  `}function K(){return`
+  `}function U(){return`
     <section class="home-top-section">
       <div class="container">
         <div class="home-top-grid">
@@ -78,20 +105,12 @@
               <span>Danh mục sản phẩm</span>
             </div>
             <ul class="sidebar-menu">
-              <li class="sidebar-item" data-cat="laptop">
-                <a href="#" data-cat="laptop">
+              <li class="sidebar-item" data-cat="aio">
+                <a href="#" data-cat="aio">
                   <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="16" x2="12" y2="21"/></svg>
                   </span>
-                  <span>Máy tính xách tay</span>
-                </a>
-              </li>
-              <li class="sidebar-item" data-cat="desktop">
-                <a href="#" data-cat="desktop">
-                  <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                  </span>
-                  <span>Máy tính để bàn</span>
+                  <span>Máy tính All-in-one</span>
                 </a>
               </li>
               <li class="sidebar-item" data-cat="monitor">
@@ -102,18 +121,10 @@
                   <span>Màn hình</span>
                 </a>
               </li>
-              <li class="sidebar-item" data-cat="ram">
-                <a href="#" data-cat="ram">
-                  <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="1"/><line x1="6" y1="17" x2="6" y2="19"/><line x1="10" y1="17" x2="10" y2="19"/><line x1="14" y1="17" x2="14" y2="19"/><line x1="18" y1="17" x2="18" y2="19"/></svg>
-                  </span>
-                  <span>RAM</span>
-                </a>
-              </li>
               <li class="sidebar-item" data-cat="keyboard">
                 <a href="#" data-cat="keyboard">
                   <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="6" y1="8" x2="6.01" y2="8"/><line x1="10" y1="8" x2="10.01" y2="8"/><line x1="14" y1="8" x2="14.01" y2="8"/><line x1="18" y1="8" x2="18.01" y2="8"/><line x1="6" y1="12" x2="6.01" y2="12"/><line x1="10" y1="12" x2="10.01" y2="12"/><line x1="14" y1="12" x2="14.01" y2="12"/><line x1="18" y1="12" x2="18.01" y2="12"/><line x1="7" y1="16" x2="17" y2="16"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="6" y1="9" x2="6.01" y2="9"/><line x1="10" y1="9" x2="10.01" y2="9"/><line x1="14" y1="9" x2="14.01" y2="9"/><line x1="18" y1="9" x2="18.01" y2="9"/><line x1="7" y1="15" x2="17" y2="15"/></svg>
                   </span>
                   <span>Bàn phím</span>
                 </a>
@@ -126,20 +137,20 @@
                   <span>Chuột</span>
                 </a>
               </li>
+              <li class="sidebar-item" data-cat="ram">
+                <a href="#" data-cat="ram">
+                  <span class="sidebar-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="1"/><line x1="6" y1="17" x2="6" y2="19"/><line x1="10" y1="17" x2="10" y2="19"/><line x1="14" y1="17" x2="14" y2="19"/><line x1="18" y1="17" x2="18" y2="19"/></svg>
+                  </span>
+                  <span>RAM</span>
+                </a>
+              </li>
               <li class="sidebar-item" data-cat="accessories">
                 <a href="#" data-cat="accessories">
                   <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                   </span>
                   <span>Phụ kiện</span>
-                </a>
-              </li>
-              <li class="sidebar-item" data-cat="other">
-                <a href="#" data-cat="other">
-                  <span class="sidebar-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                  </span>
-                  <span>Thiết bị khác</span>
                 </a>
               </li>
             </ul>
@@ -224,118 +235,119 @@
         </div>
       </div>
     </section>
-  `}function Q(){return`
+  `}const F=[{id:"aio",name:"Máy tính All-in-one",icon:"aio",desc:"Máy tính tất cả trong một tinh gọn, mạnh mẽ"},{id:"monitor",name:"Màn hình",icon:"monitor",desc:"Hiển thị sắc nét, tần số quét cao, bảo vệ mắt"},{id:"keyboard",name:"Bàn phím",icon:"keyboard",desc:"Bàn phím cơ & công thái học gõ êm mượt"},{id:"mouse",name:"Chuột",icon:"mouse",desc:"Chuột quang học, wireless độ nhạy cao"},{id:"ram",name:"RAM",icon:"ram",desc:"Bộ nhớ DDR4/DDR5 tốc độ cao, đa nhiệm tối ưu"},{id:"accessories",name:"Phụ kiện",icon:"accessories",desc:"Giá treo, hub chuyển đổi, lót chuột cao cấp"}],w=[{id:"aio-one-24",cat:"aio",name:'Máy tính All-in-one Ondata One 24"',badge:"Bán chạy",price:1399e4,oldPrice:1549e4,discount:10,stars:4.8,reviews:38,specs:[{icon:"monitor",label:"Màn hình",value:'23.8" FHD IPS viền siêu mỏng'},{icon:"cpu",label:"CPU",value:"Intel Core i5-12400 (6N/12L)"},{icon:"ram",label:"RAM",value:"16GB DDR4 3200MHz"},{icon:"hdd",label:"Ổ cứng",value:"SSD NVMe 512GB PCIe"},{icon:"gpu",label:"Card đồ họa",value:"Intel UHD Graphics 730"},{icon:"shield",label:"Bảo hành",value:"24 tháng tận nơi"}],desc:'Máy tính All-in-one Ondata One 24" mang đến giải pháp tối ưu cho không gian làm việc hiện đại. Tích hợp đầy đủ CPU, loa âm thanh nổi, webcam bảo mật và kết nối WiFi 6 ngay trong thân máy thanh mảnh.',features:["Thiết kế nguyên khối All-in-one giấu dây gọn gàng",'Màn hình 23.8" FHD IPS tràn viền 3 cạnh, góc nhìn 178°',"Tích hợp Camera Full HD có nắp gạt bảo mật vật lý","Loa kép Stereo tích hợp âm thanh rõ ràng cho hội họp"],techSpecs:{"Kích thước màn hình":"23.8 inch IPS Full HD (1920 × 1080), 75Hz, Anti-glare",CPU:"Intel Core i5-12400 (6 nhân 12 luồng, xung nhịp tối đa 4.40GHz)",RAM:"16GB DDR4 3200MHz (2 khe RAM, hỗ trợ tối đa 64GB)","Ổ cứng":'SSD M.2 NVMe 512GB PCIe Gen 3 (hỗ trợ nâng cấp thêm 2.5" SATA)',"Card đồ họa":"Intel UHD Graphics 730","Camera & Loa":"Webcam 2.0MP 1080p có nắp gạt, Loa kép Stereo 2× 3W","Kết nối":"4× USB 3.0, 2× USB 2.0, 1× HDMI Out, 1× RJ45 LAN Gigabit, Audio Jack 3.5mm","Không dây":"WiFi 6 Dual-Band + Bluetooth 5.2","Phụ kiện kèm theo":"Bộ bàn phím & chuột không dây Ondata đồng bộ","Bảo hành":"24 tháng chính hãng Ondata"}},{id:"aio-pro-27",cat:"aio",name:'Máy tính All-in-one Ondata Pro 27" 2K',badge:"Cao cấp",price:2199e4,oldPrice:245e5,discount:10,stars:4.9,reviews:29,specs:[{icon:"monitor",label:"Màn hình",value:'27" 2K QHD IPS 100Hz'},{icon:"cpu",label:"CPU",value:"Intel Core i7-13700 (16N/24L)"},{icon:"ram",label:"RAM",value:"32GB DDR5 5200MHz"},{icon:"hdd",label:"Ổ cứng",value:"SSD NVMe 1TB Gen 4"},{icon:"gpu",label:"Card đồ họa",value:"Intel UHD Graphics 770"},{icon:"shield",label:"Bảo hành",value:"36 tháng chính hãng"}],desc:'Ondata Pro 27" 2K là mẫu All-in-one đầu bảng dành cho doanh nghiệp và nhà quản lý. Sức mạnh vi xử lý Core i7 thế hệ 13 kết hợp màn hình 27 inch 2K siêu sắc nét mang lại trải nghiệm đỉnh cao.',features:['Màn hình 27" 2K QHD 100Hz chuẩn màu 100% sRGB',"Vi xử lý Core i7-13700 mạnh mẽ xử lý mọi tác vụ phân tích dữ liệu và thiết kế","RAM 32GB DDR5 thế hệ mới đa nhiệm cực nhanh","Chân đế hợp kim nhôm sang trọng nâng hạ và xoay độ nghiêng linh hoạt"],techSpecs:{"Kích thước màn hình":"27 inch IPS QHD (2560 × 1440), 100Hz, 100% sRGB, 350 nits",CPU:"Intel Core i7-13700 (16 nhân, 24 luồng, Turbo Boost 5.20GHz, 30MB Cache)",RAM:"32GB DDR5 5200MHz (tối đa 64GB)","Ổ cứng":"SSD NVMe PCIe 4.0 1TB tốc độ đọc 5000MB/s",Camera:"Pop-up Camera 5MP AI Tracking, Mic lọc ồn đa hướng","Cổng kết nối":"1× USB-C PD/DP, 4× USB 3.2 Gen 2, 1× HDMI 2.0 In, 1× HDMI Out, RJ45 2.5Gbps","Không dây":"WiFi 6E, Bluetooth 5.3","Bảo hành":"36 tháng chính hãng"}},{id:"aio-touch-24",cat:"aio",name:'Máy tính All-in-one Cảm ứng Ondata Touch 24"',badge:"Mới",price:165e5,oldPrice:182e5,discount:9,stars:4.7,reviews:19,specs:[{icon:"monitor",label:"Màn hình",value:'23.8" FHD Cảm ứng 10 điểm'},{icon:"cpu",label:"CPU",value:"Intel Core i5-13400 (10N/16L)"},{icon:"ram",label:"RAM",value:"16GB DDR4 3200MHz"},{icon:"hdd",label:"Ổ cứng",value:"SSD NVMe 512GB"},{icon:"gpu",label:"Card đồ họa",value:"Intel Iris Xe / UHD 730"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:'Ondata Touch 24" trang bị màn hình cảm ứng điện dung 10 điểm mượt mà, kính cường lực chống chói. Lý tưởng cho quầy thu ngân, thuyết trình, phòng họp và thiết kế tương tác trực tiếp.',features:["Màn hình cảm ứng 10 điểm chạm siêu nhạy, hỗ trợ bút Stylus","Kính cường lực 7H chống trầy xước và bám vân tay","Chân đế có thể gập ngửa 60 độ thuận tiện vẽ phác thảo","Cấu hình Core i5 thế hệ 13 mượt mà mọi ứng dụng đồ họa 2D"],techSpecs:{"Màn hình":'23.8" IPS FHD Cảm ứng đa điểm, kính cường lực bảo vệ',CPU:"Intel Core i5-13400 (10 nhân, 16 luồng, 4.60GHz)",RAM:"16GB DDR4 3200MHz","Ổ cứng":"SSD NVMe 512GB M.2 PCIe","Cổng giao tiếp":"USB-C, USB 3.2, HDMI In/Out, LAN Gigabit","Bảo hành":"24 tháng"}},{id:"aio-slim-22",cat:"aio",name:'Máy tính All-in-one Ondata Slim 22"',badge:"Tiết kiệm",price:999e4,oldPrice:112e5,discount:11,stars:4.6,reviews:42,specs:[{icon:"monitor",label:"Màn hình",value:'21.5" FHD IPS góc rộng'},{icon:"cpu",label:"CPU",value:"Intel Core i3-12100 (4N/8L)"},{icon:"ram",label:"RAM",value:"8GB DDR4 3200MHz"},{icon:"hdd",label:"Ổ cứng",value:"SSD NVMe 256GB"},{icon:"gpu",label:"Card đồ họa",value:"Intel UHD Graphics 730"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Mẫu All-in-one văn phòng nhỏ gọn, giá thành tối ưu cho trường học, cơ quan và văn phòng kế toán. Thiết kế siêu mỏng tiết kiệm diện tích tối đa trên bàn làm việc.",features:["Thân máy siêu mỏng chỉ 12mm tại điểm mỏng nhất","Tiêu thụ điện năng chỉ bằng 40% máy tính để bàn truyền thống","Vận hành êm ái, độ ồn dưới 20dB","Trọn bộ đã gồm bàn phím & chuột Ondata văn phòng"],techSpecs:{"Màn hình":'21.5" IPS Full HD (1920 × 1080), 75Hz, Anti-Flicker',CPU:"Intel Core i3-12100 (4 nhân 8 luồng, xung nhịp 4.30GHz)",RAM:"8GB DDR4 (nâng cấp tối đa 32GB)","Ổ cứng":"SSD M.2 NVMe 256GB","Kết nối":"WiFi Dual Band, Bluetooth 5.0, 4× USB, HDMI, LAN","Bảo hành":"24 tháng"}},{id:"aio-creator-32",cat:"aio",name:'Máy tính All-in-one Ondata Creator 32" 4K',badge:"Đồ họa",price:369e5,oldPrice:399e5,discount:8,stars:5,reviews:15,specs:[{icon:"monitor",label:"Màn hình",value:'31.5" 4K UHD 100% DCI-P3'},{icon:"cpu",label:"CPU",value:"Intel Core i9-13900 (24N/32L)"},{icon:"ram",label:"RAM",value:"64GB DDR5 5600MHz"},{icon:"hdd",label:"Ổ cứng",value:"SSD NVMe 2TB PCIe 4.0"},{icon:"gpu",label:"Card đồ họa",value:"NVIDIA RTX 4060 8GB GDDR6"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:'Trạm làm việc All-in-one siêu khủng Ondata Creator 32" 4K dành riêng cho nhà dựng phim 4K, đồ họa 3D và kiến trúc sư. Màn hình 4K HDR rực rỡ tích hợp GPU RTX 4060 rời.',features:["Màn hình 32 inch 4K Ultra HD đạt chuẩn điện ảnh 98% DCI-P3 Delta E < 1.5","Card đồ họa rời NVIDIA RTX 4060 8GB hỗ trợ Ray Tracing và AI DLSS 3","Hệ thống tản nhiệt buồng hơi Vapor Chamber kép mát mẻ tuyệt đối","Âm thanh 4 loa vòm chuẩn Dolby Audio"],techSpecs:{"Màn hình":'31.5" IPS 4K (3840 × 2160), HDR600, 10-bit màu 1.07 tỷ màu',CPU:"Intel Core i9-13900 (24 nhân, 32 luồng, Turbo 5.60GHz)",GPU:"NVIDIA GeForce RTX 4060 8GB GDDR6",RAM:"64GB DDR5 5600MHz","Ổ cứng":"SSD NVMe PCIe Gen 4 2TB","Cổng giao tiếp":"Thunderbolt 4, HDMI 2.1, DisplayPort 1.4, SD 4.0 Card Reader, LAN 2.5G","Bảo hành":"36 tháng"}},{id:"monitor-27-curved",cat:"monitor",name:'Màn hình cong Ondata 27" 165Hz Curved',badge:"Bán chạy",price:549e4,oldPrice:62e5,discount:11,stars:4.9,reviews:64,specs:[{icon:"monitor",label:"Kích thước",value:'27" độ cong 1500R'},{icon:"gpu",label:"Độ phân giải",value:"2K QHD 2560×1440"},{icon:"cpu",label:"Tần số quét",value:"165Hz siêu mượt"},{icon:"shield",label:"Thời gian đáp ứng",value:"1ms MPRT"},{icon:"ram",label:"Tấm nền",value:"Fast VA cao cấp"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:'Màn hình cong Ondata 27" 165Hz bao trọn tầm nhìn với góc cong 1500R hoàn hảo. Tần số quét 165Hz cùng độ phân giải 2K sắc nét mang lại trải nghiệm chiến game và xem phim ngoạn mục.',features:["Độ cong 1500R ôm trọn góc nhìn tự nhiên của mắt","Độ phân giải 2K QHD sắc nét hơn 77% so với chuẩn Full HD","165Hz + 1ms loại bỏ hoàn toàn hiện tượng bóng mờ (ghosting)","Hỗ trợ công nghệ đồng bộ AMD FreeSync & NVIDIA G-Sync Compatible"],techSpecs:{"Kích thước":"27 inch cong 1500R","Độ phân giải":"QHD 2560 × 1440 (2K)","Tấm nền":"Fast VA góc nhìn 178°/178°","Tần số quét":"165Hz (DisplayPort) / 144Hz (HDMI)","Thời gian phản hồi":"1ms MPRT","Độ sáng & Tương phản":"350 nits, tương phản tĩnh 3000:1","Cổng kết nối":"2× HDMI 2.0, 1× DisplayPort 1.4, Audio 3.5mm","Bảo hành":"36 tháng đổi mới năm đầu"}},{id:"monitor-24-ips",cat:"monitor",name:'Màn hình Ondata Office Pro 24" IPS 100Hz',badge:"Văn phòng",price:279e4,oldPrice:319e4,discount:13,stars:4.8,reviews:82,specs:[{icon:"monitor",label:"Kích thước",value:'23.8" IPS viền mỏng'},{icon:"gpu",label:"Độ phân giải",value:"FHD 1920×1080"},{icon:"cpu",label:"Tần số quét",value:"100Hz bảo vệ mắt"},{icon:"shield",label:"Màu sắc",value:"99% sRGB chuẩn màu"},{icon:"ram",label:"Công nghệ",value:"Lọc ánh sáng xanh Low Blue"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:"Mẫu màn hình văn phòng tiêu chuẩn với tấm nền IPS góc nhìn rộng, tần số quét 100Hz dịu mắt hơn hẳn màn 60Hz thông thường. Viền mỏng 3 cạnh tối ưu ghép đa màn hình.",features:["Tấm nền IPS hiển thị màu sắc trung thực 99% sRGB","Tần số quét 100Hz giúp cuộn trang và làm việc không mỏi mắt","Công nghệ Flicker-Free và lọc ánh sáng xanh chứng nhận TÜV Rheinland","Hỗ trợ ngàm VESA 75×75mm tiêu chuẩn"],techSpecs:{"Kích thước":"23.8 inch IPS","Độ phân giải":"Full HD 1920 × 1080","Tần số quét":"100Hz","Thời gian đáp ứng":"4ms GtG","Cổng kết nối":"1× HDMI 1.4, 1× VGA, 1× Audio Out","Bảo hành":"36 tháng"}},{id:"monitor-27-4k",cat:"monitor",name:'Màn hình Ondata ProArt 27" 4K UHD Type-C',badge:"Chuyên gia",price:849e4,oldPrice:95e5,discount:11,stars:5,reviews:31,specs:[{icon:"monitor",label:"Kích thước",value:'27" IPS 4K UHD'},{icon:"gpu",label:"Độ phân giải",value:"3840×2160 4K"},{icon:"cpu",label:"Màu sắc",value:"100% sRGB, 95% DCI-P3"},{icon:"ram",label:"Cổng sạc",value:"USB-C PD 65W sạc nhanh"},{icon:"shield",label:"Chuẩn màu",value:"Delta E < 2 cân màu sẵn"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:"Màn hình đồ họa cao cấp 27 inch 4K với cổng kết nối Type-C truyền hình ảnh và sạc nhanh 65W cho laptop chỉ với 1 sợi cáp duy nhất. Chân đế công thái học xoay dọc 90 độ.",features:["Độ phân giải 4K UHD với mật độ điểm ảnh 163 PPI chi tiết sắc sảo","Cân màu sẵn tại nhà máy với Delta E < 2, chuẩn màu đồ họa","Cổng Type-C công suất 65W sạc trực tiếp cho Macbook / Laptop","Chân đế điều chỉnh độ cao, xoay ngang dọc 90° và nghiêng linh hoạt"],techSpecs:{"Kích thước":"27 inch IPS 4K (3840 × 2160)","Độ sáng":"400 nits, chuẩn VESA DisplayHDR 400","Độ sâu màu":"10-bit (8-bit + FRC), 1.07 tỷ màu","Cổng kết nối":"1× USB-C (DP Alt, PD 65W), 2× HDMI 2.0, 1× DP 1.4, 2× USB Hub","Bảo hành":"36 tháng"}},{id:"monitor-gaming-25",cat:"monitor",name:'Màn hình Gaming Ondata Fast IPS 24.5" 240Hz',badge:"Esports",price:499e4,oldPrice:56e5,discount:11,stars:4.9,reviews:47,specs:[{icon:"monitor",label:"Kích thước",value:'24.5" Fast IPS Esports'},{icon:"gpu",label:"Độ phân giải",value:"FHD 1920×1080"},{icon:"cpu",label:"Tần số quét",value:"240Hz siêu tốc"},{icon:"shield",label:"Thời gian đáp ứng",value:"0.5ms GtG cực nhanh"},{icon:"ram",label:"Công nghệ",value:"G-Sync Compatible"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:"Vũ khí cho game thủ FPS với kích thước chuẩn giải đấu 24.5 inch, tấm nền Fast IPS 240Hz và độ trễ 0.5ms cho phản xạ bắn súng tức thì không độ trễ.",features:["Tần số quét 240Hz đem lại lợi thế khung hình vượt trội","Thời gian đáp ứng 0.5ms loại bỏ hoàn toàn vệt mờ chuyển động","Kích thước 24.5 inch tối ưu tầm mắt game thủ Valorant, CS2","Chân đế chữ V kim loại vững chắc, có lỗ luồn dây gọn gàng"],techSpecs:{"Kích thước":"24.5 inch Fast IPS","Độ phân giải":"FHD 1920 × 1080","Tần số quét":"240Hz","Thời gian phản hồi":"0.5ms GtG","Cổng kết nối":"2× HDMI 2.0, 1× DisplayPort 1.4, Audio 3.5mm","Bảo hành":"36 tháng"}},{id:"monitor-ultrawide-34",cat:"monitor",name:'Màn hình cong Ondata Ultrawide 34" WQHD 165Hz',badge:"Mới",price:999e4,oldPrice:115e5,discount:13,stars:5,reviews:23,specs:[{icon:"monitor",label:"Kích thước",value:'34" tỉ lệ 21:9 cong 1000R'},{icon:"gpu",label:"Độ phân giải",value:"WQHD 3440×1440"},{icon:"cpu",label:"Tần số quét",value:"165Hz mượt mà"},{icon:"shield",label:"Độ cong",value:"1000R sâu chuẩn mắt người"},{icon:"ram",label:"Màu sắc",value:"HDR400, 95% DCI-P3"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:"Màn hình siêu rộng tỉ lệ 21:9 tương đương không gian 2 màn hình ghép lại, không viền ngăn cách. Hoàn hảo cho làm việc đa nhiệm nhiều cửa sổ, biên tập timeline video và trải nghiệm game nhập vai.",features:["Không gian hiển thị rộng hơn 33% so với màn hình 16:9 truyền thống","Độ cong 1000R sâu nhất thị trường mang lại cảm giác bao bọc hoàn toàn","Hỗ trợ chế độ chia màn hình PIP/PBP từ 2 nguồn máy tính khác nhau","Tích hợp loa ngoài âm thanh nổi sống động"],techSpecs:{"Kích thước":"34 inch Ultrawide (21:9), độ cong 1000R","Độ phân giải":"UWQHD 3440 × 1440","Tần số quét":"165Hz","Cổng kết nối":"2× DP 1.4, 2× HDMI 2.0, Audio Out, USB Hub","Bảo hành":"36 tháng"}},{id:"keyboard-k108-rgb",cat:"keyboard",name:"Bàn phím cơ Ondata Mechanical K108 RGB",badge:"Bán chạy",price:119e4,oldPrice:139e4,discount:14,stars:4.8,reviews:55,specs:[{icon:"keyboard",label:"Layout",value:"Fullsize 108 phím đầy đủ"},{icon:"cpu",label:"Switch",value:"Ondata Custom Red/Brown Switch"},{icon:"gpu",label:"Đèn nền",value:"LED RGB 16.8 triệu màu 18 hiệu ứng"},{icon:"shield",label:"Keycap",value:"PBT Doubleshot chống mờ chữ"},{icon:"ram",label:"Tính năng",value:"Hotswap 5-pin thay switch nóng"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Bàn phím cơ Ondata K108 sở hữu layout Fullsize đầy đủ cụm phím số tiện lợi cho công việc văn phòng lẫn gaming. Tính năng Hotswap cho phép tùy biến switch dễ dàng không cần hàn mạch.",features:["Mạch xuôi Hotswap 5-pin tương thích mọi loại switch Cherry/Gateron","Keycap PBT Doubleshot đúc 2 lớp bền bỉ trọn đời không bóng nhờn","Lót sẵn foam tiêu âm PCB & đáy cho âm gõ đầm chắc, triệt tiêu tiếng rỗng","Núm xoay kim loại điều chỉnh âm lượng và độ sáng LED tiện lợi"],techSpecs:{Layout:"108 phím Fullsize","Kết nối":"Dây cáp bện Type-C có thể tháo rời",Switch:"Ondata Custom Linear/Tactile (độ bền 60 triệu lần nhấn)","Đèn LED":"RGB Per-key tùy chỉnh nhiều chế độ","Trọng lượng":"1.15 kg đầm tay chống trượt","Bảo hành":"24 tháng"}},{id:"keyboard-k87-wireless",cat:"keyboard",name:"Bàn phím cơ không dây Ondata K87 Tri-Mode",badge:"Mới",price:149e4,oldPrice:175e4,discount:15,stars:4.9,reviews:41,specs:[{icon:"keyboard",label:"Layout",value:"TKL 87 phím nhỏ gọn"},{icon:"cpu",label:"Kết nối",value:"3 chế độ: 2.4G / BT 5.0 / Dây Type-C"},{icon:"gpu",label:"Pin",value:"4000mAh dùng đến 200 giờ"},{icon:"ram",label:"Cấu trúc",value:"Gasket Mount êm ái"},{icon:"shield",label:"Hệ điều hành",value:"Tương thích Windows / macOS"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Bàn phím cơ không dây 3 chế độ kết nối Ondata K87 sở hữu cấu trúc Gasket Mount cao cấp cho cảm giác gõ êm mượt và âm thanh thock trầm ấm. Pin trâu 4000mAh đồng hành nhiều tuần làm việc.",features:["Kết nối cùng lúc 3 thiết bị Bluetooth, chuyển đổi nhanh bằng phím tắt","Cấu trúc Gasket Mount đàn hồi giảm áp lực lên các đầu ngón tay","Switch đã được lube sẵn (Pre-lubed) từ nhà máy siêu mượt mà","Có gạt chuyển đổi layout tương thích hoàn hảo phím Mac và Win"],techSpecs:{Layout:"TKL 87 phím (Tenkeyless)","Dung lượng pin":"4000mAh Li-ion sạc qua cổng Type-C","Thời lượng sử dụng":"Lên đến 200 giờ (tắt LED) / 35 giờ (bật LED)","Độ trễ không dây":"1ms ở chế độ Receiver 2.4GHz","Bảo hành":"24 tháng"}},{id:"keyboard-k68-compact",cat:"keyboard",name:"Bàn phím cơ Ondata K68 Mini RGB",badge:"Nhỏ gọn",price:89e4,oldPrice:105e4,discount:15,stars:4.7,reviews:62,specs:[{icon:"keyboard",label:"Layout",value:"68 phím Mini tiết kiệm 40% diện tích"},{icon:"cpu",label:"Switch",value:"Ondata Blue/Red Switch"},{icon:"gpu",label:"Đèn nền",value:"Rainbow RGB 12 chế độ"},{icon:"shield",label:"Trọng lượng",value:"Siêu nhẹ chỉ 580g dễ bỏ balo"},{icon:"ram",label:"Cáp kết nối",value:"Cáp Type-C tháo rời"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Thiết kế layout 68 phím giữ lại cụm phím mũi tên thiết yếu nhưng tiết kiệm tối đa diện tích trên bàn làm việc, cho góc di chuột chơi game bắn súng rộng rãi thoải mái.",features:["Gọn gàng tiện lợi bỏ balo mang theo đi làm, đi học","Giữ lại hàng phím mũi tên và Del/PgUp/PgDn tiện ích","Cáp Type-C tháo rời tiện lợi khi di chuyển","Độ bền phím nhấn lên tới 50 triệu lần"],techSpecs:{Layout:"68 phím compact","Kích thước":"310 × 100 × 38 mm","Trọng lượng":"580g","Kết nối":"USB Type-C","Bảo hành":"24 tháng"}},{id:"keyboard-office-silent",cat:"keyboard",name:"Bàn phím văn phòng siêu êm Ondata Slim KB200",badge:"Siêu êm",price:49e4,oldPrice:59e4,discount:17,stars:4.6,reviews:73,specs:[{icon:"keyboard",label:"Cấu trúc",value:"Phím cắt kéo Scissor-switch êm ái"},{icon:"cpu",label:"Độ mỏng",value:"Thân kim loại mỏng chỉ 6mm"},{icon:"gpu",label:"Kết nối",value:"Không dây Wireless 2.4GHz + BT"},{icon:"shield",label:"Độ ồn",value:"Gần như triệt tiêu hoàn toàn tiếng ồn"},{icon:"ram",label:"Pin",value:"Pin sạc Type-C dùng 3 tháng"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Bàn phím văn phòng phím phẳng phong cách thời thượng với cơ chế Scissor-switch tương tự bàn phím laptop cao cấp. Không gây tiếng ồn, tạo môi trường làm việc tập trung tuyệt đối.",features:["Cấu trúc phím cắt kéo trợ lực đồng đều gõ cực nhạy và êm","Bề mặt kim loại phay xước sang trọng, chống bám vân tay","Tích hợp pin sạc tiện lợi, không cần thay pin tiểu rời","Phím chức năng Multimedia truy cập nhanh âm nhạc, email"],techSpecs:{"Độ dày":"Chỉ 6mm tại điểm mỏng nhất","Cơ chế phím":"Scissor Keycap thấp",Pin:"500mAh sạc Type-C","Bảo hành":"24 tháng"}},{id:"keyboard-he-magnetic",cat:"keyboard",name:"Bàn phím từ tính Ondata Hall Effect Rapid Trigger",badge:"Esports",price:239e4,oldPrice:279e4,discount:14,stars:5,reviews:18,specs:[{icon:"keyboard",label:"Công nghệ",value:"Switch từ tính Hall Effect không tiếp điểm"},{icon:"cpu",label:"Rapid Trigger",value:"Nhận phím tức thì 0.1mm - 4.0mm"},{icon:"gpu",label:"Polling Rate",value:"8000Hz (0.125ms phản hồi)"},{icon:"shield",label:"Độ bền",value:"100 triệu lần bấm không hao mòn"},{icon:"ram",label:"Vỏ case",value:"Nhôm CNC anode nguyên khối"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Đỉnh cao bàn phím gaming thi đấu với công nghệ cảm biến từ Hall Effect. Cho phép chỉnh điểm nhận phím chính xác từng 0.1mm cùng tính năng Rapid Trigger ngắt phím tức thì khi nhả tay.",features:["Rapid Trigger cho phép bấm liên thanh và dừng di chuyển counter-strafe tức thì","Tần số quét 8000Hz phản hồi nhanh gấp 8 lần phím cơ thông thường","Vỏ hợp kim nhôm CNC đầm chắc, âm thanh gõ đanh gọn sắc sảo","Phần mềm Ondata Hub điều chỉnh độ nhạy từng phím độc lập"],techSpecs:{"Loại switch":"Magnetic Hall Effect Switches","Hành trình nhận phím":"Tùy chỉnh 0.1mm – 4.0mm (bước nhảy 0.1mm)","Tần số gửi tín hiệu":"8000Hz (Polling rate 0.125ms)","Bảo hành":"24 tháng"}},{id:"mouse-m100-wireless",cat:"mouse",name:"Chuột không dây Ondata Silent M100 Dual-Mode",badge:"Bán chạy",price:29e4,oldPrice:35e4,discount:17,stars:4.8,reviews:95,specs:[{icon:"mouse",label:"Kết nối",value:"2.4GHz Nano + Bluetooth 5.2"},{icon:"cpu",label:"Độ phân giải",value:"Tùy chỉnh 1000 - 1600 - 2400 DPI"},{icon:"shield",label:"Nút bấm",value:"Silent Click êm ái giảm 90% tiếng ồn"},{icon:"ram",label:"Pin",value:"Pin sạc Type-C dùng 60 ngày"},{icon:"monitor",label:"Khoảng cách",value:"Kết nối ổn định 10m"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Chuột không dây quốc dân Ondata M100 sở hữu thiết kế mỏng nhẹ đối xứng, nút bấm Silent Click không phát ra tiếng lách cách làm phiền người xung quanh. Kết nối linh hoạt qua Bluetooth và đầu thu USB.",features:["Nút bấm tĩnh âm Silent Switch êm ru trong không gian yên tĩnh","Hỗ trợ chuyển đổi nhanh giữa 2 thiết bị (Laptop & PC)","Cổng sạc Type-C tiện lợi không cần mua pin tiểu thay thế","Thiết kế đối xứng vừa vặn cho cả người thuận tay trái và phải"],techSpecs:{"Cảm biến":"Quang học cao cấp",DPI:"1000 / 1600 / 2400 DPI","Số nút bấm":"4 nút (Trái, Phải, Con lăn, Nút DPI)",Pin:"Li-Polymer 500mAh sạc lại","Trọng lượng":"75g siêu nhẹ","Bảo hành":"24 tháng"}},{id:"mouse-m600-gaming",cat:"mouse",name:"Chuột Gaming Ondata M600 RGB 26000 DPI",badge:"Gaming",price:89e4,oldPrice:109e4,discount:18,stars:4.9,reviews:53,specs:[{icon:"mouse",label:"Cảm biến",value:"PixArt PAW3395 đỉnh cao"},{icon:"cpu",label:"Độ nhạy",value:"Lên đến 26.000 DPI, 650 IPS"},{icon:"shield",label:"Switch",value:"Huano Blue Shell Pink Dot 80 triệu click"},{icon:"ram",label:"Kết nối",value:"3 chế độ: Type-C / 2.4G / Bluetooth"},{icon:"gpu",label:"Trọng lượng",value:"59g công thái học cầm chắc tay"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Trang bị mắt đọc PixArt PAW3395 hàng đầu hiện nay, Ondata M600 mang lại độ chính xác từng điểm ảnh và tracking hoàn hảo khi flick chuột tốc độ cao trong các tựa game esports.",features:["Cảm biến PAW3395 không gia tốc, độ chính xác tuyệt đối 99.8%","Switch Huano tuổi thọ 80 triệu lần nhấn, nảy giòn đanh","Con lăn TTC Gold bọc cao su chống trượt bền bỉ","Trọng lượng nhẹ 59g giúp cổ tay linh hoạt không mỏi khi chơi game lâu"],techSpecs:{"Cảm biến":"PixArt PAW3395 Optical Sensor","DPI tối đa":"26.000 DPI","Gia tốc & Tốc độ":"50G / 650 IPS","Polling Rate":"1000Hz (1ms)","Bảo hành":"24 tháng"}},{id:"mouse-m350-ergo",cat:"mouse",name:"Chuột công thái học đứng Ondata Vertical M350",badge:"Công thái học",price:59e4,oldPrice:69e4,discount:14,stars:4.7,reviews:38,specs:[{icon:"mouse",label:"Thiết kế",value:"Góc nghiêng 57° bảo vệ cổ tay"},{icon:"cpu",label:"Kết nối",value:"Không dây Dual-Mode BT & 2.4G"},{icon:"shield",label:"DPI",value:"4 mức: 800 - 1200 - 1600 - 2400 DPI"},{icon:"ram",label:"Tính năng",value:"Nút Forward / Backward bên hông"},{icon:"monitor",label:"Bề mặt",value:"Phủ nhung mịn chống mồ hôi tay"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Chuột công thái học đứng Ondata M350 được nghiên cứu góc nghiêng sinh học 57 độ giúp cổ tay đặt ở tư thế tự nhiên nhất, giải phóng áp lực lên ống cổ tay và ngăn ngừa hội chứng đau cổ tay văn phòng.",features:["Giảm 70% áp lực cơ cẳng tay so với chuột phẳng truyền thống","Hỗ trợ đệm ngón tay cái và các phím duyệt trang web nhanh","Tích hợp pin sạc lithium bền bỉ sạc nhanh qua cổng Type-C","Phù hợp cho dân văn phòng, kế toán và lập trình viên làm việc 8-10h/ngày"],techSpecs:{"Góc nghiêng":"57 độ công thái học","Số nút bấm":"6 nút bấm đa chức năng",Pin:"Lithium 600mAh sạc lại","Bảo hành":"24 tháng"}},{id:"mouse-m800-ultralight",cat:"mouse",name:"Chuột siêu nhẹ Ondata Ultralight Pro M800",badge:"Mới",price:129e4,oldPrice:149e4,discount:13,stars:4.9,reviews:27,specs:[{icon:"mouse",label:"Trọng lượng",value:"Siêu nhẹ chỉ 49g không đục lỗ"},{icon:"cpu",label:"Cảm biến",value:"PAW3395 26K DPI"},{icon:"shield",label:"Polling Rate",value:"Hỗ trợ 4000Hz (0.25ms)"},{icon:"ram",label:"Feet chuột",value:"100% PTFE bo cong mép lướt êm"},{icon:"gpu",label:"Kết nối",value:"Wireless 2.4G không dây độ trễ siêu thấp"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Được tối ưu trọng lượng đỉnh cao chỉ 49g nguyên khối kín hoàn toàn, hỗ trợ Polling Rate lên đến 4KHz cho độ mượt mà tối đa trên các màn hình tần số quét 240Hz/360Hz.",features:["Trọng lượng kỷ lục 49 gram lướt như bay trên mặt pad","Hỗ trợ 4000Hz Polling Rate phản hồi siêu tốc","Feet chuột chất liệu Virgin PTFE 100% lướt nhẹ không ma sát","Dây sạc Paracord siêu mềm không vướng víu khi vừa sạc vừa dùng"],techSpecs:{"Trọng lượng":"49 ± 2 gram","Cảm biến":"PixArt PAW3395 (26000 DPI, 650 IPS)","Polling Rate":"1000Hz / 4000Hz (qua 4K Dongle)","Bảo hành":"24 tháng"}},{id:"mouse-m220-office",cat:"mouse",name:"Chuột quang có dây văn phòng Ondata M220 USB",badge:"Bền bỉ",price:15e4,oldPrice:19e4,discount:21,stars:4.7,reviews:120,specs:[{icon:"mouse",label:"Kết nối",value:"Dây USB cắm là chạy Plug & Play"},{icon:"cpu",label:"Độ phân giải",value:"1600 DPI ổn định mọi bề mặt"},{icon:"shield",label:"Độ bền",value:"10 triệu lần bấm bền bỉ"},{icon:"ram",label:"Dây cáp",value:"Dài 1.5m bọc cao su dẻo chống đứt gãy"},{icon:"monitor",label:"Tương thích",value:"Windows, Mac, Linux, ChromeOS"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Lựa chọn tin cậy cho phòng máy trường học, công ty và quầy dịch vụ. Bền bỉ nồi đồng cối đá, cắm cổng USB nhận ngay lập tức không cần cài đặt phần mềm.",features:["Thiết kế công thái học vừa vặn lòng bàn tay, không mỏi khi cầm lâu","Con lăn cao su có khía rãnh cuộn trang chuẩn xác","Chống chịu va đập tốt, độ bền cao qua nhiều năm sử dụng","Bảo hành chính hãng 24 tháng 1 đổi 1 nhanh chóng"],techSpecs:{"Cổng kết nối":"USB-A 2.0","Độ dài dây":"1.5 mét",DPI:"1600 DPI","Trọng lượng":"85g","Bảo hành":"24 tháng"}},{id:"ram-ddr5-16",cat:"ram",name:"RAM Ondata DDR5 16GB 5600MHz Tản nhiệt nhôm",badge:"Bán chạy",price:139e4,oldPrice:159e4,discount:13,stars:5,reviews:58,specs:[{icon:"ram",label:"Dung lượng",value:"16GB (1 thanh đơn 16GB)"},{icon:"cpu",label:"Chuẩn",value:"DDR5 thế hệ mới"},{icon:"gpu",label:"Tốc độ Bus",value:"5600MHz (PC5-44800)"},{icon:"monitor",label:"Timing & Volt",value:"CL36-36-36-76 ở 1.25V"},{icon:"hdd",label:"Tính năng",value:"On-Die ECC tự sửa lỗi dữ liệu"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn (Trọn đời)"}],desc:"RAM Ondata DDR5 16GB 5600MHz mang lại bước nhảy vọt về băng thông xử lý cho dàn máy Intel Gen 12/13/14 và AMD AM5. Trang bị giáp tản nhiệt nhôm đen nguyên khối giải nhiệt mát mẻ.",features:["Tốc độ 5600MHz cho băng thông truyền tải dữ liệu cực đại","Tích hợp chip IC quản lý nguồn PMIC ổn định điện áp trên thanh RAM","Công nghệ On-Die ECC duy trì độ toàn vẹn của dữ liệu liên tục","Hỗ trợ cấu hình Intel XMP 3.0 & AMD EXPO ép xung 1 click dễ dàng"],techSpecs:{"Dung lượng":"16GB (1× 16GB)","Chuẩn RAM":"DDR5 288-Pin UDIMM",Bus:"5600MHz",Timing:"CL36-36-36-76","Điện áp":"1.25V","Tương thích":"Bo mạch chủ Intel B760/Z790 và AMD B650/X670","Bảo hành":"Trọn đời chính hãng (Lifetime Warranty)"}},{id:"ram-ddr5-32-rgb",cat:"ram",name:"RAM Ondata DDR5 32GB (2×16GB) 6000MHz RGB",badge:"Cao cấp",price:299e4,oldPrice:345e4,discount:13,stars:5,reviews:34,specs:[{icon:"ram",label:"Dung lượng",value:"Kit 32GB (2 thanh × 16GB Dual Channel)"},{icon:"cpu",label:"Chuẩn",value:"DDR5 6000MHz siêu tốc"},{icon:"gpu",label:"Đèn LED",value:"ARGB Aura Sync đồng bộ đa sắc"},{icon:"monitor",label:"Timing",value:"Độ trễ cực thấp CL30-36-36-76"},{icon:"hdd",label:"Tản nhiệt",value:"Hợp kim nhôm dày dặn 2mm"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn (Trọn đời)"}],desc:"Bộ kit RAM cao cấp dành cho game thủ và chuyên gia dựng hình. Tốc độ bus 6000MHz với độ trễ thấp CL30 kết hợp dải LED ARGB chuyển màu mượt mà rực rỡ.",features:["Dual-Channel 32GB tối ưu hóa hiệu năng render 3D và đa nhiệm nặng","Độ trễ thấp CL30 tối ưu độ phản hồi trong các tựa game esports","Dải LED ARGB tương thích đồng bộ phần mềm mainboard ASUS, MSI, Gigabyte","Bảo hành trọn đời an tâm tuyệt đối trong suốt vòng đời sử dụng"],techSpecs:{"Dung lượng":"32GB (2× 16GB)",Chuẩn:"DDR5 6000MHz","Độ trễ":"CL30-36-36-76",LED:"Addressable RGB 16.8 triệu màu","Bảo hành":"Trọn đời chính hãng"}},{id:"ram-ddr4-16",cat:"ram",name:"RAM Ondata DDR4 16GB 3200MHz Tản nhiệt thép",badge:"Phổ thông",price:85e4,oldPrice:99e4,discount:14,stars:4.9,reviews:110,specs:[{icon:"ram",label:"Dung lượng",value:"16GB (1 thanh đơn 16GB)"},{icon:"cpu",label:"Chuẩn",value:"DDR4 3200MHz (PC4-25600)"},{icon:"gpu",label:"Độ trễ",value:"CL16-18-18-38"},{icon:"monitor",label:"Điện áp",value:"1.35V tiết kiệm điện"},{icon:"hdd",label:"Tản nhiệt",value:"Giáp nhôm xước mờ cao cấp"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn (Trọn đời)"}],desc:"Lựa chọn nâng cấp hoàn hảo và kinh tế nhất cho các cấu hình máy tính văn phòng, gaming tầm trung nền tảng DDR4. Tương thích 100% với mọi bo mạch chủ trên thị trường.",features:["Tốc độ 3200MHz chuẩn JEDEC & XMP 2.0 tương thích tối đa","Tản nhiệt nhôm xước giữ nhiệt độ thanh RAM luôn dưới 45°C","Bo mạch PCB 8 lớp chất lượng cao chống nhiễu tín hiệu","Bảo hành trọn đời 1 đổi 1 nhanh chóng"],techSpecs:{"Dung lượng":"16GB",Chuẩn:"DDR4 288-Pin UDIMM","Tốc độ":"3200MHz",Timing:"CL16-18-18-38","Điện áp":"1.35V","Bảo hành":"Trọn đời chính hãng"}},{id:"ram-ddr4-8",cat:"ram",name:"RAM Ondata DDR4 8GB 3200MHz Basic",badge:"Tiết kiệm",price:45e4,oldPrice:52e4,discount:13,stars:4.8,reviews:86,specs:[{icon:"ram",label:"Dung lượng",value:"8GB (1 thanh 8GB)"},{icon:"cpu",label:"Chuẩn",value:"DDR4 3200MHz"},{icon:"gpu",label:"Độ trễ",value:"CL16"},{icon:"monitor",label:"Điện áp",value:"1.2V tiêu chuẩn"},{icon:"hdd",label:"Form factor",value:"UDIMM cho PC để bàn"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn (Trọn đời)"}],desc:"Thanh RAM tiêu chuẩn giá tốt nhất cho nhu cầu lắp ráp máy văn phòng, trường học và gia đình. Độ bền bỉ cao, hoạt động ổn định liên tục 24/7.",features:["Giải pháp tối ưu chi phí nâng cấp đa nhiệm cho văn phòng","Tương thích mượt mà với vi xử lý Intel Core i3/i5 và AMD Ryzen 3/5","Mạch đồng nguyên chất truyền dẫn dữ liệu chính xác","Bảo hành trọn đời chính hãng"],techSpecs:{"Dung lượng":"8GB",Chuẩn:"DDR4",Bus:"3200MHz","Điện áp":"1.2V","Bảo hành":"Trọn đời"}},{id:"ram-laptop-16",cat:"ram",name:"RAM Laptop Ondata SODIMM 16GB DDR4 3200MHz",badge:"Laptop & AIO",price:89e4,oldPrice:105e4,discount:15,stars:4.9,reviews:74,specs:[{icon:"ram",label:"Dung lượng",value:"16GB SODIMM cho Laptop/AIO/Mini PC"},{icon:"cpu",label:"Chuẩn",value:"DDR4 3200MHz (PC4-25600S)"},{icon:"gpu",label:"Độ trễ",value:"CL22"},{icon:"monitor",label:"Điện áp",value:"1.2V tiết kiệm pin"},{icon:"hdd",label:"Kích thước",value:"SODIMM 260-Pin nhỏ gọn"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn (Trọn đời)"}],desc:"Thanh RAM chuẩn SODIMM nhỏ gọn chuyên dụng nâng cấp dung lượng bộ nhớ cho máy tính All-in-one, Laptop và máy tính tí hon Mini PC. Lắp vào là nhận ngay không cần cấu hình phức tạp.",features:["Nâng cấp tốc độ khởi động ứng dụng và duyệt hàng chục tab Chrome","Tương thích hoàn hảo với các dòng All-in-one và Laptop phổ biến","Tiêu chuẩn điện áp thấp 1.2V giúp kéo dài thời lượng pin laptop","Chip nhớ tuyển chọn kỹ lưỡng qua bài kiểm tra chịu nhiệt khắt khe"],techSpecs:{"Dung lượng":"16GB","Chuẩn chân cắm":"SODIMM 260-Pin","Tốc độ":"DDR4 3200MHz","Điện áp":"1.2V","Bảo hành":"Trọn đời chính hãng"}},{id:"acc-monitor-arm-pro",cat:"accessories",name:"Giá treo màn hình Ondata Arm Pro Gas Spring",badge:"Bán chạy",price:69e4,oldPrice:85e4,discount:19,stars:4.9,reviews:88,specs:[{icon:"accessories",label:"Chịu tải",value:'Màn hình 17" - 35" (2kg - 10kg)'},{icon:"cpu",label:"Cơ chế trợ lực",value:"Piston khí nén Gas Spring êm ái"},{icon:"monitor",label:"Góc xoay",value:"Xoay 360°, ngửa ±90°, xoay ngang ±90°"},{icon:"shield",label:"Chuẩn VESA",value:"Hỗ trợ 75×75mm và 100×100mm"},{icon:"ram",label:"Lắp đặt",value:"Kẹp cạnh bàn hoặc khoan lỗ xuyên bàn"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Tay đỡ màn hình trợ lực khí nén Ondata Arm Pro giải phóng không gian bàn làm việc, cho phép nâng hạ, kéo đẩy và xoay màn hình mọi góc nhìn công thái học chỉ bằng một ngón tay.",features:["Piston trợ lực khí nén bền bỉ vượt qua thử nghiệm 50.000 lần chuyển động","Rãnh quản lý dây cáp thông minh giấu dây HDMI & nguồn gọn gàng","Hỗ trợ cả 2 hình thức kẹp bàn (C-clamp) và xuyên lỗ bàn","Sơn tĩnh điện đen nhám chống trầy xước cao cấp"],techSpecs:{"Tương thích màn hình":"17 đến 35 inch","Tải trọng":"2.0 kg – 10.0 kg","Ngàm VESA":"75×75 mm, 100×100 mm","Vật liệu":"Hợp kim nhôm + Thép cán nguội SPCC","Bảo hành":"24 tháng"}},{id:"acc-hub-8in1",cat:"accessories",name:"Hub Chuyển Đổi Ondata 8-in-1 Type-C Multifunction",badge:"Đa năng",price:55e4,oldPrice:69e4,discount:20,stars:4.8,reviews:65,specs:[{icon:"accessories",label:"Cổng vào",value:"USB Type-C tương thích Thunderbolt"},{icon:"monitor",label:"HDMI",value:"Xuất hình 4K @ 30Hz sắc nét"},{icon:"cpu",label:"Sạc nhanh",value:"Cổng Type-C PD 100W sạc ngược"},{icon:"ram",label:"USB Hub",value:"3× USB 3.0 tốc độ 5Gbps"},{icon:"hdd",label:"Mạng & Thẻ",value:"LAN Gigabit RJ45 + Khe thẻ SD/TF"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Giải pháp mở rộng kết nối toàn diện cho laptop mỏng nhẹ và máy All-in-one. Mở rộng từ 1 cổng Type-C ra 8 cổng kết nối thông dụng gồm HDMI 4K, LAN dây mạng và sạc nhanh 100W.",features:["Vỏ hợp kim nhôm nguyên khối tản nhiệt cực nhanh, chống quá nhiệt","Cổng LAN RJ45 1000Mbps duy trì kết nối mạng ổn định không giật lag","Đọc đồng thời thẻ nhớ SD và MicroSD tốc độ cao cho nhiếp ảnh gia","Tương thích hoàn hảo Macbook M1/M2/M3, Laptop Windows và iPad Pro"],techSpecs:{"Cổng giao tiếp":"1× HDMI 4K, 1× RJ45 Gigabit, 1× USB-C PD 100W, 3× USB 3.0, 1× SD, 1× TF","Chất liệu":"Hợp kim nhôm Anode","Bảo hành":"24 tháng"}},{id:"acc-mousepad-xxl",cat:"accessories",name:"Bàn di chuột Ondata Speed XXL 900×400×4mm",badge:"Bán chạy",price:19e4,oldPrice:25e4,discount:24,stars:4.9,reviews:142,specs:[{icon:"accessories",label:"Kích thước",value:"XXL 900mm × 400mm cực rộng"},{icon:"cpu",label:"Độ dày",value:"4mm đệm êm ái cho cổ tay"},{icon:"monitor",label:"Bề mặt",value:"Vải dệt Micro-weave Speed lướt mượt"},{icon:"shield",label:"Gia công",value:"May viền bo góc kép chống bong tróc"},{icon:"ram",label:"Mặt đáy",value:"Cao su thiên nhiên chống trượt 100%"},{icon:"shield",label:"Bảo hành",value:"12 tháng"}],desc:"Lót chuột kích thước đại 90x40cm bao trọn cả bàn phím lẫn chuột, tạo nên một góc setup chuyên nghiệp đồng bộ. Bề mặt vải dệt mật độ cao chống bám nước và dễ dàng lau sạch.",features:["Kích thước rộng rãi đặt vừa cả bàn phím cơ Fullsize và chuột di chuyển thoải mái","Mặt vải xử lý phủ lớp chống thấm nước nano trượt nước nhanh chóng","Viền được may chỉ ziczac kép dập chìm chống sờn rách sau nhiều năm","Đế cao su thiên nhiên bám chặt mặt bàn kính lẫn mặt gỗ"],techSpecs:{"Kích thước":"900 × 400 × 4 mm","Chất liệu":"Vải dệt Micro-weave + Đế cao su tự nhiên","Màu sắc":"Đen viền xanh Ondata đặc trưng","Bảo hành":"12 tháng"}},{id:"acc-hdmi-8k",cat:"accessories",name:"Cáp HDMI 2.1 Ondata 8K 60Hz / 4K 120Hz 2m",badge:"Chất lượng",price:18e4,oldPrice:23e4,discount:22,stars:4.8,reviews:49,specs:[{icon:"accessories",label:"Chuẩn cáp",value:"HDMI 2.1 Ultra High Speed"},{icon:"monitor",label:"Băng thông",value:"48Gbps truyền tải không nén"},{icon:"gpu",label:"Độ phân giải",value:"Hỗ trợ 8K@60Hz, 4K@120Hz/144Hz"},{icon:"cpu",label:"Công nghệ",value:"Dynamic HDR, eARC, VRR, ALLM"},{icon:"shield",label:"Đầu cắm",value:"Mạ vàng 24K chống oxy hóa, vỏ dù bện"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Cáp HDMI 2.1 chuẩn thế hệ mới với băng thông cực đại 48Gbps, khai thác trọn vẹn tần số quét 144Hz/165Hz của màn hình gaming và độ nét 4K/8K không bị chớp giật hay trễ tín hiệu.",features:["Băng thông 48Gbps xuất hình ảnh HDR 10-bit rực rỡ không suy giảm","Đầu cắm hợp kim kẽm mạ vàng 24K truyền dẫn tín hiệu tối ưu","Vỏ cáp bện sợi dù nylon siêu bền chịu uốn cong hơn 20.000 lần","Tương thích ngược với các cổng HDMI 2.0 / 1.4"],techSpecs:{Chuẩn:"HDMI 2.1","Chiều dài":"2.0 mét","Băng thông":"48Gbps","Độ phân giải hỗ trợ":"8K@60Hz, 4K@144Hz, 2K@240Hz","Bảo hành":"24 tháng"}},{id:"acc-laptop-stand",cat:"accessories",name:"Giá đỡ nhôm công thái học Ondata Stand X",badge:"Tiện ích",price:32e4,oldPrice:39e4,discount:18,stars:4.9,reviews:77,specs:[{icon:"accessories",label:"Chất liệu",value:"Hợp kim nhôm nguyên khối CNC"},{icon:"cpu",label:"Khả năng chỉnh",value:"7 mức điều chỉnh độ cao linh hoạt"},{icon:"monitor",label:"Tương thích",value:'Laptop & Tablet 11" đến 17.3"'},{icon:"shield",label:"Tản nhiệt",value:"Thiết kế thông gió tản nhiệt đáy máy"},{icon:"ram",label:"Đệm silicon",value:"Chống trượt và chống trầy xước vỏ máy"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Giá đỡ laptop hợp kim nhôm Ondata Stand X nâng màn hình lên vừa tầm mắt, giúp thẳng lưng và giải tỏa áp lực cột sống cổ khi làm việc thời gian dài. Có thể gập gọn bỏ túi tặng kèm.",features:["Nâng cao tầm nhìn chuẩn công thái học, chống mỏi cổ và gù lưng","Kết cấu nhôm dày dặn chắc chắn, chịu lực lên đến 15kg không rung lắc","Đệm silicon tại các điểm tiếp xúc bảo vệ máy tính tuyệt đối không trầy xước","Gấp gọn siêu mỏng dễ dàng mang theo trong balo hoặc túi xách"],techSpecs:{"Chất liệu":"Hợp kim nhôm cao cấp + Silicon","Góc điều chỉnh":"15° đến 45° (7 nấc tùy biến)","Trọng lượng":"260g","Tặng kèm":"Túi nỉ đựng chống sốc cao cấp","Bảo hành":"24 tháng"}}];function T(n){return n?(n=n.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"),n=n.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"),n=n.replace(/ì|í|ị|ỉ|ĩ/g,"i"),n=n.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"),n=n.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"),n=n.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"),n=n.replace(/đ/g,"d"),n=n.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g,"A"),n=n.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g,"E"),n=n.replace(/Ì|Í|Ị|Ỉ|Ĩ/g,"I"),n=n.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g,"O"),n=n.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g,"U"),n=n.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g,"Y"),n=n.replace(/Đ/g,"D"),n=n.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g,""),n=n.replace(/\u02C6|\u0306|\u031B/g,""),n.toLowerCase().trim()):""}function O(n){if(!n||!n.trim())return w;const t=T(n);return w.filter(i=>{const a=T(i.name),e=T(i.cat),c=i.desc?T(i.desc):"",r=i.id.toLowerCase();return a.includes(t)||e.includes(t)||r.includes(t)||c.includes(t)})}function z(n){return n?n==="desktop-master"||n==="desktop-workstation"?w.find(t=>t.id==="aio-one-24")||w[0]:n==="laptop-pro-15"||n==="laptop-gaming-16"||n==="laptop-air-14"?w.find(t=>t.id==="aio-one-24")||w[0]:(n==="ram-ddr5-16gb"&&(n="ram-ddr5-16"),w.find(t=>t.id===n)||null):null}function W(n){return!n||n==="all"?w:w.filter(t=>t.cat===n)}function $(n){return"Liên hệ"}function Q(n,t){switch(n){case"aio":return`
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="3" width="20" height="13" rx="2"/>
+          <circle cx="12" cy="5" r="0.75" fill="currentColor"/>
+          <line x1="8" y1="21" x2="16" y2="21" stroke-width="2"/>
+          <line x1="12" y1="16" x2="12" y2="21" stroke-width="2"/>
+          <line x1="4" y1="13.5" x2="20" y2="13.5" stroke-dasharray="1 2" stroke-width="0.8"/>
+        </svg>
+      `;case"monitor":return`
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <polyline points="7 21 12 17 17 21" stroke-width="1.8"/>
+          <line x1="12" y1="17" x2="12" y2="21" stroke-width="1.8"/>
+        </svg>
+      `;case"keyboard":return`
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+          <line x1="5" y1="9" x2="5.01" y2="9" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="13" y1="9" x2="13.01" y2="9" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="17" y1="9" x2="17.01" y2="9" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="5" y1="12" x2="5.01" y2="12" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="9" y1="12" x2="9.01" y2="12" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="13" y1="12" x2="13.01" y2="12" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="17" y1="12" x2="17.01" y2="12" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="7" y1="15.5" x2="17" y2="15.5" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      `;case"mouse":return`
+        <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="5" y="2" width="14" height="20" rx="7"/>
+          <line x1="12" y1="6" x2="12" y2="10" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="2" x2="12" y2="6" stroke-width="1"/>
+        </svg>
+      `;case"ram":return`
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="7" width="20" height="10" rx="1.5"/>
+          <line x1="6" y1="17" x2="6" y2="19.5" stroke-width="1.8"/>
+          <line x1="9" y1="17" x2="9" y2="19.5" stroke-width="1.8"/>
+          <line x1="12" y1="17" x2="12" y2="19.5" stroke-width="1.8"/>
+          <line x1="15" y1="17" x2="15" y2="19.5" stroke-width="1.8"/>
+          <line x1="18" y1="17" x2="18" y2="19.5" stroke-width="1.8"/>
+          <circle cx="7" cy="11" r="1" fill="currentColor"/>
+          <circle cx="12" cy="11" r="1" fill="currentColor"/>
+          <circle cx="17" cy="11" r="1" fill="currentColor"/>
+        </svg>
+      `;case"accessories":default:return`
+        <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="7" width="18" height="10" rx="2"/>
+          <circle cx="8" cy="12" r="1.5"/>
+          <circle cx="16" cy="12" r="1.5"/>
+          <line x1="12" y1="7" x2="12" y2="17" stroke-dasharray="2 2"/>
+        </svg>
+      `}}function j(n){switch(n){case"aio":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="16" x2="12" y2="21"/></svg>';case"monitor":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>';case"keyboard":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="6" y1="9" x2="6.01" y2="9"/><line x1="10" y1="9" x2="10.01" y2="9"/><line x1="14" y1="9" x2="14.01" y2="9"/><line x1="18" y1="9" x2="18.01" y2="9"/><line x1="7" y1="15" x2="17" y2="15"/></svg>';case"mouse":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="7"/><line x1="12" y1="6" x2="12" y2="10"/></svg>';case"ram":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="1"/><line x1="6" y1="17" x2="6" y2="19"/><line x1="10" y1="17" x2="10" y2="19"/><line x1="14" y1="17" x2="14" y2="19"/><line x1="18" y1="17" x2="18" y2="19"/></svg>';case"accessories":default:return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}}function X(){return`
     <section class="home-featured-section" id="featured-products">
       <div class="container">
+        <!-- Main Section Title -->
+        <div class="featured-main-header">
+          <div class="fmh-left">
+            <span class="fmh-badge">HỆ THỐNG SẢN PHẨM ONDATA</span>
+            <h2 class="fmh-title">Danh Mục Thiết Bị Chính Hãng</h2>
+          </div>
+        </div>
+
+        <!-- 6 Rows Danh Mục (Mỗi mục 1 hàng 5 sản phẩm) -->
+        <div class="featured-categories-rows">
+          ${F.map(t=>{const a=w.filter(e=>e.cat===t.id).slice(0,5).map(e=>`
+      <div class="product-item-card" data-id="${e.id}" data-cat="${e.cat}" style="cursor:pointer;">
+        ${e.badge?`<span class="badge-tag">${e.badge}</span>`:""}
+        <div class="product-thumb-container">
+          <div class="tech-device-render">
+            ${Q(e.cat,e.name)}
+            <span class="device-label">${e.name.split(" ")[0]} ${e.name.split(" ")[1]||""}</span>
+          </div>
+        </div>
+        <div class="product-info-box">
+          <h3 class="product-name" title="${e.name}">
+            ${e.name} <span class="product-ext-icon">↗</span>
+          </h3>
+          <div class="product-pricing">
+            <span class="current-price" style="color:#527d24;">Liên hệ</span>
+          </div>
+          <div class="product-stars-row">
+            <span class="stars-gold">${"★".repeat(Math.floor(e.stars))}${e.stars%1>=.5?"½":""}</span>
+            <span class="reviews-count">(${e.reviews})</span>
+          </div>
+        </div>
+      </div>
+    `).join("");return`
+      <!-- Row Danh mục: ${t.name} -->
+      <div class="home-category-row-block" id="cat-block-${t.id}">
         <div class="section-top-bar">
-          <h2 class="section-heading">Sản phẩm nổi bật</h2>
-          <a href="/san-pham/all" class="see-all-link">
+          <div class="category-header-title-wrap">
+            <span class="category-header-icon">${j(t.id)}</span>
+            <div>
+              <h2 class="section-heading">${t.name}</h2>
+              <span class="category-header-sub">${t.desc}</span>
+            </div>
+          </div>
+          <a href="/san-pham/${t.id}" class="see-all-link">
             Xem tất cả
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
           </a>
         </div>
 
-        <div class="featured-grid">
-          <!-- Card 1: Laptop Ondata Pro 15 -->
-          <div class="product-item-card" data-id="laptop-pro-15" data-cat="laptop" style="cursor:pointer;">
-            <span class="badge-tag">Bán chạy</span>
-            <div class="product-thumb-container">
-              <div class="tech-device-render">
-                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="3" y="4" width="18" height="12" rx="2"/>
-                  <line x1="2" y1="20" x2="22" y2="20"/>
-                </svg>
-                <span class="device-label">Laptop Ondata Pro</span>
-              </div>
-            </div>
-            <div class="product-info-box">
-              <h3 class="product-name">Laptop Ondata Pro 15 <span class="product-ext-icon">↗</span></h3>
-              <div class="product-pricing">
-                <span class="current-price" style="color:#527d24;">Liên hệ</span>
-              </div>
-              <div class="product-stars-row">
-                <span class="stars-gold">★★★★★</span>
-                <span class="reviews-count">(24)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Màn hình Ondata 27" -->
-          <div class="product-item-card" data-id="monitor-27-curved" data-cat="monitor" style="cursor:pointer;">
-            <div class="product-thumb-container">
-              <div class="tech-device-render">
-                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2"/>
-                  <polyline points="8 21 12 17 16 21"/>
-                </svg>
-                <span class="device-label">Màn hình Ondata 27"</span>
-              </div>
-            </div>
-            <div class="product-info-box">
-              <h3 class="product-name">Màn hình Ondata 27" <span class="product-ext-icon">↗</span></h3>
-              <div class="product-pricing">
-                <span class="current-price" style="color:#527d24;">Liên hệ</span>
-              </div>
-              <div class="product-stars-row">
-                <span class="stars-gold">★★★★★</span>
-                <span class="reviews-count">(18)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Máy tính để bàn Ondata -->
-          <div class="product-item-card" data-id="desktop-master" data-cat="desktop" style="cursor:pointer;">
-            <div class="product-thumb-container">
-              <div class="tech-device-render">
-                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="4" y="2" width="16" height="20" rx="2"/>
-                  <circle cx="12" cy="6" r="1"/>
-                  <line x1="8" y1="18" x2="16" y2="18"/>
-                </svg>
-                <span class="device-label">Máy tính để bàn</span>
-              </div>
-            </div>
-            <div class="product-info-box">
-              <h3 class="product-name">Máy tính để bàn Ondata <span class="product-ext-icon">↗</span></h3>
-              <div class="product-pricing">
-                <span class="current-price" style="color:#527d24;">Liên hệ</span>
-              </div>
-              <div class="product-stars-row">
-                <span class="stars-gold">★★★★★</span>
-                <span class="reviews-count">(12)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: RAM DDR5 16GB -->
-          <div class="product-item-card" data-id="ram-ddr5-16" data-cat="ram" style="cursor:pointer;">
-            <div class="product-thumb-container">
-              <div class="tech-device-render">
-                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="7" width="20" height="10" rx="1"/>
-                  <line x1="6" y1="17" x2="6" y2="19"/>
-                  <line x1="10" y1="17" x2="10" y2="19"/>
-                  <line x1="14" y1="17" x2="14" y2="19"/>
-                  <line x1="18" y1="17" x2="18" y2="19"/>
-                </svg>
-                <span class="device-label">RAM DDR5 16GB</span>
-              </div>
-            </div>
-            <div class="product-info-box">
-              <h3 class="product-name">RAM DDR5 16GB <span class="product-ext-icon">↗</span></h3>
-              <div class="product-pricing">
-                <span class="current-price" style="color:#527d24;">Liên hệ</span>
-              </div>
-              <div class="product-stars-row">
-                <span class="stars-gold">★★★★★</span>
-                <span class="reviews-count">(36)</span>
-              </div>
-            </div>
-          </div>
+        <div class="featured-grid-5">
+          ${a}
+        </div>
+      </div>
+    `}).join("")}
         </div>
       </div>
     </section>
-  `}function U(){return`
+  `}function Z(){return`
     <section class="home-promo-section" id="promo-banner">
       <div class="container">
         <div class="promo-banner-card">
@@ -366,7 +378,7 @@
         </div>
       </div>
     </section>
-  `}function F(){return`
+  `}function Y(){return`
     <section class="home-news-section" id="news">
       <div class="container">
         <div class="section-top-bar">
@@ -449,7 +461,7 @@
         </div>
       </div>
     </section>
-  `}function W(){return`
+  `}function J(){return`
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-main-grid">
@@ -458,18 +470,25 @@
             <a href="/" class="footer-brand-logo">
               <img src="/logo tach nen.png" alt="ONDATA" class="footer-logo-img" style="height: 34px; width: auto; filter: brightness(0) invert(1);" />
             </a>
+            <p style="color: #9aa89b; font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
+              Thương hiệu công nghệ tiên phong cung cấp giải pháp máy tính All-in-one, màn hình và linh kiện phần cứng chính hãng tại Việt Nam.
+            </p>
+            <div style="margin-top: 12px;">
+              <a href="/ve-ondata" style="color: #a8bb68; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px;">
+                Về Ondata Vietnam →
+              </a>
+            </div>
           </div>
 
           <!-- Col 2: Sản phẩm -->
           <div class="footer-col-nav">
             <h4 class="footer-col-heading">Sản phẩm</h4>
             <ul class="footer-link-list">
-              <li><a href="/san-pham/laptop">Máy tính xách tay</a></li>
-              <li><a href="/san-pham/desktop">Máy tính để bàn</a></li>
+              <li><a href="/san-pham/aio">Máy tính All-in-one</a></li>
               <li><a href="/san-pham/monitor">Màn hình</a></li>
-              <li><a href="/san-pham/ram">RAM</a></li>
               <li><a href="/san-pham/keyboard">Bàn phím</a></li>
               <li><a href="/san-pham/mouse">Chuột</a></li>
+              <li><a href="/san-pham/ram">RAM</a></li>
               <li><a href="/san-pham/accessories">Phụ kiện</a></li>
             </ul>
           </div>
@@ -525,32 +544,32 @@
         </div>
       </div>
     </footer>
-  `}const w=[{id:"laptop-pro-15",cat:"laptop",name:"Laptop Ondata Pro 15",badge:"Bán chạy",price:1599e4,oldPrice:1799e4,discount:11,stars:4.5,reviews:24,specs:[{icon:"cpu",label:"CPU",value:"Intel Core i5-1240P"},{icon:"ram",label:"RAM",value:"16GB DDR4"},{icon:"hdd",label:"Ổ cứng",value:"SSD 512GB"},{icon:"monitor",label:"Màn hình",value:'15.6" FHD (1920×1080)'},{icon:"gpu",label:"Card đồ họa",value:"Intel Iris Xe"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Laptop Ondata Pro 15 được thiết kế dành cho người dùng cần hiệu năng ổn định, thiết kế hiện đại và màn hình sắc nét. Sản phẩm phù hợp cho học tập, văn phòng, học lập trình và giải trí.",features:["Hiệu năng ổn định, xử lý mượt mà","Thiết kế mỏng nhẹ, sang trọng","Màn hình FHD cho trải nghiệm hình ảnh sống động","Bảo hành chính hãng 24 tháng"],techSpecs:{CPU:"Intel Core i5-1240P (12 nhân, 16 luồng, 4.4GHz)",RAM:"16GB DDR4 3200MHz (có thể nâng cấp lên 32GB)","Ổ cứng":"SSD NVMe 512GB PCIe Gen 4","Màn hình":'15.6" IPS FHD 1920×1080, 144Hz, 100% sRGB',"Card đồ họa":"Intel Iris Xe Graphics",Pin:"72Wh, sạc nhanh 65W","Hệ điều hành":"Windows 11 Home","Cổng kết nối":"2× USB-A 3.2, 1× USB-C, HDMI 2.0, SD Card","Kết nối không dây":"WiFi 6E, Bluetooth 5.2","Trọng lượng":"1.75 kg","Kích thước":"357 × 230 × 17.9 mm","Màu sắc":"Xám bạc, Đen nhám"}},{id:"laptop-gaming-16",cat:"laptop",name:"Laptop Gaming Ondata 16",badge:"Mới",price:2289e4,oldPrice:2599e4,discount:12,stars:4.5,reviews:18,specs:[{icon:"cpu",label:"CPU",value:"Intel Core i7-13700H"},{icon:"ram",label:"RAM",value:"16GB DDR5"},{icon:"hdd",label:"Ổ cứng",value:"SSD 1TB NVMe"},{icon:"monitor",label:"Màn hình",value:'16" QHD 165Hz'},{icon:"gpu",label:"Card đồ họa",value:"NVIDIA RTX 4060 8GB"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Laptop Gaming Ondata 16 mang đến hiệu năng chơi game đỉnh cao với NVIDIA RTX 4060, màn hình QHD 165Hz và tản nhiệt thông minh. Chiếc laptop lý tưởng cho game thủ và nhà sáng tạo nội dung.",features:["Card đồ họa RTX 4060 – chơi game 1080p siêu mượt","Màn hình QHD 165Hz, màu sắc chính xác","Tản nhiệt kép, duy trì hiệu năng tối đa","RGB per-key keyboard, tùy chỉnh không giới hạn"],techSpecs:{CPU:"Intel Core i7-13700H (14 nhân, 20 luồng, 5.0GHz)",RAM:"16GB DDR5 4800MHz (tối đa 64GB)","Ổ cứng":"SSD NVMe 1TB PCIe Gen 4 + khe mở rộng","Màn hình":'16" IPS QHD 2560×1600, 165Hz, 100% DCI-P3',"Card đồ họa":"NVIDIA GeForce RTX 4060 8GB GDDR6",Pin:"90Wh, sạc nhanh 140W","Hệ điều hành":"Windows 11 Home","Cổng kết nối":"3× USB-A 3.2, 2× USB-C (TB4), HDMI 2.1, RJ45","Kết nối không dây":"WiFi 6E, Bluetooth 5.3","Trọng lượng":"2.3 kg","Kích thước":"356 × 255 × 22.9 mm","Màu sắc":"Đen carbon"}},{id:"laptop-air-14",cat:"laptop",name:"Laptop Ondata Air 14",badge:"Mới",price:1299e4,oldPrice:null,discount:0,stars:4,reviews:12,specs:[{icon:"cpu",label:"CPU",value:"Intel Core i3-1315U"},{icon:"ram",label:"RAM",value:"8GB DDR4"},{icon:"hdd",label:"Ổ cứng",value:"SSD 256GB"},{icon:"monitor",label:"Màn hình",value:'14" FHD IPS'},{icon:"gpu",label:"Card đồ họa",value:"Intel UHD Graphics"},{icon:"shield",label:"Bảo hành",value:"24 tháng"}],desc:"Ondata Air 14 – mỏng, nhẹ, thời trang. Thiết kế siêu mỏng chỉ 14.9mm cùng trọng lượng 1.3kg, lý tưởng cho sinh viên và người đi làm năng động.",features:["Thiết kế siêu mỏng 14.9mm, nhẹ chỉ 1.3kg","Pin 12 giờ sử dụng liên tục","Màn hình IPS góc nhìn rộng 178°","Âm thanh Dolby Atmos, loa kép stereo"],techSpecs:{CPU:"Intel Core i3-1315U (6 nhân, 8 luồng, 4.5GHz)",RAM:"8GB DDR4 3200MHz","Ổ cứng":"SSD NVMe 256GB PCIe Gen 3","Màn hình":'14" IPS FHD 1920×1080, 60Hz, 250 nits',"Card đồ họa":"Intel UHD Graphics",Pin:"52Wh, sạc nhanh 45W","Hệ điều hành":"Windows 11 Home","Cổng kết nối":"2× USB-A, 1× USB-C, HDMI 1.4","Kết nối không dây":"WiFi 5, Bluetooth 5.0","Trọng lượng":"1.3 kg","Kích thước":"323 × 213 × 14.9 mm","Màu sắc":"Bạc, Vàng hồng"}},{id:"monitor-27-curved",cat:"monitor",name:'Màn hình Ondata 27" Curved',badge:"Bán chạy",price:799e4,oldPrice:899e4,discount:11,stars:5,reviews:31,specs:[{icon:"monitor",label:"Kích thước",value:'27" cong 1500R'},{icon:"gpu",label:"Độ phân giải",value:"QHD 2560×1440"},{icon:"cpu",label:"Tần số quét",value:"165Hz"},{icon:"shield",label:"Thời gian đáp ứng",value:"1ms MPRT"},{icon:"ram",label:"Tấm nền",value:"VA"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:'Màn hình cong Ondata 27" mang đến trải nghiệm hình ảnh bao trùm với độ phân giải QHD sắc nét, tần số quét 165Hz mượt mà và thời gian đáp ứng 1ms. Hoàn hảo cho gaming và làm việc chuyên nghiệp.',features:["Màn hình cong 1500R tạo cảm giác immersive","QHD 2560×1440 – rõ nét hơn FHD 77%","165Hz + 1ms đáp ứng – zero blur trong gaming","AMD FreeSync Premium, G-Sync Compatible"],techSpecs:{"Kích thước":"27 inch cong 1500R","Độ phân giải":"QHD 2560 × 1440 (2K)","Tấm nền":"VA","Tần số quét":"165Hz","Thời gian đáp ứng":"1ms MPRT","Độ sáng":"350 nits (peak 450 nits)","Tỉ lệ tương phản":"3000:1 (static)","Cổng kết nối":"2× HDMI 2.0, 1× DisplayPort 1.4, 4× USB-A 3.0 hub","Điều chỉnh":"Nghiêng, xoay 90°, điều chỉnh chiều cao","Chứng chỉ":"VESA, Eye Care, Flicker Free","Bảo hành":"36 tháng chính hãng"}},{id:"desktop-master",cat:"desktop",name:"Máy tính để bàn Ondata Master",badge:"Mới",price:1899e4,oldPrice:215e5,discount:12,stars:4.5,reviews:9,specs:[{icon:"cpu",label:"CPU",value:"Intel Core i7-13700K"},{icon:"ram",label:"RAM",value:"32GB DDR5"},{icon:"hdd",label:"Ổ cứng",value:"SSD 1TB + HDD 2TB"},{icon:"gpu",label:"Card đồ họa",value:"RTX 4070 12GB"},{icon:"monitor",label:"Nguồn",value:"750W 80+ Gold"},{icon:"shield",label:"Bảo hành",value:"36 tháng"}],desc:"Máy tính để bàn Ondata Master – cỗ máy sức mạnh cho đồ họa, video editing và gaming 4K. Được trang bị RTX 4070 và i7-13700K, không có tác vụ nào là quá khó.",features:["RTX 4070 – render nhanh, gaming 4K siêu mượt","Case kính cường lực, LED RGB đồng bộ","Tản nhiệt nước AIO 240mm","SSD NVMe Gen 4 + HDD lưu trữ lớn"],techSpecs:{CPU:"Intel Core i7-13700K (16 nhân, 24 luồng, 5.4GHz)",RAM:"32GB DDR5 6000MHz (4× khe, tối đa 128GB)",SSD:"NVMe PCIe Gen 4 1TB",HDD:"SATA 2TB 7200 RPM","Card đồ họa":"NVIDIA GeForce RTX 4070 12GB GDDR6X",Nguồn:"750W 80+ Gold, Modular","Bo mạch chủ":"ASUS Z790 Prime WiFi",Case:"Fractal Design Meshify C TG – kính cường lực","Tản nhiệt":"AIO 240mm + 4 fan ARGB","Kết nối":"WiFi 6E, Bluetooth 5.2, 2.5Gbps LAN"}},{id:"ram-ddr5-16",cat:"ram",name:"RAM Ondata DDR5 16GB 5600MHz",badge:"Bán chạy",price:129e4,oldPrice:149e4,discount:13,stars:5,reviews:36,specs:[{icon:"ram",label:"Dung lượng",value:"16GB (1× 16GB)"},{icon:"cpu",label:"Chuẩn",value:"DDR5"},{icon:"gpu",label:"Tốc độ",value:"5600MHz"},{icon:"monitor",label:"Timing",value:"CL36-36-36-76"},{icon:"hdd",label:"Điện áp",value:"1.1V"},{icon:"shield",label:"Bảo hành",value:"Vĩnh viễn"}],desc:"RAM DDR5 Ondata 16GB 5600MHz – nâng cấp hoàn hảo cho hệ thống thế hệ mới. Hiệu năng vượt trội DDR4, độ trễ thấp và bảo hành vĩnh viễn.",features:["DDR5 5600MHz – băng thông tối đa 44.8 GB/s","On-Die ECC tự sửa lỗi dữ liệu","Tản nhiệt nhôm cao cấp","Bảo hành vĩnh viễn chính hãng"],techSpecs:{"Dung lượng":"16GB (1 thanh)",Chuẩn:"DDR5","Tốc độ":"5600MHz (PC5-44800)",Timing:"CL36-36-36-76","Điện áp":"1.1V","Form factor":"DIMM (288 chân)","Tương thích":"Intel LGA1700, AMD AM5","Tản nhiệt":"Nhôm mỏng profile thấp",RGB:"Không","Bảo hành":"Vĩnh viễn"}}];function L(t){return t?(t=t.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"),t=t.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"),t=t.replace(/ì|í|ị|ỉ|ĩ/g,"i"),t=t.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"),t=t.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"),t=t.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"),t=t.replace(/đ/g,"d"),t=t.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g,"A"),t=t.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g,"E"),t=t.replace(/Ì|Í|Ị|Ỉ|Ĩ/g,"I"),t=t.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g,"O"),t=t.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g,"U"),t=t.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g,"Y"),t=t.replace(/Đ/g,"D"),t=t.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g,""),t=t.replace(/\u02C6|\u0306|\u031B/g,""),t.toLowerCase().trim()):""}function R(t){if(!t||!t.trim())return w;const e=L(t);return w.filter(s=>{const i=L(s.name),n=L(s.cat),o=s.desc?L(s.desc):"",d=s.id.toLowerCase();return i.includes(e)||n.includes(e)||d.includes(e)||o.includes(e)})}function z(t){return t==="desktop-workstation"&&(t="desktop-master"),t==="ram-ddr5-16gb"&&(t="ram-ddr5-16"),w.find(e=>e.id===t)||null}function j(t){return t==="all"?w:w.filter(e=>e.cat===t)}function O(t){return"Liên hệ"}function X(t="all",e={label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}){const s=[{id:"laptop",label:"Máy tính xách tay",icon:Z()},{id:"desktop",label:"Máy tính để bàn",icon:Y()},{id:"monitor",label:"Màn hình",icon:_()},{id:"ram",label:"RAM",icon:J()},{id:"keyboard",label:"Bàn phím",icon:tt()},{id:"mouse",label:"Chuột",icon:et()},{id:"accessories",label:"Phụ kiện",icon:st()},{id:"other",label:"Thiết bị khác",icon:nt()}],i=["Tất cả","Văn phòng","Gaming","Đồ họa","Ultrabook"],n=["Ondata","ASUS","Acer","HP","Lenovo","Dell","Khác"],o=["8GB","16GB","32GB"],d=["Còn hàng","Hết hàng","Đặt hàng"],c=j(t),l=c.length>0?c.map((a,h)=>`
-        <div class="catalog-product-card" id="catalog-product-${a.id}" data-product-id="${a.id}" data-product-cat="${a.cat}" style="cursor:pointer;">
-          ${a.badge?`<span class="badge-tag">${a.badge}</span>`:""}
+  `}function _(n="all",t={label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}){const i=[{id:"aio",label:"Máy tính All-in-one",icon:nn()},{id:"monitor",label:"Màn hình",icon:tn()},{id:"keyboard",label:"Bàn phím",icon:an()},{id:"mouse",label:"Chuột",icon:sn()},{id:"ram",label:"RAM",icon:en()},{id:"accessories",label:"Phụ kiện",icon:cn()}],a=["Tất cả","Văn phòng","Gaming","Đồ họa","Ultrabook"],e=["Ondata","ASUS","Acer","HP","Lenovo","Dell","Khác"],c=["8GB","16GB","32GB"],r=["Còn hàng","Hết hàng","Đặt hàng"],l=W(n),h=l.length>0?l.map((s,d)=>`
+        <div class="catalog-product-card" id="catalog-product-${s.id}" data-product-id="${s.id}" data-product-cat="${s.cat}" style="cursor:pointer;">
+          ${s.badge?`<span class="badge-tag">${s.badge}</span>`:""}
           <div class="catalog-product-thumb">
             <div class="catalog-thumb-visual">
               <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" style="width:100%">
                 <defs>
-                  <linearGradient id="cg${h}" x1="0" y1="0" x2="1" y2="1">
+                  <linearGradient id="cg${d}" x1="0" y1="0" x2="1" y2="1">
                     <stop offset="0%" stop-color="#1a2e1d"/>
                     <stop offset="100%" stop-color="#0d1a10"/>
                   </linearGradient>
                 </defs>
-                <rect width="160" height="110" rx="6" fill="url(#cg${h})"/>
+                <rect width="160" height="110" rx="6" fill="url(#cg${d})"/>
                 <ellipse cx="80" cy="55" rx="48" ry="28" fill="#7ea835" opacity=".12"/>
                 <text x="80" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="800" font-size="13" fill="#7ea835" opacity=".7">ONDATA</text>
               </svg>
             </div>
           </div>
           <div class="catalog-product-info">
-            <p class="catalog-product-name">${a.name}</p>
+            <p class="catalog-product-name">${s.name}</p>
             <div class="catalog-product-pricing">
               <span class="catalog-product-price" style="color:#527d24;">Liên hệ</span>
             </div>
             <div class="catalog-product-stars">
-              <span class="stars-gold">${"★".repeat(Math.floor(a.stars))}${a.stars%1>=.5?"½":""}</span>
-              <span class="reviews-count">(${a.reviews})</span>
+              <span class="stars-gold">${"★".repeat(Math.floor(s.stars))}${s.stars%1>=.5?"½":""}</span>
+              <span class="reviews-count">(${s.reviews})</span>
             </div>
           </div>
         </div>`).join(""):`<div class="catalog-empty">
@@ -568,7 +587,7 @@
           <span class="crumb-sep">›</span>
           <a href="/san-pham/all" class="crumb-link" id="crumb-products">Sản phẩm</a>
           <span class="crumb-sep">›</span>
-          <span class="crumb-current">${e.label}</span>
+          <span class="crumb-current">${t.label}</span>
         </nav>
 
         <div class="catalog-layout">
@@ -584,11 +603,11 @@
               Danh mục sản phẩm
             </div>
             <ul class="catsidebar-menu">
-              ${s.map(a=>`
+              ${i.map(s=>`
                 <li class="catsidebar-item">
-                  <a href="/san-pham/${a.id}" class="catsidebar-link${a.id===t?" catsidebar-link--active":""}" id="cat-${a.id}" data-cat="${a.id}">
-                    <span class="catsidebar-icon">${a.icon}</span>
-                    <span>${a.label}</span>
+                  <a href="/san-pham/${s.id}" class="catsidebar-link${s.id===n?" catsidebar-link--active":""}" id="cat-${s.id}" data-cat="${s.id}">
+                    <span class="catsidebar-icon">${s.icon}</span>
+                    <span>${s.label}</span>
                   </a>
                 </li>
               `).join("")}
@@ -601,8 +620,8 @@
             <!-- CATEGORY HERO BANNER -->
             <div class="catalog-hero" id="catalog-hero">
               <div class="catalog-hero-text">
-                <h1 class="catalog-hero-title">${e.label}</h1>
-                <p class="catalog-hero-sub">${e.sub}</p>
+                <h1 class="catalog-hero-title">${t.label}</h1>
+                <p class="catalog-hero-sub">${t.sub}</p>
               </div>
               <div class="catalog-hero-visual">
                 <div class="chl-wrap">
@@ -619,9 +638,9 @@
 
             <!-- TYPE FILTER TABS -->
             <div class="catalog-tabs" id="catalog-tabs" role="tablist">
-              ${i.map((a,h)=>`
-                <button class="catalog-tab${h===0?" catalog-tab--active":""}" id="tab-${h}" role="tab" data-tab="${h}">
-                  ${a}
+              ${a.map((s,d)=>`
+                <button class="catalog-tab${d===0?" catalog-tab--active":""}" id="tab-${d}" role="tab" data-tab="${d}">
+                  ${s}
                 </button>
               `).join("")}
             </div>
@@ -666,11 +685,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-brand">
-                    ${n.map((a,h)=>`
-                      <label class="filter-checkbox" id="filter-brand-${h}">
-                        <input type="checkbox" name="brand" value="${a}">
+                    ${e.map((s,d)=>`
+                      <label class="filter-checkbox" id="filter-brand-${d}">
+                        <input type="checkbox" name="brand" value="${s}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${a}</span>
+                        <span class="filter-label-text">${s}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -684,11 +703,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-ram">
-                    ${o.map((a,h)=>`
-                      <label class="filter-checkbox" id="filter-ram-${h}">
-                        <input type="checkbox" name="ram" value="${a}">
+                    ${c.map((s,d)=>`
+                      <label class="filter-checkbox" id="filter-ram-${d}">
+                        <input type="checkbox" name="ram" value="${s}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${a}</span>
+                        <span class="filter-label-text">${s}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -702,11 +721,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-status">
-                    ${d.map((a,h)=>`
-                      <label class="filter-checkbox" id="filter-status-${h}">
-                        <input type="checkbox" name="status" value="${a}">
+                    ${r.map((s,d)=>`
+                      <label class="filter-checkbox" id="filter-status-${d}">
+                        <input type="checkbox" name="status" value="${s}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${a}</span>
+                        <span class="filter-label-text">${s}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -718,7 +737,7 @@
               <!-- PRODUCT GRID -->
               <div class="catalog-products-area" id="catalog-products-area">
                 <div class="catalog-products-grid" id="catalog-products-grid">
-                  ${l}
+                  ${h}
                 </div>
 
                 <!-- PAGINATION -->
@@ -747,7 +766,7 @@
 
       </div><!-- end catalog-container -->
     </section>
-  `}function Z(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>'}function Y(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg>'}function _(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>'}function J(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>'}function tt(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>'}function et(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="18" rx="5"/><path d="M12 2v7M7 9h10"/></svg>'}function st(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>'}function nt(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>'}function it(){document.querySelectorAll(".catalog-tab").forEach(l=>{l.addEventListener("click",()=>{document.querySelectorAll(".catalog-tab").forEach(a=>a.classList.remove("catalog-tab--active")),l.classList.add("catalog-tab--active")})});const t=document.getElementById("catalog-filter-toggle"),e=document.getElementById("catalog-filters");t&&e&&t.addEventListener("click",()=>{e.classList.toggle("filters-hidden"),t.classList.toggle("catalog-filters--open")}),document.querySelectorAll(".filter-group-title").forEach(l=>{l.addEventListener("click",()=>{const a=l.getAttribute("data-group"),h=document.getElementById(`fg-${a}`);h&&(h.classList.toggle("fg-collapsed"),l.classList.toggle("fg-title-collapsed"))})});const s=document.getElementById("filter-reset-btn");s&&s.addEventListener("click",()=>{document.querySelectorAll('.catalog-filters input[type="checkbox"]').forEach(l=>{l.checked=!1})});let i=1;const n=document.querySelectorAll(".page-btn--num"),o=document.getElementById("page-prev"),d=document.getElementById("page-next");function c(l){i=l,n.forEach(a=>{a.classList.toggle("page-btn--active",parseInt(a.dataset.page)===i)}),o&&(o.disabled=i===1),d&&(d.disabled=i===n.length)}n.forEach(l=>l.addEventListener("click",()=>c(parseInt(l.dataset.page)))),o&&o.addEventListener("click",()=>{i>1&&c(i-1)}),d&&d.addEventListener("click",()=>{i<n.length&&c(i+1)}),document.querySelectorAll(".catalog-product-card[data-product-id]").forEach(l=>{l.addEventListener("click",()=>{const a=l.dataset.productId,h=l.dataset.productCat;a&&h&&(window.location.hash=`#/san-pham/${h}/${a}`)})})}function at(t){const e={cpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>',ram:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>',hdd:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M2 12v4c0 3.31 4.48 6 10 6s10-2.69 10-6v-4"/><path d="M15 10h.01"/></svg>',monitor:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>',gpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5M10 7V5M18 7V5M14 7V5M6 17v2M10 17v2M18 17v2M14 17v2"/></svg>',shield:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'};return e[t]||e.shield}function T(t){const e=Math.floor(t),s=t%1>=.4;let i="";for(let n=0;n<5;n++)n<e?i+='<svg class="star-icon star-full" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>':n===e&&s?i+=`
+  `}function nn(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="16" x2="12" y2="21"/></svg>'}function tn(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>'}function en(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>'}function an(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>'}function sn(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="18" rx="5"/><path d="M12 2v7M7 9h10"/></svg>'}function cn(){return'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>'}function on(){document.querySelectorAll(".catalog-tab").forEach(h=>{h.addEventListener("click",()=>{document.querySelectorAll(".catalog-tab").forEach(s=>s.classList.remove("catalog-tab--active")),h.classList.add("catalog-tab--active")})});const n=document.getElementById("catalog-filter-toggle"),t=document.getElementById("catalog-filters");n&&t&&n.addEventListener("click",()=>{t.classList.toggle("filters-hidden"),n.classList.toggle("catalog-filters--open")}),document.querySelectorAll(".filter-group-title").forEach(h=>{h.addEventListener("click",()=>{const s=h.getAttribute("data-group"),d=document.getElementById(`fg-${s}`);d&&(d.classList.toggle("fg-collapsed"),h.classList.toggle("fg-title-collapsed"))})});const i=document.getElementById("filter-reset-btn");i&&i.addEventListener("click",()=>{document.querySelectorAll('.catalog-filters input[type="checkbox"]').forEach(h=>{h.checked=!1})});let a=1;const e=document.querySelectorAll(".page-btn--num"),c=document.getElementById("page-prev"),r=document.getElementById("page-next");function l(h){a=h,e.forEach(s=>{s.classList.toggle("page-btn--active",parseInt(s.dataset.page)===a)}),c&&(c.disabled=a===1),r&&(r.disabled=a===e.length)}e.forEach(h=>h.addEventListener("click",()=>l(parseInt(h.dataset.page)))),c&&c.addEventListener("click",()=>{a>1&&l(a-1)}),r&&r.addEventListener("click",()=>{a<e.length&&l(a+1)}),document.querySelectorAll(".catalog-product-card[data-product-id]").forEach(h=>{h.addEventListener("click",()=>{const s=h.dataset.productId,d=h.dataset.productCat;s&&d&&(window.location.hash=`#/san-pham/${d}/${s}`)})})}function ln(n){const t={cpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>',ram:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>',hdd:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M2 12v4c0 3.31 4.48 6 10 6s10-2.69 10-6v-4"/><path d="M15 10h.01"/></svg>',monitor:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>',gpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5M10 7V5M18 7V5M14 7V5M6 17v2M10 17v2M18 17v2M14 17v2"/></svg>',shield:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'};return t[n]||t.shield}function D(n){const t=Math.floor(n),i=n%1>=.4;let a="";for(let e=0;e<5;e++)e<t?a+='<svg class="star-icon star-full" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>':e===t&&i?a+=`
         <svg class="star-icon star-half" width="16" height="16" viewBox="0 0 24 24">
           <defs>
             <linearGradient id="half-star">
@@ -756,7 +775,7 @@
             </linearGradient>
           </defs>
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star)"/>
-        </svg>`:i+='<svg class="star-icon star-empty" width="16" height="16" viewBox="0 0 24 24" fill="#e5e7eb" stroke="#d1d5db"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';return i}function S(t=0,e="Laptop Ondata Pro 15"){switch(t){case 0:return`
+        </svg>`:a+='<svg class="star-icon star-empty" width="16" height="16" viewBox="0 0 24 24" fill="#e5e7eb" stroke="#d1d5db"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';return a}function A(n=0,t="Laptop Ondata Pro 15"){switch(n){case 0:return`
         <svg viewBox="0 0 540 380" xmlns="http://www.w3.org/2000/svg" class="pd-hero-svg">
           <defs>
             <!-- Screen wallpaper: Ondata elegant green wave -->
@@ -940,10 +959,10 @@
           <rect x="80" y="60" width="380" height="180" rx="6" fill="#202922" stroke="#37453a" stroke-width="1"/>
 
           <!-- Keys rows representation -->
-          ${[0,1,2,3,4].map(s=>`
-            <g transform="translate(90, ${70+s*32})">
-              ${[0,1,2,3,4,5,6,7,8,9,10,11].map(i=>`
-                <rect x="${i*30}" y="0" width="26" height="24" rx="3.5" fill="url(#kb-grad)" stroke="#3f5244" stroke-width="0.8"/>
+          ${[0,1,2,3,4].map(i=>`
+            <g transform="translate(90, ${70+i*32})">
+              ${[0,1,2,3,4,5,6,7,8,9,10,11].map(a=>`
+                <rect x="${a*30}" y="0" width="26" height="24" rx="3.5" fill="url(#kb-grad)" stroke="#3f5244" stroke-width="0.8"/>
               `).join("")}
             </g>
           `).join("")}
@@ -951,14 +970,14 @@
           <!-- Large trackpad -->
           <rect x="180" y="255" width="180" height="72" rx="6" fill="#c7d2cb" stroke="#8d9d93" stroke-width="1.2"/>
           <text x="270" y="295" text-anchor="middle" font-family="'Outfit',sans-serif" font-size="11" fill="#78887e" font-weight="600">Precision Touchpad</text>
-        </svg>`;default:return""}}function ot(t,e=!1){const s=["Chính diện","Góc nghiêng","Mặt lưng","Cạnh bên","Bàn phím"];return`
-    <button class="pd-thumb-btn${e?" pd-thumb-btn--active":""}" data-thumb="${t}" aria-label="${s[t]}">
+        </svg>`;default:return""}}function hn(n,t=!1){const i=["Chính diện","Góc nghiêng","Mặt lưng","Cạnh bên","Bàn phím"];return`
+    <button class="pd-thumb-btn${t?" pd-thumb-btn--active":""}" data-thumb="${n}" aria-label="${i[n]}">
       <div class="pd-thumb-mini-preview">
-        ${S(t)}
+        ${A(n)}
       </div>
-      <span class="pd-thumb-caption">${s[t]}</span>
+      <span class="pd-thumb-caption">${i[n]}</span>
     </button>
-  `}function ct(t){if(!t)return`
+  `}function rn(n){if(!n)return`
       <section class="pd-page">
         <div class="pd-container">
           <div class="pd-not-found">
@@ -968,27 +987,27 @@
           </div>
         </div>
       </section>
-    `;O(t.price),t.oldPrice&&O(t.oldPrice),t.discount||t.oldPrice&&Math.round((1-t.price/t.oldPrice)*100);const e=(t.specs||[]).map(o=>`
+    `;$(n.price),n.oldPrice&&$(n.oldPrice),n.discount||n.oldPrice&&Math.round((1-n.price/n.oldPrice)*100);const t=(n.specs||[]).map(c=>`
     <li class="pd-spec-item">
-      <span class="pd-spec-icon">${at(o.icon)}</span>
-      <span class="pd-spec-label">${o.label}:</span>
-      <span class="pd-spec-val">${o.value}</span>
+      <span class="pd-spec-icon">${ln(c.icon)}</span>
+      <span class="pd-spec-label">${c.label}:</span>
+      <span class="pd-spec-val">${c.value}</span>
     </li>
-  `).join(""),s=Object.entries(t.techSpecs||{}).map(([o,d])=>`
+  `).join(""),i=Object.entries(n.techSpecs||{}).map(([c,r])=>`
     <tr class="pd-ts-row">
-      <td class="pd-ts-key">${o}</td>
-      <td class="pd-ts-val">${d}</td>
+      <td class="pd-ts-key">${c}</td>
+      <td class="pd-ts-val">${r}</td>
     </tr>
-  `).join(""),i=(t.features||[]).map(o=>`
+  `).join(""),a=(n.features||[]).map(c=>`
     <li class="pd-feature-item">
       <span class="pd-check-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
       </span>
-      <span class="pd-feature-text">${o}</span>
+      <span class="pd-feature-text">${c}</span>
     </li>
-  `).join(""),n=[0,1,2,3,4].map(o=>ot(o,o===0)).join("");return`
+  `).join(""),e=[0,1,2,3,4].map(c=>hn(c,c===0)).join("");return`
     <section class="pd-page" id="pd-page">
       <div class="pd-container">
 
@@ -996,9 +1015,9 @@
         <nav class="catalog-breadcrumb pd-breadcrumb" aria-label="Breadcrumb">
           <a href="/" class="crumb-link" id="pd-crumb-home">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="/san-pham/${t.cat}" class="crumb-link" id="pd-crumb-cat">Sản phẩm</a>
+          <a href="/san-pham/${n.cat}" class="crumb-link" id="pd-crumb-cat">Sản phẩm</a>
           <span class="crumb-sep">›</span>
-          <span class="crumb-current">${t.name}</span>
+          <span class="crumb-current">${n.name}</span>
         </nav>
 
         <!-- 2. MAIN PRODUCT CARD: GALLERY + INFO -->
@@ -1009,27 +1028,27 @@
             <div class="pd-gallery-col">
               <div class="pd-hero-preview-box" id="pd-hero-preview-box">
                 <div class="pd-hero-art" id="pd-hero-art">
-                  ${S(0,t.name)}
+                  ${A(0,n.name)}
                 </div>
               </div>
 
               <!-- Thumbnails carousel row -->
               <div class="pd-thumbs-bar" id="pd-thumbs-bar">
-                ${n}
+                ${e}
               </div>
             </div>
 
             <!-- RIGHT: INFO & ACTIONS -->
             <div class="pd-info-col">
-              <h1 class="pd-title" id="pd-title">${t.name}</h1>
+              <h1 class="pd-title" id="pd-title">${n.name}</h1>
 
               <!-- Rating row -->
               <div class="pd-rating-row">
                 <div class="pd-stars-wrap">
-                  ${T(t.stars||4.5)}
+                  ${D(n.stars||4.5)}
                 </div>
-                <span class="pd-rating-count">(${t.reviews||24} đánh giá)</span>
-                ${t.badge?`<span class="pd-top-badge">${t.badge}</span>`:""}
+                <span class="pd-rating-count">(${n.reviews||24} đánh giá)</span>
+                ${n.badge?`<span class="pd-top-badge">${n.badge}</span>`:""}
               </div>
 
               <!-- Price section: Liên hệ -->
@@ -1039,7 +1058,7 @@
 
               <!-- Key Specs List with Grey Icons -->
               <ul class="pd-specs-list">
-                ${e}
+                ${t}
               </ul>
 
               <!-- Actions: Liên hệ báo giá & Hotline (k bán lẻ) -->
@@ -1117,7 +1136,7 @@
               Thông số kỹ thuật
             </button>
             <button class="pd-tab-btn" id="pd-tab-reviews" data-tab="reviews" role="tab" aria-selected="false">
-              Đánh giá (${t.reviews||24})
+              Đánh giá (${n.reviews||24})
             </button>
           </div>
 
@@ -1126,14 +1145,14 @@
 
             <!-- Tab 1: Description -->
             <div class="pd-panel" id="pd-panel-desc" role="tabpanel">
-              <p class="pd-lead-desc">${t.desc}</p>
+              <p class="pd-lead-desc">${n.desc}</p>
               <ul class="pd-features-list">
-                ${i}
+                ${a}
               </ul>
 
               <div class="pd-editorial-block">
-                <h3 class="pd-editorial-title">Đặc điểm nổi bật của ${t.name}</h3>
-                <p>Được hoàn thiện với tiêu chuẩn khắt khe, ${t.name} đem lại sự cân bằng hoàn hảo giữa hiệu suất làm việc ấn tượng, độ bền chuẩn doanh nghiệp và khả năng tản nhiệt tối ưu cho người dùng Việt Nam.</p>
+                <h3 class="pd-editorial-title">Đặc điểm nổi bật của ${n.name}</h3>
+                <p>Được hoàn thiện với tiêu chuẩn khắt khe, ${n.name} đem lại sự cân bằng hoàn hảo giữa hiệu suất làm việc ấn tượng, độ bền chuẩn doanh nghiệp và khả năng tản nhiệt tối ưu cho người dùng Việt Nam.</p>
               </div>
             </div>
 
@@ -1141,7 +1160,7 @@
             <div class="pd-panel pd-panel--hidden" id="pd-panel-tech" role="tabpanel">
               <table class="pd-tech-table">
                 <tbody>
-                  ${s}
+                  ${i}
                 </tbody>
               </table>
             </div>
@@ -1150,9 +1169,9 @@
             <div class="pd-panel pd-panel--hidden" id="pd-panel-reviews" role="tabpanel">
               <div class="pd-reviews-summary">
                 <div class="pd-score-box">
-                  <div class="pd-big-score">${t.stars||4.5}</div>
-                  <div class="pd-stars-wrap">${T(t.stars||4.5)}</div>
-                  <span class="pd-score-sub">${t.reviews||24} đánh giá từ khách hàng</span>
+                  <div class="pd-big-score">${n.stars||4.5}</div>
+                  <div class="pd-stars-wrap">${D(n.stars||4.5)}</div>
+                  <span class="pd-score-sub">${n.reviews||24} đánh giá từ khách hàng</span>
                 </div>
 
                 <div class="pd-breakdown-box">
@@ -1197,7 +1216,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="pd-stars-wrap">${T(5)}</div>
+                  <div class="pd-stars-wrap">${D(5)}</div>
                   <p class="pd-review-comment">Máy chạy rất êm và mát, mở chục tab Chrome và code visual studio không hề bị giật lag. Màn hình màu sắc đẹp, pin dùng được tầm 8 tiếng văn phòng. Đáng giá từng đồng!</p>
                 </div>
 
@@ -1212,7 +1231,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="pd-stars-wrap">${T(5)}</div>
+                  <div class="pd-stars-wrap">${D(5)}</div>
                   <p class="pd-review-comment">Giao hàng cực kỳ nhanh, đóng gói cẩn thận có xốp chống sốc dày. Máy nhẹ hơn tưởng tượng, bàn phím gõ nảy và êm tay. Nhân viên tư vấn kỹ càng.</p>
                 </div>
               </div>
@@ -1223,12 +1242,12 @@
 
       </div>
     </section>
-  `}function lt(t,e){var f,p;if(!t)return;const s=document.querySelectorAll(".pd-thumb-btn"),i=document.getElementById("pd-hero-art");s.forEach(r=>{r.addEventListener("click",()=>{const y=parseInt(r.dataset.thumb,10);s.forEach(b=>b.classList.remove("pd-thumb-btn--active")),r.classList.add("pd-thumb-btn--active"),i&&(i.style.opacity="0",i.style.transform="scale(0.96)",setTimeout(()=>{i.innerHTML=S(y,t.name),i.style.opacity="1",i.style.transform="scale(1)"},160))})});const n=document.getElementById("pd-qty-input"),o=document.getElementById("pd-qty-minus"),d=document.getElementById("pd-qty-plus");n&&o&&d&&(o.addEventListener("click",()=>{let r=parseInt(n.value,10)||1;r>1&&(n.value=r-1)}),d.addEventListener("click",()=>{let r=parseInt(n.value,10)||1;r<99&&(n.value=r+1)}),n.addEventListener("change",()=>{let r=parseInt(n.value,10)||1;r<1&&(r=1),r>99&&(r=99),n.value=r}));const c=document.getElementById("pd-btn-cart");c&&c.addEventListener("click",()=>{parseInt(n==null?void 0:n.value,10);const r=c.innerHTML;c.classList.add("pd-btn-cart--added"),c.innerHTML=`
+  `}function dn(n,t){var v,y;if(!n)return;const i=document.querySelectorAll(".pd-thumb-btn"),a=document.getElementById("pd-hero-art");i.forEach(o=>{o.addEventListener("click",()=>{const m=parseInt(o.dataset.thumb,10);i.forEach(f=>f.classList.remove("pd-thumb-btn--active")),o.classList.add("pd-thumb-btn--active"),a&&(a.style.opacity="0",a.style.transform="scale(0.96)",setTimeout(()=>{a.innerHTML=A(m,n.name),a.style.opacity="1",a.style.transform="scale(1)"},160))})});const e=document.getElementById("pd-qty-input"),c=document.getElementById("pd-qty-minus"),r=document.getElementById("pd-qty-plus");e&&c&&r&&(c.addEventListener("click",()=>{let o=parseInt(e.value,10)||1;o>1&&(e.value=o-1)}),r.addEventListener("click",()=>{let o=parseInt(e.value,10)||1;o<99&&(e.value=o+1)}),e.addEventListener("change",()=>{let o=parseInt(e.value,10)||1;o<1&&(o=1),o>99&&(o=99),e.value=o}));const l=document.getElementById("pd-btn-cart");l&&l.addEventListener("click",()=>{parseInt(e==null?void 0:e.value,10);const o=l.innerHTML;l.classList.add("pd-btn-cart--added"),l.innerHTML=`
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
         <span>Đã thêm vào giỏ!</span>
-      `,setTimeout(()=>{c.classList.remove("pd-btn-cart--added"),c.innerHTML=r},2e3)});const l=document.getElementById("pd-btn-buy");l&&l.addEventListener("click",()=>{parseInt(n==null?void 0:n.value,10)});const a=document.querySelectorAll(".pd-tab-btn"),h=document.querySelectorAll(".pd-panel");a.forEach(r=>{r.addEventListener("click",()=>{a.forEach(b=>{b.classList.remove("pd-tab-btn--active"),b.setAttribute("aria-selected","false")}),r.classList.add("pd-tab-btn--active"),r.setAttribute("aria-selected","true");const y=r.dataset.tab;h.forEach(b=>{const C=b.id===`pd-panel-${y}`;b.classList.toggle("pd-panel--hidden",!C)})})}),(f=document.getElementById("pd-crumb-home"))==null||f.addEventListener("click",r=>{r.preventDefault(),window.location.hash="#/"}),(p=document.getElementById("pd-crumb-cat"))==null||p.addEventListener("click",r=>{r.preventDefault(),window.location.hash=`#/san-pham/${t.cat}`})}const rt=[{id:"all",label:"Tất cả"},{id:"buying-guide",label:"Tư vấn chọn mua"},{id:"tips",label:"Hướng dẫn sử dụng"},{id:"trends",label:"Xu hướng công nghệ"}],D=[{id:"chon-laptop-sinh-vien",featured:!0,category:"buying-guide",categoryLabel:"Tư vấn chọn mua",title:"Cách chọn laptop phù hợp cho sinh viên",date:"08/10/2025",readTime:"5 phút đọc",summary:"Tổng hợp kinh nghiệm chọn mua laptop tối ưu theo ngành học: Kinh tế, CNTT, Thiết kế đồ họa và Y dược với mức ngân sách hợp lý nhất.",content:`
+      `,setTimeout(()=>{l.classList.remove("pd-btn-cart--added"),l.innerHTML=o},2e3)});const h=document.getElementById("pd-btn-buy");h&&h.addEventListener("click",()=>{parseInt(e==null?void 0:e.value,10)});const s=document.querySelectorAll(".pd-tab-btn"),d=document.querySelectorAll(".pd-panel");s.forEach(o=>{o.addEventListener("click",()=>{s.forEach(f=>{f.classList.remove("pd-tab-btn--active"),f.setAttribute("aria-selected","false")}),o.classList.add("pd-tab-btn--active"),o.setAttribute("aria-selected","true");const m=o.dataset.tab;d.forEach(f=>{const k=f.id===`pd-panel-${m}`;f.classList.toggle("pd-panel--hidden",!k)})})}),(v=document.getElementById("pd-crumb-home"))==null||v.addEventListener("click",o=>{o.preventDefault(),window.location.hash="#/"}),(y=document.getElementById("pd-crumb-cat"))==null||y.addEventListener("click",o=>{o.preventDefault(),window.location.hash=`#/san-pham/${n.cat}`})}const pn=[{id:"all",label:"Tất cả"},{id:"buying-guide",label:"Tư vấn chọn mua"},{id:"tips",label:"Hướng dẫn sử dụng"},{id:"trends",label:"Xu hướng công nghệ"}],H=[{id:"chon-laptop-sinh-vien",featured:!0,category:"buying-guide",categoryLabel:"Tư vấn chọn mua",title:"Cách chọn laptop phù hợp cho sinh viên",date:"08/10/2025",readTime:"5 phút đọc",summary:"Tổng hợp kinh nghiệm chọn mua laptop tối ưu theo ngành học: Kinh tế, CNTT, Thiết kế đồ họa và Y dược với mức ngân sách hợp lý nhất.",content:`
       <p>Bước vào giảng đường đại học, một chiếc laptop phù hợp là người bạn đồng hành không thể thiếu. Tùy thuộc vào ngành học và nhu cầu sử dụng thực tế, sinh viên cần cân nhắc các yếu tố then chốt như CPU, RAM, thời lượng pin và trọng lượng máy.</p>
       <h3>1. Xác định nhu cầu theo chuyên ngành</h3>
       <p>• <strong>Khối Kinh tế, Xã hội, Ngôn ngữ:</strong> Ưu tiên laptop mỏng nhẹ dưới 1.5kg, pin từ 8-10 tiếng, cấu hình Core i3/i5 hoặc Ryzen 5, RAM 8GB - 16GB để phục vụ soạn thảo văn bản, làm slide và thuyết trình.</p>
@@ -1252,7 +1271,7 @@
       <p>Khi build PC hoặc nâng cấp laptop, người dùng thường băn khoăn liệu DDR5 đã thực sự cần thiết hay DDR4 vẫn còn đủ dùng:</p>
       <p>• <strong>Băng thông và tốc độ:</strong> DDR5 khởi điểm ở mức 4800MHz - 6400MHz, gần gấp đôi so với chuẩn DDR4 3200MHz, giúp giải quyết các tác vụ render video 4K và nạp texture game nhanh hơn đáng kể.</p>
       <p>• <strong>Mức giá và độ tương thích:</strong> Hiện nay giá RAM DDR5 đã hạ nhiệt rất nhiều và tiệm cận với DDR4, khiến đây trở thành sự lựa chọn đầu tư dài hạn thông minh cho các dàn máy mới thế hệ 13 và 14.</p>
-    `}];function P(t,e=!1){if(e)return`
+    `}];function N(n,t=!1){if(t)return`
       <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" class="news-art-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
         <defs>
           <!-- Room background -->
@@ -1340,7 +1359,7 @@
         <polygon points="325,306 635,306 648,333 312,333" fill="#232d26"/>
         <rect x="440" y="334" width="80" height="6" rx="2" fill="#bac8bf"/>
       </svg>
-    `;switch(t){case"meo-tang-tuoi-tho-pin-laptop":return`
+    `;switch(n){case"meo-tang-tuoi-tho-pin-laptop":return`
         <svg viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg" class="news-art-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
           <defs>
             <linearGradient id="n-bg-1" x1="0" y1="0" x2="1" y2="1">
@@ -1401,21 +1420,21 @@
           <line x1="45" y1="109" x2="195" y2="109" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2"/>
           <text x="52" y="100" font-family="'Outfit',sans-serif" font-size="10" font-weight="700" fill="#94a3b8">DDR4 3200MHz</text>
         </svg>
-      `;default:return""}}function dt(t="all"){const e=D.find(c=>c.featured)||D[0],s=D.filter(c=>!c.featured),i=rt.map(c=>`
+      `;default:return""}}function gn(n="all"){const t=H.find(l=>l.featured)||H[0],i=H.filter(l=>!l.featured),a=pn.map(l=>`
     <button 
-      class="news-filter-btn${c.id===t?" news-filter-btn--active":""}" 
-      data-filter="${c.id}"
-      id="filter-btn-${c.id}"
+      class="news-filter-btn${l.id===n?" news-filter-btn--active":""}" 
+      data-filter="${l.id}"
+      id="filter-btn-${l.id}"
     >
-      ${c.label}
+      ${l.label}
     </button>
-  `).join(""),n=t==="all"?s:s.filter(c=>c.category===t),o=t==="all"||e.category===t,d=n.length>0?n.map(c=>`
-        <article class="news-list-card" data-article-id="${c.id}" id="news-card-${c.id}">
+  `).join(""),e=n==="all"?i:i.filter(l=>l.category===n),c=n==="all"||t.category===n,r=e.length>0?e.map(l=>`
+        <article class="news-list-card" data-article-id="${l.id}" id="news-card-${l.id}">
           <div class="news-list-thumb">
-            ${P(c.id,!1)}
+            ${N(l.id,!1)}
           </div>
           <div class="news-list-content">
-            <h3 class="news-list-title">${c.title}</h3>
+            <h3 class="news-list-title">${l.title}</h3>
             <div class="news-list-date">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -1423,11 +1442,11 @@
                 <line x1="8" y1="2" x2="8" y2="6"/>
                 <line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
-              <span>${c.date}</span>
+              <span>${l.date}</span>
             </div>
           </div>
           <div class="news-list-badge-wrap">
-            <span class="news-badge news-badge--pill">${c.categoryLabel}</span>
+            <span class="news-badge news-badge--pill">${l.categoryLabel}</span>
           </div>
         </article>
       `).join(""):'<div class="news-empty-notice">Không có bài viết trong danh mục này.</div>';return`
@@ -1449,18 +1468,18 @@
 
         <!-- 3. CATEGORY FILTER BUTTONS -->
         <div class="news-filter-bar" id="news-filter-bar">
-          ${i}
+          ${a}
         </div>
 
         <!-- 4. FEATURED HERO ARTICLE (Top Large Card) -->
-        ${o?`
-          <article class="news-hero-card" data-article-id="${e.id}" id="news-hero-article">
+        ${c?`
+          <article class="news-hero-card" data-article-id="${t.id}" id="news-hero-article">
             <div class="news-hero-image-wrap">
-              ${P(e.id,!0)}
+              ${N(t.id,!0)}
             </div>
             <div class="news-hero-footer">
               <div class="news-hero-info">
-                <h2 class="news-hero-title">${e.title}</h2>
+                <h2 class="news-hero-title">${t.title}</h2>
                 <div class="news-hero-date">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -1468,11 +1487,11 @@
                     <line x1="8" y1="2" x2="8" y2="6"/>
                     <line x1="3" y1="10" x2="21" y2="10"/>
                   </svg>
-                  <span>${e.date}</span>
+                  <span>${t.date}</span>
                 </div>
               </div>
               <div class="news-hero-badge-wrap">
-                <span class="news-badge news-badge--pill">${e.categoryLabel}</span>
+                <span class="news-badge news-badge--pill">${t.categoryLabel}</span>
               </div>
             </div>
           </article>
@@ -1480,7 +1499,7 @@
 
         <!-- 5. ARTICLES STACK LIST (Vertical list cards) -->
         <div class="news-list-stack" id="news-list-stack">
-          ${d}
+          ${r}
         </div>
 
       </div>
@@ -1494,16 +1513,16 @@
         </div>
       </div>
     </section>
-  `}function ht(t){var c;(c=document.getElementById("news-crumb-home"))==null||c.addEventListener("click",l=>{l.preventDefault(),window.location.hash="#/"}),document.querySelectorAll(".news-filter-btn").forEach(l=>{l.addEventListener("click",()=>{const a=l.dataset.filter;t&&t(a)})});const e=document.getElementById("news-modal"),s=document.getElementById("news-modal-body"),i=document.getElementById("news-modal-close"),n=document.getElementById("news-modal-backdrop");function o(l){const a=D.find(h=>h.id===l);!a||!e||!s||(s.innerHTML=`
-      <div class="news-detail-badge">${a.categoryLabel}</div>
-      <h2 class="news-detail-title">${a.title}</h2>
+  `}function un(n){var l;(l=document.getElementById("news-crumb-home"))==null||l.addEventListener("click",h=>{h.preventDefault(),window.location.hash="#/"}),document.querySelectorAll(".news-filter-btn").forEach(h=>{h.addEventListener("click",()=>{const s=h.dataset.filter;n&&n(s)})});const t=document.getElementById("news-modal"),i=document.getElementById("news-modal-body"),a=document.getElementById("news-modal-close"),e=document.getElementById("news-modal-backdrop");function c(h){const s=H.find(d=>d.id===h);!s||!t||!i||(i.innerHTML=`
+      <div class="news-detail-badge">${s.categoryLabel}</div>
+      <h2 class="news-detail-title">${s.title}</h2>
       <div class="news-detail-meta">
-        <span>📅 ${a.date}</span>
-        <span>⏱️ ${a.readTime}</span>
+        <span>📅 ${s.date}</span>
+        <span>⏱️ ${s.readTime}</span>
       </div>
-      <div class="news-detail-summary">${a.summary}</div>
-      <div class="news-detail-content">${a.content}</div>
-    `,e.classList.add("news-modal--open"),e.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden")}function d(){e&&(e.classList.remove("news-modal--open"),e.setAttribute("aria-hidden","true"),document.body.style.overflow="")}i==null||i.addEventListener("click",d),n==null||n.addEventListener("click",d),document.querySelectorAll("[data-article-id]").forEach(l=>{l.addEventListener("click",()=>{o(l.dataset.articleId)})})}function pt(){return`
+      <div class="news-detail-summary">${s.summary}</div>
+      <div class="news-detail-content">${s.content}</div>
+    `,t.classList.add("news-modal--open"),t.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden")}function r(){t&&(t.classList.remove("news-modal--open"),t.setAttribute("aria-hidden","true"),document.body.style.overflow="")}a==null||a.addEventListener("click",r),e==null||e.addEventListener("click",r),document.querySelectorAll("[data-article-id]").forEach(h=>{h.addEventListener("click",()=>{c(h.dataset.articleId)})})}function vn(){return`
     <section class="contact-page" id="contact-page">
       <div class="contact-container">
 
@@ -1661,7 +1680,7 @@
 
       </div>
     </section>
-  `}function gt(t){var i;(i=document.getElementById("contact-crumb-home"))==null||i.addEventListener("click",n=>{n.preventDefault(),window.location.hash="#/"});const e=document.getElementById("contact-form");e&&e.addEventListener("submit",n=>{var d,c;n.preventDefault();const o=(d=document.getElementById("contact-name"))==null?void 0:d.value;(c=document.getElementById("contact-phone"))==null||c.value,t&&t(`Cảm ơn ${o||"bạn"}! Tin nhắn liên hệ đã được gửi thành công.`),e.reset()});const s=document.getElementById("btn-partner-register");s&&s.addEventListener("click",()=>{t&&t("Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.")})}function k(t){switch(t){case"hero":return`
+  `}function mn(n){var a;(a=document.getElementById("contact-crumb-home"))==null||a.addEventListener("click",e=>{e.preventDefault(),window.location.hash="#/"});const t=document.getElementById("contact-form");t&&t.addEventListener("submit",e=>{var r,l;e.preventDefault();const c=(r=document.getElementById("contact-name"))==null?void 0:r.value;(l=document.getElementById("contact-phone"))==null||l.value,n&&n(`Cảm ơn ${c||"bạn"}! Tin nhắn liên hệ đã được gửi thành công.`),t.reset()});const i=document.getElementById("btn-partner-register");i&&i.addEventListener("click",()=>{n&&n("Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.")})}function x(n){switch(n){case"hero":return`
         <svg viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" class="sp-hero-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
           <defs>
             <linearGradient id="sp-room" x1="0" y1="0" x2="1" y2="1">
@@ -1815,15 +1834,15 @@
             <line x1="27" y1="46" x2="27" y2="52" stroke="#163942" stroke-width="2.5"/>
           </g>
         </svg>
-      `;default:return""}}function vt(){const e=[{id:"bao-hanh",title:"Chính sách bảo hành<br>& đổi trả",desc:"Thông tin chi tiết về điều kiện, quy trình bảo hành và đổi trả sản phẩm.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>'},{id:"ky-thuat",title:"Hỗ trợ kỹ thuật",desc:"Hướng dẫn sử dụng, cài đặt, khắc phục sự cố và các yêu cầu hỗ trợ kỹ thuật.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>'},{id:"tra-cuu",title:"Tra cứu đơn hàng",desc:"Kiểm tra trạng thái đơn hàng và thông tin giao hàng nhanh chóng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>'},{id:"lien-he",title:"Liên hệ hỗ trợ",desc:"Hotline, Zalo, Email và biểu mẫu liên hệ với đội ngũ hỗ trợ.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'},{id:"bao-mat",title:"Chính sách bảo mật",desc:"Cam kết bảo vệ thông tin cá nhân của khách hàng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>'}].map(s=>`
-    <div class="sp-card" data-sub="${s.id}" id="sp-card-${s.id}">
+      `;default:return""}}function bn(){const t=[{id:"bao-hanh",title:"Chính sách bảo hành<br>& đổi trả",desc:"Thông tin chi tiết về điều kiện, quy trình bảo hành và đổi trả sản phẩm.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>'},{id:"ky-thuat",title:"Hỗ trợ kỹ thuật",desc:"Hướng dẫn sử dụng, cài đặt, khắc phục sự cố và các yêu cầu hỗ trợ kỹ thuật.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>'},{id:"tra-cuu",title:"Tra cứu đơn hàng",desc:"Kiểm tra trạng thái đơn hàng và thông tin giao hàng nhanh chóng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>'},{id:"lien-he",title:"Liên hệ hỗ trợ",desc:"Hotline, Zalo, Email và biểu mẫu liên hệ với đội ngũ hỗ trợ.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'},{id:"bao-mat",title:"Chính sách bảo mật",desc:"Cam kết bảo vệ thông tin cá nhân của khách hàng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>'}].map(i=>`
+    <div class="sp-card" data-sub="${i.id}" id="sp-card-${i.id}">
       <div class="sp-card-icon-wrap">
-        ${s.icon}
+        ${i.icon}
       </div>
-      <h3 class="sp-card-title">${s.title}</h3>
-      <p class="sp-card-desc">${s.desc}</p>
+      <h3 class="sp-card-title">${i.title}</h3>
+      <p class="sp-card-desc">${i.desc}</p>
       <div class="sp-card-btn-wrap">
-        <button class="sp-card-circle-btn" aria-label="Xem chi tiết ${s.id}">
+        <button class="sp-card-circle-btn" aria-label="Xem chi tiết ${i.id}">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
       </div>
@@ -1848,18 +1867,18 @@
             </p>
           </div>
           <div class="sp-hero-right">
-            ${k("hero")}
+            ${x("hero")}
           </div>
         </div>
 
         <!-- 3. FIVE SUPPORT CARDS GRID -->
         <div class="sp-cards-grid">
-          ${e}
+          ${t}
         </div>
 
       </div>
     </section>
-  `}function ut(){return`
+  `}function fn(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <!-- Breadcrumb -->
@@ -1878,7 +1897,7 @@
 
         <!-- Graphic Banner -->
         <div class="sp-sub-banner">
-          ${k("shield-banner")}
+          ${x("shield-banner")}
         </div>
 
         <!-- Tabs Toggle -->
@@ -1971,7 +1990,7 @@
         </div>
       </div>
     </section>
-  `}function ft(){const t=[{title:"Hướng dẫn sử dụng sản phẩm",sub:"Tài liệu hướng dẫn, video minh họa",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'},{title:"Cài đặt phần mềm & driver",sub:"Tải driver, phần mềm cần thiết",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'},{title:"Khắc phục sự cố thường gặp",sub:"Các lỗi phổ biến và cách xử lý",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'},{title:"Gửi yêu cầu hỗ trợ",sub:"Điền biểu mẫu để được hỗ trợ trực tiếp",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'}];return`
+  `}function yn(){const n=[{title:"Hướng dẫn sử dụng sản phẩm",sub:"Tài liệu hướng dẫn, video minh họa",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'},{title:"Cài đặt phần mềm & driver",sub:"Tải driver, phần mềm cần thiết",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'},{title:"Khắc phục sự cố thường gặp",sub:"Các lỗi phổ biến và cách xử lý",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'},{title:"Gửi yêu cầu hỗ trợ",sub:"Điền biểu mẫu để được hỗ trợ trực tiếp",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'}];return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -1988,18 +2007,18 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${k("tech-banner")}
+          ${x("tech-banner")}
         </div>
 
         <div class="sp-block">
           <h2 class="sp-block-title">Các hỗ trợ nổi bật</h2>
           <div class="sp-topics-list">
-            ${t.map(e=>`
+            ${n.map(t=>`
               <div class="sp-topic-card" style="cursor:pointer;">
-                <div class="sp-topic-icon">${e.icon}</div>
+                <div class="sp-topic-icon">${t.icon}</div>
                 <div class="sp-topic-info">
-                  <strong>${e.title}</strong>
-                  <span>${e.sub}</span>
+                  <strong>${t.title}</strong>
+                  <span>${t.sub}</span>
                 </div>
                 <div class="sp-topic-arrow">›</div>
               </div>
@@ -2014,7 +2033,7 @@
           </div>
           <div class="sp-urgent-info">
             <strong>Cần hỗ trợ gấp?</strong>
-            <span>Liên hệ hotline <strong>1800 1234</strong> (8:00 - 22:00, tất cả các ngày)</span>
+            <span>Liên hệ hotline <strong>0867036698</strong> (8:00 - 22:00, tất cả các ngày)</span>
           </div>
         </div>
 
@@ -2023,7 +2042,7 @@
         </div>
       </div>
     </section>
-  `}function mt(){return`
+  `}function wn(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2040,7 +2059,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${k("track-banner")}
+          ${x("track-banner")}
         </div>
 
         <!-- Tracking Search Form -->
@@ -2117,7 +2136,7 @@
         </div>
       </div>
     </section>
-  `}function bt(){return`
+  `}function kn(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2134,7 +2153,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${k("contact-banner")}
+          ${x("contact-banner")}
         </div>
 
         <!-- Channels Grid -->
@@ -2167,7 +2186,7 @@
             </div>
             <div>
               <strong>Email</strong>
-              <div class="sp-ch-val">support@ondata.vn</div>
+              <div class="sp-ch-val">nchieu@xinchen.vn</div>
               <small>Phản hồi trong 24 giờ</small>
             </div>
           </div>
@@ -2178,8 +2197,8 @@
             </div>
             <div>
               <strong>Địa chỉ</strong>
-              <div class="sp-ch-val">Số 10 Nguyễn Văn Cừ,</div>
-              <small>Long Biên, Hà Nội</small>
+              <div class="sp-ch-val">167 Louis I, LK34, KĐT mới Hoàng Văn Thụ,</div>
+              <small>Hoàng Mai, Hà Nội</small>
             </div>
           </div>
         </div>
@@ -2202,7 +2221,7 @@
         </div>
       </div>
     </section>
-  `}function yt(){return`
+  `}function xn(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2219,7 +2238,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${k("privacy-banner")}
+          ${x("privacy-banner")}
         </div>
 
         <div class="sp-block">
@@ -2260,54 +2279,295 @@
         </div>
       </div>
     </section>
-  `}function wt(t=null){switch(t){case"bao-hanh":return ut();case"ky-thuat":return ft();case"tra-cuu":return mt();case"lien-he":return bt();case"bao-mat":return yt();default:return vt()}}function kt(t=null,e){var h;(h=document.getElementById("sp-crumb-home"))==null||h.addEventListener("click",f=>{f.preventDefault(),window.navigate?window.navigate("/"):window.location.assign("/")}),document.querySelectorAll(".sp-card[data-sub]").forEach(f=>{f.addEventListener("click",()=>{const p=f.dataset.sub;p&&(window.navigate?window.navigate(`/ho-tro/${p}`):window.location.assign(`/ho-tro/${p}`))})});const s=document.getElementById("btn-tab-warranty"),i=document.getElementById("btn-tab-exchange"),n=document.getElementById("panel-warranty"),o=document.getElementById("panel-exchange");s&&i&&n&&o&&(s.addEventListener("click",()=>{s.classList.add("sp-tab-pill--active"),i.classList.remove("sp-tab-pill--active"),n.classList.remove("sp-tab-panel--hidden"),o.classList.add("sp-tab-panel--hidden")}),i.addEventListener("click",()=>{i.classList.add("sp-tab-pill--active"),s.classList.remove("sp-tab-pill--active"),o.classList.remove("sp-tab-panel--hidden"),n.classList.add("sp-tab-panel--hidden")}));const d=document.getElementById("btn-track-submit"),c=document.getElementById("track-input"),l=document.getElementById("track-result");d&&c&&l&&d.addEventListener("click",()=>{const f=c.value.trim();if(!f){e&&e("Vui lòng nhập mã đơn hàng hoặc số điện thoại!");return}l.style.display="block",e&&e(`Đã tìm thấy thông tin đơn hàng: ${f}`)});const a=document.getElementById("sp-quick-form");a&&a.addEventListener("submit",f=>{f.preventDefault(),e&&e("Cảm ơn bạn! Yêu cầu hỗ trợ đã được gửi thành công."),a.reset()})}let q=0,N="all";const A={laptop:{label:"Máy tính xách tay",sub:"Hiệu năng mạnh mẽ, đồng hành mọi hành trình"},desktop:{label:"Máy tính để bàn",sub:"Sức mạnh không giới hạn cho mọi tác vụ"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, trải nghiệm đỉnh cao"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm mượt mà"},keyboard:{label:"Bàn phím",sub:"Gõ phím chuyên nghiệp, cảm giác tuyệt vời"},mouse:{label:"Chuột",sub:"Chính xác từng click, gaming & văn phòng"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện setup của bạn"},other:{label:"Thiết bị khác",sub:"Khám phá thêm các sản phẩm công nghệ"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function E(t){let e=document.querySelector(".toast-container");e||(e=document.createElement("div"),e.className="toast-container",document.body.appendChild(e));const s=document.createElement("div");s.className="toast-alert",s.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${t}</span>`,e.appendChild(s),setTimeout(()=>{s.style.opacity="0",s.style.transform="translateY(10px)",setTimeout(()=>s.remove(),300)},3e3)}function xt(){if(window.location.hash&&window.location.hash.startsWith("#/")){const e=window.location.hash.slice(1);window.history.replaceState({},"",e)}let t=window.location.pathname.replace(/\/+$/,"")||"/";if(t.startsWith("/dist")&&(t=t.replace(/^\/dist/,"")||"/"),t.startsWith("/san-pham")){const e=t.split("/").filter(Boolean),s=e[1]||"all",i=e[2]||null;if(i)return{page:"detail",cat:s,id:i};if(s!=="all"){const n=z(s);if(n)return{page:"detail",cat:n.cat,id:n.id}}return{page:"catalog",cat:s}}return t.startsWith("/tin-tuc")?{page:"news"}:t.startsWith("/lien-he")?{page:"contact"}:t.startsWith("/ho-tro")?{page:"support",sub:t.split("/").filter(Boolean)[1]||null}:{page:"home"}}function m(t){const e=t.startsWith("#/")?t.slice(1):t;window.location.pathname!==e&&window.history.pushState({},"",e),B(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=m;function Bt(){return`
-    ${K()}
-    ${Q()}
+  `}function Bn(n=null){switch(n){case"bao-hanh":return fn();case"ky-thuat":return yn();case"tra-cuu":return wn();case"lien-he":return kn();case"bao-mat":return xn();default:return bn()}}function Cn(n=null,t){var d;(d=document.getElementById("sp-crumb-home"))==null||d.addEventListener("click",v=>{v.preventDefault(),window.navigate?window.navigate("/"):window.location.assign("/")}),document.querySelectorAll(".sp-card[data-sub]").forEach(v=>{v.addEventListener("click",()=>{const y=v.dataset.sub;y&&(window.navigate?window.navigate(`/ho-tro/${y}`):window.location.assign(`/ho-tro/${y}`))})});const i=document.getElementById("btn-tab-warranty"),a=document.getElementById("btn-tab-exchange"),e=document.getElementById("panel-warranty"),c=document.getElementById("panel-exchange");i&&a&&e&&c&&(i.addEventListener("click",()=>{i.classList.add("sp-tab-pill--active"),a.classList.remove("sp-tab-pill--active"),e.classList.remove("sp-tab-panel--hidden"),c.classList.add("sp-tab-panel--hidden")}),a.addEventListener("click",()=>{a.classList.add("sp-tab-pill--active"),i.classList.remove("sp-tab-pill--active"),c.classList.remove("sp-tab-panel--hidden"),e.classList.add("sp-tab-panel--hidden")}));const r=document.getElementById("btn-track-submit"),l=document.getElementById("track-input"),h=document.getElementById("track-result");r&&l&&h&&r.addEventListener("click",()=>{const v=l.value.trim();if(!v){t&&t("Vui lòng nhập mã đơn hàng hoặc số điện thoại!");return}h.style.display="block",t&&t(`Đã tìm thấy thông tin đơn hàng: ${v}`)});const s=document.getElementById("sp-quick-form");s&&s.addEventListener("submit",v=>{v.preventDefault(),t&&t("Cảm ơn bạn! Yêu cầu hỗ trợ đã được gửi thành công."),s.reset()})}function Mn(){return`
+    <div class="about-page" id="about-page">
+      <!-- HERO BANNER -->
+      <section class="about-hero">
+        <div class="container">
+          <div class="about-hero-grid">
+            <div class="about-hero-content">
+              <div class="about-badge-pill">
+                <span class="pulse-dot"></span>
+                <span>Thương hiệu công nghệ Việt Nam</span>
+              </div>
+              <h1 class="about-hero-title">
+                Kiến tạo tương lai công nghệ cùng <span class="highlight-text">ONDATA</span>
+              </h1>
+              <p class="about-hero-desc">
+                ONDATA tự hào là thương hiệu tiên phong nghiên cứu, sản xuất và phân phối các giải pháp máy tính All-in-one, màn hình chuyên nghiệp, linh kiện phần cứng và hệ sinh thái phụ kiện công nghệ đạt chuẩn chất lượng quốc tế tại Việt Nam.
+              </p>
+              <div class="about-hero-actions">
+                <a href="/san-pham/all" class="btn-about-primary">
+                  <span>Khám phá sản phẩm</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/lien-he" class="btn-about-secondary">
+                  <span>Hợp tác & Đại lý</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="about-hero-visual">
+              <div class="about-visual-card">
+                <div class="visual-glow"></div>
+                <div class="about-brand-emblem">
+                  <div class="emblem-circle">
+                    <img src="/logo tach nen.png" alt="ONDATA" class="about-emblem-logo" onerror="this.onerror=null; this.src='/logo.png';" />
+                  </div>
+                  <div class="emblem-tag">INNOVATION & RELIABILITY</div>
+                </div>
+                <div class="floating-badge badge-top-right">
+                  <span class="fb-icon">✓</span>
+                  <div>
+                    <strong>100% Chính hãng</strong>
+                    <small>Tiêu chuẩn quốc tế</small>
+                  </div>
+                </div>
+                <div class="floating-badge badge-bottom-left">
+                  <span class="fb-icon">★</span>
+                  <div>
+                    <strong>Bảo hành 24 - 36T</strong>
+                    <small>Tận nơi trên toàn quốc</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METRICS / STATS BAR -->
+      <section class="about-stats-section">
+        <div class="container">
+          <div class="about-stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">50.000+</div>
+              <div class="stat-label">Khách hàng tin cậy</div>
+              <p class="stat-sub">Cá nhân, trường học và doanh nghiệp toàn quốc</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">63</div>
+              <div class="stat-label">Tỉnh thành phủ sóng</div>
+              <p class="stat-sub">Hệ thống phân phối và trạm dịch vụ bảo hành</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">99.8%</div>
+              <div class="stat-label">Tỷ lệ hài lòng</div>
+              <p class="stat-sub">Đánh giá cao về độ ổn định và dịch vụ chăm sóc</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Hỗ trợ kỹ thuật</div>
+              <p class="stat-sub">Đội ngũ kỹ sư phần cứng đồng hành liên tục</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORY & MISSION -->
+      <section class="about-story-section">
+        <div class="container">
+          <div class="about-section-header">
+            <span class="section-sub-label">CÂU CHUYỆN THƯƠNG HIỆU</span>
+            <h2 class="section-main-title">Sứ Mệnh & Tầm Nhìn Của Ondata</h2>
+            <p class="section-main-desc">
+              Chúng tôi tin rằng công nghệ hiện đại phải đi liền với sự tối giản, bền bỉ và dễ tiếp cận cho mọi người dùng Việt.
+            </p>
+          </div>
+
+          <div class="about-story-grid">
+            <div class="story-card">
+              <div class="story-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+                </svg>
+              </div>
+              <h3>Tầm Nhìn Chiến Lược</h3>
+              <p>
+                Trở thành thương hiệu công nghệ phần cứng hàng đầu tại Việt Nam và Đông Nam Á, tiên phong định hình xu hướng máy tính All-in-one tinh gọn, bền bỉ, tiết kiệm năng lượng và thân thiện với môi trường làm việc thông minh.
+              </p>
+            </div>
+
+            <div class="story-card">
+              <div class="story-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3>Sứ Mệnh Phụng Sự</h3>
+              <p>
+                Cung cấp hệ thống giải pháp phần cứng tối ưu chi phí đầu tư cho doanh nghiệp, cơ quan giáo dục và người dùng cá nhân. Đồng thời mang tới dịch vụ bảo hành vàng tận tâm, phản hồi nhanh chóng và minh bạch.
+              </p>
+            </div>
+
+            <div class="story-card">
+              <div class="story-icon-wrap">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h3>Cam Kết Chất Lượng</h3>
+              <p>
+                Từng sản phẩm mang thương hiệu Ondata đều trải qua quy trình kiểm thử lão hóa (Burn-in Test) nghiêm ngặt trong 72 giờ trước khi xuất xưởng, đảm bảo độ bền vượt trội và tỷ lệ lỗi kỹ thuật tiệm cận mức 0%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 GIÁ TRỊ CỐT LÕI -->
+      <section class="about-values-section">
+        <div class="container">
+          <div class="about-section-header">
+            <span class="section-sub-label">GIÁ TRỊ CỐT LÕI</span>
+            <h2 class="section-main-title">4 Trụ Cột Tạo Nên Bản Sắc Ondata</h2>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-index">01</div>
+              <h4>Đột Phá (Innovation)</h4>
+              <p>Liên tục đổi mới thiết kế tinh giản, tích hợp công nghệ mới nhất vào từng dòng máy All-in-one và màn hình.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-index">02</div>
+              <h4>Bền Bỉ (Durability)</h4>
+              <p>Linh kiện tuyển chọn chuẩn công nghiệp, hoạt động mát mẻ và ổn định liên tục 24/7 dưới mọi điều kiện thời tiết nhiệt đới.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-index">03</div>
+              <h4>Tối Ưu (Optimization)</h4>
+              <p>Tối ưu hóa giữa chi phí và hiệu năng sử dụng thực tế, mang lại giá trị hoàn vốn cao nhất cho khách hàng doanh nghiệp.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-index">04</div>
+              <h4>Đồng Hành (Companion)</h4>
+              <p>Chính sách bảo hành tận nơi chu đáo, đổi mới nhanh chóng và luôn lắng nghe đóng góp để hoàn thiện sản phẩm.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HỆ SINH THÁI SẢN PHẨM ONDATA -->
+      <section class="about-ecosystem-section">
+        <div class="container">
+          <div class="about-section-header">
+            <span class="section-sub-label">HỆ SINH THÁI</span>
+            <h2 class="section-main-title">Hệ Sinh Thái Sản Phẩm Toàn Diện</h2>
+            <p class="section-main-desc">Từ thiết bị chính đến phụ kiện ngoại vi, Ondata mang tới góc làm việc hiện đại và đồng bộ.</p>
+          </div>
+
+          <div class="ecosystem-grid">
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/aio')" style="cursor:pointer;">
+              <div class="eco-icon">🖥️</div>
+              <h3>Máy tính All-in-one</h3>
+              <p>Thiết kế nguyên khối sang trọng, tích hợp CPU, loa, webcam và WiFi mượt mà trong thân máy siêu mỏng.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/monitor')" style="cursor:pointer;">
+              <div class="eco-icon">📺</div>
+              <h3>Màn hình Ondata</h3>
+              <p>Độ phân giải 2K/4K, màn hình cong 1500R/1000R, tần số quét 100Hz – 240Hz chuẩn màu đồ họa và gaming.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/keyboard')" style="cursor:pointer;">
+              <div class="eco-icon">⌨️</div>
+              <h3>Bàn phím cơ & Văn phòng</h3>
+              <p>Switch bền bỉ 100 triệu lần nhấn, cấu trúc Gasket Mount êm ái, công nghệ từ tính Rapid Trigger thi đấu.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/mouse')" style="cursor:pointer;">
+              <div class="eco-icon">🖱️</div>
+              <h3>Chuột quang & Không dây</h3>
+              <p>Cảm biến PixArt chuẩn xác, thiết kế công thái học đứng chống mỏi cổ tay và nút bấm Silent giảm tiếng ồn.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/ram')" style="cursor:pointer;">
+              <div class="eco-icon">💾</div>
+              <h3>RAM Bộ nhớ cao cấp</h3>
+              <p>Chuẩn DDR4/DDR5 tốc độ cao, tản nhiệt nhôm mát lạnh, bảo hành trọn đời an tâm tuyệt đối.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+
+            <div class="ecosystem-card" onclick="window.navigate('/san-pham/accessories')" style="cursor:pointer;">
+              <div class="eco-icon">🔌</div>
+              <h3>Phụ kiện công nghệ</h3>
+              <p>Giá treo màn hình trợ lực khí nén, Hub chuyển đổi 8-in-1 Type-C, pad chuột XXL và giá đỡ laptop nhôm.</p>
+              <span class="eco-link">Xem danh mục →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="about-cta-section">
+        <div class="container">
+          <div class="about-cta-box">
+            <div class="cta-text">
+              <h2>Sẵn sàng nâng cấp góc làm việc của bạn?</h2>
+              <p>Liên hệ đội ngũ chuyên viên Ondata để nhận báo giá dự án, chính sách đại lý hoặc tư vấn cấu hình phù hợp.</p>
+            </div>
+            <div class="cta-buttons">
+              <a href="/lien-he" class="btn-cta-highlight">Liên hệ ngay</a>
+              <a href="/ho-tro" class="btn-cta-outline">Trung tâm hỗ trợ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  `}let V=0,K="all";const S={aio:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao"},keyboard:{label:"Bàn phím",sub:"Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo"},mouse:{label:"Chuột",sub:"Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm bền bỉ"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện góc làm việc và trải nghiệm đỉnh cao"},laptop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},desktop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function L(n){let t=document.querySelector(".toast-container");t||(t=document.createElement("div"),t.className="toast-container",document.body.appendChild(t));const i=document.createElement("div");i.className="toast-alert",i.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${n}</span>`,t.appendChild(i),setTimeout(()=>{i.style.opacity="0",i.style.transform="translateY(10px)",setTimeout(()=>i.remove(),300)},3e3)}function Tn(){if(window.location.hash&&window.location.hash.startsWith("#/")){const t=window.location.hash.slice(1);window.history.replaceState({},"",t)}let n=window.location.pathname.replace(/\/+$/,"")||"/";if(n.startsWith("/dist")&&(n=n.replace(/^\/dist/,"")||"/"),n.startsWith("/san-pham")){const t=n.split("/").filter(Boolean),i=t[1]||"all",a=t[2]||null;if(a)return{page:"detail",cat:i,id:a};if(i!=="all"){const e=z(i);if(e)return{page:"detail",cat:e.cat,id:e.id}}return{page:"catalog",cat:i}}return n.startsWith("/ve-ondata")||n.startsWith("/gioi-thieu")?{page:"about"}:n.startsWith("/tin-tuc")?{page:"news"}:n.startsWith("/lien-he")?{page:"contact"}:n.startsWith("/ho-tro")?{page:"support",sub:n.split("/").filter(Boolean)[1]||null}:{page:"home"}}function b(n){const t=n.startsWith("#/")?n.slice(1):n;window.location.pathname!==t&&window.history.pushState({},"",t),C(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=b;function Dn(){return`
     ${U()}
-    ${F()}
-  `}function Ct(){document.querySelectorAll(".sidebar-item a[data-cat]").forEach(e=>{e.addEventListener("click",s=>{s.preventDefault(),m(`/san-pham/${e.dataset.cat}`)})}),document.querySelectorAll('a[href="#featured-products"], a[href="/san-pham/all"]').forEach(e=>{e.addEventListener("click",s=>{s.preventDefault(),m("/san-pham/all")})});const t=document.getElementById("newsletter-form");t&&(t.onsubmit=e=>{e.preventDefault();const s=document.getElementById("newsletter-email");s!=null&&s.value&&(E(`Đã đăng ký nhận tin thành công: ${s.value}`),s.value="")}),document.querySelectorAll(".product-item-card").forEach(e=>{e.onclick=()=>{const s=e.dataset.id,i=e.dataset.cat;m(s&&i?`/san-pham/${i}/${s}`:"/san-pham/all")}})}function Mt(t){lt(t),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(e=>{e.addEventListener("click",s=>{s.preventDefault(),m(`/san-pham/${e.dataset.cat}`)})})}function Lt(t){const e=A[t]||A.all;return X(t,e)}function Tt(t){it(),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(e=>{e.addEventListener("click",s=>{s.preventDefault(),m(`/san-pham/${e.dataset.cat}`)})})}function Dt(){const t=document.getElementById("nav-hamburger"),e=document.getElementById("nav-menu");t&&e&&(t.onclick=()=>e.classList.toggle("mobile-open"));const s=document.getElementById("search-input"),i=document.getElementById("search-dropdown"),n=document.querySelector(".search-btn");if(s&&i){let p=[],r=-1;const y=g=>{switch(g){case"laptop":return"💻";case"monitor":return"📺";case"desktop":return"🖥️";case"ram":return"💾";case"keyboard":return"⌨️";case"mouse":return"🖱️";default:return"⚡"}},b=g=>{var u;return((u=A[g])==null?void 0:u.label)||"Sản phẩm"},C=g=>{const u=(g||"").trim();u?(p=R(u),r=-1,p.length>0?i.innerHTML=`
-            <div class="search-header-label">Tìm thấy ${p.length} sản phẩm</div>
-            ${p.map((v,x)=>`
-              <div class="search-item" data-id="${v.id}" data-cat="${v.cat}" data-idx="${x}">
-                <span class="search-item-icon">${y(v.cat)}</span>
+    ${X()}
+    ${Z()}
+    ${Y()}
+  `}function Hn(){document.querySelectorAll(".sidebar-item a[data-cat]").forEach(t=>{t.addEventListener("click",i=>{i.preventDefault(),b(`/san-pham/${t.dataset.cat}`)})}),document.querySelectorAll('a[href="#featured-products"], a[href="/san-pham/all"]').forEach(t=>{t.addEventListener("click",i=>{i.preventDefault(),b("/san-pham/all")})});const n=document.getElementById("newsletter-form");n&&(n.onsubmit=t=>{t.preventDefault();const i=document.getElementById("newsletter-email");i!=null&&i.value&&(L(`Đã đăng ký nhận tin thành công: ${i.value}`),i.value="")}),document.querySelectorAll(".product-item-card").forEach(t=>{t.onclick=()=>{const i=t.dataset.id,a=t.dataset.cat;b(i&&a?`/san-pham/${a}/${i}`:"/san-pham/all")}})}function Ln(n){dn(n),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(t=>{t.addEventListener("click",i=>{i.preventDefault(),b(`/san-pham/${t.dataset.cat}`)})})}function Sn(n){const t=S[n]||S.all;return _(n,t)}function An(n){on(),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(t=>{t.addEventListener("click",i=>{i.preventDefault(),b(`/san-pham/${t.dataset.cat}`)})})}function Pn(){const n=document.getElementById("nav-hamburger"),t=document.getElementById("nav-menu");n&&t&&(n.onclick=()=>t.classList.toggle("mobile-open"));const i=document.getElementById("search-input"),a=document.getElementById("search-dropdown"),e=document.querySelector(".search-btn");if(i&&a){let o=[],m=-1;const f=p=>{switch(p){case"aio":return"🖥️";case"monitor":return"📺";case"keyboard":return"⌨️";case"mouse":return"🖱️";case"ram":return"💾";case"accessories":return"🔌";case"laptop":return"💻";case"desktop":return"🖥️";default:return"⚡"}},k=p=>{var u;return((u=S[p])==null?void 0:u.label)||"Sản phẩm"},P=p=>{const u=(p||"").trim();u?(o=O(u),m=-1,o.length>0?a.innerHTML=`
+            <div class="search-header-label">Tìm thấy ${o.length} sản phẩm</div>
+            ${o.map((g,B)=>`
+              <div class="search-item" data-id="${g.id}" data-cat="${g.cat}" data-idx="${B}">
+                <span class="search-item-icon">${f(g.cat)}</span>
                 <div class="search-item-details">
-                  <span class="search-item-name">${v.name}</span>
-                  <span class="search-item-cat">${v.badge?`<span class="search-badge">${v.badge}</span>`:""} ${b(v.cat)}</span>
+                  <span class="search-item-name">${g.name}</span>
+                  <span class="search-item-cat">${g.badge?`<span class="search-badge">${g.badge}</span>`:""} ${k(g.cat)}</span>
                 </div>
                 <span class="search-item-price">Liên hệ</span>
               </div>
             `).join("")}
-          `:i.innerHTML=`
+          `:a.innerHTML=`
             <div class="search-empty">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.4">
                 <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
               </svg>
               <span>Không tìm thấy sản phẩm cho "<strong>${u}</strong>"</span>
             </div>
-          `):(p=w.slice(0,5),r=-1,i.innerHTML=`
+          `):(o=w.slice(0,5),m=-1,a.innerHTML=`
           <div class="search-header-label">Sản phẩm gợi ý</div>
-          ${p.map((v,x)=>`
-            <div class="search-item" data-id="${v.id}" data-cat="${v.cat}" data-idx="${x}">
-              <span class="search-item-icon">${y(v.cat)}</span>
+          ${o.map((g,B)=>`
+            <div class="search-item" data-id="${g.id}" data-cat="${g.cat}" data-idx="${B}">
+              <span class="search-item-icon">${f(g.cat)}</span>
               <div class="search-item-details">
-                <span class="search-item-name">${v.name}</span>
-                <span class="search-item-cat">${v.badge?`<span class="search-badge">${v.badge}</span>`:""} ${b(v.cat)}</span>
+                <span class="search-item-name">${g.name}</span>
+                <span class="search-item-cat">${g.badge?`<span class="search-badge">${g.badge}</span>`:""} ${k(g.cat)}</span>
               </div>
               <span class="search-item-price">Liên hệ</span>
             </div>
           `).join("")}
-        `),i.querySelectorAll(".search-item").forEach(v=>{v.addEventListener("mousedown",x=>{x.preventDefault();const I=v.dataset.id,$=v.dataset.cat;I&&$&&M($,I)})})},M=(g,u)=>{i.classList.remove("show"),s.blur(),m(`/san-pham/${g}/${u}`)},H=()=>{if(r>=0&&p[r]){const v=p[r];M(v.cat,v.id);return}const g=s.value.trim();if(!g){p.length>0&&M(p[0].cat,p[0].id);return}const u=R(g);u.length>0?M(u[0].cat,u[0].id):E(`Không tìm thấy sản phẩm phù hợp với "${g}"`)};s.addEventListener("focus",()=>{C(s.value),i.classList.add("show")}),s.addEventListener("input",()=>{C(s.value),i.classList.add("show")}),s.addEventListener("keydown",g=>{const u=i.querySelectorAll(".search-item");g.key==="ArrowDown"?(g.preventDefault(),u.length>0&&(r=(r+1)%u.length,G(u))):g.key==="ArrowUp"?(g.preventDefault(),u.length>0&&(r=(r-1+u.length)%u.length,G(u))):g.key==="Enter"?(g.preventDefault(),H()):g.key==="Escape"&&i.classList.remove("show")});const G=g=>{g.forEach((u,v)=>{u.classList.toggle("search-item--active",v===r),v===r&&u.scrollIntoView({block:"nearest"})})};n&&n.addEventListener("click",g=>{g.preventDefault(),H()}),document.addEventListener("click",g=>{!s.contains(g.target)&&!i.contains(g.target)&&!(n!=null&&n.contains(g.target))&&i.classList.remove("show")})}const o=document.getElementById("back-to-top");window.addEventListener("scroll",()=>{o&&o.classList.toggle("visible",window.scrollY>300)}),o&&(o.onclick=()=>window.scrollTo({top:0,behavior:"smooth"}));const d=document.getElementById("menu-home");d&&d.addEventListener("click",p=>{p.preventDefault(),m("/")});const c=document.getElementById("menu-products");c&&c.addEventListener("click",p=>{p.preventDefault(),m("/san-pham/all")});const l=document.getElementById("menu-news");l&&l.addEventListener("click",p=>{p.preventDefault(),m("/tin-tuc")});const a=document.getElementById("menu-contact");a&&a.addEventListener("click",p=>{p.preventDefault(),m("/lien-he")});const h=document.getElementById("menu-support");h&&h.addEventListener("click",p=>{p.preventDefault(),m("/ho-tro")});const f=document.getElementById("cart-badge");f&&(f.textContent=q)}function B(){var a,h,f,p,r;const t=document.querySelector("#app");if(!t)return;const e=xt(),s=e.page==="home",i=e.page==="catalog",n=e.page==="detail",o=e.page==="news",d=e.page==="contact",c=e.page==="support";document.body.classList.add("theme-onda-dark");let l=null;n&&(l=z(e.id)),t.innerHTML=`
-    ${V(q)}
+        `),a.querySelectorAll(".search-item").forEach(g=>{g.addEventListener("mousedown",B=>{B.preventDefault();const R=g.dataset.id,E=g.dataset.cat;R&&E&&M(E,R)})})},M=(p,u)=>{a.classList.remove("show"),i.blur(),b(`/san-pham/${p}/${u}`)},I=()=>{if(m>=0&&o[m]){const g=o[m];M(g.cat,g.id);return}const p=i.value.trim();if(!p){o.length>0&&M(o[0].cat,o[0].id);return}const u=O(p);u.length>0?M(u[0].cat,u[0].id):L(`Không tìm thấy sản phẩm phù hợp với "${p}"`)};i.addEventListener("focus",()=>{P(i.value),a.classList.add("show")}),i.addEventListener("input",()=>{P(i.value),a.classList.add("show")}),i.addEventListener("keydown",p=>{const u=a.querySelectorAll(".search-item");p.key==="ArrowDown"?(p.preventDefault(),u.length>0&&(m=(m+1)%u.length,G(u))):p.key==="ArrowUp"?(p.preventDefault(),u.length>0&&(m=(m-1+u.length)%u.length,G(u))):p.key==="Enter"?(p.preventDefault(),I()):p.key==="Escape"&&a.classList.remove("show")});const G=p=>{p.forEach((u,g)=>{u.classList.toggle("search-item--active",g===m),g===m&&u.scrollIntoView({block:"nearest"})})};e&&e.addEventListener("click",p=>{p.preventDefault(),I()}),document.addEventListener("click",p=>{!i.contains(p.target)&&!a.contains(p.target)&&!(e!=null&&e.contains(p.target))&&a.classList.remove("show")})}const c=document.getElementById("back-to-top");window.addEventListener("scroll",()=>{c&&c.classList.toggle("visible",window.scrollY>300)}),c&&(c.onclick=()=>window.scrollTo({top:0,behavior:"smooth"}));const r=document.getElementById("menu-home");r&&r.addEventListener("click",o=>{o.preventDefault(),b("/")});const l=document.getElementById("menu-about");l&&l.addEventListener("click",o=>{o.preventDefault(),b("/ve-ondata")});const h=document.getElementById("menu-products");h&&h.addEventListener("click",o=>{o.preventDefault(),b("/san-pham/all")});const s=document.getElementById("menu-news");s&&s.addEventListener("click",o=>{o.preventDefault(),b("/tin-tuc")});const d=document.getElementById("menu-contact");d&&d.addEventListener("click",o=>{o.preventDefault(),b("/lien-he")});const v=document.getElementById("menu-support");v&&v.addEventListener("click",o=>{o.preventDefault(),b("/ho-tro")});const y=document.getElementById("cart-badge");y&&(y.textContent=V)}function C(){var d,v,y,o,m,f;const n=document.querySelector("#app");if(!n)return;const t=Tn(),i=t.page==="home",a=t.page==="about",e=t.page==="catalog",c=t.page==="detail",r=t.page==="news",l=t.page==="contact",h=t.page==="support";document.body.classList.add("theme-onda-dark");let s=null;c&&(s=z(t.id)),n.innerHTML=`
+    ${q(V)}
     <main id="main-content">
-      ${s?Bt():""}
-      ${i?Lt(e.cat):""}
-      ${n?ct(l):""}
-      ${o?dt(N):""}
-      ${d?pt():""}
-      ${c?wt(e.sub):""}
+      ${i?Dn():""}
+      ${a?Mn():""}
+      ${e?Sn(t.cat):""}
+      ${c?rn(s):""}
+      ${r?gn(K):""}
+      ${l?vn():""}
+      ${h?Bn(t.sub):""}
     </main>
-    ${W()}
+    ${J()}
     <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
-  `,window.scrollTo({top:0}),Dt(),s&&Ct(),i&&Tt(e.cat),n&&Mt(l),o&&ht(y=>{N=y,B()}),d&&gt(E),c&&kt(e.sub,E),(a=document.getElementById("menu-home"))==null||a.classList.toggle("active",s),(h=document.getElementById("menu-products"))==null||h.classList.toggle("active",i||n),(f=document.getElementById("menu-news"))==null||f.classList.toggle("active",o),(p=document.getElementById("menu-contact"))==null||p.classList.toggle("active",d),(r=document.getElementById("menu-support"))==null||r.classList.toggle("active",c)}window.addEventListener("popstate",B);window.addEventListener("hashchange",B);document.addEventListener("click",t=>{const e=t.target.closest("a");if(!e)return;const s=e.getAttribute("href");if(s){if(s.startsWith("#")&&!s.startsWith("#/")){const i=document.querySelector(s);i&&(t.preventDefault(),i.scrollIntoView({behavior:"smooth"}));return}if(s.startsWith("/")&&!s.startsWith("//")){t.preventDefault(),m(s);return}if(s.startsWith("#/")){t.preventDefault(),m(s.slice(1));return}}});B();
+  `,window.scrollTo({top:0}),Pn(),i&&Hn(),e&&An(t.cat),c&&Ln(s),r&&un(k=>{K=k,C()}),l&&mn(L),h&&Cn(t.sub,L),(d=document.getElementById("menu-home"))==null||d.classList.toggle("active",i),(v=document.getElementById("menu-about"))==null||v.classList.toggle("active",a),(y=document.getElementById("menu-products"))==null||y.classList.toggle("active",e||c),(o=document.getElementById("menu-news"))==null||o.classList.toggle("active",r),(m=document.getElementById("menu-contact"))==null||m.classList.toggle("active",l),(f=document.getElementById("menu-support"))==null||f.classList.toggle("active",h)}window.addEventListener("popstate",C);window.addEventListener("hashchange",C);document.addEventListener("click",n=>{const t=n.target.closest("a");if(!t)return;const i=t.getAttribute("href");if(i){if(i.startsWith("#")&&!i.startsWith("#/")){const a=document.querySelector(i);a&&(n.preventDefault(),a.scrollIntoView({behavior:"smooth"}));return}if(i.startsWith("/")&&!i.startsWith("//")){n.preventDefault(),b(i);return}if(i.startsWith("#/")){n.preventDefault(),b(i.slice(1));return}}});C();

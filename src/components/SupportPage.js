@@ -463,7 +463,7 @@ export function renderSubKyThuat() {
           </div>
           <div class="sp-urgent-info">
             <strong>Cần hỗ trợ gấp?</strong>
-            <span>Liên hệ hotline <strong>1800 1234</strong> (8:00 - 22:00, tất cả các ngày)</span>
+            <span>Liên hệ hotline <strong>0867036698</strong> (8:00 - 22:00, tất cả các ngày)</span>
           </div>
         </div>
 
@@ -630,7 +630,7 @@ export function renderSubLienHe() {
             </div>
             <div>
               <strong>Email</strong>
-              <div class="sp-ch-val">support@ondata.vn</div>
+              <div class="sp-ch-val">nchieu@xinchen.vn</div>
               <small>Phản hồi trong 24 giờ</small>
             </div>
           </div>
@@ -641,8 +641,8 @@ export function renderSubLienHe() {
             </div>
             <div>
               <strong>Địa chỉ</strong>
-              <div class="sp-ch-val">Số 10 Nguyễn Văn Cừ,</div>
-              <small>Long Biên, Hà Nội</small>
+              <div class="sp-ch-val">167 Louis I, LK34, KĐT mới Hoàng Văn Thụ,</div>
+              <small>Hoàng Mai, Hà Nội</small>
             </div>
           </div>
         </div>
@@ -740,10 +740,10 @@ export function renderSupportPage(subRoute = null) {
   switch (subRoute) {
     case 'bao-hanh': return renderSubBaoHanh();
     case 'ky-thuat': return renderSubKyThuat();
-    case 'tra-cuu':  return renderSubTraCuu();
-    case 'lien-he':  return renderSubLienHe();
-    case 'bao-mat':  return renderSubBaoMat();
-    default:         return renderMainSupportHub();
+    case 'tra-cuu': return renderSubTraCuu();
+    case 'lien-he': return renderSubLienHe();
+    case 'bao-mat': return renderSubBaoMat();
+    default: return renderMainSupportHub();
   }
 }
 
@@ -788,9 +788,9 @@ export function initSupportPageInteractions(subRoute = null, showToast) {
   }
 
   // Subpage 3: Order tracking button
-  const trackBtn   = document.getElementById('btn-track-submit');
+  const trackBtn = document.getElementById('btn-track-submit');
   const trackInput = document.getElementById('track-input');
-  const trackResult= document.getElementById('track-result');
+  const trackResult = document.getElementById('track-result');
 
   if (trackBtn && trackInput && trackResult) {
     trackBtn.addEventListener('click', () => {

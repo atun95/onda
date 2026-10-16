@@ -48,14 +48,41 @@ export function renderNavbar(cartCount = 0) {
           </div>
         </div>
 
-        <!-- Subrow Menu: Trang chủ, Sản phẩm, Khuyến mãi, Tin tức, Liên hệ, Hỗ trợ -->
+        <!-- Subrow Menu: Trang chủ, Về Ondata, Sản phẩm, Khuyến mãi, Tin tức, Liên hệ, Hỗ trợ -->
         <nav class="nav-menu" id="nav-menu">
           <a href="/" class="nav-menu-link active" id="menu-home">Trang chủ</a>
+          <a href="/ve-ondata" class="nav-menu-link" id="menu-about">Về Ondata</a>
           <div class="nav-dropdown-wrap">
             <a href="/san-pham/all" class="nav-menu-link" id="menu-products">
               Sản phẩm
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
+            <div class="nav-dropdown-menu">
+              <a href="/san-pham/aio" class="nav-dropdown-item">
+                <span class="ndi-icon">🖥️</span>
+                <span>Máy tính All-in-one</span>
+              </a>
+              <a href="/san-pham/monitor" class="nav-dropdown-item">
+                <span class="ndi-icon">📺</span>
+                <span>Màn hình</span>
+              </a>
+              <a href="/san-pham/keyboard" class="nav-dropdown-item">
+                <span class="ndi-icon">⌨️</span>
+                <span>Bàn phím</span>
+              </a>
+              <a href="/san-pham/mouse" class="nav-dropdown-item">
+                <span class="ndi-icon">🖱️</span>
+                <span>Chuột</span>
+              </a>
+              <a href="/san-pham/ram" class="nav-dropdown-item">
+                <span class="ndi-icon">💾</span>
+                <span>RAM</span>
+              </a>
+              <a href="/san-pham/accessories" class="nav-dropdown-item">
+                <span class="ndi-icon">🔌</span>
+                <span>Phụ kiện</span>
+              </a>
+            </div>
           </div>
           <a href="#promo-banner" class="nav-menu-link" id="menu-promo">Khuyến mãi</a>
           <a href="/tin-tuc" class="nav-menu-link" id="menu-news">Tin tức</a>

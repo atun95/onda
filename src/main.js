@@ -10,6 +10,7 @@ import { renderProductDetail, initProductDetailInteractions } from './components
 import { renderNewsPage, initNewsPageInteractions } from './components/NewsPage.js';
 import { renderContactPage, initContactPageInteractions } from './components/ContactPage.js';
 import { renderSupportPage, initSupportPageInteractions } from './components/SupportPage.js';
+import { renderAboutPage, initAboutPageInteractions } from './components/AboutPage.js';
 import { getProductById, getProductsByCat, PRODUCTS, searchProducts } from './data/products.js';
 
 /* ── App State ──────────────────────────────────────────── */
@@ -18,15 +19,15 @@ let activeNewsFilter = 'all';
 
 // Map category id → display info used by catalog hero
 const CATEGORY_META = {
-  laptop:      { label: 'Máy tính xách tay', sub: 'Hiệu năng mạnh mẽ, đồng hành mọi hành trình' },
-  desktop:     { label: 'Máy tính để bàn',   sub: 'Sức mạnh không giới hạn cho mọi tác vụ' },
-  monitor:     { label: 'Màn hình',           sub: 'Hiển thị sắc nét, trải nghiệm đỉnh cao' },
-  ram:         { label: 'RAM',                sub: 'Tốc độ vượt trội, đa nhiệm mượt mà' },
-  keyboard:    { label: 'Bàn phím',           sub: 'Gõ phím chuyên nghiệp, cảm giác tuyệt vời' },
-  mouse:       { label: 'Chuột',              sub: 'Chính xác từng click, gaming & văn phòng' },
-  accessories: { label: 'Phụ kiện',           sub: 'Hoàn thiện setup của bạn' },
-  other:       { label: 'Thiết bị khác',      sub: 'Khám phá thêm các sản phẩm công nghệ' },
-  all:         { label: 'Sản phẩm',           sub: 'Tất cả sản phẩm chính hãng Ondata' },
+  aio:         { label: 'Máy tính All-in-one', sub: 'Thiết kế tinh gọn, hiệu năng vượt trội all-in-one' },
+  monitor:     { label: 'Màn hình',            sub: 'Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao' },
+  keyboard:    { label: 'Bàn phím',            sub: 'Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo' },
+  mouse:       { label: 'Chuột',               sub: 'Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay' },
+  ram:         { label: 'RAM',                 sub: 'Tốc độ vượt trội, đa nhiệm bền bỉ' },
+  accessories: { label: 'Phụ kiện',            sub: 'Hoàn thiện góc làm việc và trải nghiệm đỉnh cao' },
+  laptop:      { label: 'Máy tính All-in-one', sub: 'Thiết kế tinh gọn, hiệu năng vượt trội all-in-one' },
+  desktop:     { label: 'Máy tính All-in-one', sub: 'Thiết kế tinh gọn, hiệu năng vượt trội all-in-one' },
+  all:         { label: 'Sản phẩm',            sub: 'Tất cả sản phẩm chính hãng Ondata' },
 };
 
 /* ── Toast ──────────────────────────────────────────────── */
@@ -76,6 +77,10 @@ function getRoute() {
       }
     }
     return { page: 'catalog', cat: catOrId };
+  }
+
+  if (path.startsWith('/ve-ondata') || path.startsWith('/gioi-thieu')) {
+    return { page: 'about' };
   }
 
   if (path.startsWith('/tin-tuc')) {
@@ -210,13 +215,15 @@ function initSharedInteractions() {
 
     const getCatIcon = cat => {
       switch (cat) {
-        case 'laptop':  return '💻';
-        case 'monitor': return '📺';
-        case 'desktop': return '🖥️';
-        case 'ram':     return '💾';
-        case 'keyboard':return '⌨️';
-        case 'mouse':   return '🖱️';
-        default:        return '⚡';
+        case 'aio':         return '🖥️';
+        case 'monitor':     return '📺';
+        case 'keyboard':    return '⌨️';
+        case 'mouse':       return '🖱️';
+        case 'ram':         return '💾';
+        case 'accessories': return '🔌';
+        case 'laptop':      return '💻';
+        case 'desktop':     return '🖥️';
+        default:            return '⚡';
       }
     };
 
@@ -381,6 +388,15 @@ function initSharedInteractions() {
     });
   }
 
+  // Navbar: "Về Ondata" link
+  const menuAbout = document.getElementById('menu-about');
+  if (menuAbout) {
+    menuAbout.addEventListener('click', e => {
+      e.preventDefault();
+      navigate('/ve-ondata');
+    });
+  }
+
   // Navbar: "Sản phẩm" link
   const menuProducts = document.getElementById('menu-products');
   if (menuProducts) {
@@ -430,6 +446,7 @@ function renderApp() {
   const route = getRoute();
 
   const isHome    = route.page === 'home';
+  const isAbout   = route.page === 'about';
   const isCatalog = route.page === 'catalog';
   const isDetail  = route.page === 'detail';
   const isNews    = route.page === 'news';
@@ -443,9 +460,10 @@ function renderApp() {
   if (isDetail) product = getProductById(route.id);
 
   app.innerHTML = `
-    ${renderNavbar(cartCount, isCatalog || isDetail || isNews || isContact || isSupport)}
+    ${renderNavbar(cartCount, isAbout || isCatalog || isDetail || isNews || isContact || isSupport)}
     <main id="main-content">
       ${ isHome    ? renderHome()                      : '' }
+      ${ isAbout   ? renderAboutPage()                 : '' }
       ${ isCatalog ? renderCatalogPage(route.cat)      : '' }
       ${ isDetail  ? renderProductDetail(product)      : '' }
       ${ isNews    ? renderNewsPage(activeNewsFilter)  : '' }
@@ -462,6 +480,7 @@ function renderApp() {
   initSharedInteractions();
 
   if (isHome)    initHomeInteractions();
+  if (isAbout)   initAboutPageInteractions();
   if (isCatalog) initCatalogPageInteractions(route.cat);
   if (isDetail)  initDetailPageInteractions(product);
   if (isNews) {
@@ -478,6 +497,7 @@ function renderApp() {
   }
 
   document.getElementById('menu-home')?.classList.toggle('active', isHome);
+  document.getElementById('menu-about')?.classList.toggle('active', isAbout);
   document.getElementById('menu-products')?.classList.toggle('active', isCatalog || isDetail);
   document.getElementById('menu-news')?.classList.toggle('active', isNews);
   document.getElementById('menu-contact')?.classList.toggle('active', isContact);

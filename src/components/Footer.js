@@ -8,18 +8,25 @@ export function renderFooter() {
             <a href="/" class="footer-brand-logo">
               <img src="/logo tach nen.png" alt="ONDATA" class="footer-logo-img" style="height: 34px; width: auto; filter: brightness(0) invert(1);" />
             </a>
+            <p style="color: #9aa89b; font-size: 0.88rem; margin-top: 12px; line-height: 1.6;">
+              Thương hiệu công nghệ tiên phong cung cấp giải pháp máy tính All-in-one, màn hình và linh kiện phần cứng chính hãng tại Việt Nam.
+            </p>
+            <div style="margin-top: 12px;">
+              <a href="/ve-ondata" style="color: #a8bb68; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 4px;">
+                Về Ondata Vietnam →
+              </a>
+            </div>
           </div>
 
           <!-- Col 2: Sản phẩm -->
           <div class="footer-col-nav">
             <h4 class="footer-col-heading">Sản phẩm</h4>
             <ul class="footer-link-list">
-              <li><a href="/san-pham/laptop">Máy tính xách tay</a></li>
-              <li><a href="/san-pham/desktop">Máy tính để bàn</a></li>
+              <li><a href="/san-pham/aio">Máy tính All-in-one</a></li>
               <li><a href="/san-pham/monitor">Màn hình</a></li>
-              <li><a href="/san-pham/ram">RAM</a></li>
               <li><a href="/san-pham/keyboard">Bàn phím</a></li>
               <li><a href="/san-pham/mouse">Chuột</a></li>
+              <li><a href="/san-pham/ram">RAM</a></li>
               <li><a href="/san-pham/accessories">Phụ kiện</a></li>
             </ul>
           </div>
