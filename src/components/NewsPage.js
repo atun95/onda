@@ -229,7 +229,7 @@ export function renderNewsPage(activeFilter = 'all') {
 
         <!-- 1. BREADCRUMB -->
         <nav class="catalog-breadcrumb news-breadcrumb" aria-label="Breadcrumb">
-          <a href="#/" class="crumb-link" id="news-crumb-home">Trang chủ</a>
+          <a href="/" class="crumb-link" id="news-crumb-home">Trang chủ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Tin tức & Kiến thức</span>
         </nav>

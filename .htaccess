@@ -1,12 +1,17 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Chuyển hướng truy cập trang chủ vào thư mục dist/
-  RewriteRule ^$ dist/ [L]
+  # 1. Chuyển tiếp file tĩnh trong thư mục assets
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
 
-  # Chuyển tiếp các file tĩnh và đường dẫn chưa tồn tại vào dist/
+  # 2. Chuyển tiếp các file ảnh, favicon ở root vào dist/
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteRule ^(logo.*|favicon.*|office.*)$ dist/$1 [L]
+
+  # 3. SPA Fallback: Mọi request trang chủ và các route (/san-pham, /lien-he, /tin-tuc, /ho-tro,...)
   RewriteCond %{REQUEST_URI} !^/dist/
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ dist/$1 [L]
+  RewriteRule ^(.*)$ dist/index.html [L]
 </IfModule>

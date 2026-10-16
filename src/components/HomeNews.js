@@ -4,7 +4,7 @@ export function renderHomeNews() {
       <div class="container">
         <div class="section-top-bar">
           <h2 class="section-heading">Tin tức & Kiến thức</h2>
-          <a href="#/tin-tuc" class="see-all-link">
+          <a href="/tin-tuc" class="see-all-link">
             Xem tất cả
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
           </a>

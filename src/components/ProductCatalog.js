@@ -65,9 +65,9 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
 
         <!-- BREADCRUMB -->
         <nav class="catalog-breadcrumb" aria-label="Breadcrumb">
-          <a href="#" class="crumb-link" id="crumb-home">Trang chủ</a>
+          <a href="/" class="crumb-link" id="crumb-home">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#" class="crumb-link" id="crumb-products">Sản phẩm</a>
+          <a href="/san-pham/all" class="crumb-link" id="crumb-products">Sản phẩm</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">${meta.label}</span>
         </nav>
@@ -87,7 +87,7 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
             <ul class="catsidebar-menu">
               ${categories.map(cat => `
                 <li class="catsidebar-item">
-                  <a href="#" class="catsidebar-link${cat.id === activeCat ? ' catsidebar-link--active' : ''}" id="cat-${cat.id}" data-cat="${cat.id}">
+                  <a href="/san-pham/${cat.id}" class="catsidebar-link${cat.id === activeCat ? ' catsidebar-link--active' : ''}" id="cat-${cat.id}" data-cat="${cat.id}">
                     <span class="catsidebar-icon">${cat.icon}</span>
                     <span>${cat.label}</span>
                   </a>

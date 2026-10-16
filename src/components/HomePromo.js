@@ -6,7 +6,7 @@ export function renderHomePromo() {
           <div class="promo-left-content">
             <span class="promo-badge-text">Chính sách B2B & Dự án</span>
             <h2 class="promo-headline">Chiết khấu đến 20%</h2>
-            <a href="#/lien-he" class="btn-promo-action">
+            <a href="/lien-he" class="btn-promo-action">
               Liên hệ ngay
             </a>
           </div>

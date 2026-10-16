@@ -246,7 +246,7 @@ export function renderMainSupportHub() {
 
         <!-- 1. BREADCRUMB -->
         <nav class="catalog-breadcrumb sp-breadcrumb" aria-label="Breadcrumb">
-          <a href="#/" class="crumb-link" id="sp-crumb-home">Trang chủ</a>
+          <a href="/" class="crumb-link" id="sp-crumb-home">Trang chủ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Hỗ trợ</span>
         </nav>
@@ -283,9 +283,9 @@ export function renderSubBaoHanh() {
       <div class="sp-detail-container">
         <!-- Breadcrumb -->
         <nav class="catalog-breadcrumb sp-breadcrumb">
-          <a href="#/">Trang chủ</a>
+          <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#/ho-tro">Hỗ trợ</a>
+          <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Chính sách bảo hành & đổi trả</span>
         </nav>
@@ -386,7 +386,7 @@ export function renderSubBaoHanh() {
         </div>
 
         <div class="sp-back-wrap">
-          <a href="#/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
+          <a href="/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
         </div>
       </div>
     </section>
@@ -424,9 +424,9 @@ export function renderSubKyThuat() {
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
-          <a href="#/">Trang chủ</a>
+          <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#/ho-tro">Hỗ trợ</a>
+          <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Hỗ trợ kỹ thuật</span>
         </nav>
@@ -468,7 +468,7 @@ export function renderSubKyThuat() {
         </div>
 
         <div class="sp-back-wrap">
-          <a href="#/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
+          <a href="/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
         </div>
       </div>
     </section>
@@ -483,9 +483,9 @@ export function renderSubTraCuu() {
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
-          <a href="#/">Trang chủ</a>
+          <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#/ho-tro">Hỗ trợ</a>
+          <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Tra cứu đơn hàng</span>
         </nav>
@@ -569,7 +569,7 @@ export function renderSubTraCuu() {
         </div>
 
         <div class="sp-back-wrap">
-          <a href="#/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
+          <a href="/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
         </div>
       </div>
     </section>
@@ -584,9 +584,9 @@ export function renderSubLienHe() {
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
-          <a href="#/">Trang chủ</a>
+          <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#/ho-tro">Hỗ trợ</a>
+          <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Liên hệ hỗ trợ</span>
         </nav>
@@ -661,7 +661,7 @@ export function renderSubLienHe() {
         </div>
 
         <div class="sp-back-wrap">
-          <a href="#/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
+          <a href="/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
         </div>
       </div>
     </section>
@@ -676,9 +676,9 @@ export function renderSubBaoMat() {
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
-          <a href="#/">Trang chủ</a>
+          <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
-          <a href="#/ho-tro">Hỗ trợ</a>
+          <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
           <span class="crumb-current">Chính sách bảo mật</span>
         </nav>
@@ -726,7 +726,7 @@ export function renderSubBaoMat() {
         </div>
 
         <div class="sp-back-wrap">
-          <a href="#/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
+          <a href="/ho-tro" class="sp-btn-back">← Quay lại danh mục hỗ trợ</a>
         </div>
       </div>
     </section>
@@ -754,14 +754,14 @@ export function initSupportPageInteractions(subRoute = null, showToast) {
   // Breadcrumb home link
   document.getElementById('sp-crumb-home')?.addEventListener('click', e => {
     e.preventDefault();
-    window.location.hash = '#/';
+    window.navigate ? window.navigate('/') : window.location.assign('/');
   });
 
   // Main hub cards click -> navigate to subroute
   document.querySelectorAll('.sp-card[data-sub]').forEach(card => {
     card.addEventListener('click', () => {
       const sub = card.dataset.sub;
-      if (sub) window.location.hash = `#/ho-tro/${sub}`;
+      if (sub) window.navigate ? window.navigate(`/ho-tro/${sub}`) : window.location.assign(`/ho-tro/${sub}`);
     });
   });
 

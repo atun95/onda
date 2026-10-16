@@ -5,7 +5,7 @@ export function renderFooter() {
         <div class="footer-main-grid">
           <!-- Col 1: Brand -->
           <div class="footer-col-brand">
-            <a href="#" class="footer-brand-logo">
+            <a href="/" class="footer-brand-logo">
               <img src="/logo tach nen.png" alt="ONDATA" class="footer-logo-img" style="height: 34px; width: auto; filter: brightness(0) invert(1);" />
             </a>
           </div>
@@ -14,13 +14,13 @@ export function renderFooter() {
           <div class="footer-col-nav">
             <h4 class="footer-col-heading">Sản phẩm</h4>
             <ul class="footer-link-list">
-              <li><a href="#products">Máy tính xách tay</a></li>
-              <li><a href="#products">Máy tính để bàn</a></li>
-              <li><a href="#products">Màn hình</a></li>
-              <li><a href="#products">RAM</a></li>
-              <li><a href="#products">Bàn phím</a></li>
-              <li><a href="#products">Chuột</a></li>
-              <li><a href="#products">Phụ kiện</a></li>
+              <li><a href="/san-pham/laptop">Máy tính xách tay</a></li>
+              <li><a href="/san-pham/desktop">Máy tính để bàn</a></li>
+              <li><a href="/san-pham/monitor">Màn hình</a></li>
+              <li><a href="/san-pham/ram">RAM</a></li>
+              <li><a href="/san-pham/keyboard">Bàn phím</a></li>
+              <li><a href="/san-pham/mouse">Chuột</a></li>
+              <li><a href="/san-pham/accessories">Phụ kiện</a></li>
             </ul>
           </div>
 
@@ -28,11 +28,11 @@ export function renderFooter() {
           <div class="footer-col-nav">
             <h4 class="footer-col-heading">Hỗ trợ khách hàng</h4>
             <ul class="footer-link-list">
-              <li><a href="#support">Chính sách bảo hành</a></li>
-              <li><a href="#support">Đổi trả - Hoàn tiền</a></li>
-              <li><a href="#support">Hướng dẫn mua hàng</a></li>
-              <li><a href="#support">Hỗ trợ kỹ thuật</a></li>
-              <li><a href="#support">FAQ</a></li>
+              <li><a href="/ho-tro/warranty">Chính sách bảo hành</a></li>
+              <li><a href="/ho-tro/returns">Đổi trả - Hoàn tiền</a></li>
+              <li><a href="/ho-tro/guide">Hướng dẫn mua hàng</a></li>
+              <li><a href="/ho-tro/tech">Hỗ trợ kỹ thuật</a></li>
+              <li><a href="/ho-tro/faq">FAQ</a></li>
             </ul>
           </div>
 

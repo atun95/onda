@@ -4,7 +4,7 @@ export function renderNavbar(cartCount = 0) {
       <div class="nav-container">
         <!-- Top Row: Logo, Search Bar, Icons -->
         <div class="nav-top">
-          <a href="#" class="nav-logo" id="nav-logo">
+          <a href="/" class="nav-logo" id="nav-logo">
             <img src="/logo tach nen.png" alt="ONDATA" class="logo-img" onerror="this.onerror=null; this.src='/logo.png';" />
           </a>
 
@@ -36,7 +36,7 @@ export function renderNavbar(cartCount = 0) {
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
               </svg>
             </a>
-            <a href="#/lien-he" class="nav-quote-pill" id="btn-nav-quote" title="Liên hệ báo giá">
+            <a href="/lien-he" class="nav-quote-pill" id="btn-nav-quote" title="Liên hệ báo giá">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
@@ -50,17 +50,17 @@ export function renderNavbar(cartCount = 0) {
 
         <!-- Subrow Menu: Trang chủ, Sản phẩm, Khuyến mãi, Tin tức, Liên hệ, Hỗ trợ -->
         <nav class="nav-menu" id="nav-menu">
-          <a href="#" class="nav-menu-link active" id="menu-home">Trang chủ</a>
+          <a href="/" class="nav-menu-link active" id="menu-home">Trang chủ</a>
           <div class="nav-dropdown-wrap">
-            <a href="#featured-products" class="nav-menu-link" id="menu-products">
+            <a href="/san-pham/all" class="nav-menu-link" id="menu-products">
               Sản phẩm
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
           </div>
           <a href="#promo-banner" class="nav-menu-link" id="menu-promo">Khuyến mãi</a>
-          <a href="#/tin-tuc" class="nav-menu-link" id="menu-news">Tin tức</a>
-          <a href="#/lien-he" class="nav-menu-link" id="menu-contact">Liên hệ</a>
-          <a href="#/ho-tro" class="nav-menu-link" id="menu-support">Hỗ trợ</a>
+          <a href="/tin-tuc" class="nav-menu-link" id="menu-news">Tin tức</a>
+          <a href="/lien-he" class="nav-menu-link" id="menu-contact">Liên hệ</a>
+          <a href="/ho-tro" class="nav-menu-link" id="menu-support">Hỗ trợ</a>
         </nav>
       </div>
     </header>
