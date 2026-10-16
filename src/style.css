@@ -4858,7 +4858,8 @@ body {
   background: rgba(138, 155, 78, 0.25) !important;
 }
 
-.pd-tabs-bar {
+.pd-tabs-bar,
+.pd-tabs-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -4875,14 +4876,77 @@ body {
   border-bottom-color: #8a9b4e !important;
 }
 
+.pd-tab-btn--active::after {
+  background: #8a9b4e !important;
+}
+
 .pd-tab-card {
   background: #14181c !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  color: #e8eae4 !important;
+  color: #c5d0c7 !important;
 }
 
 .pd-tab-card h2, .pd-tab-card h3, .pd-tab-card h4 {
   color: #ffffff !important;
+}
+
+.pd-lead-desc {
+  color: #c5d0c7 !important;
+}
+
+.pd-feature-item {
+  color: #e8eae4 !important;
+}
+
+.pd-check-icon {
+  background: rgba(138, 155, 78, 0.18) !important;
+}
+
+.pd-check-icon svg path {
+  stroke: #a8bb68 !important;
+}
+
+/* Khối Đặc điểm nổi bật */
+.pd-editorial-block {
+  background: #0e1012 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-left: 4px solid #8a9b4e !important;
+  border-radius: var(--radius-sm);
+  padding: 22px 26px !important;
+}
+
+.pd-editorial-title {
+  color: #a8bb68 !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+.pd-editorial-block p {
+  color: #c5d0c7 !important;
+  line-height: 1.7 !important;
+}
+
+/* Tab Thông số kỹ thuật */
+.pd-tech-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+.pd-ts-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.pd-ts-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.pd-ts-key {
+  color: #9aa89b !important;
+}
+
+.pd-ts-val {
+  color: #e8eae4 !important;
 }
 
 .pd-specs-table td {
@@ -4896,6 +4960,49 @@ body {
 
 .pd-specs-table tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Tab Đánh giá */
+.pd-reviews-summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.pd-big-score {
+  color: #ffffff !important;
+}
+
+.pd-score-sub {
+  color: #9aa89b !important;
+}
+
+.pd-bar-row {
+  color: #9aa89b !important;
+}
+
+.pd-bar-track {
+  background: #0e1012 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.pd-bar-fill {
+  background: #8a9b4e !important;
+}
+
+.pd-review-card {
+  background: #0e1012 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.pd-user-name {
+  color: #ffffff !important;
+}
+
+.pd-date {
+  color: #9aa89b !important;
+}
+
+.pd-review-comment {
+  color: #c5d0c7 !important;
 }
 
 /* ── 5. Trang Tin Tức (News Page) ───────────────────────── */
