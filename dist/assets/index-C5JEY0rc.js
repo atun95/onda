@@ -1569,61 +1569,68 @@
 
         <!-- 4. CONTACT FORM SECTION -->
         <div class="contact-form-section">
-          <h2 class="contact-form-title">Gửi tin nhắn cho chúng tôi</h2>
+          <div class="contact-form-header">
+            <h2 class="contact-form-title">Gửi tin nhắn cho chúng tôi</h2>
+            <p class="contact-form-subtitle">Điền thông tin bên dưới, chuyên viên Ondata sẽ liên hệ tư vấn và phản hồi nhanh chóng trong vòng 24 giờ.</p>
+          </div>
 
           <form class="contact-form" id="contact-form">
             <!-- Row 1: Họ tên + SĐT -->
             <div class="contact-form-row">
               <div class="contact-field-group">
-                <label for="contact-name" class="contact-field-label">Họ và tên *</label>
+                <label for="contact-name" class="contact-field-label">Họ và tên <span class="req">*</span></label>
                 <input 
                   type="text" 
                   id="contact-name" 
                   class="contact-input" 
                   required 
-                  placeholder="Nhập họ và tên..."
+                  placeholder="Ví dụ: Nguyễn Văn A"
                 />
               </div>
 
               <div class="contact-field-group">
-                <label for="contact-phone" class="contact-field-label">Số điện thoại *</label>
+                <label for="contact-phone" class="contact-field-label">Số điện thoại <span class="req">*</span></label>
                 <input 
                   type="tel" 
                   id="contact-phone" 
                   class="contact-input" 
                   required 
-                  placeholder="Nhập số điện thoại..."
+                  placeholder="Ví dụ: 0987 654 321"
                 />
               </div>
             </div>
 
             <!-- Row 2: Email -->
             <div class="contact-field-group">
-              <label for="contact-email" class="contact-field-label">Email *</label>
+              <label for="contact-email" class="contact-field-label">Email <span class="req">*</span></label>
               <input 
                 type="email" 
                 id="contact-email" 
                 class="contact-input" 
                 required 
-                placeholder="Nhập địa chỉ email..."
+                placeholder="Ví dụ: hotro@domain.com"
               />
             </div>
 
             <!-- Row 3: Nội dung -->
             <div class="contact-field-group">
-              <label for="contact-message" class="contact-field-label">Nội dung *</label>
+              <label for="contact-message" class="contact-field-label">Nội dung liên hệ <span class="req">*</span></label>
               <textarea 
                 id="contact-message" 
                 class="contact-textarea" 
                 rows="4" 
                 required 
-                placeholder="Nhập nội dung..."
+                placeholder="Nhập thông tin sản phẩm cần tư vấn, báo giá hoặc yêu cầu hỗ trợ..."
               ></textarea>
             </div>
 
             <!-- Row 4: Submit Button -->
             <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
-              Gửi liên hệ
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              <span>Gửi liên hệ ngay</span>
             </button>
           </form>
         </div>

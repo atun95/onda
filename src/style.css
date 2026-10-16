@@ -5160,52 +5160,153 @@ body {
   color: #a8bb68 !important;
 }
 
+/* ── Form gửi tin nhắn liên hệ ────────────────────────── */
 .contact-form-section {
   background: #14181c !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  padding: 38px 42px !important;
+  margin-bottom: 36px !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35) !important;
+}
+
+.contact-form-header {
+  margin-bottom: 26px !important;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
 }
 
 .contact-form-title {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 1.65rem !important;
+  font-weight: 700 !important;
   color: #ffffff !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 0 6px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
 }
 
-.contact-form-desc {
+.contact-form-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  background: #8a9b4e;
+  border-radius: 3px;
+}
+
+.contact-form-subtitle {
+  font-size: 0.92rem !important;
   color: #9aa89b !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
 }
 
-.contact-form-card {
-  background: #14181c !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+.contact-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
 }
 
-.contact-form-group label {
+.contact-form-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+}
+
+.contact-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.contact-field-label {
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
   color: #c5d0c7 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
 }
 
-.contact-form-group input,
-.contact-form-group textarea,
-.contact-form-group select {
-  background: #101418 !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+.contact-field-label .req {
+  color: #8a9b4e !important;
+  font-weight: 700 !important;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100% !important;
+  background: #0e1012 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  padding: 13px 18px !important;
+  font-size: 0.95rem !important;
   color: #ffffff !important;
+  font-family: inherit !important;
+  outline: none !important;
+  transition: all 0.2s ease !important;
+  box-sizing: border-box !important;
 }
 
-.contact-form-group input:focus,
-.contact-form-group textarea:focus,
-.contact-form-group select:focus {
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+  font-size: 0.92rem !important;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
   border-color: #8a9b4e !important;
-  box-shadow: 0 0 0 3px rgba(138, 155, 78, 0.25) !important;
-  outline: none !important;
+  background: #111519 !important;
+  box-shadow: 0 0 0 3px rgba(138, 155, 78, 0.22) !important;
+}
+
+.contact-textarea {
+  resize: vertical !important;
+  min-height: 120px !important;
+  line-height: 1.6 !important;
 }
 
 .contact-submit-btn {
+  width: 100% !important;
+  height: 50px !important;
   background: #8a9b4e !important;
   color: #0e1012 !important;
+  font-size: 1.02rem !important;
   font-weight: 700 !important;
+  font-family: 'Outfit', sans-serif !important;
+  border: none !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 16px rgba(138, 155, 78, 0.25) !important;
+  margin-top: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
 }
 
 .contact-submit-btn:hover {
   background: #9bb056 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(138, 155, 78, 0.4) !important;
+}
+
+@media (max-width: 640px) {
+  .contact-form-section {
+    padding: 24px 18px !important;
+  }
+  .contact-form-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .contact-form-title {
+    font-size: 1.35rem !important;
+  }
 }
 
 .contact-partner-card {
