@@ -1,17 +1,22 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # 1. Chuyển tiếp file tĩnh trong thư mục assets
-  RewriteCond %{REQUEST_URI} !^/dist/
+  # 1. Luôn chuyển hướng trang chủ "/" và "index.html" vào dist/index.html
+  RewriteRule ^$ dist/index.html [L]
+  RewriteRule ^index\.html$ dist/index.html [L]
+
+  # 2. Chuyển tiếp các file tĩnh trong assets/
   RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
 
-  # 2. Chuyển tiếp các file ảnh, favicon ở root vào dist/
-  RewriteCond %{REQUEST_URI} !^/dist/
+  # 3. Chuyển tiếp logo, favicon, hình ảnh vào dist/
   RewriteRule ^(logo.*|favicon.*|office.*)$ dist/$1 [L]
 
-  # 3. SPA Fallback: Mọi request trang chủ và các route (/san-pham, /lien-he, /tin-tuc, /ho-tro,...)
-  RewriteCond %{REQUEST_URI} !^/dist/
+  # 4. Bỏ qua nếu request đã nằm trong dist/
+  RewriteCond %{REQUEST_URI} ^/dist/
+  RewriteRule ^ - [L]
+
+  # 5. SPA Fallback: Mọi URL (/san-pham, /lien-he, /tin-tuc, /ho-tro,...)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ dist/index.html [L]
+  RewriteRule ^.*$ dist/index.html [L]
 </IfModule>
