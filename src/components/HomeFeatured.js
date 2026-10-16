@@ -144,13 +144,7 @@ export function renderHomeFeatured() {
   return `
     <section class="home-featured-section" id="featured-products">
       <div class="container">
-        <!-- Main Section Title -->
-        <div class="featured-main-header">
-          <div class="fmh-left">
-            <span class="fmh-badge">HỆ THỐNG SẢN PHẨM ONDATA</span>
-            <h2 class="fmh-title">Danh Mục Thiết Bị Chính Hãng</h2>
-          </div>
-        </div>
+
 
         <!-- 6 Rows Danh Mục (Mỗi mục 1 hàng 5 sản phẩm) -->
         <div class="featured-categories-rows">
