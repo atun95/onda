@@ -184,42 +184,36 @@ export function renderAboutPage() {
 
           <div class="ecosystem-grid">
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/aio')" style="cursor:pointer;">
-              <div class="eco-icon">🖥️</div>
               <h3>Máy tính All-in-one</h3>
               <p>Thiết kế nguyên khối sang trọng, tích hợp CPU, loa, webcam và WiFi mượt mà trong thân máy siêu mỏng.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/monitor')" style="cursor:pointer;">
-              <div class="eco-icon">📺</div>
               <h3>Màn hình Ondata</h3>
               <p>Độ phân giải 2K/4K, màn hình cong 1500R/1000R, tần số quét 100Hz – 240Hz chuẩn màu đồ họa và gaming.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/keyboard')" style="cursor:pointer;">
-              <div class="eco-icon">⌨️</div>
               <h3>Bàn phím cơ & Văn phòng</h3>
               <p>Switch bền bỉ 100 triệu lần nhấn, cấu trúc Gasket Mount êm ái, công nghệ từ tính Rapid Trigger thi đấu.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/mouse')" style="cursor:pointer;">
-              <div class="eco-icon">🖱️</div>
               <h3>Chuột quang & Không dây</h3>
               <p>Cảm biến PixArt chuẩn xác, thiết kế công thái học đứng chống mỏi cổ tay và nút bấm Silent giảm tiếng ồn.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/ram')" style="cursor:pointer;">
-              <div class="eco-icon">💾</div>
               <h3>RAM Bộ nhớ cao cấp</h3>
               <p>Chuẩn DDR4/DDR5 tốc độ cao, tản nhiệt nhôm mát lạnh, bảo hành trọn đời an tâm tuyệt đối.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/accessories')" style="cursor:pointer;">
-              <div class="eco-icon">🔌</div>
               <h3>Phụ kiện công nghệ</h3>
               <p>Giá treo màn hình trợ lực khí nén, Hub chuyển đổi 8-in-1 Type-C, pad chuột XXL và giá đỡ laptop nhôm.</p>
               <span class="eco-link">Xem danh mục →</span>

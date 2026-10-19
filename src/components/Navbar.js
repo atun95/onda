@@ -59,27 +59,27 @@ export function renderNavbar(cartCount = 0) {
             </a>
             <div class="nav-dropdown-menu">
               <a href="/san-pham/aio" class="nav-dropdown-item">
-                <span class="ndi-icon">🖥️</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg></span>
                 <span>Máy tính All-in-one</span>
               </a>
               <a href="/san-pham/monitor" class="nav-dropdown-item">
-                <span class="ndi-icon">📺</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg></span>
                 <span>Màn hình</span>
               </a>
               <a href="/san-pham/keyboard" class="nav-dropdown-item">
-                <span class="ndi-icon">⌨️</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg></span>
                 <span>Bàn phím</span>
               </a>
               <a href="/san-pham/mouse" class="nav-dropdown-item">
-                <span class="ndi-icon">🖱️</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg></span>
                 <span>Chuột</span>
               </a>
               <a href="/san-pham/ram" class="nav-dropdown-item">
-                <span class="ndi-icon">💾</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg></span>
                 <span>RAM</span>
               </a>
               <a href="/san-pham/accessories" class="nav-dropdown-item">
-                <span class="ndi-icon">🔌</span>
+                <span class="ndi-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
                 <span>Phụ kiện</span>
               </a>
             </div>
