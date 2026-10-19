@@ -73,7 +73,7 @@ export function renderChatBox() {
             </button>
           </form>
           <div class="chatbox-footer-note">
-            Hotline: <a href="tel:0867036698">0867036698</a> • <a href="https://m.me/" target="_blank" rel="noopener">Chat Messenger</a>
+            Hotline: <a href="tel:0867036698">0867036698</a> • <a href="https://m.me/61593699315764" target="_blank" rel="noopener noreferrer">Chat Messenger</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@ export function renderChatBox() {
         </a>
 
         <!-- Nút 2: Messenger -->
-        <a href="https://m.me/" target="_blank" rel="noopener" class="f-btn f-btn--messenger" title="Chat qua Messenger" aria-label="Facebook Messenger">
+        <a href="https://m.me/61593699315764" target="_blank" rel="noopener noreferrer" class="f-btn f-btn--messenger" title="Chat qua Messenger" aria-label="Facebook Messenger">
           <span class="f-btn-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.455 5.518 3.736 7.185v3.557a.75.75 0 0 0 1.134.643l3.24-1.892c.607.137 1.238.21 1.89.21 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.066 12.44-2.584-2.756-5.044 2.756 5.544-5.885 2.65 2.756 4.978-2.756-5.544 5.885z"/>

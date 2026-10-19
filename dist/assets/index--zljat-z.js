@@ -506,7 +506,7 @@
               <a href="https://www.facebook.com/share/1DyrmpdgvU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Facebook">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
-              <a href="#" class="social-circle-btn" aria-label="Zalo / Messenger">
+              <a href="https://m.me/61593699315764" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Zalo / Messenger">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
               </a>
               <a href="#" class="social-circle-btn" aria-label="Instagram">
@@ -2573,7 +2573,7 @@
             </button>
           </form>
           <div class="chatbox-footer-note">
-            Hotline: <a href="tel:0867036698">0867036698</a> • <a href="https://m.me/" target="_blank" rel="noopener">Chat Messenger</a>
+            Hotline: <a href="tel:0867036698">0867036698</a> • <a href="https://m.me/61593699315764" target="_blank" rel="noopener noreferrer">Chat Messenger</a>
           </div>
         </div>
       </div>
@@ -2592,7 +2592,7 @@
         </a>
 
         <!-- Nút 2: Messenger -->
-        <a href="https://m.me/" target="_blank" rel="noopener" class="f-btn f-btn--messenger" title="Chat qua Messenger" aria-label="Facebook Messenger">
+        <a href="https://m.me/61593699315764" target="_blank" rel="noopener noreferrer" class="f-btn f-btn--messenger" title="Chat qua Messenger" aria-label="Facebook Messenger">
           <span class="f-btn-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.455 5.518 3.736 7.185v3.557a.75.75 0 0 0 1.134.643l3.24-1.892c.607.137 1.238.21 1.89.21 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.066 12.44-2.584-2.756-5.044 2.756 5.544-5.885 2.65 2.756 4.978-2.756-5.544 5.885z"/>
