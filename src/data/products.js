@@ -23,7 +23,7 @@ export const PRODUCTS = [
   {
     id: 'aio-one-24',
     cat: 'aio',
-    name: 'Máy tính All-in-one Ondata One 24"',
+    name: 'Máy tính All-in-one Ondata',
     badge: 'Bán chạy',
     price: 13990000,
     oldPrice: 15490000,
@@ -61,7 +61,7 @@ export const PRODUCTS = [
   {
     id: 'aio-pro-27',
     cat: 'aio',
-    name: 'Máy tính All-in-one Ondata Pro 27" 2K',
+    name: 'Máy tính All-in-one Ondata',
     badge: 'Cao cấp',
     price: 21990000,
     oldPrice: 24500000,
@@ -97,7 +97,7 @@ export const PRODUCTS = [
   {
     id: 'aio-touch-24',
     cat: 'aio',
-    name: 'Máy tính All-in-one Cảm ứng Ondata Touch 24"',
+    name: 'Máy tính All-in-one Ondata',
     badge: 'Mới',
     price: 16500000,
     oldPrice: 18200000,
@@ -131,7 +131,7 @@ export const PRODUCTS = [
   {
     id: 'aio-slim-22',
     cat: 'aio',
-    name: 'Máy tính All-in-one Ondata Slim 22"',
+    name: 'Máy tính All-in-one Ondata',
     badge: 'Tiết kiệm',
     price: 9990000,
     oldPrice: 11200000,
@@ -165,7 +165,7 @@ export const PRODUCTS = [
   {
     id: 'aio-creator-32',
     cat: 'aio',
-    name: 'Máy tính All-in-one Ondata Creator 32" 4K',
+    name: 'Máy tính All-in-one Ondata',
     badge: 'Đồ họa',
     price: 36900000,
     oldPrice: 39900000,
@@ -202,7 +202,7 @@ export const PRODUCTS = [
   {
     id: 'monitor-27-curved',
     cat: 'monitor',
-    name: 'Màn hình cong Ondata 27" 165Hz Curved',
+    name: 'Màn hình Ondata',
     badge: 'Bán chạy',
     price: 5490000,
     oldPrice: 6200000,
@@ -238,7 +238,7 @@ export const PRODUCTS = [
   {
     id: 'monitor-24-ips',
     cat: 'monitor',
-    name: 'Màn hình Ondata Office Pro 24" IPS 100Hz',
+    name: 'Màn hình Ondata',
     badge: 'Văn phòng',
     price: 2790000,
     oldPrice: 3190000,
@@ -272,7 +272,7 @@ export const PRODUCTS = [
   {
     id: 'monitor-27-4k',
     cat: 'monitor',
-    name: 'Màn hình Ondata ProArt 27" 4K UHD Type-C',
+    name: 'Màn hình Ondata',
     badge: 'Chuyên gia',
     price: 8490000,
     oldPrice: 9500000,
@@ -305,7 +305,7 @@ export const PRODUCTS = [
   {
     id: 'monitor-gaming-25',
     cat: 'monitor',
-    name: 'Màn hình Gaming Ondata Fast IPS 24.5" 240Hz',
+    name: 'Màn hình Ondata',
     badge: 'Esports',
     price: 4990000,
     oldPrice: 5600000,
@@ -339,7 +339,7 @@ export const PRODUCTS = [
   {
     id: 'monitor-ultrawide-34',
     cat: 'monitor',
-    name: 'Màn hình cong Ondata Ultrawide 34" WQHD 165Hz',
+    name: 'Màn hình Ondata',
     badge: 'Mới',
     price: 9990000,
     oldPrice: 11500000,
@@ -374,7 +374,7 @@ export const PRODUCTS = [
   {
     id: 'keyboard-k108-rgb',
     cat: 'keyboard',
-    name: 'Bàn phím cơ Ondata Mechanical K108 RGB',
+    name: 'Bàn phím Ondata',
     badge: 'Bán chạy',
     price: 1190000,
     oldPrice: 1390000,
@@ -408,7 +408,7 @@ export const PRODUCTS = [
   {
     id: 'keyboard-k87-wireless',
     cat: 'keyboard',
-    name: 'Bàn phím cơ không dây Ondata K87 Tri-Mode',
+    name: 'Bàn phím Ondata',
     badge: 'Mới',
     price: 1490000,
     oldPrice: 1750000,
@@ -441,7 +441,7 @@ export const PRODUCTS = [
   {
     id: 'keyboard-k68-compact',
     cat: 'keyboard',
-    name: 'Bàn phím cơ Ondata K68 Mini RGB',
+    name: 'Bàn phím Ondata',
     badge: 'Nhỏ gọn',
     price: 890000,
     oldPrice: 1050000,
@@ -474,7 +474,7 @@ export const PRODUCTS = [
   {
     id: 'keyboard-office-silent',
     cat: 'keyboard',
-    name: 'Bàn phím văn phòng siêu êm Ondata Slim KB200',
+    name: 'Bàn phím Ondata',
     badge: 'Siêu êm',
     price: 490000,
     oldPrice: 590000,
@@ -506,7 +506,7 @@ export const PRODUCTS = [
   {
     id: 'keyboard-he-magnetic',
     cat: 'keyboard',
-    name: 'Bàn phím từ tính Ondata Hall Effect Rapid Trigger',
+    name: 'Bàn phím Ondata',
     badge: 'Esports',
     price: 2390000,
     oldPrice: 2790000,
@@ -540,7 +540,7 @@ export const PRODUCTS = [
   {
     id: 'mouse-m100-wireless',
     cat: 'mouse',
-    name: 'Chuột không dây Ondata Silent M100 Dual-Mode',
+    name: 'Chuột Ondata',
     badge: 'Bán chạy',
     price: 290000,
     oldPrice: 350000,
@@ -574,7 +574,7 @@ export const PRODUCTS = [
   {
     id: 'mouse-m600-gaming',
     cat: 'mouse',
-    name: 'Chuột Gaming Ondata M600 RGB 26000 DPI',
+    name: 'Chuột Ondata',
     badge: 'Gaming',
     price: 890000,
     oldPrice: 1090000,
@@ -607,7 +607,7 @@ export const PRODUCTS = [
   {
     id: 'mouse-m350-ergo',
     cat: 'mouse',
-    name: 'Chuột công thái học đứng Ondata Vertical M350',
+    name: 'Chuột Ondata',
     badge: 'Công thái học',
     price: 590000,
     oldPrice: 690000,
@@ -639,7 +639,7 @@ export const PRODUCTS = [
   {
     id: 'mouse-m800-ultralight',
     cat: 'mouse',
-    name: 'Chuột siêu nhẹ Ondata Ultralight Pro M800',
+    name: 'Chuột Ondata',
     badge: 'Mới',
     price: 1290000,
     oldPrice: 1490000,
@@ -671,7 +671,7 @@ export const PRODUCTS = [
   {
     id: 'mouse-m220-office',
     cat: 'mouse',
-    name: 'Chuột quang có dây văn phòng Ondata M220 USB',
+    name: 'Chuột Ondata',
     badge: 'Bền bỉ',
     price: 150000,
     oldPrice: 190000,
@@ -706,7 +706,7 @@ export const PRODUCTS = [
   {
     id: 'ram-ddr5-16',
     cat: 'ram',
-    name: 'RAM Ondata DDR5 16GB 5600MHz Tản nhiệt nhôm',
+    name: 'RAM Ondata',
     badge: 'Bán chạy',
     price: 1390000,
     oldPrice: 1590000,
@@ -741,7 +741,7 @@ export const PRODUCTS = [
   {
     id: 'ram-ddr5-32-rgb',
     cat: 'ram',
-    name: 'RAM Ondata DDR5 32GB (2×16GB) 6000MHz RGB',
+    name: 'RAM Ondata',
     badge: 'Cao cấp',
     price: 2990000,
     oldPrice: 3450000,
@@ -774,7 +774,7 @@ export const PRODUCTS = [
   {
     id: 'ram-ddr4-16',
     cat: 'ram',
-    name: 'RAM Ondata DDR4 16GB 3200MHz Tản nhiệt thép',
+    name: 'RAM Ondata',
     badge: 'Phổ thông',
     price: 850000,
     oldPrice: 990000,
@@ -808,7 +808,7 @@ export const PRODUCTS = [
   {
     id: 'ram-ddr4-8',
     cat: 'ram',
-    name: 'RAM Ondata DDR4 8GB 3200MHz Basic',
+    name: 'RAM Ondata',
     badge: 'Tiết kiệm',
     price: 450000,
     oldPrice: 520000,
@@ -841,7 +841,7 @@ export const PRODUCTS = [
   {
     id: 'ram-laptop-16',
     cat: 'ram',
-    name: 'RAM Laptop Ondata SODIMM 16GB DDR4 3200MHz',
+    name: 'RAM Ondata',
     badge: 'Laptop & AIO',
     price: 890000,
     oldPrice: 1050000,
@@ -876,7 +876,7 @@ export const PRODUCTS = [
   {
     id: 'acc-monitor-arm-pro',
     cat: 'accessories',
-    name: 'Giá treo màn hình Ondata Arm Pro Gas Spring',
+    name: 'Giá treo màn hình Ondata',
     badge: 'Bán chạy',
     price: 690000,
     oldPrice: 850000,
@@ -909,7 +909,7 @@ export const PRODUCTS = [
   {
     id: 'acc-hub-8in1',
     cat: 'accessories',
-    name: 'Hub Chuyển Đổi Ondata 8-in-1 Type-C Multifunction',
+    name: 'Hub chuyển đổi Ondata',
     badge: 'Đa năng',
     price: 550000,
     oldPrice: 690000,
@@ -940,7 +940,7 @@ export const PRODUCTS = [
   {
     id: 'acc-mousepad-xxl',
     cat: 'accessories',
-    name: 'Bàn di chuột Ondata Speed XXL 900×400×4mm',
+    name: 'Bàn di chuột Ondata',
     badge: 'Bán chạy',
     price: 190000,
     oldPrice: 250000,
@@ -972,7 +972,7 @@ export const PRODUCTS = [
   {
     id: 'acc-hdmi-8k',
     cat: 'accessories',
-    name: 'Cáp HDMI 2.1 Ondata 8K 60Hz / 4K 120Hz 2m',
+    name: 'Cáp HDMI Ondata',
     badge: 'Chất lượng',
     price: 180000,
     oldPrice: 230000,
@@ -1005,7 +1005,7 @@ export const PRODUCTS = [
   {
     id: 'acc-laptop-stand',
     cat: 'accessories',
-    name: 'Giá đỡ nhôm công thái học Ondata Stand X',
+    name: 'Giá đỡ Ondata',
     badge: 'Tiện ích',
     price: 320000,
     oldPrice: 390000,
