@@ -2,6 +2,14 @@ export function renderHomeHero() {
   return `
     <section class="home-top-section">
       <div class="container">
+        <div class="home-mobile-cats" aria-label="Danh mục">
+          <a href="/san-pham/aio">Máy tính All-in-one</a>
+          <a href="/san-pham/monitor">Màn hình</a>
+          <a href="/san-pham/keyboard">Bàn phím</a>
+          <a href="/san-pham/mouse">Chuột</a>
+          <a href="/san-pham/ram">RAM</a>
+          <a href="/san-pham/accessories">Phụ kiện</a>
+        </div>
         <div class="home-top-grid">
           <!-- Sidebar: Danh mục sản phẩm -->
           <aside class="sidebar-categories" id="sidebar-categories">

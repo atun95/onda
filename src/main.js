@@ -1,9 +1,9 @@
 import './style.css';
+import './mobile.css';
 import { renderNavbar } from './components/Navbar.js';
 import { renderHomeHero } from './components/HomeHero.js';
 import { renderHomeFeatured } from './components/HomeFeatured.js';
 import { renderHomePromo } from './components/HomePromo.js';
-import { renderHomeNews } from './components/HomeNews.js';
 import { renderFooter } from './components/Footer.js';
 import { renderProductCatalog, initCatalogInteractions } from './components/ProductCatalog.js';
 import { renderProductDetail, initProductDetailInteractions } from './components/ProductDetail.js';
@@ -117,7 +117,6 @@ function renderHome() {
     ${renderHomeHero()}
     ${renderHomeFeatured()}
     ${renderHomePromo()}
-    ${renderHomeNews()}
   `;
 }
 
@@ -202,7 +201,30 @@ function initSharedInteractions() {
   const hamburger = document.getElementById('nav-hamburger');
   const navMenu   = document.getElementById('nav-menu');
   if (hamburger && navMenu) {
-    hamburger.onclick = () => navMenu.classList.toggle('mobile-open');
+    const setMenu = (open) => {
+      navMenu.classList.toggle('mobile-open', open);
+      hamburger.classList.toggle('is-open', open);
+      document.body.classList.toggle('menu-open', open);
+      const nav = document.getElementById('navbar');
+      if (open) {
+        document.documentElement.style.setProperty('--mobile-nav-h', `${nav ? nav.offsetHeight : 120}px`);
+        document.body.appendChild(navMenu);
+      } else if (nav && navMenu.parentElement === document.body) {
+        nav.querySelector('.nav-container').appendChild(navMenu);
+      }
+    };
+    hamburger.onclick = () => setMenu(!navMenu.classList.contains('mobile-open'));
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => setMenu(false));
+    });
+  }
+
+  const searchJump = document.getElementById('nav-search-icon');
+  if (searchJump) {
+    searchJump.onclick = () => {
+      const input = document.getElementById('search-input');
+      if (input) input.focus();
+    };
   }
 
   // Interactive Product Search

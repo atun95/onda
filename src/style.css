@@ -1708,6 +1708,10 @@ input {
   align-items: start;
 }
 
+.catalog-body:has(.catalog-filters.filters-hidden) {
+  grid-template-columns: 1fr;
+}
+
 /* ── Filter panel ─────────────────────────────────────── */
 .catalog-filters {
   background: var(--bg-card);
@@ -1716,6 +1720,11 @@ input {
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+}
+
+.filter-sheet-head,
+.filter-apply-btn {
+  display: none;
 }
 
 .catalog-filters.filters-hidden {
@@ -1824,7 +1833,10 @@ input {
   color: var(--primary-dark);
 }
 
-/* Reset button */
+.filter-sheet-actions {
+  display: block;
+}
+
 .filter-reset-btn {
   display: block;
   width: calc(100% - 28px);

@@ -4,6 +4,9 @@ export function renderNavbar(cartCount = 0) {
       <div class="nav-container">
         <!-- Top Row: Logo, Search Bar, Icons -->
         <div class="nav-top">
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
           <a href="/" class="nav-logo" id="nav-logo">
             <img src="/logo tach nen.png" alt="ONDATA" class="logo-img" onerror="this.onerror=null; this.src='/logo.png';" />
           </a>
@@ -25,6 +28,12 @@ export function renderNavbar(cartCount = 0) {
           </div>
 
           <div class="nav-actions">
+            <button class="nav-search-icon" id="nav-search-icon" type="button" aria-label="Tìm kiếm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </button>
             <a href="#" class="nav-action-icon" id="btn-account" title="Tài khoản">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -42,9 +51,6 @@ export function renderNavbar(cartCount = 0) {
               </svg>
               <span>Báo giá</span>
             </a>
-            <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
-              <span></span><span></span><span></span>
-            </button>
           </div>
         </div>
 
@@ -84,10 +90,26 @@ export function renderNavbar(cartCount = 0) {
               </a>
             </div>
           </div>
-          <a href="#promo-banner" class="nav-menu-link" id="menu-promo">Khuyến mãi</a>
-          <a href="/tin-tuc" class="nav-menu-link" id="menu-news">Tin tức</a>
           <a href="/lien-he" class="nav-menu-link" id="menu-contact">Liên hệ</a>
           <a href="/ho-tro" class="nav-menu-link" id="menu-support">Hỗ trợ</a>
+
+          <div class="mobile-menu-foot">
+            <a href="#" class="mm-chip" id="btn-account-mobile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Tài khoản
+            </a>
+            <a href="#" class="mm-chip" id="btn-wishlist-mobile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              Đã lưu
+            </a>
+            <div class="mm-hotline">
+              <div>
+                <span>Hotline</span>
+                <a href="tel:0867036698">0867036698</a>
+              </div>
+              <span class="mm-hours">8:00 – 22:00</span>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

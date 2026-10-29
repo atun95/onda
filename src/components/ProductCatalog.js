@@ -155,7 +155,17 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
             <div class="catalog-body" id="catalog-body">
 
               <!-- FILTER PANEL -->
+              <div class="filter-backdrop" id="filter-backdrop"></div>
               <div class="catalog-filters" id="catalog-filters">
+                <div class="filter-sheet-head">
+                  <span class="filter-sheet-handle"></span>
+                  <div class="filter-sheet-title-row">
+                    <h3>Bộ lọc</h3>
+                    <button type="button" class="filter-sheet-close" id="filter-sheet-close" aria-label="Đóng bộ lọc">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                  </div>
+                </div>
 
                 <div class="filter-group" id="fg-group-brand">
                   <div class="filter-group-title" data-group="brand">
@@ -211,7 +221,10 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
                   </div>
                 </div>
 
-                <button class="filter-reset-btn" id="filter-reset-btn">Xóa bộ lọc</button>
+                <div class="filter-sheet-actions">
+                  <button class="filter-reset-btn" id="filter-reset-btn" type="button">Xóa bộ lọc</button>
+                  <button class="filter-apply-btn" id="filter-apply-btn" type="button">Xem kết quả</button>
+                </div>
               </div>
 
               <!-- PRODUCT GRID -->
@@ -293,12 +306,36 @@ export function initCatalogInteractions() {
   // Filter panel toggle
   const filterToggle = document.getElementById('catalog-filter-toggle');
   const filterPanel = document.getElementById('catalog-filters');
+  const closeMobileFilter = () => {
+    if (!filterPanel) return;
+    filterPanel.classList.remove('show-mobile');
+    document.body.classList.remove('filter-open');
+    if (filterToggle) filterToggle.classList.remove('catalog-filters--open');
+  };
   if (filterToggle && filterPanel) {
     filterToggle.addEventListener('click', () => {
-      filterPanel.classList.toggle('filters-hidden');
-      filterToggle.classList.toggle('catalog-filters--open');
+      const isMobile = window.matchMedia('(max-width: 860px)').matches;
+      if (isMobile) {
+        const open = !filterPanel.classList.contains('show-mobile');
+        filterPanel.classList.toggle('show-mobile', open);
+        document.body.classList.toggle('filter-open', open);
+        filterToggle.classList.toggle('catalog-filters--open', open);
+      } else {
+        filterPanel.classList.toggle('filters-hidden');
+        filterToggle.classList.toggle('catalog-filters--open');
+      }
     });
   }
+  document.getElementById('filter-sheet-close')?.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 860px)').matches) {
+      closeMobileFilter();
+    } else if (filterPanel) {
+      filterPanel.classList.add('filters-hidden');
+      filterToggle?.classList.remove('catalog-filters--open');
+    }
+  });
+  document.getElementById('filter-apply-btn')?.addEventListener('click', closeMobileFilter);
+  document.getElementById('filter-backdrop')?.addEventListener('click', closeMobileFilter);
 
   // Filter group collapse
   document.querySelectorAll('.filter-group-title').forEach(title => {
