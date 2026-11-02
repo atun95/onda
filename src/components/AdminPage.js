@@ -123,6 +123,26 @@ async function paintDashboard(root, token) {
 
   const draw = () => {
     const sorted = [...rows].sort((a, b) => Number(a.stt) - Number(b.stt) || a.name.localeCompare(b.name, 'vi'));
+    const visibleRows = sorted.filter((row) => !row.hidden);
+    const hiddenRows = sorted.filter((row) => row.hidden);
+    const renderRows = (list, emptyText, hideLabel) => (list.length ? list.map((row) => `
+      <li class="admin-list-item ${row.id === formState.id ? 'admin-list-item--active' : ''}">
+        <div class="admin-list-thumb">
+          ${row.images?.[0]
+            ? `<img src="${escapeHtml(row.images[0])}" alt="">`
+            : '<span>Ảnh</span>'}
+        </div>
+        <div class="admin-list-copy">
+          <strong>${escapeHtml(row.name)}</strong>
+          <span>${escapeHtml(categoryName(row.category))}</span>
+        </div>
+        <div class="admin-row-actions">
+          <button type="button" data-edit="${escapeHtml(row.id)}">Sửa</button>
+          <button type="button" data-hide="${escapeHtml(row.id)}">${hideLabel}</button>
+          <button type="button" class="admin-btn--danger" data-delete="${escapeHtml(row.id)}">Xóa</button>
+        </div>
+      </li>
+    `).join('') : `<li class="admin-empty">${emptyText}</li>`);
     root.innerHTML = `
       <div class="admin-app">
         <aside class="admin-side">
@@ -143,7 +163,7 @@ async function paintDashboard(root, token) {
               <p class="admin-kicker">Danh mục sản phẩm</p>
               <h1>Quản lý sản phẩm</h1>
             </div>
-            <div class="admin-stat">${sorted.length} sản phẩm</div>
+            <div class="admin-stat">${visibleRows.length} đang hiện · ${hiddenRows.length} đang ẩn</div>
           </header>
           ${notice ? `<p class="admin-alert ${notice.ok ? 'admin-alert--ok' : ''}">${escapeHtml(notice.text)}</p>` : ''}
           <div class="admin-workspace">
@@ -200,31 +220,26 @@ async function paintDashboard(root, token) {
               </div>
             </form>
 
-            <section class="admin-card admin-list-card">
-              <div class="admin-card-head">
-                <h2>Đang hiển thị</h2>
-              </div>
-              <ul class="admin-list">
-                ${sorted.length ? sorted.map((row) => `
-                  <li class="admin-list-item ${row.id === formState.id ? 'admin-list-item--active' : ''} ${row.hidden ? 'admin-list-item--hidden' : ''}">
-                    <div class="admin-list-thumb">
-                      ${row.images?.[0]
-                        ? `<img src="${escapeHtml(row.images[0])}" alt="">`
-                        : '<span>Ảnh</span>'}
-                    </div>
-                    <div class="admin-list-copy">
-                      <strong>${escapeHtml(row.name)}</strong>
-                      <span>${escapeHtml(categoryName(row.category))}${row.hidden ? ' · Đang ẩn' : ''}</span>
-                    </div>
-                    <div class="admin-row-actions">
-                      <button type="button" data-edit="${escapeHtml(row.id)}">Sửa</button>
-                      <button type="button" data-hide="${escapeHtml(row.id)}">${row.hidden ? 'Hiện' : 'Ẩn'}</button>
-                      <button type="button" class="admin-btn--danger" data-delete="${escapeHtml(row.id)}">Xóa</button>
-                    </div>
-                  </li>
-                `).join('') : '<li class="admin-empty">Chưa có sản phẩm.</li>'}
-              </ul>
-            </section>
+            <div class="admin-lists">
+              <section class="admin-card admin-list-card">
+                <div class="admin-card-head">
+                  <h2>Sản phẩm đang hiển thị</h2>
+                  <p>${visibleRows.length} sản phẩm</p>
+                </div>
+                <ul class="admin-list">
+                  ${renderRows(visibleRows, 'Chưa có sản phẩm đang hiển thị.', 'Ẩn')}
+                </ul>
+              </section>
+              <section class="admin-card admin-list-card">
+                <div class="admin-card-head">
+                  <h2>Sản phẩm đang ẩn</h2>
+                  <p>${hiddenRows.length} sản phẩm</p>
+                </div>
+                <ul class="admin-list">
+                  ${renderRows(hiddenRows, 'Chưa có sản phẩm đang ẩn.', 'Hiện')}
+                </ul>
+              </section>
+            </div>
           </div>
         </main>
       </div>
