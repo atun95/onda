@@ -101,6 +101,7 @@ export function rowToProduct(row) {
 export function rowsToProducts(rows) {
   const list = Array.isArray(rows) ? rows : [];
   return list
+    .filter((row) => !row.hidden)
     .map(rowToProduct)
     .sort((a, b) => a.stt - b.stt || a.name.localeCompare(b.name, 'vi'));
 }

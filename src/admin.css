@@ -345,6 +345,10 @@
   background: rgba(138, 155, 78, 0.08);
 }
 
+.admin-list-item--hidden {
+  opacity: 0.62;
+}
+
 .admin-list-thumb {
   width: 64px;
   height: 64px;

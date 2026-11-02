@@ -38,11 +38,14 @@ async function api(url, options = {}) {
   } catch {
     data = null;
   }
-  if (!data || typeof data !== 'object' || data.ok !== true) {
-    const error = new Error(
-      (data && data.message) || 'Hosting chưa nhận đủ file lưu sản phẩm. Hãy tải lên thư mục api và data.',
-    );
+  if (!data || typeof data !== 'object' || Array.isArray(data)) {
+    const error = new Error('Hosting chưa nhận đủ file lưu sản phẩm. Hãy tải lên thư mục api và data.');
     error.status = response.ok ? 502 : response.status;
+    throw error;
+  }
+  if (data.ok !== true) {
+    const error = new Error(data.message || 'Không thực hiện được');
+    error.status = response.ok ? 400 : response.status;
     throw error;
   }
   return data;
@@ -203,7 +206,7 @@ async function paintDashboard(root, token) {
               </div>
               <ul class="admin-list">
                 ${sorted.length ? sorted.map((row) => `
-                  <li class="admin-list-item ${row.id === formState.id ? 'admin-list-item--active' : ''}">
+                  <li class="admin-list-item ${row.id === formState.id ? 'admin-list-item--active' : ''} ${row.hidden ? 'admin-list-item--hidden' : ''}">
                     <div class="admin-list-thumb">
                       ${row.images?.[0]
                         ? `<img src="${escapeHtml(row.images[0])}" alt="">`
@@ -211,10 +214,11 @@ async function paintDashboard(root, token) {
                     </div>
                     <div class="admin-list-copy">
                       <strong>${escapeHtml(row.name)}</strong>
-                      <span>${escapeHtml(categoryName(row.category))}</span>
+                      <span>${escapeHtml(categoryName(row.category))}${row.hidden ? ' · Đang ẩn' : ''}</span>
                     </div>
                     <div class="admin-row-actions">
                       <button type="button" data-edit="${escapeHtml(row.id)}">Sửa</button>
+                      <button type="button" data-hide="${escapeHtml(row.id)}">${row.hidden ? 'Hiện' : 'Ẩn'}</button>
                       <button type="button" class="admin-btn--danger" data-delete="${escapeHtml(row.id)}">Xóa</button>
                     </div>
                   </li>
@@ -286,6 +290,7 @@ async function paintDashboard(root, token) {
         shortDesc: form.shortDesc.value,
         detail: form.detail.value,
         images: formState.images || [],
+        hidden: Boolean(formState.hidden),
       };
       const next = formState.id
         ? rows.map((row) => (row.id === formState.id ? draft : row))
@@ -334,6 +339,36 @@ async function paintDashboard(root, token) {
         notice = '';
         draw();
         root.querySelector('#admin-product-form')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    root.querySelectorAll('[data-hide]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const row = rows.find((item) => item.id === button.dataset.hide);
+        if (!row) return;
+        const next = rows.map((item) => (item.id === row.id ? { ...item, hidden: !item.hidden } : item));
+        try {
+          const saved = await api('/api/catalog.php', {
+            method: 'POST',
+            headers: authHeaders(token),
+            body: JSON.stringify({ rows: next }),
+          });
+          if (!Array.isArray(saved.rows)) {
+            throw new Error(saved.message || 'Không nhận được danh sách sản phẩm từ hosting.');
+          }
+          rows = saved.rows;
+          applyCatalogRows(rows);
+          if (formState.id === row.id) formState = { ...formState, hidden: !row.hidden };
+          notice = { ok: true, text: row.hidden ? 'Đã hiện sản phẩm trên website.' : 'Đã ẩn sản phẩm khỏi website.' };
+          draw();
+        } catch (error) {
+          if (error.status === 401) {
+            sessionStorage.removeItem(TOKEN_KEY);
+            paintLogin(root, error.message);
+            return;
+          }
+          notice = { ok: false, text: error.message };
+          draw();
+        }
       });
     });
     root.querySelectorAll('[data-delete]').forEach((button) => {

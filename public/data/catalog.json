@@ -11,7 +11,8 @@
     "images": [
       "/images/monitors/monitor-01.png?v=2",
       "/images/monitors/monitor-02.png?v=2"
-    ]
+    ],
+    "hidden": false
   },
   {
     "id": "od270100iv",
@@ -25,6 +26,7 @@
     "images": [
       "/images/monitors/monitor-01.png?v=2",
       "/images/monitors/monitor-02.png?v=2"
-    ]
+    ],
+    "hidden": false
   }
 ]

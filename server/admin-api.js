@@ -142,6 +142,7 @@ export function createAdminApi(root) {
           shortDesc: cleanText(row.shortDesc, 5000),
           detail: cleanText(row.detail, 100000),
           images: row.images.map((image) => cleanText(image, 500).trim()).filter(Boolean).slice(0, 12),
+          hidden: Boolean(row.hidden),
         }));
         writeCatalog(root, rows);
         return send(res, 200, { ok: true, rows });

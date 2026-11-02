@@ -191,6 +191,7 @@ function normalizeRows($rows): array
             'shortDesc' => cleanText($row['shortDesc'] ?? '', 5000),
             'detail' => cleanText($row['detail'] ?? '', 100000),
             'images' => array_slice($savedImages, 0, 12),
+            'hidden' => !empty($row['hidden']),
         ];
     }
     return $clean;
