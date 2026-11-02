@@ -97,13 +97,15 @@ export function renderHomeFeatured() {
       <div class="product-item-card" data-id="${p.id}" data-cat="${p.cat}" style="cursor:pointer;">
         ${p.badge ? `<span class="badge-tag">${p.badge}</span>` : ''}
         <div class="product-thumb-container">
-          <div class="tech-device-render">
+          ${p.images?.[0]
+            ? `<img class="product-thumb-photo" src="${p.images[0]}" alt="${String(p.name).replace(/"/g, '&quot;')}" />`
+            : `<div class="tech-device-render">
             ${getDeviceSvg(p.cat, p.name)}
             <span class="device-label">${p.name.split(' ')[0]} ${p.name.split(' ')[1] || ''}</span>
-          </div>
+          </div>`}
         </div>
         <div class="product-info-box">
-          <h3 class="product-name" title="${p.name}">
+          <h3 class="product-name" title="${String(p.name).replace(/"/g, '&quot;')}">
             ${p.name} <span class="product-ext-icon">↗</span>
           </h3>
           <div class="product-pricing">
@@ -135,7 +137,7 @@ export function renderHomeFeatured() {
         </div>
 
         <div class="featured-grid-5">
-          ${productCardsHtml}
+          ${productCardsHtml || '<p class="featured-empty">Sản phẩm sẽ được cập nhật.</p>'}
         </div>
       </div>
     `;

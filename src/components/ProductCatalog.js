@@ -24,7 +24,9 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
         <div class="catalog-product-card" id="catalog-product-${p.id}" data-product-id="${p.id}" data-product-cat="${p.cat}" style="cursor:pointer;">
           ${p.badge ? `<span class="badge-tag">${p.badge}</span>` : ''}
           <div class="catalog-product-thumb">
-            <div class="catalog-thumb-visual">
+            ${p.images?.[0]
+              ? `<img class="catalog-thumb-photo" src="${p.images[0]}" alt="${String(p.name).replace(/"/g, '&quot;')}" />`
+              : `<div class="catalog-thumb-visual">
               <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" style="width:100%">
                 <defs>
                   <linearGradient id="cg${i}" x1="0" y1="0" x2="1" y2="1">
@@ -36,7 +38,7 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
                 <ellipse cx="80" cy="55" rx="48" ry="28" fill="#7ea835" opacity=".12"/>
                 <text x="80" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="800" font-size="13" fill="#7ea835" opacity=".7">ONDATA</text>
               </svg>
-            </div>
+            </div>`}
           </div>
           <div class="catalog-product-info">
             <p class="catalog-product-name">${p.name}</p>

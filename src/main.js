@@ -1,5 +1,6 @@
 import './style.css';
 import './mobile.css';
+import './admin.css';
 import { renderNavbar } from './components/Navbar.js';
 import { renderHomeHero } from './components/HomeHero.js';
 import { renderHomeFeatured } from './components/HomeFeatured.js';
@@ -12,7 +13,9 @@ import { renderContactPage, initContactPageInteractions } from './components/Con
 import { renderSupportPage, initSupportPageInteractions } from './components/SupportPage.js';
 import { renderAboutPage, initAboutPageInteractions } from './components/AboutPage.js';
 import { renderChatBox, initChatBoxInteractions } from './components/ChatBox.js';
+import { renderAdminPage, initAdminPage } from './components/AdminPage.js';
 import { getProductById, getProductsByCat, PRODUCTS, searchProducts } from './data/products.js';
+import { loadCatalog } from './data/catalogStore.js';
 
 /* ── App State ──────────────────────────────────────────── */
 let cartCount = 0;
@@ -96,6 +99,10 @@ function getRoute() {
     const parts = path.split('/').filter(Boolean);
     const sub = parts[1] || null;
     return { page: 'support', sub };
+  }
+
+  if (path.startsWith('/admin')) {
+    return { page: 'admin' };
   }
 
   return { page: 'home' };
@@ -467,6 +474,29 @@ function initSharedInteractions() {
   if (badge) badge.textContent = cartCount;
 }
 
+const DEFAULT_SEO = {
+  title: 'Ondata Việt Nam – Hiệu Năng Vượt Trội Cho Mọi Nhu Cầu',
+  description: 'Ondata Việt Nam - Máy tính xách tay, máy tính để bàn, màn hình, linh kiện và phụ kiện công nghệ chính hãng Onda.',
+};
+
+function applyPageSeo(product) {
+  document.title = product?.seo?.title || DEFAULT_SEO.title;
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.setAttribute('content', product?.seo?.description || DEFAULT_SEO.description);
+
+  let keywords = document.querySelector('meta[name="keywords"]');
+  if (product?.seo?.keywords) {
+    if (!keywords) {
+      keywords = document.createElement('meta');
+      keywords.setAttribute('name', 'keywords');
+      document.head.appendChild(keywords);
+    }
+    keywords.setAttribute('content', product.seo.keywords);
+  } else if (keywords) {
+    keywords.remove();
+  }
+}
+
 /* ── Main render ────────────────────────────────────────── */
 function renderApp() {
   const app = document.querySelector('#app');
@@ -481,12 +511,20 @@ function renderApp() {
   const isNews    = route.page === 'news';
   const isContact = route.page === 'contact';
   const isSupport = route.page === 'support';
+  const isAdmin   = route.page === 'admin';
 
-  // Áp dụng đồng nhất nền xanh đen (#0e1012) theo onda.vn cho toàn bộ các trang
   document.body.classList.add('theme-onda-dark');
+
+  if (isAdmin) {
+    document.title = 'Quản trị sản phẩm | Ondata';
+    app.innerHTML = renderAdminPage();
+    initAdminPage();
+    return;
+  }
 
   let product = null;
   if (isDetail) product = getProductById(route.id);
+  applyPageSeo(isDetail ? product : null);
 
   app.innerHTML = `
     ${renderNavbar(cartCount, isAbout || isCatalog || isDetail || isNews || isContact || isSupport)}
@@ -571,4 +609,4 @@ document.addEventListener('click', e => {
   }
 });
 
-renderApp();
+loadCatalog().finally(renderApp);

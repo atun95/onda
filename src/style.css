@@ -2135,6 +2135,35 @@ input {
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.06));
 }
 
+.pd-hero-photo {
+  width: 100%;
+  max-width: 520px;
+  max-height: 460px;
+  object-fit: contain;
+  display: block;
+}
+
+.pd-thumb-photo,
+.catalog-thumb-photo,
+.product-thumb-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.pd-thumb-btn--photo {
+  width: 96px;
+  height: 78px;
+}
+
+.catalog-product-thumb:has(.catalog-thumb-photo),
+.product-thumb-container:has(.product-thumb-photo),
+.pd-hero-preview-box:has(.pd-hero-photo),
+.pd-thumb-btn--photo {
+  background: #ffffff !important;
+}
+
 /* Thumbnails row */
 .pd-thumbs-bar {
   display: flex;
@@ -2631,6 +2660,48 @@ input {
   color: var(--text-secondary);
   font-size: 0.92rem;
   line-height: 1.6;
+}
+
+.pd-article h2 {
+  font-size: 1.28rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 4px 0 14px;
+}
+
+.pd-article h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 20px 0 8px;
+}
+
+.pd-article p,
+.pd-article li {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.pd-article p {
+  margin: 0 0 12px;
+}
+
+.pd-article ul {
+  margin: 0 0 14px;
+  padding-left: 1.25rem;
+}
+
+.pd-article li {
+  margin: 6px 0;
+}
+
+.pd-article .pd-note {
+  margin: 12px 0 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(138, 155, 78, 0.12);
+  border-left: 3px solid #8a9b4e;
 }
 
 /* Tech Specs Table */
@@ -4776,6 +4847,17 @@ body {
   border-color: #8a9b4e !important;
 }
 
+.pd-hero-preview-box:has(.pd-hero-photo),
+.pd-thumb-btn--photo,
+.catalog-product-thumb:has(.catalog-thumb-photo),
+.product-thumb-container:has(.product-thumb-photo) {
+  background: #ffffff !important;
+}
+
+.pd-thumb-btn--photo .pd-thumb-mini-preview {
+  height: 50px;
+}
+
 .pd-thumb-btn--active {
   border-color: #8a9b4e !important;
   background: #1a241b !important;
@@ -4904,6 +4986,15 @@ body {
 
 .pd-lead-desc {
   color: #c5d0c7 !important;
+}
+
+.pd-article p,
+.pd-article li {
+  color: #c5d0c7 !important;
+}
+
+.pd-article strong {
+  color: #ffffff;
 }
 
 .pd-feature-item {
@@ -5729,6 +5820,14 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+}
+
+.featured-empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 18px 4px 8px;
+  color: #8f9e92;
+  font-size: 0.92rem;
 }
 
 @media (max-width: 1200px) {

@@ -257,8 +257,28 @@ export function getProductViewSVG(viewIndex = 0, productName = 'Laptop Ondata Pr
   }
 }
 
-/* ── Thumbnail SVG generator ─────────────────────────── */
-function renderThumbnail(idx, active = false) {
+function escapeAttr(value) {
+  return String(value ?? '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+function renderProductPhoto(src, alt, className) {
+  return `<img class="${className}" src="${src}" alt="${escapeAttr(alt)}" />`;
+}
+
+/* ── Thumbnail generator ─────────────────────────────── */
+function renderThumbnail(idx, active = false, product = null) {
+  if (product?.images?.length) {
+    const label = `Ảnh ${idx + 1}`;
+    return `
+      <button class="pd-thumb-btn pd-thumb-btn--photo${active ? ' pd-thumb-btn--active' : ''}" data-thumb="${idx}" aria-label="${label}">
+        <div class="pd-thumb-mini-preview">
+          ${renderProductPhoto(product.images[idx], product.name, 'pd-thumb-photo')}
+        </div>
+        <span class="pd-thumb-caption">${label}</span>
+      </button>
+    `;
+  }
+
   const titles = ['Chính diện', 'Góc nghiêng', 'Mặt lưng', 'Cạnh bên', 'Bàn phím'];
   return `
     <button class="pd-thumb-btn${active ? ' pd-thumb-btn--active' : ''}" data-thumb="${idx}" aria-label="${titles[idx]}">
@@ -321,8 +341,13 @@ export function renderProductDetail(product) {
     </li>
   `).join('');
 
-  // 5 Thumbnails
-  const thumbsHtml = [0, 1, 2, 3, 4].map(i => renderThumbnail(i, i === 0)).join('');
+  const hasPhotos = Array.isArray(product.images) && product.images.length > 0;
+  const thumbsHtml = hasPhotos
+    ? product.images.map((_, i) => renderThumbnail(i, i === 0, product)).join('')
+    : [0, 1, 2, 3, 4].map(i => renderThumbnail(i, i === 0)).join('');
+  const heroHtml = hasPhotos
+    ? renderProductPhoto(product.images[0], product.name, 'pd-hero-photo')
+    : getProductViewSVG(0, product.name);
 
   return `
     <section class="pd-page" id="pd-page">
@@ -345,7 +370,7 @@ export function renderProductDetail(product) {
             <div class="pd-gallery-col">
               <div class="pd-hero-preview-box" id="pd-hero-preview-box">
                 <div class="pd-hero-art" id="pd-hero-art">
-                  ${getProductViewSVG(0, product.name)}
+                  ${heroHtml}
                 </div>
               </div>
 
@@ -364,7 +389,7 @@ export function renderProductDetail(product) {
                 <div class="pd-stars-wrap">
                   ${renderStars(product.stars || 4.5)}
                 </div>
-                <span class="pd-rating-count">(${product.reviews || 24} đánh giá)</span>
+                <span class="pd-rating-count">(${product.reviews ?? 24} đánh giá)</span>
                 ${product.badge ? `<span class="pd-top-badge">${product.badge}</span>` : ''}
               </div>
 
@@ -453,7 +478,7 @@ export function renderProductDetail(product) {
               Thông số kỹ thuật
             </button>
             <button class="pd-tab-btn" id="pd-tab-reviews" data-tab="reviews" role="tab" aria-selected="false">
-              Đánh giá (${product.reviews || 24})
+              Đánh giá (${product.reviews ?? 24})
             </button>
           </div>
 
@@ -463,14 +488,17 @@ export function renderProductDetail(product) {
             <!-- Tab 1: Description -->
             <div class="pd-panel" id="pd-panel-desc" role="tabpanel">
               <p class="pd-lead-desc">${product.desc}</p>
-              <ul class="pd-features-list">
-                ${featuresHtml}
-              </ul>
-
-              <div class="pd-editorial-block">
-                <h3 class="pd-editorial-title">Đặc điểm nổi bật của ${product.name}</h3>
-                <p>Được hoàn thiện với tiêu chuẩn khắt khe, ${product.name} đem lại sự cân bằng hoàn hảo giữa hiệu suất làm việc ấn tượng, độ bền chuẩn doanh nghiệp và khả năng tản nhiệt tối ưu cho người dùng Việt Nam.</p>
-              </div>
+              ${product.detailHtml ? `
+                <div class="pd-article">${product.detailHtml}</div>
+              ` : `
+                <ul class="pd-features-list">
+                  ${featuresHtml}
+                </ul>
+                <div class="pd-editorial-block">
+                  <h3 class="pd-editorial-title">Đặc điểm nổi bật của ${product.name}</h3>
+                  <p>Được hoàn thiện với tiêu chuẩn khắt khe, ${product.name} đem lại sự cân bằng hoàn hảo giữa hiệu suất làm việc ấn tượng, độ bền chuẩn doanh nghiệp và khả năng tản nhiệt tối ưu cho người dùng Việt Nam.</p>
+                </div>
+              `}
             </div>
 
             <!-- Tab 2: Tech Specs -->
@@ -488,7 +516,7 @@ export function renderProductDetail(product) {
                 <div class="pd-score-box">
                   <div class="pd-big-score">${product.stars || 4.5}</div>
                   <div class="pd-stars-wrap">${renderStars(product.stars || 4.5)}</div>
-                  <span class="pd-score-sub">${product.reviews || 24} đánh giá từ khách hàng</span>
+                  <span class="pd-score-sub">${product.reviews ?? 24} đánh giá từ khách hàng</span>
                 </div>
 
                 <div class="pd-breakdown-box">
@@ -582,7 +610,9 @@ export function initProductDetailInteractions(product, onAddToCart) {
         heroArt.style.opacity = '0';
         heroArt.style.transform = 'scale(0.96)';
         setTimeout(() => {
-          heroArt.innerHTML = getProductViewSVG(idx, product.name);
+          heroArt.innerHTML = product.images?.[idx]
+            ? renderProductPhoto(product.images[idx], product.name, 'pd-hero-photo')
+            : getProductViewSVG(idx, product.name);
           heroArt.style.opacity = '1';
           heroArt.style.transform = 'scale(1)';
         }, 160);
