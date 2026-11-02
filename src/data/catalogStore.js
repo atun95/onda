@@ -99,7 +99,8 @@ export function rowToProduct(row) {
 }
 
 export function rowsToProducts(rows) {
-  return [...rows]
+  const list = Array.isArray(rows) ? rows : [];
+  return list
     .map(rowToProduct)
     .sort((a, b) => a.stt - b.stt || a.name.localeCompare(b.name, 'vi'));
 }

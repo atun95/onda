@@ -31,10 +31,18 @@ function authHeaders(token) {
 
 async function api(url, options = {}) {
   const response = await fetch(url, options);
-  const data = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    const error = new Error(data.message || 'Không thực hiện được');
-    error.status = response.status;
+  const text = await response.text();
+  let data = null;
+  try {
+    data = text ? JSON.parse(text) : null;
+  } catch {
+    data = null;
+  }
+  if (!data || typeof data !== 'object' || data.ok !== true) {
+    const error = new Error(
+      (data && data.message) || 'Hosting chưa nhận đủ file lưu sản phẩm. Hãy tải lên thư mục api và data.',
+    );
+    error.status = response.ok ? 502 : response.status;
     throw error;
   }
   return data;
@@ -65,11 +73,6 @@ function paintLogin(root, message = '') {
   root.innerHTML = `
     <div class="admin-login">
       <div class="admin-login-panel">
-        <div class="admin-login-aside">
-          <p class="admin-brand">ONDATA</p>
-          <h1>Quản trị nội dung website</h1>
-          <p>Thêm sản phẩm, ảnh và mô tả. Sau khi lưu, sản phẩm hiện ngay trên trang bán hàng.</p>
-        </div>
         <form class="admin-login-form" id="admin-login-form">
           <h2>Đăng nhập</h2>
           ${message ? `<p class="admin-alert">${escapeHtml(message)}</p>` : ''}
@@ -295,6 +298,9 @@ async function paintDashboard(root, token) {
           headers: authHeaders(token),
           body: JSON.stringify({ rows: next }),
         });
+        if (!Array.isArray(saved.rows)) {
+          throw new Error(saved.message || 'Không nhận được danh sách sản phẩm từ hosting.');
+        }
         rows = saved.rows;
         applyCatalogRows(rows);
         formState = { ...EMPTY_FORM, stt: nextStt(rows) };
@@ -337,13 +343,16 @@ async function paintDashboard(root, token) {
         if (!window.confirm(`Xóa sản phẩm "${row.name}"?`)) return;
         const next = rows.filter((item) => item.id !== row.id);
         try {
-          const saved = await api('/api/catalog.php', {
-            method: 'POST',
-            headers: authHeaders(token),
-            body: JSON.stringify({ rows: next }),
-          });
-          rows = saved.rows;
-          applyCatalogRows(rows);
+        const saved = await api('/api/catalog.php', {
+          method: 'POST',
+          headers: authHeaders(token),
+          body: JSON.stringify({ rows: next }),
+        });
+        if (!Array.isArray(saved.rows)) {
+          throw new Error(saved.message || 'Không nhận được danh sách sản phẩm từ hosting.');
+        }
+        rows = saved.rows;
+        applyCatalogRows(rows);
           if (formState.id === row.id) formState = { ...EMPTY_FORM, stt: nextStt(rows) };
           notice = { ok: true, text: 'Đã xóa sản phẩm.' };
           draw();
