@@ -120,6 +120,7 @@ async function paintDashboard(root, token) {
   }
   let formState = { ...EMPTY_FORM, stt: nextStt(rows) };
   let notice = '';
+  let section = 'visible';
 
   const draw = () => {
     const sorted = [...rows].sort((a, b) => Number(a.stt) - Number(b.stt) || a.name.localeCompare(b.name, 'vi'));
@@ -150,7 +151,17 @@ async function paintDashboard(root, token) {
             <p class="admin-brand">ONDATA</p>
           </div>
           <nav class="admin-nav">
-            <span class="admin-nav-item admin-nav-item--active">Sản phẩm</span>
+            <button type="button" class="admin-nav-item ${section === 'visible' ? 'admin-nav-item--active' : ''}" data-section="visible">
+              <span>Sản phẩm đang hiển thị</span>
+              <em>${visibleRows.length}</em>
+            </button>
+            <button type="button" class="admin-nav-item ${section === 'hidden' ? 'admin-nav-item--active' : ''}" data-section="hidden">
+              <span>Sản phẩm đang ẩn</span>
+              <em>${hiddenRows.length}</em>
+            </button>
+            <button type="button" class="admin-nav-item ${section === 'add' ? 'admin-nav-item--active' : ''}" data-section="add">
+              <span>Thêm sản phẩm mới</span>
+            </button>
           </nav>
           <div class="admin-side-actions">
             <a class="admin-link" href="/">Xem website</a>
@@ -161,12 +172,13 @@ async function paintDashboard(root, token) {
           <header class="admin-top">
             <div>
               <p class="admin-kicker">Danh mục sản phẩm</p>
-              <h1>Quản lý sản phẩm</h1>
+              <h1>${section === 'add' ? (formState.id ? 'Sửa sản phẩm' : 'Thêm sản phẩm mới') : section === 'hidden' ? 'Sản phẩm đang ẩn' : 'Sản phẩm đang hiển thị'}</h1>
             </div>
             <div class="admin-stat">${visibleRows.length} đang hiện · ${hiddenRows.length} đang ẩn</div>
           </header>
           ${notice ? `<p class="admin-alert ${notice.ok ? 'admin-alert--ok' : ''}">${escapeHtml(notice.text)}</p>` : ''}
           <div class="admin-workspace">
+            ${section === 'add' ? `
             <form class="admin-card" id="admin-product-form">
               <div class="admin-card-head">
                 <h2>${formState.id ? 'Sửa sản phẩm' : 'Thêm sản phẩm mới'}</h2>
@@ -219,32 +231,28 @@ async function paintDashboard(root, token) {
                 <button class="admin-btn admin-btn--ghost" type="button" id="admin-reset">Làm mới form</button>
               </div>
             </form>
-
-            <div class="admin-lists">
-              <section class="admin-card admin-list-card">
-                <div class="admin-card-head">
-                  <h2>Sản phẩm đang hiển thị</h2>
-                  <p>${visibleRows.length} sản phẩm</p>
-                </div>
-                <ul class="admin-list">
-                  ${renderRows(visibleRows, 'Chưa có sản phẩm đang hiển thị.', 'Ẩn')}
-                </ul>
-              </section>
-              <section class="admin-card admin-list-card">
-                <div class="admin-card-head">
-                  <h2>Sản phẩm đang ẩn</h2>
-                  <p>${hiddenRows.length} sản phẩm</p>
-                </div>
-                <ul class="admin-list">
-                  ${renderRows(hiddenRows, 'Chưa có sản phẩm đang ẩn.', 'Hiện')}
-                </ul>
-              </section>
-            </div>
+            ` : `
+            <section class="admin-card admin-list-card">
+              <ul class="admin-list">
+                ${section === 'hidden'
+                  ? renderRows(hiddenRows, 'Chưa có sản phẩm đang ẩn.', 'Hiện')
+                  : renderRows(visibleRows, 'Chưa có sản phẩm đang hiển thị.', 'Ẩn')}
+              </ul>
+            </section>
+            `}
           </div>
         </main>
       </div>
     `;
 
+    root.querySelectorAll('[data-section]').forEach((button) => {
+      button.addEventListener('click', () => {
+        section = button.dataset.section;
+        if (section === 'add') formState = { ...EMPTY_FORM, stt: nextStt(rows) };
+        notice = '';
+        draw();
+      });
+    });
     root.querySelector('#admin-logout').addEventListener('click', () => {
       sessionStorage.removeItem(TOKEN_KEY);
       paintLogin(root);
@@ -285,12 +293,12 @@ async function paintDashboard(root, token) {
         draw();
       });
     });
-    root.querySelector('#admin-reset').addEventListener('click', () => {
+    root.querySelector('#admin-reset')?.addEventListener('click', () => {
       formState = { ...EMPTY_FORM, stt: nextStt(rows) };
       notice = '';
       draw();
     });
-    root.querySelector('#admin-product-form').addEventListener('submit', async (event) => {
+    root.querySelector('#admin-product-form')?.addEventListener('submit', async (event) => {
       event.preventDefault();
       const form = event.currentTarget;
       const name = form.name.value.trim();
@@ -323,6 +331,7 @@ async function paintDashboard(root, token) {
         }
         rows = saved.rows;
         applyCatalogRows(rows);
+        section = draft.hidden ? 'hidden' : 'visible';
         formState = { ...EMPTY_FORM, stt: nextStt(rows) };
         notice = { ok: true, text: 'Đã lưu. Sản phẩm đã được cập nhật trên website.' };
         draw();
@@ -352,8 +361,8 @@ async function paintDashboard(root, token) {
           images: [...(row.images || [])],
         };
         notice = '';
+        section = 'add';
         draw();
-        root.querySelector('#admin-product-form')?.scrollIntoView({ behavior: 'smooth' });
       });
     });
     root.querySelectorAll('[data-hide]').forEach((button) => {
@@ -373,6 +382,7 @@ async function paintDashboard(root, token) {
           rows = saved.rows;
           applyCatalogRows(rows);
           if (formState.id === row.id) formState = { ...formState, hidden: !row.hidden };
+          section = row.hidden ? 'visible' : 'hidden';
           notice = { ok: true, text: row.hidden ? 'Đã hiện sản phẩm trên website.' : 'Đã ẩn sản phẩm khỏi website.' };
           draw();
         } catch (error) {
