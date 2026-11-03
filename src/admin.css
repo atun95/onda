@@ -580,7 +580,7 @@
 
 .admin-spec-table {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 52px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr) 52px;
   gap: 8px;
   margin-top: 12px;
 }
