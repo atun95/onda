@@ -3909,17 +3909,21 @@ input {
 }
 
 .sp-notice-box {
-  background: #f8faf8;
+  background: #3d5228;
   border-radius: var(--radius-sm);
-  border: 1px solid #e2eee0;
-  border-left: 4px solid #527d24;
+  border: 1px solid #8a9b4e;
+  border-left: 4px solid #c5d68a;
   padding: 14px 18px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
   font-size: 0.88rem;
-  color: var(--text-secondary);
+  color: #f3f8ea;
   margin-bottom: 24px;
+}
+
+.sp-notice-box strong {
+  color: #ffffff;
 }
 
 .sp-notice-icon {
