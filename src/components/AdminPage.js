@@ -121,11 +121,27 @@ async function paintDashboard(root, token) {
   let formState = { ...EMPTY_FORM, stt: nextStt(rows) };
   let notice = '';
   let section = 'visible';
+  let listCategory = 'all';
 
   const draw = () => {
     const sorted = [...rows].sort((a, b) => Number(a.stt) - Number(b.stt) || a.name.localeCompare(b.name, 'vi'));
     const visibleRows = sorted.filter((row) => !row.hidden);
     const hiddenRows = sorted.filter((row) => row.hidden);
+    const sourceRows = section === 'hidden' ? hiddenRows : visibleRows;
+    const filteredRows = listCategory === 'all'
+      ? sourceRows
+      : sourceRows.filter((row) => row.category === listCategory);
+    const categoryCounts = new Map(CATEGORIES_LIST.map((category) => [
+      category.id,
+      sourceRows.filter((row) => row.category === category.id).length,
+    ]));
+    const listEmptyText = section === 'hidden'
+      ? (listCategory === 'all'
+        ? 'Chưa có sản phẩm đang ẩn.'
+        : 'Không có sản phẩm đang ẩn trong danh mục này.')
+      : (listCategory === 'all'
+        ? 'Chưa có sản phẩm đang hiển thị.'
+        : 'Không có sản phẩm đang hiển thị trong danh mục này.');
     const renderRows = (list, emptyText, hideLabel) => (list.length ? list.map((row) => `
       <li class="admin-list-item ${row.id === formState.id ? 'admin-list-item--active' : ''}">
         <div class="admin-list-thumb">
@@ -261,10 +277,20 @@ async function paintDashboard(root, token) {
             </form>
             ` : `
             <section class="admin-card admin-list-card">
+              <div class="admin-filters" role="group" aria-label="Lọc theo danh mục">
+                <button type="button" class="admin-filter ${listCategory === 'all' ? 'admin-filter--active' : ''}" data-category="all">
+                  Tất cả <em>${sourceRows.length}</em>
+                </button>
+                ${CATEGORIES_LIST.map((category) => `
+                  <button type="button" class="admin-filter ${listCategory === category.id ? 'admin-filter--active' : ''}" data-category="${category.id}">
+                    ${escapeHtml(category.name)} <em>${categoryCounts.get(category.id) || 0}</em>
+                  </button>
+                `).join('')}
+              </div>
               <ul class="admin-list">
                 ${section === 'hidden'
-                  ? renderRows(hiddenRows, 'Chưa có sản phẩm đang ẩn.', 'Hiện')
-                  : renderRows(visibleRows, 'Chưa có sản phẩm đang hiển thị.', 'Ẩn')}
+                  ? renderRows(filteredRows, listEmptyText, 'Hiện')
+                  : renderRows(filteredRows, listEmptyText, 'Ẩn')}
               </ul>
             </section>
             `}
@@ -278,6 +304,12 @@ async function paintDashboard(root, token) {
         section = button.dataset.section;
         if (section === 'add') formState = { ...EMPTY_FORM, stt: nextStt(rows) };
         notice = '';
+        draw();
+      });
+    });
+    root.querySelectorAll('[data-category]').forEach((button) => {
+      button.addEventListener('click', () => {
+        listCategory = button.dataset.category || 'all';
         draw();
       });
     });
