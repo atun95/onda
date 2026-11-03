@@ -1,4 +1,4 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))s(i);new MutationObserver(i=>{for(const a of i)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&s(r)}).observe(document,{childList:!0,subtree:!0});function e(i){const a={};return i.integrity&&(a.integrity=i.integrity),i.referrerPolicy&&(a.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?a.credentials="include":i.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function s(i){if(i.ep)return;i.ep=!0;const a=e(i);fetch(i.href,a)}})();function ot(t=0){return`
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const a of s)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function e(s){const a={};return s.integrity&&(a.integrity=s.integrity),s.referrerPolicy&&(a.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?a.credentials="include":s.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(s){if(s.ep)return;s.ep=!0;const a=e(s);fetch(s.href,a)}})();function gt(t=0){return`
     <header class="navbar" id="navbar">
       <div class="nav-container">
         <!-- Top Row: Logo, Search Bar, Icons -->
@@ -112,7 +112,7 @@
         </nav>
       </div>
     </header>
-  `}function ct(){return`
+  `}function ut(){return`
     <section class="home-top-section">
       <div class="container">
         <div class="home-mobile-cats" aria-label="Danh mục">
@@ -265,7 +265,7 @@
         </div>
       </div>
     </section>
-  `}const z=["/images/monitors/monitor-01.png?v=2","/images/monitors/monitor-02.png?v=2"],K=[{id:"aio",name:"Máy tính All-in-one",icon:"aio",desc:"Máy tính tất cả trong một tinh gọn, mạnh mẽ"},{id:"monitor",name:"Màn hình",icon:"monitor",desc:"Hiển thị sắc nét, tần số quét cao, bảo vệ mắt"},{id:"keyboard",name:"Bàn phím",icon:"keyboard",desc:"Bàn phím cơ & công thái học gõ êm mượt"},{id:"mouse",name:"Chuột",icon:"mouse",desc:"Chuột quang học, wireless độ nhạy cao"},{id:"ram",name:"RAM",icon:"ram",desc:"Bộ nhớ DDR4/DDR5 tốc độ cao, đa nhiệm tối ưu"},{id:"accessories",name:"Phụ kiện",icon:"accessories",desc:"Giá treo, hub chuyển đổi, lót chuột cao cấp"}];let C=[{id:"od215100vv",cat:"monitor",name:"Màn hình ONDATA OD215100VV 21.5 inch 100Hz Full HD VA",images:z,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:"Màn hình ONDATA OD215100VV 21.5 inch 100Hz Full HD VA",description:"Màn hình ONDATA OD215100VV 21.5 inch Full HD, 100Hz, tấm nền VA, 95% sRGB, HDMI + VGA, giảm ánh sáng xanh.",keywords:"màn hình ONDATA OD215100VV, màn hình 21.5 inch, màn hình 100Hz, màn hình VA Full HD, màn hình văn phòng, màn hình 95% sRGB, màn hình HDMI VGA"},specs:[{icon:"monitor",label:"Kích thước",value:'21.5" VA Full HD'},{icon:"cpu",label:"Tần số quét",value:"100Hz"},{icon:"gpu",label:"Độ tương phản",value:"3000:1 (Typ.)"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD215100VV là màn hình LCD 21.5 inch, độ phân giải Full HD 1920×1080, tấm nền VA, tần số quét 100Hz. Màn hình phủ 95% sRGB, có công nghệ giảm ánh sáng xanh và đủ hai cổng HDMI, VGA. Sản phẩm phù hợp cho văn phòng, học tập, giải trí và công việc thiết kế cơ bản.",features:["Tần số quét 100Hz, thao tác mượt hơn màn hình 60Hz","Tấm nền VA, độ tương phản 3000:1","Phủ 95% sRGB, 16.7 triệu màu","HDMI + VGA, hỗ trợ VESA 75×75 mm"],techSpecs:{Model:"OD215100VV","Kích thước":"21.5 inch, tỷ lệ 16:9","Vùng hiển thị":"478.654 (H) × 260.28 (V) mm","Tấm nền / đèn nền":"VA / ELED","Độ phân giải":"1920 × 1080 (Full HD), 102 PPI","Tần số quét":"100Hz","Thời gian phản hồi":"14ms (Typ.)","Độ sáng":"250 cd/m² (Max.)","Độ tương phản":"3000:1 (Typ.)","Dải màu":"95% sRGB (BT.709), 16.7 triệu màu","Góc nhìn":"178° (H) / 178° (V)","Cổng vào":"HDMI + VGA","Nguồn điện":"12V / 2.5A, adapter rời","Công suất":"Tối đa 26W; chờ < 0.5W","Nhiệt độ hoạt động / lưu trữ":"0°C ~ 40°C / -20°C ~ 60°C","Độ ẩm hoạt động / lưu trữ":"10~80% RH / 5~90% (không ngưng tụ)","Chân đế":"Chữ V, cố định",VESA:"75 × 75 mm","Kích thước sản phẩm":"494 × 153 × 367 mm","Kích thước đóng gói":"546 × 93 × 346 mm","Màu vỏ":"Đen"},detailHtml:`
+  `}const K=["/images/monitors/monitor-01.png?v=2","/images/monitors/monitor-02.png?v=2"],W=[{id:"aio",name:"Máy tính All-in-one",icon:"aio",desc:"Máy tính tất cả trong một tinh gọn, mạnh mẽ"},{id:"monitor",name:"Màn hình",icon:"monitor",desc:"Hiển thị sắc nét, tần số quét cao, bảo vệ mắt"},{id:"keyboard",name:"Bàn phím",icon:"keyboard",desc:"Bàn phím cơ & công thái học gõ êm mượt"},{id:"mouse",name:"Chuột",icon:"mouse",desc:"Chuột quang học, wireless độ nhạy cao"},{id:"ram",name:"RAM",icon:"ram",desc:"Bộ nhớ DDR4/DDR5 tốc độ cao, đa nhiệm tối ưu"},{id:"accessories",name:"Phụ kiện",icon:"accessories",desc:"Giá treo, hub chuyển đổi, lót chuột cao cấp"}];let L=[{id:"od215100vv",cat:"monitor",name:"Màn hình ONDATA OD215100VV 21.5 inch 100Hz Full HD VA",images:K,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:"Màn hình ONDATA OD215100VV 21.5 inch 100Hz Full HD VA",description:"Màn hình ONDATA OD215100VV 21.5 inch Full HD, 100Hz, tấm nền VA, 95% sRGB, HDMI + VGA, giảm ánh sáng xanh.",keywords:"màn hình ONDATA OD215100VV, màn hình 21.5 inch, màn hình 100Hz, màn hình VA Full HD, màn hình văn phòng, màn hình 95% sRGB, màn hình HDMI VGA"},specs:[{icon:"monitor",label:"Kích thước",value:'21.5" VA Full HD'},{icon:"cpu",label:"Tần số quét",value:"100Hz"},{icon:"gpu",label:"Độ tương phản",value:"3000:1 (Typ.)"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD215100VV là màn hình LCD 21.5 inch, độ phân giải Full HD 1920×1080, tấm nền VA, tần số quét 100Hz. Màn hình phủ 95% sRGB, có công nghệ giảm ánh sáng xanh và đủ hai cổng HDMI, VGA. Sản phẩm phù hợp cho văn phòng, học tập, giải trí và công việc thiết kế cơ bản.",features:["Tần số quét 100Hz, thao tác mượt hơn màn hình 60Hz","Tấm nền VA, độ tương phản 3000:1","Phủ 95% sRGB, 16.7 triệu màu","HDMI + VGA, hỗ trợ VESA 75×75 mm"],techSpecs:{Model:"OD215100VV","Kích thước":"21.5 inch, tỷ lệ 16:9","Vùng hiển thị":"478.654 (H) × 260.28 (V) mm","Tấm nền / đèn nền":"VA / ELED","Độ phân giải":"1920 × 1080 (Full HD), 102 PPI","Tần số quét":"100Hz","Thời gian phản hồi":"14ms (Typ.)","Độ sáng":"250 cd/m² (Max.)","Độ tương phản":"3000:1 (Typ.)","Dải màu":"95% sRGB (BT.709), 16.7 triệu màu","Góc nhìn":"178° (H) / 178° (V)","Cổng vào":"HDMI + VGA","Nguồn điện":"12V / 2.5A, adapter rời","Công suất":"Tối đa 26W; chờ < 0.5W","Nhiệt độ hoạt động / lưu trữ":"0°C ~ 40°C / -20°C ~ 60°C","Độ ẩm hoạt động / lưu trữ":"10~80% RH / 5~90% (không ngưng tụ)","Chân đế":"Chữ V, cố định",VESA:"75 × 75 mm","Kích thước sản phẩm":"494 × 153 × 367 mm","Kích thước đóng gói":"546 × 93 × 346 mm","Màu vỏ":"Đen"},detailHtml:`
       <h2>Màn hình ONDATA OD215100VV 21.5 inch Full HD 100Hz tấm nền VA</h2>
       <p>Màn hình ONDATA OD215100VV là màn hình LCD 21.5 inch, độ phân giải Full HD 1920×1080, tấm nền VA, tần số quét 100Hz. Màn hình phủ 95% sRGB, có công nghệ giảm ánh sáng xanh và đủ hai cổng HDMI, VGA. Sản phẩm phù hợp cho văn phòng, học tập, giải trí và công việc thiết kế cơ bản.</p>
       <h3>Vì sao nên chọn màn hình ONDATA OD215100VV?</h3>
@@ -283,7 +283,7 @@
       <p>Cổng HDMI dùng cho máy tính, laptop, đầu thu đời mới. Cổng VGA giúp tận dụng thiết bị đời cũ. Màn hình hỗ trợ chuẩn VESA 75×75mm nên có thể gắn giá treo hoặc tay đỡ để tiết kiệm diện tích bàn.</p>
       <h3>7. Thiết kế gọn, tiết kiệm điện</h3>
       <p>Màn hình màu đen, chân đế cố định hình chữ V. Công suất tối đa 26W, tiêu thụ chờ dưới 0.5W. Đèn báo xanh khi hoạt động, đỏ khi không có tín hiệu hoặc ở chế độ chờ.</p>
-    `},{id:"od238120iv",cat:"monitor",name:'Màn hình ONDATA OD238120IV 23.8" IPS Full HD 120Hz',images:z,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:'Màn hình ONDATA OD238120IV 23.8" IPS Full HD 120Hz',description:"ONDATA OD238120IV màn hình 23.8 inch IPS, Full HD, 120Hz mượt mà, phủ 95% sRGB, HDMI + VGA, hỗ trợ VESA.",keywords:"màn hình ONDATA OD238120IV, màn hình 24 inch 120Hz, màn hình 23.8 inch IPS, màn hình Full HD 120Hz, màn hình văn phòng 24 inch, màn hình ONDATA 120Hz, màn hình máy tính 120Hz giá tốt"},specs:[{icon:"monitor",label:"Kích thước",value:'23.8" IPS Full HD'},{icon:"cpu",label:"Tần số quét",value:"120Hz"},{icon:"gpu",label:"Tấm nền",value:"IPS, góc nhìn 178°"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD238120IV mang tần số quét 120Hz lên phân khúc màn hình 24 inch phổ thông, kết hợp tấm nền IPS Full HD cho màu sắc đẹp, góc nhìn rộng. Thiết kế viền mỏng, chân đế chữ V gọn gàng và khả năng treo tường VESA 75×75mm giúp máy phù hợp từ bàn làm việc gia đình đến văn phòng, phòng máy và cửa hàng.",features:["Tần số quét 120Hz, mượt hơn thấy rõ so với 60Hz","Tấm nền IPS, góc nhìn 178°","Độ phủ màu 95% sRGB, 16.7 triệu màu","Viền mỏng, VESA 75×75mm, HDMI + VGA"],techSpecs:{Model:"OD238120IV","Kích thước":"23.8 inch, tỷ lệ 16:9","Công nghệ LCD":"IPS, đèn nền DLED","Độ phân giải":"1920 × 1080 (Full HD)","Tần số quét":"120Hz","Độ phủ màu":"95% sRGB (BT.709)","Màu hiển thị":"16.7 triệu màu","Độ sáng":"250 cd/m² (tối đa)","Độ tương phản":"1000:1","Thời gian phản hồi":"14ms (Typ.)","Góc nhìn":"178° (H) / 178° (V)","Vùng hiển thị":"527.04 (H) × 296.46 (V) mm","Cổng kết nối":"Vào: VGA + HDMI; Ra: không có","Nguồn điện":"Adapter ngoài 12V/2.5A","Công suất":"Tối đa 30W; chờ < 0.5W","Nhiệt độ / độ ẩm hoạt động":"0°C ~ 40°C / 10 ~ 80% RH","Nhiệt độ / độ ẩm bảo quản":"-20°C ~ 60°C / 5 ~ 90% (không ngưng tụ)","Chân đế":"Chữ V cố định","Treo tường":"VESA 75×75mm","Kích thước sản phẩm":"539 × 153 × 407 mm","Kích thước đóng gói":"617 × 110 × 406 mm","Màu vỏ":"Đen","Đèn báo":"Xanh: đang hoạt động; đỏ: không tín hiệu hoặc chế độ chờ"},detailHtml:`
+    `},{id:"od238120iv",cat:"monitor",name:'Màn hình ONDATA OD238120IV 23.8" IPS Full HD 120Hz',images:K,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:'Màn hình ONDATA OD238120IV 23.8" IPS Full HD 120Hz',description:"ONDATA OD238120IV màn hình 23.8 inch IPS, Full HD, 120Hz mượt mà, phủ 95% sRGB, HDMI + VGA, hỗ trợ VESA.",keywords:"màn hình ONDATA OD238120IV, màn hình 24 inch 120Hz, màn hình 23.8 inch IPS, màn hình Full HD 120Hz, màn hình văn phòng 24 inch, màn hình ONDATA 120Hz, màn hình máy tính 120Hz giá tốt"},specs:[{icon:"monitor",label:"Kích thước",value:'23.8" IPS Full HD'},{icon:"cpu",label:"Tần số quét",value:"120Hz"},{icon:"gpu",label:"Tấm nền",value:"IPS, góc nhìn 178°"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD238120IV mang tần số quét 120Hz lên phân khúc màn hình 24 inch phổ thông, kết hợp tấm nền IPS Full HD cho màu sắc đẹp, góc nhìn rộng. Thiết kế viền mỏng, chân đế chữ V gọn gàng và khả năng treo tường VESA 75×75mm giúp máy phù hợp từ bàn làm việc gia đình đến văn phòng, phòng máy và cửa hàng.",features:["Tần số quét 120Hz, mượt hơn thấy rõ so với 60Hz","Tấm nền IPS, góc nhìn 178°","Độ phủ màu 95% sRGB, 16.7 triệu màu","Viền mỏng, VESA 75×75mm, HDMI + VGA"],techSpecs:{Model:"OD238120IV","Kích thước":"23.8 inch, tỷ lệ 16:9","Công nghệ LCD":"IPS, đèn nền DLED","Độ phân giải":"1920 × 1080 (Full HD)","Tần số quét":"120Hz","Độ phủ màu":"95% sRGB (BT.709)","Màu hiển thị":"16.7 triệu màu","Độ sáng":"250 cd/m² (tối đa)","Độ tương phản":"1000:1","Thời gian phản hồi":"14ms (Typ.)","Góc nhìn":"178° (H) / 178° (V)","Vùng hiển thị":"527.04 (H) × 296.46 (V) mm","Cổng kết nối":"Vào: VGA + HDMI; Ra: không có","Nguồn điện":"Adapter ngoài 12V/2.5A","Công suất":"Tối đa 30W; chờ < 0.5W","Nhiệt độ / độ ẩm hoạt động":"0°C ~ 40°C / 10 ~ 80% RH","Nhiệt độ / độ ẩm bảo quản":"-20°C ~ 60°C / 5 ~ 90% (không ngưng tụ)","Chân đế":"Chữ V cố định","Treo tường":"VESA 75×75mm","Kích thước sản phẩm":"539 × 153 × 407 mm","Kích thước đóng gói":"617 × 110 × 406 mm","Màu vỏ":"Đen","Đèn báo":"Xanh: đang hoạt động; đỏ: không tín hiệu hoặc chế độ chờ"},detailHtml:`
       <h2>Màn hình ONDATA OD238120IV 23.8 inch IPS Full HD 120Hz</h2>
       <p>Đã đến lúc nói lời tạm biệt với màn hình 60Hz. Màn hình ONDATA OD238120IV mang tần số quét 120Hz lên phân khúc màn hình 24 inch phổ thông, kết hợp tấm nền IPS Full HD cho màu sắc đẹp, góc nhìn rộng. Thiết kế viền mỏng, chân đế chữ V gọn gàng và khả năng treo tường VESA 75×75mm giúp máy phù hợp từ bàn làm việc gia đình đến văn phòng, phòng máy và cửa hàng.</p>
       <h3>Vì sao nên chọn màn hình ONDATA OD238120IV?</h3>
@@ -305,7 +305,7 @@
       </ul>
       <h3>Tiết kiệm điện năng</h3>
       <p>Công suất tiêu thụ tối đa 30W, ở chế độ chờ dưới 0.5W. Phù hợp khi trang bị số lượng lớn cho văn phòng, trường học, phòng máy.</p>
-    `},{id:"od270100iv",cat:"monitor",name:"Màn hình ONDATA OD270100IV 27 inch IPS 100Hz Full HD",images:z,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:"Màn hình ONDATA OD270100IV 27 inch IPS 100Hz Full HD",description:"Màn hình ONDATA OD270100IV 27 inch IPS Full HD 100Hz, 95% sRGB, giảm ánh sáng xanh, HDMI + VGA, tặng kèm cáp HDMI.",keywords:"màn hình ONDATA OD270100IV, màn hình 27 inch 100Hz, màn hình IPS 27 inch Full HD, màn hình máy tính 27 inch, màn hình văn phòng 27 inch, màn hình ONDATA chính hãng, màn hình HDMI VGA 27 inch"},specs:[{icon:"monitor",label:"Kích thước",value:'27" IPS Full HD'},{icon:"cpu",label:"Tần số quét",value:"100Hz"},{icon:"gpu",label:"Tấm nền",value:"IPS, góc nhìn 178°"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA, tặng cáp HDMI"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD270100IV là màn hình 27 inch tấm nền IPS, độ phân giải Full HD 1920×1080, tần số quét 100Hz. Màn hình có độ phủ màu 95% sRGB, công nghệ giảm ánh sáng xanh và kết nối HDMI + VGA, phù hợp cho văn phòng, học tập, thiết kế cơ bản và giải trí hằng ngày.",features:["Tần số quét 100Hz, mượt hơn màn hình 60Hz","Tấm nền IPS, góc nhìn rộng 178°","Dải màu 95% sRGB, màn hình lớn 27 inch","HDMI + VGA, VESA 75×75mm, tặng kèm cáp HDMI"],techSpecs:{Model:"OD270100IV","Kích thước màn hình":"27 inch","Tấm nền / đèn nền":"IPS / DLED","Tỷ lệ khung hình":"16:9","Độ phân giải":"1920×1080 (Full HD)","Tần số quét":"100Hz","Độ sáng":"250 cd/m² (tối đa)","Độ tương phản":"1000:1","Thời gian phản hồi":"14ms (Typ.)","Màu hiển thị":"16.7 triệu màu","Độ phủ màu":"95% sRGB (BT.709)","Góc nhìn":"178° (H) / 178° (V)","Vùng hiển thị":"597.888 (H) × 336.312 (V) mm","Cổng vào":"HDMI + VGA","Cổng ra":"Không có","Nguồn điện":"Adapter ngoài 12V/2.5A","Công suất":"Tối đa 30W; chế độ chờ < 0.5W","Điều khiển":"1 nút điều hướng","Chân đế":"Chữ V, cố định","Chuẩn treo tường":"VESA 75×75mm","Kích thước sản phẩm":"613.3 × 153 × 441 mm","Kích thước đóng gói":"682 × 123 × 440 mm","Màu vỏ":"Đen","Nhiệt độ hoạt động":"0°C ~ 40°C","Độ ẩm hoạt động":"10% ~ 80% RH","Điều kiện lưu trữ":"-20°C ~ 60°C; độ ẩm 5% ~ 90% (không ngưng tụ)"},detailHtml:`
+    `},{id:"od270100iv",cat:"monitor",name:"Màn hình ONDATA OD270100IV 27 inch IPS 100Hz Full HD",images:K,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:"Màn hình ONDATA OD270100IV 27 inch IPS 100Hz Full HD",description:"Màn hình ONDATA OD270100IV 27 inch IPS Full HD 100Hz, 95% sRGB, giảm ánh sáng xanh, HDMI + VGA, tặng kèm cáp HDMI.",keywords:"màn hình ONDATA OD270100IV, màn hình 27 inch 100Hz, màn hình IPS 27 inch Full HD, màn hình máy tính 27 inch, màn hình văn phòng 27 inch, màn hình ONDATA chính hãng, màn hình HDMI VGA 27 inch"},specs:[{icon:"monitor",label:"Kích thước",value:'27" IPS Full HD'},{icon:"cpu",label:"Tần số quét",value:"100Hz"},{icon:"gpu",label:"Tấm nền",value:"IPS, góc nhìn 178°"},{icon:"ram",label:"Dải màu",value:"95% sRGB"},{icon:"shield",label:"Kết nối",value:"HDMI + VGA, tặng cáp HDMI"},{icon:"shield",label:"Treo tường",value:"VESA 75×75 mm"}],desc:"Màn hình ONDATA OD270100IV là màn hình 27 inch tấm nền IPS, độ phân giải Full HD 1920×1080, tần số quét 100Hz. Màn hình có độ phủ màu 95% sRGB, công nghệ giảm ánh sáng xanh và kết nối HDMI + VGA, phù hợp cho văn phòng, học tập, thiết kế cơ bản và giải trí hằng ngày.",features:["Tần số quét 100Hz, mượt hơn màn hình 60Hz","Tấm nền IPS, góc nhìn rộng 178°","Dải màu 95% sRGB, màn hình lớn 27 inch","HDMI + VGA, VESA 75×75mm, tặng kèm cáp HDMI"],techSpecs:{Model:"OD270100IV","Kích thước màn hình":"27 inch","Tấm nền / đèn nền":"IPS / DLED","Tỷ lệ khung hình":"16:9","Độ phân giải":"1920×1080 (Full HD)","Tần số quét":"100Hz","Độ sáng":"250 cd/m² (tối đa)","Độ tương phản":"1000:1","Thời gian phản hồi":"14ms (Typ.)","Màu hiển thị":"16.7 triệu màu","Độ phủ màu":"95% sRGB (BT.709)","Góc nhìn":"178° (H) / 178° (V)","Vùng hiển thị":"597.888 (H) × 336.312 (V) mm","Cổng vào":"HDMI + VGA","Cổng ra":"Không có","Nguồn điện":"Adapter ngoài 12V/2.5A","Công suất":"Tối đa 30W; chế độ chờ < 0.5W","Điều khiển":"1 nút điều hướng","Chân đế":"Chữ V, cố định","Chuẩn treo tường":"VESA 75×75mm","Kích thước sản phẩm":"613.3 × 153 × 441 mm","Kích thước đóng gói":"682 × 123 × 440 mm","Màu vỏ":"Đen","Nhiệt độ hoạt động":"0°C ~ 40°C","Độ ẩm hoạt động":"10% ~ 80% RH","Điều kiện lưu trữ":"-20°C ~ 60°C; độ ẩm 5% ~ 90% (không ngưng tụ)"},detailHtml:`
       <h2>Màn hình ONDATA OD270100IV 27 inch IPS Full HD 100Hz</h2>
       <p>Màn hình ONDATA OD270100IV là màn hình 27 inch tấm nền IPS, độ phân giải Full HD 1920×1080, tần số quét 100Hz. Màn hình có độ phủ màu 95% sRGB, công nghệ giảm ánh sáng xanh và kết nối HDMI + VGA, phù hợp cho văn phòng, học tập, thiết kế cơ bản và giải trí hằng ngày.</p>
       <p><strong>Giá bán:</strong> Liên hệ – gọi 0916666804 để nhận báo giá cho khách lẻ và đơn hàng số lượng lớn.</p>
@@ -333,7 +333,7 @@
         <li>Sách hướng dẫn sử dụng</li>
       </ul>
       <p>Phụ kiện mua thêm: giá treo tường.</p>
-    `}];function O(t){return t?(t=t.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"),t=t.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"),t=t.replace(/ì|í|ị|ỉ|ĩ/g,"i"),t=t.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"),t=t.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"),t=t.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"),t=t.replace(/đ/g,"d"),t=t.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g,"A"),t=t.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g,"E"),t=t.replace(/Ì|Í|Ị|Ỉ|Ĩ/g,"I"),t=t.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g,"O"),t=t.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g,"U"),t=t.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g,"Y"),t=t.replace(/Đ/g,"D"),t=t.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g,""),t=t.replace(/\u02C6|\u0306|\u031B/g,""),t.toLowerCase().trim()):""}function X(t){if(!t||!t.trim())return C;const n=O(t);return C.filter(e=>{const s=O(e.name),i=O(e.cat),a=e.desc?O(e.desc):"",r=e.id.toLowerCase();return s.includes(n)||i.includes(n)||r.includes(n)||a.includes(n)})}function it(t){return t&&C.find(n=>n.id===t)||null}function lt(t){return!t||t==="all"?C:C.filter(n=>n.cat===t)}function Y(t){return"Liên hệ"}function rt(t){C=Array.isArray(t)?t:[]}function ht(t,n){switch(t){case"aio":return`
+    `}];function G(t){return t?(t=t.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"),t=t.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"),t=t.replace(/ì|í|ị|ỉ|ĩ/g,"i"),t=t.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"),t=t.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"),t=t.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"),t=t.replace(/đ/g,"d"),t=t.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g,"A"),t=t.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g,"E"),t=t.replace(/Ì|Í|Ị|Ỉ|Ĩ/g,"I"),t=t.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g,"O"),t=t.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g,"U"),t=t.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g,"Y"),t=t.replace(/Đ/g,"D"),t=t.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g,""),t=t.replace(/\u02C6|\u0306|\u031B/g,""),t.toLowerCase().trim()):""}function _(t){if(!t||!t.trim())return L;const n=G(t);return L.filter(e=>{const i=G(e.name),s=G(e.cat),a=e.desc?G(e.desc):"",o=e.id.toLowerCase();return i.includes(n)||s.includes(n)||o.includes(n)||a.includes(n)})}function rt(t){return t&&L.find(n=>n.id===t)||null}function vt(t){return!t||t==="all"?L:L.filter(n=>n.cat===t)}function J(t){return"Liên hệ"}function mt(t){L=Array.isArray(t)?t:[]}function ft(t,n){switch(t){case"aio":return`
         <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="2" y="3" width="20" height="13" rx="2"/>
           <circle cx="12" cy="5" r="0.75" fill="currentColor"/>
@@ -385,32 +385,32 @@
           <circle cx="16" cy="12" r="1.5"/>
           <line x1="12" y1="7" x2="12" y2="17" stroke-dasharray="2 2"/>
         </svg>
-      `}}function dt(t){switch(t){case"aio":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>';case"monitor":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>';case"keyboard":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>';case"mouse":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>';case"ram":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>';case"accessories":default:return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}}function pt(){return`
+      `}}function bt(t){switch(t){case"aio":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>';case"monitor":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>';case"keyboard":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>';case"mouse":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>';case"ram":return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>';case"accessories":default:return'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}}function yt(){return`
     <section class="home-featured-section" id="featured-products">
       <div class="container">
 
 
         <!-- 6 Rows Danh Mục (Mỗi mục 1 hàng 5 sản phẩm) -->
         <div class="featured-categories-rows">
-          ${K.map(n=>{const s=C.filter(i=>i.cat===n.id).slice(0,5).map(i=>{var a;return`
-      <div class="product-item-card" data-id="${i.id}" data-cat="${i.cat}" style="cursor:pointer;">
-        ${i.badge?`<span class="badge-tag">${i.badge}</span>`:""}
+          ${W.map(n=>{const i=L.filter(s=>s.cat===n.id).slice(0,5).map(s=>{var a;return`
+      <div class="product-item-card" data-id="${s.id}" data-cat="${s.cat}" style="cursor:pointer;">
+        ${s.badge?`<span class="badge-tag">${s.badge}</span>`:""}
         <div class="product-thumb-container">
-          ${(a=i.images)!=null&&a[0]?`<img class="product-thumb-photo" src="${i.images[0]}" alt="${String(i.name).replace(/"/g,"&quot;")}" />`:`<div class="tech-device-render">
-            ${ht(i.cat,i.name)}
-            <span class="device-label">${i.name.split(" ")[0]} ${i.name.split(" ")[1]||""}</span>
+          ${(a=s.images)!=null&&a[0]?`<img class="product-thumb-photo" src="${s.images[0]}" alt="${String(s.name).replace(/"/g,"&quot;")}" />`:`<div class="tech-device-render">
+            ${ft(s.cat,s.name)}
+            <span class="device-label">${s.name.split(" ")[0]} ${s.name.split(" ")[1]||""}</span>
           </div>`}
         </div>
         <div class="product-info-box">
-          <h3 class="product-name" title="${String(i.name).replace(/"/g,"&quot;")}">
-            ${i.name} <span class="product-ext-icon">↗</span>
+          <h3 class="product-name" title="${String(s.name).replace(/"/g,"&quot;")}">
+            ${s.name} <span class="product-ext-icon">↗</span>
           </h3>
           <div class="product-pricing">
             <span class="current-price" style="color:#527d24;">Liên hệ</span>
           </div>
           <div class="product-stars-row">
-            <span class="stars-gold">${"★".repeat(Math.floor(i.stars))}${i.stars%1>=.5?"½":""}</span>
-            <span class="reviews-count">(${i.reviews})</span>
+            <span class="stars-gold">${"★".repeat(Math.floor(s.stars))}${s.stars%1>=.5?"½":""}</span>
+            <span class="reviews-count">(${s.reviews})</span>
           </div>
         </div>
       </div>
@@ -419,7 +419,7 @@
       <div class="home-category-row-block" id="cat-block-${n.id}">
         <div class="section-top-bar">
           <div class="category-header-title-wrap">
-            <span class="category-header-icon">${dt(n.id)}</span>
+            <span class="category-header-icon">${bt(n.id)}</span>
             <div>
               <h2 class="section-heading">${n.name}</h2>
               <span class="category-header-sub">${n.desc}</span>
@@ -432,14 +432,14 @@
         </div>
 
         <div class="featured-grid-5">
-          ${s||'<p class="featured-empty">Sản phẩm sẽ được cập nhật.</p>'}
+          ${i||'<p class="featured-empty">Sản phẩm sẽ được cập nhật.</p>'}
         </div>
       </div>
     `}).join("")}
         </div>
       </div>
     </section>
-  `}function gt(){return`
+  `}function wt(){return`
     <section class="home-promo-section" id="promo-banner">
       <div class="container">
         <div class="promo-banner-card">
@@ -470,7 +470,7 @@
         </div>
       </div>
     </section>
-  `}function ut(){return`
+  `}function kt(){return`
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-main-grid">
@@ -553,32 +553,32 @@
         </div>
       </div>
     </footer>
-  `}function vt(t="all",n={label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}){const e=[{id:"aio",label:"Máy tính All-in-one",icon:mt()},{id:"monitor",label:"Màn hình",icon:ft()},{id:"keyboard",label:"Bàn phím",icon:bt()},{id:"mouse",label:"Chuột",icon:yt()},{id:"ram",label:"RAM",icon:wt()},{id:"accessories",label:"Phụ kiện",icon:kt()}],s=["Tất cả","Văn phòng","Gaming","Đồ họa","Ultrabook"],i=["Ondata","ASUS","Acer","HP","Lenovo","Dell","Khác"],a=["8GB","16GB","32GB"],r=["Còn hàng","Hết hàng","Đặt hàng"],l=lt(t),g=l.length>0?l.map((d,m)=>{var b;return`
-        <div class="catalog-product-card" id="catalog-product-${d.id}" data-product-id="${d.id}" data-product-cat="${d.cat}" style="cursor:pointer;">
-          ${d.badge?`<span class="badge-tag">${d.badge}</span>`:""}
+  `}function xt(t="all",n={label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}){const e=[{id:"aio",label:"Máy tính All-in-one",icon:Tt()},{id:"monitor",label:"Màn hình",icon:At()},{id:"keyboard",label:"Bàn phím",icon:Bt()},{id:"mouse",label:"Chuột",icon:Ct()},{id:"ram",label:"RAM",icon:Lt()},{id:"accessories",label:"Phụ kiện",icon:Mt()}],i=["Tất cả","Văn phòng","Gaming","Đồ họa","Ultrabook"],s=["Ondata","ASUS","Acer","HP","Lenovo","Dell","Khác"],a=["8GB","16GB","32GB"],o=["Còn hàng","Hết hàng","Đặt hàng"],c=vt(t),p=c.length>0?c.map((r,f)=>{var y;return`
+        <div class="catalog-product-card" id="catalog-product-${r.id}" data-product-id="${r.id}" data-product-cat="${r.cat}" style="cursor:pointer;">
+          ${r.badge?`<span class="badge-tag">${r.badge}</span>`:""}
           <div class="catalog-product-thumb">
-            ${(b=d.images)!=null&&b[0]?`<img class="catalog-thumb-photo" src="${d.images[0]}" alt="${String(d.name).replace(/"/g,"&quot;")}" />`:`<div class="catalog-thumb-visual">
+            ${(y=r.images)!=null&&y[0]?`<img class="catalog-thumb-photo" src="${r.images[0]}" alt="${String(r.name).replace(/"/g,"&quot;")}" />`:`<div class="catalog-thumb-visual">
               <svg viewBox="0 0 160 110" xmlns="http://www.w3.org/2000/svg" style="width:100%">
                 <defs>
-                  <linearGradient id="cg${m}" x1="0" y1="0" x2="1" y2="1">
+                  <linearGradient id="cg${f}" x1="0" y1="0" x2="1" y2="1">
                     <stop offset="0%" stop-color="#1a2e1d"/>
                     <stop offset="100%" stop-color="#0d1a10"/>
                   </linearGradient>
                 </defs>
-                <rect width="160" height="110" rx="6" fill="url(#cg${m})"/>
+                <rect width="160" height="110" rx="6" fill="url(#cg${f})"/>
                 <ellipse cx="80" cy="55" rx="48" ry="28" fill="#7ea835" opacity=".12"/>
                 <text x="80" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="800" font-size="13" fill="#7ea835" opacity=".7">ONDATA</text>
               </svg>
             </div>`}
           </div>
           <div class="catalog-product-info">
-            <p class="catalog-product-name">${d.name}</p>
+            <p class="catalog-product-name">${r.name}</p>
             <div class="catalog-product-pricing">
               <span class="catalog-product-price" style="color:#527d24;">Liên hệ</span>
             </div>
             <div class="catalog-product-stars">
-              <span class="stars-gold">${"★".repeat(Math.floor(d.stars))}${d.stars%1>=.5?"½":""}</span>
-              <span class="reviews-count">(${d.reviews})</span>
+              <span class="stars-gold">${"★".repeat(Math.floor(r.stars))}${r.stars%1>=.5?"½":""}</span>
+              <span class="reviews-count">(${r.reviews})</span>
             </div>
           </div>
         </div>`}).join(""):`<div class="catalog-empty">
@@ -612,11 +612,11 @@
               Danh mục sản phẩm
             </div>
             <ul class="catsidebar-menu">
-              ${e.map(d=>`
+              ${e.map(r=>`
                 <li class="catsidebar-item">
-                  <a href="/san-pham/${d.id}" class="catsidebar-link${d.id===t?" catsidebar-link--active":""}" id="cat-${d.id}" data-cat="${d.id}">
-                    <span class="catsidebar-icon">${d.icon}</span>
-                    <span>${d.label}</span>
+                  <a href="/san-pham/${r.id}" class="catsidebar-link${r.id===t?" catsidebar-link--active":""}" id="cat-${r.id}" data-cat="${r.id}">
+                    <span class="catsidebar-icon">${r.icon}</span>
+                    <span>${r.label}</span>
                   </a>
                 </li>
               `).join("")}
@@ -647,9 +647,9 @@
 
             <!-- TYPE FILTER TABS -->
             <div class="catalog-tabs" id="catalog-tabs" role="tablist">
-              ${s.map((d,m)=>`
-                <button class="catalog-tab${m===0?" catalog-tab--active":""}" id="tab-${m}" role="tab" data-tab="${m}">
-                  ${d}
+              ${i.map((r,f)=>`
+                <button class="catalog-tab${f===0?" catalog-tab--active":""}" id="tab-${f}" role="tab" data-tab="${f}">
+                  ${r}
                 </button>
               `).join("")}
             </div>
@@ -704,11 +704,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-brand">
-                    ${i.map((d,m)=>`
-                      <label class="filter-checkbox" id="filter-brand-${m}">
-                        <input type="checkbox" name="brand" value="${d}">
+                    ${s.map((r,f)=>`
+                      <label class="filter-checkbox" id="filter-brand-${f}">
+                        <input type="checkbox" name="brand" value="${r}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${d}</span>
+                        <span class="filter-label-text">${r}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -722,11 +722,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-ram">
-                    ${a.map((d,m)=>`
-                      <label class="filter-checkbox" id="filter-ram-${m}">
-                        <input type="checkbox" name="ram" value="${d}">
+                    ${a.map((r,f)=>`
+                      <label class="filter-checkbox" id="filter-ram-${f}">
+                        <input type="checkbox" name="ram" value="${r}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${d}</span>
+                        <span class="filter-label-text">${r}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -740,11 +740,11 @@
                     </svg>
                   </div>
                   <div class="filter-group-body" id="fg-status">
-                    ${r.map((d,m)=>`
-                      <label class="filter-checkbox" id="filter-status-${m}">
-                        <input type="checkbox" name="status" value="${d}">
+                    ${o.map((r,f)=>`
+                      <label class="filter-checkbox" id="filter-status-${f}">
+                        <input type="checkbox" name="status" value="${r}">
                         <span class="checkmark"></span>
-                        <span class="filter-label-text">${d}</span>
+                        <span class="filter-label-text">${r}</span>
                       </label>
                     `).join("")}
                   </div>
@@ -759,7 +759,7 @@
               <!-- PRODUCT GRID -->
               <div class="catalog-products-area" id="catalog-products-area">
                 <div class="catalog-products-grid" id="catalog-products-grid">
-                  ${g}
+                  ${p}
                 </div>
 
                 <!-- PAGINATION -->
@@ -788,7 +788,7 @@
 
       </div><!-- end catalog-container -->
     </section>
-  `}function mt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>'}function ft(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>'}function bt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>'}function yt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>'}function wt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>'}function kt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}function xt(){var d,m,b;document.querySelectorAll(".catalog-tab").forEach(v=>{v.addEventListener("click",()=>{document.querySelectorAll(".catalog-tab").forEach(h=>h.classList.remove("catalog-tab--active")),v.classList.add("catalog-tab--active")})});const t=document.getElementById("catalog-filter-toggle"),n=document.getElementById("catalog-filters"),e=()=>{n&&(n.classList.remove("show-mobile"),document.body.classList.remove("filter-open"),t&&t.classList.remove("catalog-filters--open"))};t&&n&&t.addEventListener("click",()=>{if(window.matchMedia("(max-width: 860px)").matches){const h=!n.classList.contains("show-mobile");n.classList.toggle("show-mobile",h),document.body.classList.toggle("filter-open",h),t.classList.toggle("catalog-filters--open",h)}else n.classList.toggle("filters-hidden"),t.classList.toggle("catalog-filters--open")}),(d=document.getElementById("filter-sheet-close"))==null||d.addEventListener("click",()=>{window.matchMedia("(max-width: 860px)").matches?e():n&&(n.classList.add("filters-hidden"),t==null||t.classList.remove("catalog-filters--open"))}),(m=document.getElementById("filter-apply-btn"))==null||m.addEventListener("click",e),(b=document.getElementById("filter-backdrop"))==null||b.addEventListener("click",e),document.querySelectorAll(".filter-group-title").forEach(v=>{v.addEventListener("click",()=>{const h=v.getAttribute("data-group"),o=document.getElementById(`fg-${h}`);o&&(o.classList.toggle("fg-collapsed"),v.classList.toggle("fg-title-collapsed"))})});const s=document.getElementById("filter-reset-btn");s&&s.addEventListener("click",()=>{document.querySelectorAll('.catalog-filters input[type="checkbox"]').forEach(v=>{v.checked=!1})});let i=1;const a=document.querySelectorAll(".page-btn--num"),r=document.getElementById("page-prev"),l=document.getElementById("page-next");function g(v){i=v,a.forEach(h=>{h.classList.toggle("page-btn--active",parseInt(h.dataset.page)===i)}),r&&(r.disabled=i===1),l&&(l.disabled=i===a.length)}a.forEach(v=>v.addEventListener("click",()=>g(parseInt(v.dataset.page)))),r&&r.addEventListener("click",()=>{i>1&&g(i-1)}),l&&l.addEventListener("click",()=>{i<a.length&&g(i+1)}),document.querySelectorAll(".catalog-product-card[data-product-id]").forEach(v=>{v.addEventListener("click",()=>{const h=v.dataset.productId,o=v.dataset.productCat;h&&o&&(window.location.hash=`#/san-pham/${o}/${h}`)})})}function Tt(t){const n={cpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>',ram:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>',hdd:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M2 12v4c0 3.31 4.48 6 10 6s10-2.69 10-6v-4"/><path d="M15 10h.01"/></svg>',monitor:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>',gpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5M10 7V5M18 7V5M14 7V5M6 17v2M10 17v2M18 17v2M14 17v2"/></svg>',shield:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'};return n[t]||n.shield}function N(t){const n=Math.floor(t),e=t%1>=.4;let s="";for(let i=0;i<5;i++)i<n?s+='<svg class="star-icon star-full" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>':i===n&&e?s+=`
+  `}function Tt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>'}function At(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>'}function Bt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>'}function Ct(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>'}function Lt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>'}function Mt(){return'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}function Ht(){var r,f,y;document.querySelectorAll(".catalog-tab").forEach(m=>{m.addEventListener("click",()=>{document.querySelectorAll(".catalog-tab").forEach(h=>h.classList.remove("catalog-tab--active")),m.classList.add("catalog-tab--active")})});const t=document.getElementById("catalog-filter-toggle"),n=document.getElementById("catalog-filters"),e=()=>{n&&(n.classList.remove("show-mobile"),document.body.classList.remove("filter-open"),t&&t.classList.remove("catalog-filters--open"))};t&&n&&t.addEventListener("click",()=>{if(window.matchMedia("(max-width: 860px)").matches){const h=!n.classList.contains("show-mobile");n.classList.toggle("show-mobile",h),document.body.classList.toggle("filter-open",h),t.classList.toggle("catalog-filters--open",h)}else n.classList.toggle("filters-hidden"),t.classList.toggle("catalog-filters--open")}),(r=document.getElementById("filter-sheet-close"))==null||r.addEventListener("click",()=>{window.matchMedia("(max-width: 860px)").matches?e():n&&(n.classList.add("filters-hidden"),t==null||t.classList.remove("catalog-filters--open"))}),(f=document.getElementById("filter-apply-btn"))==null||f.addEventListener("click",e),(y=document.getElementById("filter-backdrop"))==null||y.addEventListener("click",e),document.querySelectorAll(".filter-group-title").forEach(m=>{m.addEventListener("click",()=>{const h=m.getAttribute("data-group"),d=document.getElementById(`fg-${h}`);d&&(d.classList.toggle("fg-collapsed"),m.classList.toggle("fg-title-collapsed"))})});const i=document.getElementById("filter-reset-btn");i&&i.addEventListener("click",()=>{document.querySelectorAll('.catalog-filters input[type="checkbox"]').forEach(m=>{m.checked=!1})});let s=1;const a=document.querySelectorAll(".page-btn--num"),o=document.getElementById("page-prev"),c=document.getElementById("page-next");function p(m){s=m,a.forEach(h=>{h.classList.toggle("page-btn--active",parseInt(h.dataset.page)===s)}),o&&(o.disabled=s===1),c&&(c.disabled=s===a.length)}a.forEach(m=>m.addEventListener("click",()=>p(parseInt(m.dataset.page)))),o&&o.addEventListener("click",()=>{s>1&&p(s-1)}),c&&c.addEventListener("click",()=>{s<a.length&&p(s+1)}),document.querySelectorAll(".catalog-product-card[data-product-id]").forEach(m=>{m.addEventListener("click",()=>{const h=m.dataset.productId,d=m.dataset.productCat;h&&d&&(window.location.hash=`#/san-pham/${d}/${h}`)})})}function Et(t){const n={cpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>',ram:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8V6M10 8V6M14 8V6M18 8V6M6 16v2M10 16v2M14 16v2M18 16v2"/></svg>',hdd:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M2 12v4c0 3.31 4.48 6 10 6s10-2.69 10-6v-4"/><path d="M15 10h.01"/></svg>',monitor:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>',gpu:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7V5M10 7V5M18 7V5M14 7V5M6 17v2M10 17v2M18 17v2M14 17v2"/></svg>',shield:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'};return n[t]||n.shield}function q(t){const n=Math.floor(t),e=t%1>=.4;let i="";for(let s=0;s<5;s++)s<n?i+='<svg class="star-icon star-full" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>':s===n&&e?i+=`
         <svg class="star-icon star-half" width="16" height="16" viewBox="0 0 24 24">
           <defs>
             <linearGradient id="half-star">
@@ -797,7 +797,7 @@
             </linearGradient>
           </defs>
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star)"/>
-        </svg>`:s+='<svg class="star-icon star-empty" width="16" height="16" viewBox="0 0 24 24" fill="#e5e7eb" stroke="#d1d5db"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';return s}function F(t=0,n="Laptop Ondata Pro 15"){switch(t){case 0:return`
+        </svg>`:i+='<svg class="star-icon star-empty" width="16" height="16" viewBox="0 0 24 24" fill="#e5e7eb" stroke="#d1d5db"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';return i}function U(t=0,n="Laptop Ondata Pro 15"){switch(t){case 0:return`
         <svg viewBox="0 0 540 380" xmlns="http://www.w3.org/2000/svg" class="pd-hero-svg">
           <defs>
             <!-- Screen wallpaper: Ondata elegant green wave -->
@@ -983,8 +983,8 @@
           <!-- Keys rows representation -->
           ${[0,1,2,3,4].map(e=>`
             <g transform="translate(90, ${70+e*32})">
-              ${[0,1,2,3,4,5,6,7,8,9,10,11].map(s=>`
-                <rect x="${s*30}" y="0" width="26" height="24" rx="3.5" fill="url(#kb-grad)" stroke="#3f5244" stroke-width="0.8"/>
+              ${[0,1,2,3,4,5,6,7,8,9,10,11].map(i=>`
+                <rect x="${i*30}" y="0" width="26" height="24" rx="3.5" fill="url(#kb-grad)" stroke="#3f5244" stroke-width="0.8"/>
               `).join("")}
             </g>
           `).join("")}
@@ -992,21 +992,21 @@
           <!-- Large trackpad -->
           <rect x="180" y="255" width="180" height="72" rx="6" fill="#c7d2cb" stroke="#8d9d93" stroke-width="1.2"/>
           <text x="270" y="295" text-anchor="middle" font-family="'Outfit',sans-serif" font-size="11" fill="#78887e" font-weight="600">Precision Touchpad</text>
-        </svg>`;default:return""}}function At(t){return String(t??"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;")}function Q(t,n,e){return`<img class="${e}" src="${t}" alt="${At(n)}" />`}function Z(t,n=!1,e=null){var i;if((i=e==null?void 0:e.images)!=null&&i.length){const a=`Ảnh ${t+1}`;return`
+        </svg>`;default:return""}}function Dt(t){return String(t??"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;")}function X(t,n,e){return`<img class="${e}" src="${t}" alt="${Dt(n)}" />`}function tt(t,n=!1,e=null){var s;if((s=e==null?void 0:e.images)!=null&&s.length){const a=`Ảnh ${t+1}`;return`
       <button class="pd-thumb-btn pd-thumb-btn--photo${n?" pd-thumb-btn--active":""}" data-thumb="${t}" aria-label="${a}">
         <div class="pd-thumb-mini-preview">
-          ${Q(e.images[t],e.name,"pd-thumb-photo")}
+          ${X(e.images[t],e.name,"pd-thumb-photo")}
         </div>
         <span class="pd-thumb-caption">${a}</span>
       </button>
-    `}const s=["Chính diện","Góc nghiêng","Mặt lưng","Cạnh bên","Bàn phím"];return`
-    <button class="pd-thumb-btn${n?" pd-thumb-btn--active":""}" data-thumb="${t}" aria-label="${s[t]}">
+    `}const i=["Chính diện","Góc nghiêng","Mặt lưng","Cạnh bên","Bàn phím"];return`
+    <button class="pd-thumb-btn${n?" pd-thumb-btn--active":""}" data-thumb="${t}" aria-label="${i[t]}">
       <div class="pd-thumb-mini-preview">
-        ${F(t)}
+        ${U(t)}
       </div>
-      <span class="pd-thumb-caption">${s[t]}</span>
+      <span class="pd-thumb-caption">${i[t]}</span>
     </button>
-  `}function Bt(t){if(!t)return`
+  `}function St(t){if(!t)return`
       <section class="pd-page">
         <div class="pd-container">
           <div class="pd-not-found">
@@ -1016,27 +1016,27 @@
           </div>
         </div>
       </section>
-    `;Y(t.price),t.oldPrice&&Y(t.oldPrice),t.discount||t.oldPrice&&Math.round((1-t.price/t.oldPrice)*100);const n=(t.specs||[]).map(l=>`
+    `;J(t.price),t.oldPrice&&J(t.oldPrice),t.discount||t.oldPrice&&Math.round((1-t.price/t.oldPrice)*100);const n=(t.specs||[]).map(c=>`
     <li class="pd-spec-item">
-      <span class="pd-spec-icon">${Tt(l.icon)}</span>
-      <span class="pd-spec-label">${l.label}:</span>
-      <span class="pd-spec-val">${l.value}</span>
+      <span class="pd-spec-icon">${Et(c.icon)}</span>
+      <span class="pd-spec-label">${c.label}:</span>
+      <span class="pd-spec-val">${c.value}</span>
     </li>
-  `).join(""),e=Object.entries(t.techSpecs||{}).map(([l,g])=>`
+  `).join(""),e=Object.entries(t.techSpecs||{}).map(([c,p])=>`
     <tr class="pd-ts-row">
-      <td class="pd-ts-key">${l}</td>
-      <td class="pd-ts-val">${g}</td>
+      <td class="pd-ts-key">${c}</td>
+      <td class="pd-ts-val">${p}</td>
     </tr>
-  `).join(""),s=(t.features||[]).map(l=>`
+  `).join(""),i=(t.features||[]).map(c=>`
     <li class="pd-feature-item">
       <span class="pd-check-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
       </span>
-      <span class="pd-feature-text">${l}</span>
+      <span class="pd-feature-text">${c}</span>
     </li>
-  `).join(""),i=Array.isArray(t.images)&&t.images.length>0,a=i?t.images.map((l,g)=>Z(g,g===0,t)).join(""):[0,1,2,3,4].map(l=>Z(l,l===0)).join(""),r=i?Q(t.images[0],t.name,"pd-hero-photo"):F(0,t.name);return`
+  `).join(""),s=Array.isArray(t.images)&&t.images.length>0,a=s?t.images.map((c,p)=>tt(p,p===0,t)).join(""):[0,1,2,3,4].map(c=>tt(c,c===0)).join(""),o=s?X(t.images[0],t.name,"pd-hero-photo"):U(0,t.name);return`
     <section class="pd-page" id="pd-page">
       <div class="pd-container">
 
@@ -1057,7 +1057,7 @@
             <div class="pd-gallery-col">
               <div class="pd-hero-preview-box" id="pd-hero-preview-box">
                 <div class="pd-hero-art" id="pd-hero-art">
-                  ${r}
+                  ${o}
                 </div>
               </div>
 
@@ -1074,7 +1074,7 @@
               <!-- Rating row -->
               <div class="pd-rating-row">
                 <div class="pd-stars-wrap">
-                  ${N(t.stars||4.5)}
+                  ${q(t.stars||4.5)}
                 </div>
                 <span class="pd-rating-count">(${t.reviews??24} đánh giá)</span>
                 ${t.badge?`<span class="pd-top-badge">${t.badge}</span>`:""}
@@ -1179,7 +1179,7 @@
                 <div class="pd-article">${t.detailHtml}</div>
               `:`
                 <ul class="pd-features-list">
-                  ${s}
+                  ${i}
                 </ul>
                 <div class="pd-editorial-block">
                   <h3 class="pd-editorial-title">Đặc điểm nổi bật của ${t.name}</h3>
@@ -1202,7 +1202,7 @@
               <div class="pd-reviews-summary">
                 <div class="pd-score-box">
                   <div class="pd-big-score">${t.stars||4.5}</div>
-                  <div class="pd-stars-wrap">${N(t.stars||4.5)}</div>
+                  <div class="pd-stars-wrap">${q(t.stars||4.5)}</div>
                   <span class="pd-score-sub">${t.reviews??24} đánh giá từ khách hàng</span>
                 </div>
 
@@ -1248,7 +1248,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="pd-stars-wrap">${N(5)}</div>
+                  <div class="pd-stars-wrap">${q(5)}</div>
                   <p class="pd-review-comment">Máy chạy rất êm và mát, mở chục tab Chrome và code visual studio không hề bị giật lag. Màn hình màu sắc đẹp, pin dùng được tầm 8 tiếng văn phòng. Đáng giá từng đồng!</p>
                 </div>
 
@@ -1263,7 +1263,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="pd-stars-wrap">${N(5)}</div>
+                  <div class="pd-stars-wrap">${q(5)}</div>
                   <p class="pd-review-comment">Giao hàng cực kỳ nhanh, đóng gói cẩn thận có xốp chống sốc dày. Máy nhẹ hơn tưởng tượng, bàn phím gõ nảy và êm tay. Nhân viên tư vấn kỹ càng.</p>
                 </div>
               </div>
@@ -1274,12 +1274,12 @@
 
       </div>
     </section>
-  `}function Ct(t,n){var b,v;if(!t)return;const e=document.querySelectorAll(".pd-thumb-btn"),s=document.getElementById("pd-hero-art");e.forEach(h=>{h.addEventListener("click",()=>{const o=parseInt(h.dataset.thumb,10);e.forEach(c=>c.classList.remove("pd-thumb-btn--active")),h.classList.add("pd-thumb-btn--active"),s&&(s.style.opacity="0",s.style.transform="scale(0.96)",setTimeout(()=>{var c;s.innerHTML=(c=t.images)!=null&&c[o]?Q(t.images[o],t.name,"pd-hero-photo"):F(o,t.name),s.style.opacity="1",s.style.transform="scale(1)"},160))})});const i=document.getElementById("pd-qty-input"),a=document.getElementById("pd-qty-minus"),r=document.getElementById("pd-qty-plus");i&&a&&r&&(a.addEventListener("click",()=>{let h=parseInt(i.value,10)||1;h>1&&(i.value=h-1)}),r.addEventListener("click",()=>{let h=parseInt(i.value,10)||1;h<99&&(i.value=h+1)}),i.addEventListener("change",()=>{let h=parseInt(i.value,10)||1;h<1&&(h=1),h>99&&(h=99),i.value=h}));const l=document.getElementById("pd-btn-cart");l&&l.addEventListener("click",()=>{parseInt(i==null?void 0:i.value,10);const h=l.innerHTML;l.classList.add("pd-btn-cart--added"),l.innerHTML=`
+  `}function $t(t,n){var y,m;if(!t)return;const e=document.querySelectorAll(".pd-thumb-btn"),i=document.getElementById("pd-hero-art");e.forEach(h=>{h.addEventListener("click",()=>{const d=parseInt(h.dataset.thumb,10);e.forEach(u=>u.classList.remove("pd-thumb-btn--active")),h.classList.add("pd-thumb-btn--active"),i&&(i.style.opacity="0",i.style.transform="scale(0.96)",setTimeout(()=>{var u;i.innerHTML=(u=t.images)!=null&&u[d]?X(t.images[d],t.name,"pd-hero-photo"):U(d,t.name),i.style.opacity="1",i.style.transform="scale(1)"},160))})});const s=document.getElementById("pd-qty-input"),a=document.getElementById("pd-qty-minus"),o=document.getElementById("pd-qty-plus");s&&a&&o&&(a.addEventListener("click",()=>{let h=parseInt(s.value,10)||1;h>1&&(s.value=h-1)}),o.addEventListener("click",()=>{let h=parseInt(s.value,10)||1;h<99&&(s.value=h+1)}),s.addEventListener("change",()=>{let h=parseInt(s.value,10)||1;h<1&&(h=1),h>99&&(h=99),s.value=h}));const c=document.getElementById("pd-btn-cart");c&&c.addEventListener("click",()=>{parseInt(s==null?void 0:s.value,10);const h=c.innerHTML;c.classList.add("pd-btn-cart--added"),c.innerHTML=`
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
         <span>Đã thêm vào giỏ!</span>
-      `,setTimeout(()=>{l.classList.remove("pd-btn-cart--added"),l.innerHTML=h},2e3)});const g=document.getElementById("pd-btn-buy");g&&g.addEventListener("click",()=>{parseInt(i==null?void 0:i.value,10)});const d=document.querySelectorAll(".pd-tab-btn"),m=document.querySelectorAll(".pd-panel");d.forEach(h=>{h.addEventListener("click",()=>{d.forEach(c=>{c.classList.remove("pd-tab-btn--active"),c.setAttribute("aria-selected","false")}),h.classList.add("pd-tab-btn--active"),h.setAttribute("aria-selected","true");const o=h.dataset.tab;m.forEach(c=>{const u=c.id===`pd-panel-${o}`;c.classList.toggle("pd-panel--hidden",!u)})})}),(b=document.getElementById("pd-crumb-home"))==null||b.addEventListener("click",h=>{h.preventDefault(),window.location.hash="#/"}),(v=document.getElementById("pd-crumb-cat"))==null||v.addEventListener("click",h=>{h.preventDefault(),window.location.hash=`#/san-pham/${t.cat}`})}const Mt=[{id:"all",label:"Tất cả"},{id:"buying-guide",label:"Tư vấn chọn mua"},{id:"tips",label:"Hướng dẫn sử dụng"},{id:"trends",label:"Xu hướng công nghệ"}],R=[{id:"chon-laptop-sinh-vien",featured:!0,category:"buying-guide",categoryLabel:"Tư vấn chọn mua",title:"Cách chọn laptop phù hợp cho sinh viên",date:"08/10/2025",readTime:"5 phút đọc",summary:"Tổng hợp kinh nghiệm chọn mua laptop tối ưu theo ngành học: Kinh tế, CNTT, Thiết kế đồ họa và Y dược với mức ngân sách hợp lý nhất.",content:`
+      `,setTimeout(()=>{c.classList.remove("pd-btn-cart--added"),c.innerHTML=h},2e3)});const p=document.getElementById("pd-btn-buy");p&&p.addEventListener("click",()=>{parseInt(s==null?void 0:s.value,10)});const r=document.querySelectorAll(".pd-tab-btn"),f=document.querySelectorAll(".pd-panel");r.forEach(h=>{h.addEventListener("click",()=>{r.forEach(u=>{u.classList.remove("pd-tab-btn--active"),u.setAttribute("aria-selected","false")}),h.classList.add("pd-tab-btn--active"),h.setAttribute("aria-selected","true");const d=h.dataset.tab;f.forEach(u=>{const l=u.id===`pd-panel-${d}`;u.classList.toggle("pd-panel--hidden",!l)})})}),(y=document.getElementById("pd-crumb-home"))==null||y.addEventListener("click",h=>{h.preventDefault(),window.location.hash="#/"}),(m=document.getElementById("pd-crumb-cat"))==null||m.addEventListener("click",h=>{h.preventDefault(),window.location.hash=`#/san-pham/${t.cat}`})}const It=[{id:"all",label:"Tất cả"},{id:"buying-guide",label:"Tư vấn chọn mua"},{id:"tips",label:"Hướng dẫn sử dụng"},{id:"trends",label:"Xu hướng công nghệ"}],P=[{id:"chon-laptop-sinh-vien",featured:!0,category:"buying-guide",categoryLabel:"Tư vấn chọn mua",title:"Cách chọn laptop phù hợp cho sinh viên",date:"08/10/2025",readTime:"5 phút đọc",summary:"Tổng hợp kinh nghiệm chọn mua laptop tối ưu theo ngành học: Kinh tế, CNTT, Thiết kế đồ họa và Y dược với mức ngân sách hợp lý nhất.",content:`
       <p>Bước vào giảng đường đại học, một chiếc laptop phù hợp là người bạn đồng hành không thể thiếu. Tùy thuộc vào ngành học và nhu cầu sử dụng thực tế, sinh viên cần cân nhắc các yếu tố then chốt như CPU, RAM, thời lượng pin và trọng lượng máy.</p>
       <h3>1. Xác định nhu cầu theo chuyên ngành</h3>
       <p>• <strong>Khối Kinh tế, Xã hội, Ngôn ngữ:</strong> Ưu tiên laptop mỏng nhẹ dưới 1.5kg, pin từ 8-10 tiếng, cấu hình Core i3/i5 hoặc Ryzen 5, RAM 8GB - 16GB để phục vụ soạn thảo văn bản, làm slide và thuyết trình.</p>
@@ -1303,7 +1303,7 @@
       <p>Khi build PC hoặc nâng cấp laptop, người dùng thường băn khoăn liệu DDR5 đã thực sự cần thiết hay DDR4 vẫn còn đủ dùng:</p>
       <p>• <strong>Băng thông và tốc độ:</strong> DDR5 khởi điểm ở mức 4800MHz - 6400MHz, gần gấp đôi so với chuẩn DDR4 3200MHz, giúp giải quyết các tác vụ render video 4K và nạp texture game nhanh hơn đáng kể.</p>
       <p>• <strong>Mức giá và độ tương thích:</strong> Hiện nay giá RAM DDR5 đã hạ nhiệt rất nhiều và tiệm cận với DDR4, khiến đây trở thành sự lựa chọn đầu tư dài hạn thông minh cho các dàn máy mới thế hệ 13 và 14.</p>
-    `}];function _(t,n=!1){if(n)return`
+    `}];function nt(t,n=!1){if(n)return`
       <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" class="news-art-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
         <defs>
           <!-- Room background -->
@@ -1452,21 +1452,21 @@
           <line x1="45" y1="109" x2="195" y2="109" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2"/>
           <text x="52" y="100" font-family="'Outfit',sans-serif" font-size="10" font-weight="700" fill="#94a3b8">DDR4 3200MHz</text>
         </svg>
-      `;default:return""}}function Ht(t="all"){const n=R.find(l=>l.featured)||R[0],e=R.filter(l=>!l.featured),s=Mt.map(l=>`
+      `;default:return""}}function Ot(t="all"){const n=P.find(c=>c.featured)||P[0],e=P.filter(c=>!c.featured),i=It.map(c=>`
     <button 
-      class="news-filter-btn${l.id===t?" news-filter-btn--active":""}" 
-      data-filter="${l.id}"
-      id="filter-btn-${l.id}"
+      class="news-filter-btn${c.id===t?" news-filter-btn--active":""}" 
+      data-filter="${c.id}"
+      id="filter-btn-${c.id}"
     >
-      ${l.label}
+      ${c.label}
     </button>
-  `).join(""),i=t==="all"?e:e.filter(l=>l.category===t),a=t==="all"||n.category===t,r=i.length>0?i.map(l=>`
-        <article class="news-list-card" data-article-id="${l.id}" id="news-card-${l.id}">
+  `).join(""),s=t==="all"?e:e.filter(c=>c.category===t),a=t==="all"||n.category===t,o=s.length>0?s.map(c=>`
+        <article class="news-list-card" data-article-id="${c.id}" id="news-card-${c.id}">
           <div class="news-list-thumb">
-            ${_(l.id,!1)}
+            ${nt(c.id,!1)}
           </div>
           <div class="news-list-content">
-            <h3 class="news-list-title">${l.title}</h3>
+            <h3 class="news-list-title">${c.title}</h3>
             <div class="news-list-date">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -1474,11 +1474,11 @@
                 <line x1="8" y1="2" x2="8" y2="6"/>
                 <line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
-              <span>${l.date}</span>
+              <span>${c.date}</span>
             </div>
           </div>
           <div class="news-list-badge-wrap">
-            <span class="news-badge news-badge--pill">${l.categoryLabel}</span>
+            <span class="news-badge news-badge--pill">${c.categoryLabel}</span>
           </div>
         </article>
       `).join(""):'<div class="news-empty-notice">Không có bài viết trong danh mục này.</div>';return`
@@ -1500,14 +1500,14 @@
 
         <!-- 3. CATEGORY FILTER BUTTONS -->
         <div class="news-filter-bar" id="news-filter-bar">
-          ${s}
+          ${i}
         </div>
 
         <!-- 4. FEATURED HERO ARTICLE (Top Large Card) -->
         ${a?`
           <article class="news-hero-card" data-article-id="${n.id}" id="news-hero-article">
             <div class="news-hero-image-wrap">
-              ${_(n.id,!0)}
+              ${nt(n.id,!0)}
             </div>
             <div class="news-hero-footer">
               <div class="news-hero-info">
@@ -1531,7 +1531,7 @@
 
         <!-- 5. ARTICLES STACK LIST (Vertical list cards) -->
         <div class="news-list-stack" id="news-list-stack">
-          ${r}
+          ${o}
         </div>
 
       </div>
@@ -1545,16 +1545,16 @@
         </div>
       </div>
     </section>
-  `}function Lt(t){var l;(l=document.getElementById("news-crumb-home"))==null||l.addEventListener("click",g=>{g.preventDefault(),window.location.hash="#/"}),document.querySelectorAll(".news-filter-btn").forEach(g=>{g.addEventListener("click",()=>{const d=g.dataset.filter;t&&t(d)})});const n=document.getElementById("news-modal"),e=document.getElementById("news-modal-body"),s=document.getElementById("news-modal-close"),i=document.getElementById("news-modal-backdrop");function a(g){const d=R.find(m=>m.id===g);!d||!n||!e||(e.innerHTML=`
-      <div class="news-detail-badge">${d.categoryLabel}</div>
-      <h2 class="news-detail-title">${d.title}</h2>
+  `}function Gt(t){var c;(c=document.getElementById("news-crumb-home"))==null||c.addEventListener("click",p=>{p.preventDefault(),window.location.hash="#/"}),document.querySelectorAll(".news-filter-btn").forEach(p=>{p.addEventListener("click",()=>{const r=p.dataset.filter;t&&t(r)})});const n=document.getElementById("news-modal"),e=document.getElementById("news-modal-body"),i=document.getElementById("news-modal-close"),s=document.getElementById("news-modal-backdrop");function a(p){const r=P.find(f=>f.id===p);!r||!n||!e||(e.innerHTML=`
+      <div class="news-detail-badge">${r.categoryLabel}</div>
+      <h2 class="news-detail-title">${r.title}</h2>
       <div class="news-detail-meta">
-        <span>📅 ${d.date}</span>
-        <span>⏱️ ${d.readTime}</span>
+        <span>📅 ${r.date}</span>
+        <span>⏱️ ${r.readTime}</span>
       </div>
-      <div class="news-detail-summary">${d.summary}</div>
-      <div class="news-detail-content">${d.content}</div>
-    `,n.classList.add("news-modal--open"),n.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden")}function r(){n&&(n.classList.remove("news-modal--open"),n.setAttribute("aria-hidden","true"),document.body.style.overflow="")}s==null||s.addEventListener("click",r),i==null||i.addEventListener("click",r),document.querySelectorAll("[data-article-id]").forEach(g=>{g.addEventListener("click",()=>{a(g.dataset.articleId)})})}function Et(){return`
+      <div class="news-detail-summary">${r.summary}</div>
+      <div class="news-detail-content">${r.content}</div>
+    `,n.classList.add("news-modal--open"),n.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden")}function o(){n&&(n.classList.remove("news-modal--open"),n.setAttribute("aria-hidden","true"),document.body.style.overflow="")}i==null||i.addEventListener("click",o),s==null||s.addEventListener("click",o),document.querySelectorAll("[data-article-id]").forEach(p=>{p.addEventListener("click",()=>{a(p.dataset.articleId)})})}function Vt(){return`
     <section class="contact-page" id="contact-page">
       <div class="contact-container">
 
@@ -1712,7 +1712,7 @@
 
       </div>
     </section>
-  `}function Dt(t){var s;(s=document.getElementById("contact-crumb-home"))==null||s.addEventListener("click",i=>{i.preventDefault(),window.location.hash="#/"});const n=document.getElementById("contact-form");n&&n.addEventListener("submit",i=>{var r,l;i.preventDefault();const a=(r=document.getElementById("contact-name"))==null?void 0:r.value;(l=document.getElementById("contact-phone"))==null||l.value,t&&t(`Cảm ơn ${a||"bạn"}! Tin nhắn liên hệ đã được gửi thành công.`),n.reset()});const e=document.getElementById("btn-partner-register");e&&e.addEventListener("click",()=>{t&&t("Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.")})}function D(t){switch(t){case"hero":return`
+  `}function Nt(t){var i;(i=document.getElementById("contact-crumb-home"))==null||i.addEventListener("click",s=>{s.preventDefault(),window.location.hash="#/"});const n=document.getElementById("contact-form");n&&n.addEventListener("submit",s=>{var o,c;s.preventDefault();const a=(o=document.getElementById("contact-name"))==null?void 0:o.value;(c=document.getElementById("contact-phone"))==null||c.value,t&&t(`Cảm ơn ${a||"bạn"}! Tin nhắn liên hệ đã được gửi thành công.`),n.reset()});const e=document.getElementById("btn-partner-register");e&&e.addEventListener("click",()=>{t&&t("Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.")})}function I(t){switch(t){case"hero":return`
         <svg viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" class="sp-hero-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
           <defs>
             <linearGradient id="sp-room" x1="0" y1="0" x2="1" y2="1">
@@ -1866,7 +1866,7 @@
             <line x1="27" y1="46" x2="27" y2="52" stroke="#163942" stroke-width="2.5"/>
           </g>
         </svg>
-      `;default:return""}}function St(){const n=[{id:"bao-hanh",title:"Chính sách bảo hành<br>& đổi trả",desc:"Thông tin chi tiết về điều kiện, quy trình bảo hành và đổi trả sản phẩm.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>'},{id:"ky-thuat",title:"Hỗ trợ kỹ thuật",desc:"Hướng dẫn sử dụng, cài đặt, khắc phục sự cố và các yêu cầu hỗ trợ kỹ thuật.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>'},{id:"tra-cuu",title:"Tra cứu đơn hàng",desc:"Kiểm tra trạng thái đơn hàng và thông tin giao hàng nhanh chóng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>'},{id:"lien-he",title:"Liên hệ hỗ trợ",desc:"Hotline, Zalo, Email và biểu mẫu liên hệ với đội ngũ hỗ trợ.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'},{id:"bao-mat",title:"Chính sách bảo mật",desc:"Cam kết bảo vệ thông tin cá nhân của khách hàng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>'}].map(e=>`
+      `;default:return""}}function Rt(){const n=[{id:"bao-hanh",title:"Chính sách bảo hành<br>& đổi trả",desc:"Thông tin chi tiết về điều kiện, quy trình bảo hành và đổi trả sản phẩm.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>'},{id:"ky-thuat",title:"Hỗ trợ kỹ thuật",desc:"Hướng dẫn sử dụng, cài đặt, khắc phục sự cố và các yêu cầu hỗ trợ kỹ thuật.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>'},{id:"tra-cuu",title:"Tra cứu đơn hàng",desc:"Kiểm tra trạng thái đơn hàng và thông tin giao hàng nhanh chóng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>'},{id:"lien-he",title:"Liên hệ hỗ trợ",desc:"Hotline, Zalo, Email và biểu mẫu liên hệ với đội ngũ hỗ trợ.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'},{id:"bao-mat",title:"Chính sách bảo mật",desc:"Cam kết bảo vệ thông tin cá nhân của khách hàng.",icon:'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>'}].map(e=>`
     <div class="sp-card" data-sub="${e.id}" id="sp-card-${e.id}">
       <div class="sp-card-icon-wrap">
         ${e.icon}
@@ -1899,7 +1899,7 @@
             </p>
           </div>
           <div class="sp-hero-right">
-            ${D("hero")}
+            ${I("hero")}
           </div>
         </div>
 
@@ -1910,7 +1910,7 @@
 
       </div>
     </section>
-  `}function $t(){return`
+  `}function qt(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <!-- Breadcrumb -->
@@ -1929,7 +1929,7 @@
 
         <!-- Graphic Banner -->
         <div class="sp-sub-banner">
-          ${D("shield-banner")}
+          ${I("shield-banner")}
         </div>
 
         <!-- Tabs Toggle -->
@@ -2022,7 +2022,7 @@
         </div>
       </div>
     </section>
-  `}function It(){const t=[{title:"Hướng dẫn sử dụng sản phẩm",sub:"Tài liệu hướng dẫn, video minh họa",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'},{title:"Cài đặt phần mềm & driver",sub:"Tải driver, phần mềm cần thiết",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'},{title:"Khắc phục sự cố thường gặp",sub:"Các lỗi phổ biến và cách xử lý",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'},{title:"Gửi yêu cầu hỗ trợ",sub:"Điền biểu mẫu để được hỗ trợ trực tiếp",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'}];return`
+  `}function Pt(){const t=[{title:"Hướng dẫn sử dụng sản phẩm",sub:"Tài liệu hướng dẫn, video minh họa",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'},{title:"Cài đặt phần mềm & driver",sub:"Tải driver, phần mềm cần thiết",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'},{title:"Khắc phục sự cố thường gặp",sub:"Các lỗi phổ biến và cách xử lý",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'},{title:"Gửi yêu cầu hỗ trợ",sub:"Điền biểu mẫu để được hỗ trợ trực tiếp",icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'}];return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2039,7 +2039,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${D("tech-banner")}
+          ${I("tech-banner")}
         </div>
 
         <div class="sp-block">
@@ -2074,7 +2074,7 @@
         </div>
       </div>
     </section>
-  `}function Ot(){return`
+  `}function zt(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2091,7 +2091,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${D("track-banner")}
+          ${I("track-banner")}
         </div>
 
         <!-- Tracking Search Form -->
@@ -2168,7 +2168,7 @@
         </div>
       </div>
     </section>
-  `}function Vt(){return`
+  `}function jt(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2185,14 +2185,14 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${D("contact-banner")}
+          ${I("contact-banner")}
         </div>
 
         <!-- Channels Grid -->
         <div class="sp-contact-grid">
           <div class="sp-ch-item">
             <div class="sp-ch-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
               <strong>Hotline</strong>
@@ -2203,7 +2203,7 @@
 
           <div class="sp-ch-item">
             <div class="sp-ch-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
             <div>
               <strong>Zalo</strong>
@@ -2214,7 +2214,7 @@
 
           <div class="sp-ch-item">
             <div class="sp-ch-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
             <div>
               <strong>Email</strong>
@@ -2225,7 +2225,7 @@
 
           <div class="sp-ch-item">
             <div class="sp-ch-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
               <strong>Địa chỉ</strong>
@@ -2253,7 +2253,7 @@
         </div>
       </div>
     </section>
-  `}function Gt(){return`
+  `}function Kt(){return`
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container">
         <nav class="catalog-breadcrumb sp-breadcrumb">
@@ -2270,7 +2270,7 @@
         </div>
 
         <div class="sp-sub-banner">
-          ${D("privacy-banner")}
+          ${I("privacy-banner")}
         </div>
 
         <div class="sp-block">
@@ -2311,7 +2311,7 @@
         </div>
       </div>
     </section>
-  `}function Nt(t=null){switch(t){case"bao-hanh":return $t();case"ky-thuat":return It();case"tra-cuu":return Ot();case"lien-he":return Vt();case"bao-mat":return Gt();default:return St()}}function Rt(t=null,n){var m;(m=document.getElementById("sp-crumb-home"))==null||m.addEventListener("click",b=>{b.preventDefault(),window.navigate?window.navigate("/"):window.location.assign("/")}),document.querySelectorAll(".sp-card[data-sub]").forEach(b=>{b.addEventListener("click",()=>{const v=b.dataset.sub;v&&(window.navigate?window.navigate(`/ho-tro/${v}`):window.location.assign(`/ho-tro/${v}`))})});const e=document.getElementById("btn-tab-warranty"),s=document.getElementById("btn-tab-exchange"),i=document.getElementById("panel-warranty"),a=document.getElementById("panel-exchange");e&&s&&i&&a&&(e.addEventListener("click",()=>{e.classList.add("sp-tab-pill--active"),s.classList.remove("sp-tab-pill--active"),i.classList.remove("sp-tab-panel--hidden"),a.classList.add("sp-tab-panel--hidden")}),s.addEventListener("click",()=>{s.classList.add("sp-tab-pill--active"),e.classList.remove("sp-tab-pill--active"),a.classList.remove("sp-tab-panel--hidden"),i.classList.add("sp-tab-panel--hidden")}));const r=document.getElementById("btn-track-submit"),l=document.getElementById("track-input"),g=document.getElementById("track-result");r&&l&&g&&r.addEventListener("click",()=>{const b=l.value.trim();if(!b){n&&n("Vui lòng nhập mã đơn hàng hoặc số điện thoại!");return}g.style.display="block",n&&n(`Đã tìm thấy thông tin đơn hàng: ${b}`)});const d=document.getElementById("sp-quick-form");d&&d.addEventListener("submit",b=>{b.preventDefault(),n&&n("Cảm ơn bạn! Yêu cầu hỗ trợ đã được gửi thành công."),d.reset()})}function qt(){return`
+  `}function Ft(t=null){switch(t){case"bao-hanh":return qt();case"ky-thuat":return Pt();case"tra-cuu":return zt();case"lien-he":return jt();case"bao-mat":return Kt();default:return Rt()}}function Qt(t=null,n){var f;(f=document.getElementById("sp-crumb-home"))==null||f.addEventListener("click",y=>{y.preventDefault(),window.navigate?window.navigate("/"):window.location.assign("/")}),document.querySelectorAll(".sp-card[data-sub]").forEach(y=>{y.addEventListener("click",()=>{const m=y.dataset.sub;m&&(window.navigate?window.navigate(`/ho-tro/${m}`):window.location.assign(`/ho-tro/${m}`))})});const e=document.getElementById("btn-tab-warranty"),i=document.getElementById("btn-tab-exchange"),s=document.getElementById("panel-warranty"),a=document.getElementById("panel-exchange");e&&i&&s&&a&&(e.addEventListener("click",()=>{e.classList.add("sp-tab-pill--active"),i.classList.remove("sp-tab-pill--active"),s.classList.remove("sp-tab-panel--hidden"),a.classList.add("sp-tab-panel--hidden")}),i.addEventListener("click",()=>{i.classList.add("sp-tab-pill--active"),e.classList.remove("sp-tab-pill--active"),a.classList.remove("sp-tab-panel--hidden"),s.classList.add("sp-tab-panel--hidden")}));const o=document.getElementById("btn-track-submit"),c=document.getElementById("track-input"),p=document.getElementById("track-result");o&&c&&p&&o.addEventListener("click",()=>{const y=c.value.trim();if(!y){n&&n("Vui lòng nhập mã đơn hàng hoặc số điện thoại!");return}p.style.display="block",n&&n(`Đã tìm thấy thông tin đơn hàng: ${y}`)});const r=document.getElementById("sp-quick-form");r&&r.addEventListener("submit",y=>{y.preventDefault(),n&&n("Cảm ơn bạn! Yêu cầu hỗ trợ đã được gửi thành công."),r.reset()})}function Wt(){return`
     <div class="about-page" id="about-page">
       <!-- HERO BANNER -->
       <section class="about-hero">
@@ -2545,7 +2545,7 @@
         </div>
       </section>
     </div>
-  `}function Pt(){return`
+  `}function Ut(){return`
     <!-- FLOATING CONTACT & CHATBOX WIDGET -->
     <div class="floating-contact-widget" id="floating-contact-widget">
       <!-- CỬA SỔ CHATBOX POPUP -->
@@ -2657,12 +2657,13 @@
         </button>
       </div>
     </div>
-  `}function zt(t){document.getElementById("floating-contact-widget");const n=document.getElementById("chatbox-window"),e=document.getElementById("chatbox-toggle-btn"),s=document.getElementById("chatbox-btn-close"),i=document.getElementById("chatbox-form"),a=document.getElementById("chatbox-input"),r=document.getElementById("chatbox-messages"),l=e==null?void 0:e.querySelector(".icon-chat-open"),g=e==null?void 0:e.querySelector(".icon-chat-close");if(!e||!n)return;function d(){n.classList.add("chatbox-window--active"),l&&(l.style.display="none"),g&&(g.style.display="inline-block"),setTimeout(()=>a==null?void 0:a.focus(),200)}function m(){n.classList.remove("chatbox-window--active"),l&&(l.style.display="inline-block"),g&&(g.style.display="none")}e.addEventListener("click",h=>{h.stopPropagation(),n.classList.contains("chatbox-window--active")?m():d()}),s==null||s.addEventListener("click",h=>{h.stopPropagation(),m()});function b(h,o=!0){if(!r)return;const c=document.createElement("div");c.className=`chat-msg ${o?"chat-msg--outgoing":"chat-msg--incoming"}`,c.innerHTML=`
+  `}function Xt(t){document.getElementById("floating-contact-widget");const n=document.getElementById("chatbox-window"),e=document.getElementById("chatbox-toggle-btn"),i=document.getElementById("chatbox-btn-close"),s=document.getElementById("chatbox-form"),a=document.getElementById("chatbox-input"),o=document.getElementById("chatbox-messages"),c=e==null?void 0:e.querySelector(".icon-chat-open"),p=e==null?void 0:e.querySelector(".icon-chat-close");if(!e||!n)return;function r(){n.classList.add("chatbox-window--active"),c&&(c.style.display="none"),p&&(p.style.display="inline-block"),setTimeout(()=>a==null?void 0:a.focus(),200)}function f(){n.classList.remove("chatbox-window--active"),c&&(c.style.display="inline-block"),p&&(p.style.display="none")}e.addEventListener("click",h=>{h.stopPropagation(),n.classList.contains("chatbox-window--active")?f():r()}),i==null||i.addEventListener("click",h=>{h.stopPropagation(),f()});function y(h,d=!0){if(!o)return;const u=document.createElement("div");u.className=`chat-msg ${d?"chat-msg--outgoing":"chat-msg--incoming"}`,u.innerHTML=`
       <div class="msg-bubble">${h}</div>
       <span class="msg-time">Vừa xong</span>
-    `,r.appendChild(c),r.scrollTop=r.scrollHeight}function v(h){const o=document.createElement("div");o.className="chat-typing-indicator",o.innerHTML="<span></span><span></span><span></span>",r.appendChild(o),r.scrollTop=r.scrollHeight,setTimeout(()=>{o.remove();let c="Cảm ơn bạn đã nhắn tin! Chuyên viên Ondata đã nhận được yêu cầu và sẽ phản hồi ngay.";const u=h.toLowerCase();u.includes("all-in-one")||u.includes("aio")||u.includes("máy tính")?c='Dạ máy tính All-in-one Ondata One 24" và Pro 27" 2K hiện đang có sẵn cấu hình i5/i7 cực mạnh, bảo hành chính hãng 24-36 tháng. Quý khách vui lòng để lại SĐT hoặc gọi Hotline <strong>0867036698</strong> để được báo giá ưu đãi nhất ạ!':u.includes("màn hình")||u.includes("monitor")?c='Dạ Ondata có màn hình từ 24" IPS 100Hz đến màn hình cong 27" 165Hz và 34" Ultrawide sắc nét chuẩn màu đồ họa & gaming. Quý khách có thể xem chi tiết tại mục Sản phẩm hoặc liên hệ hotline <strong>0867036698</strong> để được hỗ trợ ạ!':u.includes("báo giá")||u.includes("đại lý")||u.includes("dự án")?c="Dạ phòng kinh doanh Ondata luôn có chính sách chiết khấu đại lý và giá dự án hấp dẫn. Vui lòng gửi email tới <strong>nchieu@xinchen.vn</strong> hoặc gọi hotline <strong>0867036698</strong> để nhận bảng báo giá ngay ạ!":(u.includes("bảo hành")||u.includes("kỹ thuật"))&&(c="Dạ sản phẩm Ondata được bảo hành chính hãng 24 đến 36 tháng (RAM bảo hành trọn đời), tiếp nhận xử lý tận nơi. Mọi sự cố kỹ thuật quý khách hãy liên hệ Hotline <strong>0867036698</strong> để được hỗ trợ tức thì!"),b(c,!1)},700)}i==null||i.addEventListener("submit",h=>{h.preventDefault();const o=a==null?void 0:a.value.trim();o&&(b(o,!0),a.value="",v(o))}),document.querySelectorAll(".chat-quick-btn").forEach(h=>{h.addEventListener("click",()=>{const o=h.dataset.query;o&&(b(o,!0),v(o))})})}const J=["monitor","cpu","gpu","ram","shield","hdd"];function jt(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}function Kt(t){return String(t).replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi,"").replace(/<iframe[\s\S]*?>[\s\S]*?<\/iframe>/gi,"").replace(/\son\w+\s*=\s*(['"]).*?\1/gi,"").replace(/javascript:/gi,"")}function Ft(t){const n=String(t||"").trim();return n?/<[a-z][\s\S]*>/i.test(n)?Kt(n):n.split(/\n{2,}/).map(e=>`<p>${jt(e).replace(/\n/g,"<br>")}</p>`).join(""):""}function Qt(t){const n=[];return String(t||"").split(`
-`).forEach(e=>{const s=e.trim();if(!s)return;const i=s.indexOf(":");i===-1?n.push(["Thông số",s]):n.push([s.slice(0,i).trim()||"Thông số",s.slice(i+1).trim()])}),n.filter(([,e])=>e)}function Wt(t){const n={title:"",description:"",keywords:""};return String(t||"").split(`
-`).forEach(e=>{const s=e.match(/^\s*(Tiêu đề SEO|Meta description|Từ khóa chính|Từ khóa phụ|Từ khóa)\s*:\s*(.*)$/i);if(!s)return;const i=s[1].toLowerCase(),a=s[2].trim();i.includes("tiêu")?n.title=a:i.includes("meta")?n.description=a:i.includes("phụ")?n.keywords=n.keywords?`${n.keywords}, ${a}`:a:(i.includes("chính")||i.startsWith("từ khóa"))&&(n.keywords=n.keywords?`${a}, ${n.keywords}`:a)}),n}function Ut(t){return(Array.isArray(t)?t:[]).map(n=>String(n||"").trim()).filter(n=>/^https?:\/\//i.test(n)||n.startsWith("/"))}function Xt(t){const n=Qt(t.specs),e={};n.forEach(([a,r],l)=>{const g=e[a]?`${a} (${l+1})`:a;e[g]=r});const s=Wt(t.notes),i=Ut(t.images);return{id:t.id,cat:t.category,stt:Number(t.stt)||0,name:t.name,images:i,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:s.title||t.name,description:s.description||t.shortDesc||"",keywords:s.keywords||""},specs:n.slice(0,6).map(([a,r],l)=>({icon:J[l%J.length],label:a,value:r})),desc:t.shortDesc||"",features:[],techSpecs:e,detailHtml:Ft(t.detail),notes:t.notes||""}}function Yt(t){return(Array.isArray(t)?t:[]).filter(e=>!e.hidden).map(Xt).sort((e,s)=>e.stt-s.stt||e.name.localeCompare(s.name,"vi"))}function q(t){rt(Yt(t))}async function Zt(){try{const t=await fetch("/data/catalog.json",{cache:"no-store"});if(!t.ok)return null;const n=await t.json();return Array.isArray(n)?(q(n),n):null}catch{return null}}function _t(t){var n;return((n=K.find(e=>e.id===t))==null?void 0:n.name)||t}function Jt(t,n){const e=O(t).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"san-pham";let s=e,i=2;const a=new Set(n.map(r=>r.id));for(;a.has(s);)s=`${e}-${i}`,i+=1;return s}const H="ondata-admin-token",I={id:"",stt:1,category:"monitor",name:"",specs:"",notes:"",shortDesc:"",detail:"",images:[]};function x(t){return String(t??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}function V(t){return{"Content-Type":"application/json",Authorization:`Bearer ${t}`}}async function E(t,n={}){const e=await fetch(t,n),s=await e.text();let i=null;try{i=s?JSON.parse(s):null}catch{i=null}if(!i||typeof i!="object"||Array.isArray(i)){const a=new Error("Hosting chưa nhận đủ file lưu sản phẩm. Hãy tải lên thư mục api và data.");throw a.status=e.ok?502:e.status,a}if(i.ok!==!0){const a=new Error(i.message||"Không thực hiện được");throw a.status=e.ok?400:e.status,a}return i}function tn(){return'<div id="admin-root" class="admin-page"></div>'}function nn(){const t=document.getElementById("admin-root");if(!t)return;const n=sessionStorage.getItem(H);if(!n){L(t);return}t.innerHTML='<p class="admin-status">Đang mở trang quản trị...</p>',E("/api/session.php",{headers:V(n)}).then(()=>st(t,n)).catch(()=>{sessionStorage.removeItem(H),L(t,"Phiên đăng nhập đã hết. Hãy đăng nhập lại.")})}function L(t,n=""){t.innerHTML=`
+    `,o.appendChild(u),o.scrollTop=o.scrollHeight}function m(h){const d=document.createElement("div");d.className="chat-typing-indicator",d.innerHTML="<span></span><span></span><span></span>",o.appendChild(d),o.scrollTop=o.scrollHeight,setTimeout(()=>{d.remove();let u="Cảm ơn bạn đã nhắn tin! Chuyên viên Ondata đã nhận được yêu cầu và sẽ phản hồi ngay.";const l=h.toLowerCase();l.includes("all-in-one")||l.includes("aio")||l.includes("máy tính")?u='Dạ máy tính All-in-one Ondata One 24" và Pro 27" 2K hiện đang có sẵn cấu hình i5/i7 cực mạnh, bảo hành chính hãng 24-36 tháng. Quý khách vui lòng để lại SĐT hoặc gọi Hotline <strong>0867036698</strong> để được báo giá ưu đãi nhất ạ!':l.includes("màn hình")||l.includes("monitor")?u='Dạ Ondata có màn hình từ 24" IPS 100Hz đến màn hình cong 27" 165Hz và 34" Ultrawide sắc nét chuẩn màu đồ họa & gaming. Quý khách có thể xem chi tiết tại mục Sản phẩm hoặc liên hệ hotline <strong>0867036698</strong> để được hỗ trợ ạ!':l.includes("báo giá")||l.includes("đại lý")||l.includes("dự án")?u="Dạ phòng kinh doanh Ondata luôn có chính sách chiết khấu đại lý và giá dự án hấp dẫn. Vui lòng gửi email tới <strong>nchieu@xinchen.vn</strong> hoặc gọi hotline <strong>0867036698</strong> để nhận bảng báo giá ngay ạ!":(l.includes("bảo hành")||l.includes("kỹ thuật"))&&(u="Dạ sản phẩm Ondata được bảo hành chính hãng 24 đến 36 tháng (RAM bảo hành trọn đời), tiếp nhận xử lý tận nơi. Mọi sự cố kỹ thuật quý khách hãy liên hệ Hotline <strong>0867036698</strong> để được hỗ trợ tức thì!"),y(u,!1)},700)}s==null||s.addEventListener("submit",h=>{h.preventDefault();const d=a==null?void 0:a.value.trim();d&&(y(d,!0),a.value="",m(d))}),document.querySelectorAll(".chat-quick-btn").forEach(h=>{h.addEventListener("click",()=>{const d=h.dataset.query;d&&(y(d,!0),m(d))})})}const et=["monitor","cpu","gpu","ram","shield","hdd"];function Yt(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}function Zt(t){return String(t).replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi,"").replace(/<iframe[\s\S]*?>[\s\S]*?<\/iframe>/gi,"").replace(/\son\w+\s*=\s*(['"]).*?\1/gi,"").replace(/javascript:/gi,"")}function _t(t){const n=String(t||"").trim();return n?/<[a-z][\s\S]*>/i.test(n)?Zt(n):n.split(/\n{2,}/).map(e=>`<p>${Yt(e).replace(/\n/g,"<br>")}</p>`).join(""):""}function ht(t){const n=t.trim(),e=n.indexOf("	");if(e!==-1)return[n.slice(0,e).trim(),n.slice(e+1).trim()];for(let i=0;i<n.length;i+=1){if(n[i]!==":")continue;const s=n[i-1]||"",a=n[i+1]||"";if(!(/\d/.test(s)&&/\d/.test(a)))return[n.slice(0,i).trim(),n.slice(i+1).trim()]}return[n,""]}function Jt(t){const n=[];return String(t||"").split(`
+`).forEach(e=>{const i=e.trim();if(!i||i.startsWith("@@"))return;const[s,a]=ht(i);(s||a)&&n.push([s,a])}),n.filter(([e,i])=>e||i)}function it(t){const n=String(t||"").trim();if(!n||n.startsWith("@@"))return null;if(n===":")return{label:"",value:""};const[e,i]=ht(n);return{label:e,value:i}}function V(t){const n=String(t||"").replace(/\r/g,"").split(`
+`),e=n.indexOf("@@highlight"),i=n.indexOf("@@specs");if(e===-1){const o=Jt(t).map(([c,p])=>({label:c,value:p}));return{highlights:o.slice(0,6),rest:o}}const s=n.slice(e+1,i===-1?n.length:i),a=i===-1?[]:n.slice(i+1);return{highlights:s.map(it).filter(Boolean),rest:a.map(it).filter(Boolean)}}function tn(t){const n={title:"",description:"",keywords:""};return String(t||"").split(`
+`).forEach(e=>{const i=e.match(/^\s*(Tiêu đề SEO|Meta description|Từ khóa chính|Từ khóa phụ|Từ khóa)\s*:\s*(.*)$/i);if(!i)return;const s=i[1].toLowerCase(),a=i[2].trim();s.includes("tiêu")?n.title=a:s.includes("meta")?n.description=a:s.includes("phụ")?n.keywords=n.keywords?`${n.keywords}, ${a}`:a:(s.includes("chính")||s.startsWith("từ khóa"))&&(n.keywords=n.keywords?`${a}, ${n.keywords}`:a)}),n}function nn(t){return(Array.isArray(t)?t:[]).map(n=>String(n||"").trim()).filter(n=>/^https?:\/\//i.test(n)||n.startsWith("/"))}function en(t){const n=V(t.specs),e=n.rest.filter(o=>o.label||o.value).map(o=>[o.label,o.value]),i={};e.forEach(([o,c],p)=>{const r=i[o]?`${o} (${p+1})`:o;i[r]=c});const s=tn(t.notes),a=nn(t.images);return{id:t.id,cat:t.category,stt:Number(t.stt)||0,name:t.name,images:a,badge:"Mới",price:0,stars:5,reviews:0,seo:{title:s.title||t.name,description:s.description||t.shortDesc||"",keywords:s.keywords||""},specs:n.highlights.filter(o=>o.label||o.value).map((o,c)=>({icon:et[c%et.length],label:o.label,value:o.value})),desc:t.shortDesc||"",features:[],techSpecs:i,detailHtml:_t(t.detail),notes:t.notes||""}}function sn(t){return(Array.isArray(t)?t:[]).filter(e=>!e.hidden).map(en).sort((e,i)=>e.stt-i.stt||e.name.localeCompare(i.name,"vi"))}function z(t){mt(sn(t))}async function an(){try{const t=await fetch("/data/catalog.json",{cache:"no-store"});if(!t.ok)return null;const n=await t.json();return Array.isArray(n)?(z(n),n):null}catch{return null}}function on(t){var n;return((n=W.find(e=>e.id===t))==null?void 0:n.name)||t}function cn(t,n){const e=G(t).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"san-pham";let i=e,s=2;const a=new Set(n.map(o=>o.id));for(;a.has(i);)i=`${e}-${s}`,s+=1;return i}const H="ondata-admin-token",O={id:"",stt:1,category:"monitor",name:"",specs:"",notes:"",shortDesc:"",detail:"",images:[]};function x(t){return String(t??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}function N(t){return{"Content-Type":"application/json",Authorization:`Bearer ${t}`}}async function $(t,n={}){const e=await fetch(t,n),i=await e.text();let s=null;try{s=i?JSON.parse(i):null}catch{s=null}if(!s||typeof s!="object"||Array.isArray(s)){const a=new Error("Hosting chưa nhận đủ file lưu sản phẩm. Hãy tải lên thư mục api và data.");throw a.status=e.ok?502:e.status,a}if(s.ok!==!0){const a=new Error(s.message||"Không thực hiện được");throw a.status=e.ok?400:e.status,a}return s}function ln(){return'<div id="admin-root" class="admin-page"></div>'}function rn(){const t=document.getElementById("admin-root");if(!t)return;const n=sessionStorage.getItem(H);if(!n){E(t);return}t.innerHTML='<p class="admin-status">Đang mở trang quản trị...</p>',$("/api/session.php",{headers:N(n)}).then(()=>dt(t,n)).catch(()=>{sessionStorage.removeItem(H),E(t,"Phiên đăng nhập đã hết. Hãy đăng nhập lại.")})}function E(t,n=""){t.innerHTML=`
     <div class="admin-login">
       <div class="admin-login-panel">
         <form class="admin-login-form" id="admin-login-form">
@@ -2675,22 +2676,22 @@
         </form>
       </div>
     </div>
-  `,t.querySelector("#admin-login-form").addEventListener("submit",async e=>{e.preventDefault();const s=e.currentTarget,i=s.querySelector("button");i.disabled=!0;try{const a=await E("/api/login.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:s.username.value.trim(),password:s.password.value})});sessionStorage.setItem(H,a.token),st(t,a.token)}catch(a){L(t,a.message)}})}async function st(t,n){let e=[];try{e=await(await fetch("/data/catalog.json",{cache:"no-store"})).json(),Array.isArray(e)||(e=[])}catch{e=[]}let s={...I,stt:M(e)},i="",a="visible";const r=()=>{var b,v,h;const l=[...e].sort((o,c)=>Number(o.stt)-Number(c.stt)||o.name.localeCompare(c.name,"vi")),g=l.filter(o=>!o.hidden),d=l.filter(o=>o.hidden),m=(o,c,u)=>o.length?o.map(p=>{var A;return`
-      <li class="admin-list-item ${p.id===s.id?"admin-list-item--active":""}">
+  `,t.querySelector("#admin-login-form").addEventListener("submit",async e=>{e.preventDefault();const i=e.currentTarget,s=i.querySelector("button");s.disabled=!0;try{const a=await $("/api/login.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:i.username.value.trim(),password:i.password.value})});sessionStorage.setItem(H,a.token),dt(t,a.token)}catch(a){E(t,a.message)}})}async function dt(t,n){let e=[];try{e=await(await fetch("/data/catalog.json",{cache:"no-store"})).json(),Array.isArray(e)||(e=[])}catch{e=[]}let i={...O,stt:M(e)},s="",a="visible";const o=()=>{var y,m,h,d,u;const c=[...e].sort((l,v)=>Number(l.stt)-Number(v.stt)||l.name.localeCompare(v.name,"vi")),p=c.filter(l=>!l.hidden),r=c.filter(l=>l.hidden),f=(l,v,T)=>l.length?l.map(g=>{var C;return`
+      <li class="admin-list-item ${g.id===i.id?"admin-list-item--active":""}">
         <div class="admin-list-thumb">
-          ${(A=p.images)!=null&&A[0]?`<img src="${x(p.images[0])}" alt="">`:"<span>Ảnh</span>"}
+          ${(C=g.images)!=null&&C[0]?`<img src="${x(g.images[0])}" alt="">`:"<span>Ảnh</span>"}
         </div>
         <div class="admin-list-copy">
-          <strong>${x(p.name)}</strong>
-          <span>${x(_t(p.category))}</span>
+          <strong>${x(g.name)}</strong>
+          <span>${x(on(g.category))}</span>
         </div>
         <div class="admin-row-actions">
-          <button type="button" data-edit="${x(p.id)}">Sửa</button>
-          <button type="button" data-hide="${x(p.id)}">${u}</button>
-          <button type="button" class="admin-btn--danger" data-delete="${x(p.id)}">Xóa</button>
+          <button type="button" data-edit="${x(g.id)}">Sửa</button>
+          <button type="button" data-hide="${x(g.id)}">${T}</button>
+          <button type="button" class="admin-btn--danger" data-delete="${x(g.id)}">Xóa</button>
         </div>
       </li>
-    `}).join(""):`<li class="admin-empty">${c}</li>`;t.innerHTML=`
+    `}).join(""):`<li class="admin-empty">${v}</li>`;t.innerHTML=`
       <div class="admin-app">
         <aside class="admin-side">
           <div>
@@ -2699,11 +2700,11 @@
           <nav class="admin-nav">
             <button type="button" class="admin-nav-item ${a==="visible"?"admin-nav-item--active":""}" data-section="visible">
               <span>Sản phẩm đang hiển thị</span>
-              <em>${g.length}</em>
+              <em>${p.length}</em>
             </button>
             <button type="button" class="admin-nav-item ${a==="hidden"?"admin-nav-item--active":""}" data-section="hidden">
               <span>Sản phẩm đang ẩn</span>
-              <em>${d.length}</em>
+              <em>${r.length}</em>
             </button>
             <button type="button" class="admin-nav-item ${a==="add"?"admin-nav-item--active":""}" data-section="add">
               <span>Thêm sản phẩm mới</span>
@@ -2718,124 +2719,151 @@
           <header class="admin-top">
             <div>
               <p class="admin-kicker">Danh mục sản phẩm</p>
-              <h1>${a==="add"?s.id?"Sửa sản phẩm":"Thêm sản phẩm mới":a==="hidden"?"Sản phẩm đang ẩn":"Sản phẩm đang hiển thị"}</h1>
+              <h1>${a==="add"?i.id?"Sửa sản phẩm":"Thêm sản phẩm mới":a==="hidden"?"Sản phẩm đang ẩn":"Sản phẩm đang hiển thị"}</h1>
             </div>
-            <div class="admin-stat">${g.length} đang hiện · ${d.length} đang ẩn</div>
+            <div class="admin-stat">${p.length} đang hiện · ${r.length} đang ẩn</div>
           </header>
-          ${i?`<p class="admin-alert ${i.ok?"admin-alert--ok":""}">${x(i.text)}</p>`:""}
+          ${s?`<p class="admin-alert ${s.ok?"admin-alert--ok":""}">${x(s.text)}</p>`:""}
           <div class="admin-workspace">
             ${a==="add"?`
-            <form class="admin-card" id="admin-product-form">
-              <div class="admin-card-head">
-                <h2>${s.id?"Sửa sản phẩm":"Thêm sản phẩm mới"}</h2>
+            <form class="admin-card admin-pd" id="admin-product-form">
+              <div class="admin-pd-grid">
+                <div class="admin-pd-gallery">
+                  <div class="admin-pd-hero">
+                    ${(i.images||[])[0]?`<img src="${x(i.images[0])}" alt="">`:"<span>Ảnh bìa sẽ hiện ở đây</span>"}
+                  </div>
+                  <div class="admin-pd-thumbs">
+                    ${(i.images||[]).map((l,v)=>`
+                      <figure class="admin-pd-thumb">
+                        <img src="${x(l)}" alt="Ảnh ${v+1}">
+                        <button type="button" data-remove-image="${v}">Gỡ</button>
+                        ${v===0?"<span>Bìa</span>":""}
+                      </figure>
+                    `).join("")}
+                  </div>
+                  <label class="admin-upload">
+                    Chọn ảnh từ máy
+                    <input id="admin-image-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+                  </label>
+                  <p class="admin-hint">Ảnh đầu tiên là ảnh lớn. Có thể chọn nhiều ảnh.</p>
+                </div>
+                <div class="admin-pd-info">
+                  <label>Danh mục
+                    <select name="category">
+                      ${W.map(l=>`
+                        <option value="${l.id}" ${l.id===i.category?"selected":""}>${x(l.name)}</option>
+                      `).join("")}
+                    </select>
+                  </label>
+                  <label class="admin-pd-title">Tên sản phẩm
+                    <input name="name" required value="${x(i.name)}" placeholder="Màn hình ONDATA ...">
+                  </label>
+                  <p class="admin-pd-price">Liên hệ</p>
+                  <div class="admin-spec-table admin-highlights">
+                    ${at(V(i.specs).highlights).map(l=>`
+                      <div class="admin-spec-row">
+                        <input data-highlight-label value="${x(l.label)}" placeholder="Tên thông số">
+                        <input data-highlight-value value="${x(l.value)}" placeholder="Giá trị">
+                        <button type="button" data-remove-highlight>Gỡ</button>
+                      </div>
+                    `).join("")}
+                  </div>
+                  <button class="admin-btn admin-btn--ghost" type="button" id="admin-add-highlight">Thêm thông số</button>
+                </div>
               </div>
 
               <section class="admin-section">
-                <h3>Thông tin chính</h3>
-                <label>Danh mục
-                  <select name="category">
-                    ${K.map(o=>`
-                      <option value="${o.id}" ${o.id===s.category?"selected":""}>${x(o.name)}</option>
-                    `).join("")}
-                  </select>
-                </label>
-                <label>Tên sản phẩm<input name="name" required value="${x(s.name)}" placeholder="Màn hình ONDATA ..."></label>
+                <h3>Thông tin chi tiết</h3>
+                <label>Mô tả ngắn<textarea name="shortDesc" rows="3">${x(i.shortDesc)}</textarea></label>
+                <label>Mô tả chi tiết<textarea name="detail" rows="8" placeholder="Xuống dòng để tách đoạn. Một dòng trống để tách đoạn mới.">${x(i.detail)}</textarea></label>
               </section>
 
               <section class="admin-section">
-                <h3>Nội dung</h3>
-                <label>Thông số kỹ thuật
-                  <textarea name="specs" rows="7" placeholder="Mỗi dòng một thông số. Ví dụ:&#10;Kích thước: 23.8 inch&#10;Tần số quét: 120Hz">${x(s.specs)}</textarea>
-                </label>
-                <label>Lưu ý khi đăng sản phẩm
-                  <textarea name="notes" rows="5" placeholder="Tiêu đề SEO: ...&#10;Meta description: ...&#10;Từ khóa chính: ...&#10;Từ khóa phụ: ...">${x(s.notes)}</textarea>
-                </label>
-                <label>Mô tả ngắn<textarea name="shortDesc" rows="3">${x(s.shortDesc)}</textarea></label>
-                <label>Mô tả chi tiết<textarea name="detail" rows="8" placeholder="Xuống dòng để tách đoạn. Một dòng trống để tách đoạn mới.">${x(s.detail)}</textarea></label>
-              </section>
-
-              <section class="admin-section">
-                <h3>Ảnh sản phẩm</h3>
-                <div class="admin-photos" id="admin-photos">
-                  ${(s.images||[]).map((o,c)=>`
-                    <figure class="admin-photo">
-                      <img src="${x(o)}" alt="Ảnh ${c+1}">
-                      <button type="button" data-remove-image="${c}">Gỡ</button>
-                      ${c===0?'<span class="admin-photo-badge">Ảnh bìa</span>':""}
-                    </figure>
+                <h3>Thông số kỹ thuật</h3>
+                <div class="admin-spec-table">
+                  ${at(V(i.specs).rest).map(l=>`
+                    <div class="admin-spec-row">
+                      <input data-spec-label value="${x(l.label)}" placeholder="Tên thông số">
+                      <input data-spec-value value="${x(l.value)}" placeholder="Giá trị">
+                      <button type="button" data-remove-spec>Gỡ</button>
+                    </div>
                   `).join("")}
                 </div>
-                <label class="admin-upload">
-                  Chọn ảnh từ máy
-                  <input id="admin-image-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+                <button class="admin-btn admin-btn--ghost" type="button" id="admin-add-spec">Thêm thông số</button>
+              </section>
+
+              <section class="admin-section">
+                <h3>Lưu ý khi đăng sản phẩm</h3>
+                <label>Tiêu đề SEO, mô tả và từ khóa
+                  <textarea name="notes" rows="5" placeholder="Tiêu đề SEO: ...&#10;Meta description: ...&#10;Từ khóa chính: ...&#10;Từ khóa phụ: ...">${x(i.notes)}</textarea>
                 </label>
-                <p class="admin-hint">Chọn nhiều ảnh một lần. Ảnh đầu tiên là ảnh bìa. Mỗi ảnh tối đa 8MB.</p>
               </section>
 
               <div class="admin-form-actions">
-                <button class="admin-btn" type="submit">${s.id?"Lưu thay đổi":"Đăng sản phẩm"}</button>
+                <button class="admin-btn" type="submit">${i.id?"Lưu thay đổi":"Đăng sản phẩm"}</button>
                 <button class="admin-btn admin-btn--ghost" type="button" id="admin-reset">Làm mới form</button>
               </div>
             </form>
             `:`
             <section class="admin-card admin-list-card">
               <ul class="admin-list">
-                ${a==="hidden"?m(d,"Chưa có sản phẩm đang ẩn.","Hiện"):m(g,"Chưa có sản phẩm đang hiển thị.","Ẩn")}
+                ${a==="hidden"?f(r,"Chưa có sản phẩm đang ẩn.","Hiện"):f(p,"Chưa có sản phẩm đang hiển thị.","Ẩn")}
               </ul>
             </section>
             `}
           </div>
         </main>
       </div>
-    `,t.querySelectorAll("[data-section]").forEach(o=>{o.addEventListener("click",()=>{a=o.dataset.section,a==="add"&&(s={...I,stt:M(e)}),i="",r()})}),t.querySelector("#admin-logout").addEventListener("click",()=>{sessionStorage.removeItem(H),L(t)}),(b=t.querySelector("#admin-image-input"))==null||b.addEventListener("change",async o=>{const c=[...o.target.files];if(!c.length)return;s=tt(t,s);const u=t.querySelector(".admin-hint");u&&(u.textContent="Đang tải ảnh lên...");try{for(const p of c){if(s.images.length>=12)break;const A=await en(p),B=await E("/api/upload.php",{method:"POST",headers:V(n),body:JSON.stringify({dataUrl:A})});s.images.push(B.image)}i={ok:!0,text:"Đã tải ảnh lên. Bấm lưu sản phẩm để cập nhật website."},r()}catch(p){if(p.status===401){sessionStorage.removeItem(H),L(t,p.message);return}i={ok:!1,text:p.message},r()}}),t.querySelectorAll("[data-remove-image]").forEach(o=>{o.addEventListener("click",()=>{s=tt(t,s),s.images.splice(Number(o.dataset.removeImage),1),r()})}),(v=t.querySelector("#admin-reset"))==null||v.addEventListener("click",()=>{s={...I,stt:M(e)},i="",r()}),(h=t.querySelector("#admin-product-form"))==null||h.addEventListener("submit",async o=>{var S;o.preventDefault();const c=o.currentTarget,u=c.name.value.trim();if(!u)return;const p={id:s.id||Jt(u,e),stt:s.id&&Number(s.stt)||M(e),category:c.category.value,name:u,specs:c.specs.value,notes:c.notes.value,shortDesc:c.shortDesc.value,detail:c.detail.value,images:s.images||[],hidden:!!s.hidden},A=s.id?e.map(T=>T.id===s.id?p:T):[...e,p],B=c.querySelector('button[type="submit"]');B.disabled=!0;try{const T=await E("/api/catalog.php",{method:"POST",headers:V(n),body:JSON.stringify({rows:A})});if(!Array.isArray(T.rows))throw new Error(T.message||"Không nhận được danh sách sản phẩm từ hosting.");e=T.rows,q(e),a=p.hidden?"hidden":"visible",s={...I,stt:M(e)},i={ok:!0,text:"Đã lưu. Sản phẩm đã được cập nhật trên website."},r()}catch(T){if(T.status===401){sessionStorage.removeItem(H),L(t,T.message);return}B.disabled=!1;let f=t.querySelector(".admin-alert");f||(f=document.createElement("p"),f.className="admin-alert",(S=t.querySelector(".admin-top"))==null||S.insertAdjacentElement("afterend",f)),f.classList.remove("admin-alert--ok"),f.textContent=T.message}}),t.querySelectorAll("[data-edit]").forEach(o=>{o.addEventListener("click",()=>{const c=e.find(u=>u.id===o.dataset.edit);c&&(s={...c,images:[...c.images||[]]},i="",a="add",r())})}),t.querySelectorAll("[data-hide]").forEach(o=>{o.addEventListener("click",async()=>{const c=e.find(p=>p.id===o.dataset.hide);if(!c)return;const u=e.map(p=>p.id===c.id?{...p,hidden:!p.hidden}:p);try{const p=await E("/api/catalog.php",{method:"POST",headers:V(n),body:JSON.stringify({rows:u})});if(!Array.isArray(p.rows))throw new Error(p.message||"Không nhận được danh sách sản phẩm từ hosting.");e=p.rows,q(e),s.id===c.id&&(s={...s,hidden:!c.hidden}),a=c.hidden?"visible":"hidden",i={ok:!0,text:c.hidden?"Đã hiện sản phẩm trên website.":"Đã ẩn sản phẩm khỏi website."},r()}catch(p){if(p.status===401){sessionStorage.removeItem(H),L(t,p.message);return}i={ok:!1,text:p.message},r()}})}),t.querySelectorAll("[data-delete]").forEach(o=>{o.addEventListener("click",async()=>{const c=e.find(p=>p.id===o.dataset.delete);if(!c||!window.confirm(`Xóa sản phẩm "${c.name}"?`))return;const u=e.filter(p=>p.id!==c.id);try{const p=await E("/api/catalog.php",{method:"POST",headers:V(n),body:JSON.stringify({rows:u})});if(!Array.isArray(p.rows))throw new Error(p.message||"Không nhận được danh sách sản phẩm từ hosting.");e=p.rows,q(e),s.id===c.id&&(s={...I,stt:M(e)}),i={ok:!0,text:"Đã xóa sản phẩm."},r()}catch(p){i={ok:!1,text:p.message},r()}})})};r()}function tt(t,n){const e=t.querySelector("#admin-product-form");return e?{...n,category:e.category.value,name:e.name.value,specs:e.specs.value,notes:e.notes.value,shortDesc:e.shortDesc.value,detail:e.detail.value}:n}function en(t){return new Promise((n,e)=>{if(!/^image\/(jpeg|png|webp|gif)$/.test(t.type)){e(new Error("Chỉ nhận ảnh JPG, PNG, WEBP hoặc GIF"));return}if(t.size>8e6){e(new Error("Mỗi ảnh tối đa 8MB"));return}const s=new FileReader;s.onload=()=>n(s.result),s.onerror=()=>e(new Error("Không đọc được ảnh trên máy")),s.readAsDataURL(t)})}function M(t){return t.reduce((e,s)=>Math.max(e,Number(s.stt)||0),0)+1}let at=0,nt="all";const j={aio:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao"},keyboard:{label:"Bàn phím",sub:"Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo"},mouse:{label:"Chuột",sub:"Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm bền bỉ"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện góc làm việc và trải nghiệm đỉnh cao"},laptop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},desktop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function P(t){let n=document.querySelector(".toast-container");n||(n=document.createElement("div"),n.className="toast-container",document.body.appendChild(n));const e=document.createElement("div");e.className="toast-alert",e.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${t}</span>`,n.appendChild(e),setTimeout(()=>{e.style.opacity="0",e.style.transform="translateY(10px)",setTimeout(()=>e.remove(),300)},3e3)}function sn(){if(window.location.hash&&window.location.hash.startsWith("#/")){const n=window.location.hash.slice(1);window.history.replaceState({},"",n)}let t=window.location.pathname.replace(/\/+$/,"")||"/";if(t.startsWith("/dist")&&(t=t.replace(/^\/dist/,"")||"/"),t.startsWith("/san-pham")){const n=t.split("/").filter(Boolean),e=n[1]||"all",s=n[2]||null;if(s)return{page:"detail",cat:e,id:s};if(e!=="all"){const i=it(e);if(i)return{page:"detail",cat:i.cat,id:i.id}}return{page:"catalog",cat:e}}return t.startsWith("/ve-ondata")||t.startsWith("/gioi-thieu")?{page:"about"}:t.startsWith("/tin-tuc")?{page:"news"}:t.startsWith("/lien-he")?{page:"contact"}:t.startsWith("/ho-tro")?{page:"support",sub:t.split("/").filter(Boolean)[1]||null}:t.startsWith("/admin")?{page:"admin"}:{page:"home"}}function k(t){const n=t.startsWith("#/")?t.slice(1):t;window.location.pathname!==n&&window.history.pushState({},"",n),G(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=k;function an(){return`
-    ${ct()}
-    ${pt()}
-    ${gt()}
-  `}function on(){document.querySelectorAll(".sidebar-item a[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),k(`/san-pham/${n.dataset.cat}`)})}),document.querySelectorAll('a[href="#featured-products"], a[href="/san-pham/all"]').forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),k("/san-pham/all")})});const t=document.getElementById("newsletter-form");t&&(t.onsubmit=n=>{n.preventDefault();const e=document.getElementById("newsletter-email");e!=null&&e.value&&(P(`Đã đăng ký nhận tin thành công: ${e.value}`),e.value="")}),document.querySelectorAll(".product-item-card").forEach(n=>{n.onclick=()=>{const e=n.dataset.id,s=n.dataset.cat;k(e&&s?`/san-pham/${s}/${e}`:"/san-pham/all")}})}function cn(t){Ct(t),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),k(`/san-pham/${n.dataset.cat}`)})})}function ln(t){const n=j[t]||j.all;return vt(t,n)}function rn(t){xt(),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),k(`/san-pham/${n.dataset.cat}`)})})}function hn(){const t=document.getElementById("nav-hamburger"),n=document.getElementById("nav-menu");if(t&&n){const o=c=>{n.classList.toggle("mobile-open",c),t.classList.toggle("is-open",c),document.body.classList.toggle("menu-open",c);const u=document.getElementById("navbar");c?(document.documentElement.style.setProperty("--mobile-nav-h",`${u?u.offsetHeight:120}px`),document.body.appendChild(n)):u&&n.parentElement===document.body&&u.querySelector(".nav-container").appendChild(n)};t.onclick=()=>o(!n.classList.contains("mobile-open")),n.querySelectorAll("a").forEach(c=>{c.addEventListener("click",()=>o(!1))})}const e=document.getElementById("nav-search-icon");e&&(e.onclick=()=>{const o=document.getElementById("search-input");o&&o.focus()});const s=document.getElementById("search-input"),i=document.getElementById("search-dropdown"),a=document.querySelector(".search-btn");if(s&&i){let o=[],c=-1;const u=f=>{switch(f){case"aio":case"laptop":case"desktop":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>';case"monitor":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>';case"keyboard":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>';case"mouse":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>';case"ram":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>';case"accessories":default:return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}},p=f=>{var w;return((w=j[f])==null?void 0:w.label)||"Sản phẩm"},A=f=>{const w=(f||"").trim();w?(o=X(w),c=-1,o.length>0?i.innerHTML=`
-            <div class="search-header-label">Tìm thấy ${o.length} sản phẩm</div>
-            ${o.map((y,$)=>`
-              <div class="search-item" data-id="${y.id}" data-cat="${y.cat}" data-idx="${$}">
-                <span class="search-item-icon">${u(y.cat)}</span>
+    `,t.querySelectorAll("[data-section]").forEach(l=>{l.addEventListener("click",()=>{a=l.dataset.section,a==="add"&&(i={...O,stt:M(e)}),s="",o()})}),t.querySelector("#admin-logout").addEventListener("click",()=>{sessionStorage.removeItem(H),E(t)}),(y=t.querySelector("#admin-image-input"))==null||y.addEventListener("change",async l=>{const v=[...l.target.files];if(!v.length)return;i=S(t,i);const T=t.querySelector(".admin-hint");T&&(T.textContent="Đang tải ảnh lên...");try{for(const g of v){if(i.images.length>=12)break;const C=await dn(g),D=await $("/api/upload.php",{method:"POST",headers:N(n),body:JSON.stringify({dataUrl:C})});i.images.push(D.image)}s={ok:!0,text:"Đã tải ảnh lên. Bấm lưu sản phẩm để cập nhật website."},o()}catch(g){if(g.status===401){sessionStorage.removeItem(H),E(t,g.message);return}s={ok:!1,text:g.message},o()}}),t.querySelectorAll("[data-remove-image]").forEach(l=>{l.addEventListener("click",()=>{i=S(t,i),i.images.splice(Number(l.dataset.removeImage),1),o()})}),(m=t.querySelector("#admin-add-highlight"))==null||m.addEventListener("click",()=>{i=S(t,i);const l=V(i.specs);l.highlights.push({label:"",value:""}),i.specs=F(l),o()}),(h=t.querySelector("#admin-add-spec"))==null||h.addEventListener("click",()=>{i=S(t,i);const l=V(i.specs);l.rest.push({label:"",value:""}),i.specs=F(l),o()}),t.querySelectorAll("[data-remove-highlight], [data-remove-spec]").forEach(l=>{l.addEventListener("click",()=>{var v;(v=l.closest(".admin-spec-row"))==null||v.remove(),i=S(t,i),o()})}),(d=t.querySelector("#admin-reset"))==null||d.addEventListener("click",()=>{i={...O,stt:M(e)},s="",o()}),(u=t.querySelector("#admin-product-form"))==null||u.addEventListener("submit",async l=>{var k;l.preventDefault();const v=l.currentTarget,T=v.name.value.trim();if(!T)return;const g=S(t,i),C={id:i.id||cn(T,e),stt:i.id&&Number(i.stt)||M(e),category:v.category.value,name:T,specs:g.specs,notes:v.notes.value,shortDesc:v.shortDesc.value,detail:v.detail.value,images:i.images||[],hidden:!!i.hidden},D=i.id?e.map(b=>b.id===i.id?C:b):[...e,C],w=v.querySelector('button[type="submit"]');w.disabled=!0;try{const b=await $("/api/catalog.php",{method:"POST",headers:N(n),body:JSON.stringify({rows:D})});if(!Array.isArray(b.rows))throw new Error(b.message||"Không nhận được danh sách sản phẩm từ hosting.");e=b.rows,z(e),a=C.hidden?"hidden":"visible",i={...O,stt:M(e)},s={ok:!0,text:"Đã lưu. Sản phẩm đã được cập nhật trên website."},o()}catch(b){if(b.status===401){sessionStorage.removeItem(H),E(t,b.message);return}w.disabled=!1;let B=t.querySelector(".admin-alert");B||(B=document.createElement("p"),B.className="admin-alert",(k=t.querySelector(".admin-top"))==null||k.insertAdjacentElement("afterend",B)),B.classList.remove("admin-alert--ok"),B.textContent=b.message}}),t.querySelectorAll("[data-edit]").forEach(l=>{l.addEventListener("click",()=>{const v=e.find(T=>T.id===l.dataset.edit);v&&(i={...v,images:[...v.images||[]]},s="",a="add",o())})}),t.querySelectorAll("[data-hide]").forEach(l=>{l.addEventListener("click",async()=>{const v=e.find(g=>g.id===l.dataset.hide);if(!v)return;const T=e.map(g=>g.id===v.id?{...g,hidden:!g.hidden}:g);try{const g=await $("/api/catalog.php",{method:"POST",headers:N(n),body:JSON.stringify({rows:T})});if(!Array.isArray(g.rows))throw new Error(g.message||"Không nhận được danh sách sản phẩm từ hosting.");e=g.rows,z(e),i.id===v.id&&(i={...i,hidden:!v.hidden}),a=v.hidden?"visible":"hidden",s={ok:!0,text:v.hidden?"Đã hiện sản phẩm trên website.":"Đã ẩn sản phẩm khỏi website."},o()}catch(g){if(g.status===401){sessionStorage.removeItem(H),E(t,g.message);return}s={ok:!1,text:g.message},o()}})}),t.querySelectorAll("[data-delete]").forEach(l=>{l.addEventListener("click",async()=>{const v=e.find(g=>g.id===l.dataset.delete);if(!v||!window.confirm(`Xóa sản phẩm "${v.name}"?`))return;const T=e.filter(g=>g.id!==v.id);try{const g=await $("/api/catalog.php",{method:"POST",headers:N(n),body:JSON.stringify({rows:T})});if(!Array.isArray(g.rows))throw new Error(g.message||"Không nhận được danh sách sản phẩm từ hosting.");e=g.rows,z(e),i.id===v.id&&(i={...O,stt:M(e)}),s={ok:!0,text:"Đã xóa sản phẩm."},o()}catch(g){s={ok:!1,text:g.message},o()}})})};o()}function st(t,n){const e=String(t||"").trim(),i=String(n||"").trim();return!e&&!i?":":`${e}: ${i}`}function at(t){return t.length?t:[{label:"",value:""}]}function F(t){const n=(t.highlights||[]).map(i=>st(i.label,i.value)),e=(t.rest||[]).map(i=>st(i.label,i.value));return["@@highlight",...n,"@@specs",...e].join(`
+`)}function ot(t,n,e,i){const s=[...t.querySelectorAll(n)],a=[...t.querySelectorAll(e)];return s.map((c,p)=>{var r;return{label:c.value.trim(),value:(((r=a[p])==null?void 0:r.value)||"").trim()}})}function hn(t){const n=ot(t,"[data-highlight-label]","[data-highlight-value]"),e=ot(t,"[data-spec-label]","[data-spec-value]");return!n.length&&!e.length?"":F({highlights:n,rest:e})}function S(t,n){const e=t.querySelector("#admin-product-form");if(!e)return n;const i=hn(t);return{...n,category:e.category.value,name:e.name.value,specs:i,notes:e.notes.value,shortDesc:e.shortDesc.value,detail:e.detail.value}}function dn(t){return new Promise((n,e)=>{if(!/^image\/(jpeg|png|webp|gif)$/.test(t.type)){e(new Error("Chỉ nhận ảnh JPG, PNG, WEBP hoặc GIF"));return}if(t.size>8e6){e(new Error("Mỗi ảnh tối đa 8MB"));return}const i=new FileReader;i.onload=()=>n(i.result),i.onerror=()=>e(new Error("Không đọc được ảnh trên máy")),i.readAsDataURL(t)})}function M(t){return t.reduce((e,i)=>Math.max(e,Number(i.stt)||0),0)+1}let pt=0,ct="all";const Q={aio:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},monitor:{label:"Màn hình",sub:"Hiển thị sắc nét, công nghệ bảo vệ mắt đỉnh cao"},keyboard:{label:"Bàn phím",sub:"Cảm giác gõ êm ái, switch bền bỉ, thiết kế tinh xảo"},mouse:{label:"Chuột",sub:"Độ nhạy chuẩn xác, công thái học vừa vặn lòng bàn tay"},ram:{label:"RAM",sub:"Tốc độ vượt trội, đa nhiệm bền bỉ"},accessories:{label:"Phụ kiện",sub:"Hoàn thiện góc làm việc và trải nghiệm đỉnh cao"},laptop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},desktop:{label:"Máy tính All-in-one",sub:"Thiết kế tinh gọn, hiệu năng vượt trội all-in-one"},all:{label:"Sản phẩm",sub:"Tất cả sản phẩm chính hãng Ondata"}};function j(t){let n=document.querySelector(".toast-container");n||(n=document.createElement("div"),n.className="toast-container",document.body.appendChild(n));const e=document.createElement("div");e.className="toast-alert",e.innerHTML=`<span style="color:#7ea835;font-weight:700;">✓</span> <span>${t}</span>`,n.appendChild(e),setTimeout(()=>{e.style.opacity="0",e.style.transform="translateY(10px)",setTimeout(()=>e.remove(),300)},3e3)}function pn(){if(window.location.hash&&window.location.hash.startsWith("#/")){const n=window.location.hash.slice(1);window.history.replaceState({},"",n)}let t=window.location.pathname.replace(/\/+$/,"")||"/";if(t.startsWith("/dist")&&(t=t.replace(/^\/dist/,"")||"/"),t.startsWith("/san-pham")){const n=t.split("/").filter(Boolean),e=n[1]||"all",i=n[2]||null;if(i)return{page:"detail",cat:e,id:i};if(e!=="all"){const s=rt(e);if(s)return{page:"detail",cat:s.cat,id:s.id}}return{page:"catalog",cat:e}}return t.startsWith("/ve-ondata")||t.startsWith("/gioi-thieu")?{page:"about"}:t.startsWith("/tin-tuc")?{page:"news"}:t.startsWith("/lien-he")?{page:"contact"}:t.startsWith("/ho-tro")?{page:"support",sub:t.split("/").filter(Boolean)[1]||null}:t.startsWith("/admin")?{page:"admin"}:{page:"home"}}function A(t){const n=t.startsWith("#/")?t.slice(1):t;window.location.pathname!==n&&window.history.pushState({},"",n),R(),window.scrollTo({top:0,behavior:"smooth"})}window.navigate=A;function gn(){return`
+    ${ut()}
+    ${yt()}
+    ${wt()}
+  `}function un(){document.querySelectorAll(".sidebar-item a[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),A(`/san-pham/${n.dataset.cat}`)})}),document.querySelectorAll('a[href="#featured-products"], a[href="/san-pham/all"]').forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),A("/san-pham/all")})});const t=document.getElementById("newsletter-form");t&&(t.onsubmit=n=>{n.preventDefault();const e=document.getElementById("newsletter-email");e!=null&&e.value&&(j(`Đã đăng ký nhận tin thành công: ${e.value}`),e.value="")}),document.querySelectorAll(".product-item-card").forEach(n=>{n.onclick=()=>{const e=n.dataset.id,i=n.dataset.cat;A(e&&i?`/san-pham/${i}/${e}`:"/san-pham/all")}})}function vn(t){$t(t),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),A(`/san-pham/${n.dataset.cat}`)})})}function mn(t){const n=Q[t]||Q.all;return xt(t,n)}function fn(t){Ht(),document.querySelectorAll(".catsidebar-link[data-cat]").forEach(n=>{n.addEventListener("click",e=>{e.preventDefault(),A(`/san-pham/${n.dataset.cat}`)})})}function bn(){const t=document.getElementById("nav-hamburger"),n=document.getElementById("nav-menu");if(t&&n){const d=u=>{n.classList.toggle("mobile-open",u),t.classList.toggle("is-open",u),document.body.classList.toggle("menu-open",u);const l=document.getElementById("navbar");u?(document.documentElement.style.setProperty("--mobile-nav-h",`${l?l.offsetHeight:120}px`),document.body.appendChild(n)):l&&n.parentElement===document.body&&l.querySelector(".nav-container").appendChild(n)};t.onclick=()=>d(!n.classList.contains("mobile-open")),n.querySelectorAll("a").forEach(u=>{u.addEventListener("click",()=>d(!1))})}const e=document.getElementById("nav-search-icon");e&&(e.onclick=()=>{const d=document.getElementById("search-input");d&&d.focus()});const i=document.getElementById("search-input"),s=document.getElementById("search-dropdown"),a=document.querySelector(".search-btn");if(i&&s){let d=[],u=-1;const l=w=>{switch(w){case"aio":case"laptop":case"desktop":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>';case"monitor":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="10.5" y2="17"/><line x1="16" y1="21" x2="13.5" y2="17"/></svg>';case"keyboard":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><line x1="7" y1="14" x2="17" y2="14"/></svg>';case"mouse":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="6"/><circle cx="12" cy="7.5" r="1.2" fill="currentColor"/></svg>';case"ram":return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="9" rx="1.5"/><line x1="5" y1="16" x2="5" y2="18.5"/><line x1="8" y1="16" x2="8" y2="18.5"/><line x1="11" y1="16" x2="11" y2="18.5"/><line x1="13" y1="16" x2="13" y2="18.5"/><line x1="16" y1="16" x2="16" y2="18.5"/><line x1="19" y1="16" x2="19" y2="18.5"/></svg>';case"accessories":default:return'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'}},v=w=>{var k;return((k=Q[w])==null?void 0:k.label)||"Sản phẩm"},T=w=>{const k=(w||"").trim();k?(d=_(k),u=-1,d.length>0?s.innerHTML=`
+            <div class="search-header-label">Tìm thấy ${d.length} sản phẩm</div>
+            ${d.map((b,B)=>`
+              <div class="search-item" data-id="${b.id}" data-cat="${b.cat}" data-idx="${B}">
+                <span class="search-item-icon">${l(b.cat)}</span>
                 <div class="search-item-details">
-                  <span class="search-item-name">${y.name}</span>
-                  <span class="search-item-cat">${y.badge?`<span class="search-badge">${y.badge}</span>`:""} ${p(y.cat)}</span>
+                  <span class="search-item-name">${b.name}</span>
+                  <span class="search-item-cat">${b.badge?`<span class="search-badge">${b.badge}</span>`:""} ${v(b.cat)}</span>
                 </div>
                 <span class="search-item-price">Liên hệ</span>
               </div>
             `).join("")}
-          `:i.innerHTML=`
+          `:s.innerHTML=`
             <div class="search-empty">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.4">
                 <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
               </svg>
-              <span>Không tìm thấy sản phẩm cho "<strong>${w}</strong>"</span>
+              <span>Không tìm thấy sản phẩm cho "<strong>${k}</strong>"</span>
             </div>
-          `):(o=C.slice(0,5),c=-1,i.innerHTML=`
+          `):(d=L.slice(0,5),u=-1,s.innerHTML=`
           <div class="search-header-label">Sản phẩm gợi ý</div>
-          ${o.map((y,$)=>`
-            <div class="search-item" data-id="${y.id}" data-cat="${y.cat}" data-idx="${$}">
-              <span class="search-item-icon">${u(y.cat)}</span>
+          ${d.map((b,B)=>`
+            <div class="search-item" data-id="${b.id}" data-cat="${b.cat}" data-idx="${B}">
+              <span class="search-item-icon">${l(b.cat)}</span>
               <div class="search-item-details">
-                <span class="search-item-name">${y.name}</span>
-                <span class="search-item-cat">${y.badge?`<span class="search-badge">${y.badge}</span>`:""} ${p(y.cat)}</span>
+                <span class="search-item-name">${b.name}</span>
+                <span class="search-item-cat">${b.badge?`<span class="search-badge">${b.badge}</span>`:""} ${v(b.cat)}</span>
               </div>
               <span class="search-item-price">Liên hệ</span>
             </div>
           `).join("")}
-        `),i.querySelectorAll(".search-item").forEach(y=>{y.addEventListener("mousedown",$=>{$.preventDefault();const W=y.dataset.id,U=y.dataset.cat;W&&U&&B(U,W)})})},B=(f,w)=>{i.classList.remove("show"),s.blur(),k(`/san-pham/${f}/${w}`)},S=()=>{if(c>=0&&o[c]){const y=o[c];B(y.cat,y.id);return}const f=s.value.trim();if(!f){o.length>0&&B(o[0].cat,o[0].id);return}const w=X(f);w.length>0?B(w[0].cat,w[0].id):P(`Không tìm thấy sản phẩm phù hợp với "${f}"`)};s.addEventListener("focus",()=>{A(s.value),i.classList.add("show")}),s.addEventListener("input",()=>{A(s.value),i.classList.add("show")}),s.addEventListener("keydown",f=>{const w=i.querySelectorAll(".search-item");f.key==="ArrowDown"?(f.preventDefault(),w.length>0&&(c=(c+1)%w.length,T(w))):f.key==="ArrowUp"?(f.preventDefault(),w.length>0&&(c=(c-1+w.length)%w.length,T(w))):f.key==="Enter"?(f.preventDefault(),S()):f.key==="Escape"&&i.classList.remove("show")});const T=f=>{f.forEach((w,y)=>{w.classList.toggle("search-item--active",y===c),y===c&&w.scrollIntoView({block:"nearest"})})};a&&a.addEventListener("click",f=>{f.preventDefault(),S()}),document.addEventListener("click",f=>{!s.contains(f.target)&&!i.contains(f.target)&&!(a!=null&&a.contains(f.target))&&i.classList.remove("show")})}const r=document.getElementById("back-to-top");window.addEventListener("scroll",()=>{r&&r.classList.toggle("visible",window.scrollY>300)}),r&&(r.onclick=()=>window.scrollTo({top:0,behavior:"smooth"}));const l=document.getElementById("menu-home");l&&l.addEventListener("click",o=>{o.preventDefault(),k("/")});const g=document.getElementById("menu-about");g&&g.addEventListener("click",o=>{o.preventDefault(),k("/ve-ondata")});const d=document.getElementById("menu-products");d&&d.addEventListener("click",o=>{o.preventDefault(),k("/san-pham/all")});const m=document.getElementById("menu-news");m&&m.addEventListener("click",o=>{o.preventDefault(),k("/tin-tuc")});const b=document.getElementById("menu-contact");b&&b.addEventListener("click",o=>{o.preventDefault(),k("/lien-he")});const v=document.getElementById("menu-support");v&&v.addEventListener("click",o=>{o.preventDefault(),k("/ho-tro")});const h=document.getElementById("cart-badge");h&&(h.textContent=at)}const et={title:"Ondata Việt Nam – Hiệu Năng Vượt Trội Cho Mọi Nhu Cầu",description:"Ondata Việt Nam - Máy tính xách tay, máy tính để bàn, màn hình, linh kiện và phụ kiện công nghệ chính hãng Onda."};function dn(t){var s,i,a;document.title=((s=t==null?void 0:t.seo)==null?void 0:s.title)||et.title;const n=document.querySelector('meta[name="description"]');n&&n.setAttribute("content",((i=t==null?void 0:t.seo)==null?void 0:i.description)||et.description);let e=document.querySelector('meta[name="keywords"]');(a=t==null?void 0:t.seo)!=null&&a.keywords?(e||(e=document.createElement("meta"),e.setAttribute("name","keywords"),document.head.appendChild(e)),e.setAttribute("content",t.seo.keywords)):e&&e.remove()}function G(){var b,v,h,o,c,u;const t=document.querySelector("#app");if(!t)return;const n=sn(),e=n.page==="home",s=n.page==="about",i=n.page==="catalog",a=n.page==="detail",r=n.page==="news",l=n.page==="contact",g=n.page==="support",d=n.page==="admin";if(document.body.classList.add("theme-onda-dark"),d){document.title="Quản trị sản phẩm | Ondata",t.innerHTML=tn(),nn();return}let m=null;a&&(m=it(n.id)),dn(a?m:null),t.innerHTML=`
-    ${ot(at)}
+        `),s.querySelectorAll(".search-item").forEach(b=>{b.addEventListener("mousedown",B=>{B.preventDefault();const Y=b.dataset.id,Z=b.dataset.cat;Y&&Z&&g(Z,Y)})})},g=(w,k)=>{s.classList.remove("show"),i.blur(),A(`/san-pham/${w}/${k}`)},C=()=>{if(u>=0&&d[u]){const b=d[u];g(b.cat,b.id);return}const w=i.value.trim();if(!w){d.length>0&&g(d[0].cat,d[0].id);return}const k=_(w);k.length>0?g(k[0].cat,k[0].id):j(`Không tìm thấy sản phẩm phù hợp với "${w}"`)};i.addEventListener("focus",()=>{T(i.value),s.classList.add("show")}),i.addEventListener("input",()=>{T(i.value),s.classList.add("show")}),i.addEventListener("keydown",w=>{const k=s.querySelectorAll(".search-item");w.key==="ArrowDown"?(w.preventDefault(),k.length>0&&(u=(u+1)%k.length,D(k))):w.key==="ArrowUp"?(w.preventDefault(),k.length>0&&(u=(u-1+k.length)%k.length,D(k))):w.key==="Enter"?(w.preventDefault(),C()):w.key==="Escape"&&s.classList.remove("show")});const D=w=>{w.forEach((k,b)=>{k.classList.toggle("search-item--active",b===u),b===u&&k.scrollIntoView({block:"nearest"})})};a&&a.addEventListener("click",w=>{w.preventDefault(),C()}),document.addEventListener("click",w=>{!i.contains(w.target)&&!s.contains(w.target)&&!(a!=null&&a.contains(w.target))&&s.classList.remove("show")})}const o=document.getElementById("back-to-top");window.addEventListener("scroll",()=>{o&&o.classList.toggle("visible",window.scrollY>300)}),o&&(o.onclick=()=>window.scrollTo({top:0,behavior:"smooth"}));const c=document.getElementById("menu-home");c&&c.addEventListener("click",d=>{d.preventDefault(),A("/")});const p=document.getElementById("menu-about");p&&p.addEventListener("click",d=>{d.preventDefault(),A("/ve-ondata")});const r=document.getElementById("menu-products");r&&r.addEventListener("click",d=>{d.preventDefault(),A("/san-pham/all")});const f=document.getElementById("menu-news");f&&f.addEventListener("click",d=>{d.preventDefault(),A("/tin-tuc")});const y=document.getElementById("menu-contact");y&&y.addEventListener("click",d=>{d.preventDefault(),A("/lien-he")});const m=document.getElementById("menu-support");m&&m.addEventListener("click",d=>{d.preventDefault(),A("/ho-tro")});const h=document.getElementById("cart-badge");h&&(h.textContent=pt)}const lt={title:"Ondata Việt Nam – Hiệu Năng Vượt Trội Cho Mọi Nhu Cầu",description:"Ondata Việt Nam - Máy tính xách tay, máy tính để bàn, màn hình, linh kiện và phụ kiện công nghệ chính hãng Onda."};function yn(t){var i,s,a;document.title=((i=t==null?void 0:t.seo)==null?void 0:i.title)||lt.title;const n=document.querySelector('meta[name="description"]');n&&n.setAttribute("content",((s=t==null?void 0:t.seo)==null?void 0:s.description)||lt.description);let e=document.querySelector('meta[name="keywords"]');(a=t==null?void 0:t.seo)!=null&&a.keywords?(e||(e=document.createElement("meta"),e.setAttribute("name","keywords"),document.head.appendChild(e)),e.setAttribute("content",t.seo.keywords)):e&&e.remove()}function R(){var y,m,h,d,u,l;const t=document.querySelector("#app");if(!t)return;const n=pn(),e=n.page==="home",i=n.page==="about",s=n.page==="catalog",a=n.page==="detail",o=n.page==="news",c=n.page==="contact",p=n.page==="support",r=n.page==="admin";if(document.body.classList.add("theme-onda-dark"),r){document.title="Quản trị sản phẩm | Ondata",t.innerHTML=ln(),rn();return}let f=null;a&&(f=rt(n.id)),yn(a?f:null),t.innerHTML=`
+    ${gt(pt)}
     <main id="main-content">
-      ${e?an():""}
-      ${s?qt():""}
-      ${i?ln(n.cat):""}
-      ${a?Bt(m):""}
-      ${r?Ht(nt):""}
-      ${l?Et():""}
-      ${g?Nt(n.sub):""}
+      ${e?gn():""}
+      ${i?Wt():""}
+      ${s?mn(n.cat):""}
+      ${a?St(f):""}
+      ${o?Ot(ct):""}
+      ${c?Vt():""}
+      ${p?Ft(n.sub):""}
     </main>
-    ${ut()}
-    ${Pt()}
+    ${kt()}
+    ${Ut()}
     <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
-  `,window.scrollTo({top:0}),hn(),zt(),e&&on(),i&&rn(n.cat),a&&cn(m),r&&Lt(p=>{nt=p,G()}),l&&Dt(P),g&&Rt(n.sub,P),(b=document.getElementById("menu-home"))==null||b.classList.toggle("active",e),(v=document.getElementById("menu-about"))==null||v.classList.toggle("active",s),(h=document.getElementById("menu-products"))==null||h.classList.toggle("active",i||a),(o=document.getElementById("menu-news"))==null||o.classList.toggle("active",r),(c=document.getElementById("menu-contact"))==null||c.classList.toggle("active",l),(u=document.getElementById("menu-support"))==null||u.classList.toggle("active",g)}window.addEventListener("popstate",G);window.addEventListener("hashchange",G);document.addEventListener("click",t=>{const n=t.target.closest("a");if(!n)return;const e=n.getAttribute("href");if(e){if(e.startsWith("#")&&!e.startsWith("#/")){const s=document.querySelector(e);s&&(t.preventDefault(),s.scrollIntoView({behavior:"smooth"}));return}if(e.startsWith("/")&&!e.startsWith("//")){t.preventDefault(),k(e);return}if(e.startsWith("#/")){t.preventDefault(),k(e.slice(1));return}}});Zt().finally(G);
+  `,window.scrollTo({top:0}),bn(),Xt(),e&&un(),s&&fn(n.cat),a&&vn(f),o&&Gt(v=>{ct=v,R()}),c&&Nt(j),p&&Qt(n.sub,j),(y=document.getElementById("menu-home"))==null||y.classList.toggle("active",e),(m=document.getElementById("menu-about"))==null||m.classList.toggle("active",i),(h=document.getElementById("menu-products"))==null||h.classList.toggle("active",s||a),(d=document.getElementById("menu-news"))==null||d.classList.toggle("active",o),(u=document.getElementById("menu-contact"))==null||u.classList.toggle("active",c),(l=document.getElementById("menu-support"))==null||l.classList.toggle("active",p)}window.addEventListener("popstate",R);window.addEventListener("hashchange",R);document.addEventListener("click",t=>{const n=t.target.closest("a");if(!n)return;const e=n.getAttribute("href");if(e){if(e.startsWith("#")&&!e.startsWith("#/")){const i=document.querySelector(e);i&&(t.preventDefault(),i.scrollIntoView({behavior:"smooth"}));return}if(e.startsWith("/")&&!e.startsWith("//")){t.preventDefault(),A(e);return}if(e.startsWith("#/")){t.preventDefault(),A(e.slice(1));return}}});an().finally(R);

@@ -447,7 +447,128 @@
   width: 100%;
 }
 
+.admin-pd-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.admin-pd-hero {
+  min-height: 280px;
+  border-radius: 18px;
+  background: #f4f6f2;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #667066;
+}
+
+.admin-pd-hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+}
+
+.admin-pd-thumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.admin-pd-thumb {
+  position: relative;
+  width: 72px;
+  margin: 0;
+}
+
+.admin-pd-thumb img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.admin-pd-thumb button,
+.admin-pd-thumb span {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.admin-pd-thumb button {
+  bottom: 4px;
+  background: rgba(16, 16, 16, 0.78);
+  color: #fff;
+  cursor: pointer;
+}
+
+.admin-pd-thumb span {
+  top: 4px;
+  background: #8a9b4e;
+  color: #10140f;
+}
+
+.admin-pd-title input {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.admin-pd-price {
+  margin: 8px 0 0;
+  color: #c5d68a;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.admin-highlights {
+  margin-top: 16px;
+}
+
+.admin-pd-info .admin-btn {
+  margin-top: 10px;
+}
+
+.admin-spec-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.admin-spec-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.8fr) minmax(0, 1.4fr) auto;
+  gap: 8px;
+}
+
+.admin-spec-row input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: #101418;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.admin-spec-row button {
+  border: 1px solid rgba(255, 150, 150, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: #ffc9c9;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
 @media (max-width: 980px) {
+  .admin-pd-grid,
+  .admin-spec-row,
   .admin-login-panel,
   .admin-app,
   .admin-workspace,

@@ -1,5 +1,5 @@
 import { CATEGORIES_LIST } from '../data/products.js';
-import { applyCatalogRows, categoryName, makeProductId } from '../data/catalogStore.js';
+import { applyCatalogRows, categoryName, makeProductId, readSpecBlocks } from '../data/catalogStore.js';
 
 const TOKEN_KEY = 'ondata-admin-token';
 const EMPTY_FORM = {
@@ -179,51 +179,79 @@ async function paintDashboard(root, token) {
           ${notice ? `<p class="admin-alert ${notice.ok ? 'admin-alert--ok' : ''}">${escapeHtml(notice.text)}</p>` : ''}
           <div class="admin-workspace">
             ${section === 'add' ? `
-            <form class="admin-card" id="admin-product-form">
-              <div class="admin-card-head">
-                <h2>${formState.id ? 'Sửa sản phẩm' : 'Thêm sản phẩm mới'}</h2>
+            <form class="admin-card admin-pd" id="admin-product-form">
+              <div class="admin-pd-grid">
+                <div class="admin-pd-gallery">
+                  <div class="admin-pd-hero">
+                    ${(formState.images || [])[0]
+                      ? `<img src="${escapeHtml(formState.images[0])}" alt="">`
+                      : '<span>Ảnh bìa sẽ hiện ở đây</span>'}
+                  </div>
+                  <div class="admin-pd-thumbs">
+                    ${(formState.images || []).map((src, index) => `
+                      <figure class="admin-pd-thumb">
+                        <img src="${escapeHtml(src)}" alt="Ảnh ${index + 1}">
+                        <button type="button" data-remove-image="${index}">Gỡ</button>
+                        ${index === 0 ? '<span>Bìa</span>' : ''}
+                      </figure>
+                    `).join('')}
+                  </div>
+                  <label class="admin-upload">
+                    Chọn ảnh từ máy
+                    <input id="admin-image-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+                  </label>
+                  <p class="admin-hint">Ảnh đầu tiên là ảnh lớn. Có thể chọn nhiều ảnh.</p>
+                </div>
+                <div class="admin-pd-info">
+                  <label>Danh mục
+                    <select name="category">
+                      ${CATEGORIES_LIST.map((category) => `
+                        <option value="${category.id}" ${category.id === formState.category ? 'selected' : ''}>${escapeHtml(category.name)}</option>
+                      `).join('')}
+                    </select>
+                  </label>
+                  <label class="admin-pd-title">Tên sản phẩm
+                    <input name="name" required value="${escapeHtml(formState.name)}" placeholder="Màn hình ONDATA ...">
+                  </label>
+                  <p class="admin-pd-price">Liên hệ</p>
+                  <div class="admin-spec-table admin-highlights">
+                    ${rowsOrBlank(readSpecBlocks(formState.specs).highlights).map((pair) => `
+                      <div class="admin-spec-row">
+                        <input data-highlight-label value="${escapeHtml(pair.label)}" placeholder="Tên thông số">
+                        <input data-highlight-value value="${escapeHtml(pair.value)}" placeholder="Giá trị">
+                        <button type="button" data-remove-highlight>Gỡ</button>
+                      </div>
+                    `).join('')}
+                  </div>
+                  <button class="admin-btn admin-btn--ghost" type="button" id="admin-add-highlight">Thêm thông số</button>
+                </div>
               </div>
 
               <section class="admin-section">
-                <h3>Thông tin chính</h3>
-                <label>Danh mục
-                  <select name="category">
-                    ${CATEGORIES_LIST.map((category) => `
-                      <option value="${category.id}" ${category.id === formState.category ? 'selected' : ''}>${escapeHtml(category.name)}</option>
-                    `).join('')}
-                  </select>
-                </label>
-                <label>Tên sản phẩm<input name="name" required value="${escapeHtml(formState.name)}" placeholder="Màn hình ONDATA ..."></label>
-              </section>
-
-              <section class="admin-section">
-                <h3>Nội dung</h3>
-                <label>Thông số kỹ thuật
-                  <textarea name="specs" rows="7" placeholder="Mỗi dòng một thông số. Ví dụ:&#10;Kích thước: 23.8 inch&#10;Tần số quét: 120Hz">${escapeHtml(formState.specs)}</textarea>
-                </label>
-                <label>Lưu ý khi đăng sản phẩm
-                  <textarea name="notes" rows="5" placeholder="Tiêu đề SEO: ...&#10;Meta description: ...&#10;Từ khóa chính: ...&#10;Từ khóa phụ: ...">${escapeHtml(formState.notes)}</textarea>
-                </label>
+                <h3>Thông tin chi tiết</h3>
                 <label>Mô tả ngắn<textarea name="shortDesc" rows="3">${escapeHtml(formState.shortDesc)}</textarea></label>
                 <label>Mô tả chi tiết<textarea name="detail" rows="8" placeholder="Xuống dòng để tách đoạn. Một dòng trống để tách đoạn mới.">${escapeHtml(formState.detail)}</textarea></label>
               </section>
 
               <section class="admin-section">
-                <h3>Ảnh sản phẩm</h3>
-                <div class="admin-photos" id="admin-photos">
-                  ${(formState.images || []).map((src, index) => `
-                    <figure class="admin-photo">
-                      <img src="${escapeHtml(src)}" alt="Ảnh ${index + 1}">
-                      <button type="button" data-remove-image="${index}">Gỡ</button>
-                      ${index === 0 ? '<span class="admin-photo-badge">Ảnh bìa</span>' : ''}
-                    </figure>
+                <h3>Thông số kỹ thuật</h3>
+                <div class="admin-spec-table">
+                  ${rowsOrBlank(readSpecBlocks(formState.specs).rest).map((pair) => `
+                    <div class="admin-spec-row">
+                      <input data-spec-label value="${escapeHtml(pair.label)}" placeholder="Tên thông số">
+                      <input data-spec-value value="${escapeHtml(pair.value)}" placeholder="Giá trị">
+                      <button type="button" data-remove-spec>Gỡ</button>
+                    </div>
                   `).join('')}
                 </div>
-                <label class="admin-upload">
-                  Chọn ảnh từ máy
-                  <input id="admin-image-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+                <button class="admin-btn admin-btn--ghost" type="button" id="admin-add-spec">Thêm thông số</button>
+              </section>
+
+              <section class="admin-section">
+                <h3>Lưu ý khi đăng sản phẩm</h3>
+                <label>Tiêu đề SEO, mô tả và từ khóa
+                  <textarea name="notes" rows="5" placeholder="Tiêu đề SEO: ...&#10;Meta description: ...&#10;Từ khóa chính: ...&#10;Từ khóa phụ: ...">${escapeHtml(formState.notes)}</textarea>
                 </label>
-                <p class="admin-hint">Chọn nhiều ảnh một lần. Ảnh đầu tiên là ảnh bìa. Mỗi ảnh tối đa 8MB.</p>
               </section>
 
               <div class="admin-form-actions">
@@ -293,6 +321,27 @@ async function paintDashboard(root, token) {
         draw();
       });
     });
+    root.querySelector('#admin-add-highlight')?.addEventListener('click', () => {
+      formState = readForm(root, formState);
+      const blocks = readSpecBlocks(formState.specs);
+      blocks.highlights.push({ label: '', value: '' });
+      formState.specs = writeSpecBlocks(blocks);
+      draw();
+    });
+    root.querySelector('#admin-add-spec')?.addEventListener('click', () => {
+      formState = readForm(root, formState);
+      const blocks = readSpecBlocks(formState.specs);
+      blocks.rest.push({ label: '', value: '' });
+      formState.specs = writeSpecBlocks(blocks);
+      draw();
+    });
+    root.querySelectorAll('[data-remove-highlight], [data-remove-spec]').forEach((button) => {
+      button.addEventListener('click', () => {
+        button.closest('.admin-spec-row')?.remove();
+        formState = readForm(root, formState);
+        draw();
+      });
+    });
     root.querySelector('#admin-reset')?.addEventListener('click', () => {
       formState = { ...EMPTY_FORM, stt: nextStt(rows) };
       notice = '';
@@ -303,12 +352,13 @@ async function paintDashboard(root, token) {
       const form = event.currentTarget;
       const name = form.name.value.trim();
       if (!name) return;
+      const current = readForm(root, formState);
       const draft = {
         id: formState.id || makeProductId(name, rows),
         stt: formState.id ? Number(formState.stt) || nextStt(rows) : nextStt(rows),
         category: form.category.value,
         name,
-        specs: form.specs.value,
+        specs: current.specs,
         notes: form.notes.value,
         shortDesc: form.shortDesc.value,
         detail: form.detail.value,
@@ -427,14 +477,49 @@ async function paintDashboard(root, token) {
   draw();
 }
 
+function specLine(label, value) {
+  const name = String(label || '').trim();
+  const detail = String(value || '').trim();
+  if (!name && !detail) return ':';
+  return `${name}: ${detail}`;
+}
+
+function rowsOrBlank(pairs) {
+  return pairs.length ? pairs : [{ label: '', value: '' }];
+}
+
+function writeSpecBlocks(blocks) {
+  const highlights = (blocks.highlights || []).map((pair) => specLine(pair.label, pair.value));
+  const rest = (blocks.rest || []).map((pair) => specLine(pair.label, pair.value));
+  return ['@@highlight', ...highlights, '@@specs', ...rest].join('\n');
+}
+
+function readPairInputs(root, labelSelector, valueSelector, keepEmpty) {
+  const labels = [...root.querySelectorAll(labelSelector)];
+  const values = [...root.querySelectorAll(valueSelector)];
+  const pairs = labels.map((label, index) => ({
+    label: label.value.trim(),
+    value: (values[index]?.value || '').trim(),
+  }));
+  return keepEmpty ? pairs : pairs.filter((pair) => pair.label || pair.value);
+}
+
+function readSpecs(root) {
+  const highlights = readPairInputs(root, '[data-highlight-label]', '[data-highlight-value]', true);
+  const rest = readPairInputs(root, '[data-spec-label]', '[data-spec-value]', true);
+  if (!highlights.length && !rest.length) return '';
+  return writeSpecBlocks({ highlights, rest });
+}
+
 function readForm(root, current) {
   const form = root.querySelector('#admin-product-form');
   if (!form) return current;
+  const specs = readSpecs(root);
   return {
     ...current,
     category: form.category.value,
     name: form.name.value,
-    specs: form.specs.value,
+    specs,
     notes: form.notes.value,
     shortDesc: form.shortDesc.value,
     detail: form.detail.value,

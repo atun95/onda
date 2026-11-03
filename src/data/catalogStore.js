@@ -28,16 +28,55 @@ function toDetailHtml(detail) {
     .join('');
 }
 
+function splitSpecLine(line) {
+  const trimmed = line.trim();
+  const tab = trimmed.indexOf('\t');
+  if (tab !== -1) {
+    return [trimmed.slice(0, tab).trim(), trimmed.slice(tab + 1).trim()];
+  }
+  for (let i = 0; i < trimmed.length; i += 1) {
+    if (trimmed[i] !== ':') continue;
+    const prev = trimmed[i - 1] || '';
+    const next = trimmed[i + 1] || '';
+    if (/\d/.test(prev) && /\d/.test(next)) continue;
+    return [trimmed.slice(0, i).trim(), trimmed.slice(i + 1).trim()];
+  }
+  return [trimmed, ''];
+}
+
 function parseSpecs(text) {
   const pairs = [];
   String(text || '').split('\n').forEach((line) => {
     const trimmed = line.trim();
-    if (!trimmed) return;
-    const idx = trimmed.indexOf(':');
-    if (idx === -1) pairs.push(['Thông số', trimmed]);
-    else pairs.push([trimmed.slice(0, idx).trim() || 'Thông số', trimmed.slice(idx + 1).trim()]);
+    if (!trimmed || trimmed.startsWith('@@')) return;
+    const [label, value] = splitSpecLine(trimmed);
+    if (label || value) pairs.push([label, value]);
   });
-  return pairs.filter(([, value]) => value);
+  return pairs.filter(([label, value]) => label || value);
+}
+
+function lineToPair(line) {
+  const trimmed = String(line || '').trim();
+  if (!trimmed || trimmed.startsWith('@@')) return null;
+  if (trimmed === ':') return { label: '', value: '' };
+  const [label, value] = splitSpecLine(trimmed);
+  return { label, value };
+}
+
+export function readSpecBlocks(text) {
+  const lines = String(text || '').replace(/\r/g, '').split('\n');
+  const highlightAt = lines.indexOf('@@highlight');
+  const specsAt = lines.indexOf('@@specs');
+  if (highlightAt === -1) {
+    const pairs = parseSpecs(text).map(([label, value]) => ({ label, value }));
+    return { highlights: pairs.slice(0, 6), rest: pairs };
+  }
+  const highlightLines = lines.slice(highlightAt + 1, specsAt === -1 ? lines.length : specsAt);
+  const restLines = specsAt === -1 ? [] : lines.slice(specsAt + 1);
+  return {
+    highlights: highlightLines.map(lineToPair).filter(Boolean),
+    rest: restLines.map(lineToPair).filter(Boolean),
+  };
 }
 
 function parseNotes(notes) {
@@ -62,7 +101,10 @@ function cleanImages(images) {
 }
 
 export function rowToProduct(row) {
-  const pairs = parseSpecs(row.specs);
+  const blocks = readSpecBlocks(row.specs);
+  const pairs = blocks.rest
+    .filter((pair) => pair.label || pair.value)
+    .map((pair) => [pair.label, pair.value]);
   const techSpecs = {};
   pairs.forEach(([label, value], index) => {
     const key = techSpecs[label] ? `${label} (${index + 1})` : label;
@@ -85,11 +127,13 @@ export function rowToProduct(row) {
       description: seo.description || row.shortDesc || '',
       keywords: seo.keywords || '',
     },
-    specs: pairs.slice(0, 6).map(([label, value], index) => ({
-      icon: ICONS[index % ICONS.length],
-      label,
-      value,
-    })),
+    specs: blocks.highlights
+      .filter((pair) => pair.label || pair.value)
+      .map((pair, index) => ({
+        icon: ICONS[index % ICONS.length],
+        label: pair.label,
+        value: pair.value,
+      })),
     desc: row.shortDesc || '',
     features: [],
     techSpecs,
