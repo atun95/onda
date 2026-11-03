@@ -3989,8 +3989,8 @@ input {
 }
 
 .sp-urgent-box {
-  background: #fbfdf9;
-  border: 1.5px solid #d4ebbf;
+  background: #3d5228;
+  border: 1.5px solid #8a9b4e;
   border-radius: var(--radius);
   padding: 16px 20px;
   display: flex;
@@ -4003,7 +4003,7 @@ input {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #edf7e5;
+  background: rgba(197, 214, 138, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4015,11 +4015,11 @@ input {
   flex-direction: column;
   gap: 2px;
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: #f3f8ea;
 }
 
 .sp-urgent-info strong {
-  color: var(--text-main);
+  color: #ffffff;
 }
 
 /* Order tracking form & timeline */
