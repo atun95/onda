@@ -2312,17 +2312,21 @@ input {
 /* Specs list with icons */
 .pd-specs-list {
   list-style: none;
-  padding: 0;
+  padding: 4px 0;
   margin: 0 0 32px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: 28px max-content minmax(0, 1fr);
+  column-gap: 18px;
+  width: 100%;
 }
 
 .pd-spec-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
   align-items: center;
-  gap: 12px;
+  width: 100%;
+  padding: 11px 16px;
   font-size: 0.95rem;
 }
 
@@ -2338,12 +2342,13 @@ input {
 .pd-spec-label {
   color: var(--text-secondary);
   font-weight: 600;
-  min-width: 105px;
+  min-width: 0;
 }
 
 .pd-spec-val {
   color: var(--text-main);
   font-weight: 500;
+  min-width: 0;
 }
 
 /* Actions Group */
@@ -4896,10 +4901,16 @@ body {
   background: #101418 !important;
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
   border-radius: var(--radius);
+  width: 100%;
 }
 
 .pd-spec-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  width: 100%;
+}
+
+.pd-spec-item:last-child {
+  border-bottom: 0 !important;
 }
 
 .pd-spec-label {
