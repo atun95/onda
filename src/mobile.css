@@ -245,6 +245,10 @@
   }
 
   /* ── Trang chủ ── */
+  .home-top-section {
+    padding-top: 0 !important;
+  }
+
   .home-mobile-cats {
     display: flex;
     gap: 8px;
@@ -270,6 +274,7 @@
   }
 
   .home-top-grid {
+    gap: 0 !important;
     margin-bottom: 14px;
   }
 
@@ -283,14 +288,17 @@
   .main-hero-banner.main-hero-banner--photo {
     margin-left: -16px;
     margin-right: -16px;
-    border-radius: 0;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
   }
 
   .main-hero-banner.main-hero-banner--photo img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 
   .banner-title {
