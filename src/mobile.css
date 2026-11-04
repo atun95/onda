@@ -279,19 +279,18 @@
     gap: 16px;
   }
 
-  /* Banner trang chủ — to hơn trên mobile */
+  /* Banner trang chủ — full viền trên mobile */
   .main-hero-banner.main-hero-banner--photo {
-    min-height: 220px;
-    overflow: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
   }
 
   .main-hero-banner.main-hero-banner--photo img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
-    border-radius: var(--radius);
+    border-radius: 0;
   }
 
   .banner-title {
@@ -420,17 +419,16 @@
 
   .catalog-hero.catalog-hero--photo {
     padding: 0 !important;
-    min-height: 180px;
-    overflow: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
   }
 
   .catalog-hero.catalog-hero--photo img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
-    border-radius: var(--radius);
+    border-radius: 0;
   }
 
   .catalog-hero-visual {
@@ -635,34 +633,33 @@
     font-size: 1.45rem !important;
   }
 
-  /* Banner chính trang hỗ trợ — to hơn trên mobile */
+  /* Banner chính trang hỗ trợ — full viền trên mobile */
   .sp-hero-banner {
-    min-height: 220px;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
     margin-bottom: 24px;
   }
 
   .sp-hero-banner img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
+    border-radius: 0;
   }
 
-  /* Banner phụ (bảo hành, kỹ thuật, v.v.) — to hơn trên mobile */
+  /* Banner phụ (bảo hành, kỹ thuật, v.v.) — full viền trên mobile */
   .sp-sub-banner {
-    overflow: hidden;
-    border-radius: var(--radius);
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
   }
 
   .sp-sub-banner .sp-banner-img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
+    border-radius: 0;
   }
 
   .sp-cards-grid {
