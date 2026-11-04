@@ -403,6 +403,10 @@
     min-height: 0;
   }
 
+  .catalog-hero.catalog-hero--photo {
+    padding: 0 !important;
+  }
+
   .catalog-hero-visual {
     display: block !important;
   }

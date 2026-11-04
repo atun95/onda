@@ -72,6 +72,10 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
           <span class="crumb-current">${meta.label}</span>
         </nav>
 
+        <div class="catalog-hero catalog-hero--photo" id="catalog-hero">
+          <img src="/images/banners/banner-products.jpg" alt="Sản phẩm màn hình Ondata — hiển thị mượt mà cho văn phòng, học tập và giải trí." />
+        </div>
+
         <div class="catalog-layout">
 
           <!-- ===== LEFT SIDEBAR ===== -->
@@ -98,25 +102,6 @@ export function renderProductCatalog(activeCat = 'all', meta = { label: 'Sản p
 
           <!-- ===== RIGHT CONTENT ===== -->
           <div class="catalog-content">
-
-            <!-- CATEGORY HERO BANNER -->
-            <div class="catalog-hero" id="catalog-hero">
-              <div class="catalog-hero-text">
-                <h1 class="catalog-hero-title">${meta.label}</h1>
-                <p class="catalog-hero-sub">${meta.sub}</p>
-              </div>
-              <div class="catalog-hero-visual">
-                <div class="chl-wrap">
-                  <div class="chl-screen">
-                    <div class="chl-glow"></div>
-                    <div class="chl-logo-text">ONDATA</div>
-                  </div>
-                  <div class="chl-base">
-                    <div class="chl-notch"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <!-- TYPE FILTER TABS -->
             <div class="catalog-tabs" id="catalog-tabs" role="tablist">

@@ -73,38 +73,10 @@ export function renderHomeHero() {
             </ul>
           </aside>
 
-          <!-- Banner Lớn: Hiệu năng vượt trội Cho mọi nhu cầu -->
-          <div class="main-hero-banner">
-            <div class="banner-content">
-              <div class="banner-logo-badge">
-                <span class="banner-brand">ONDATA</span>
-              </div>
-              <h1 class="banner-title">
-                Hiệu năng vượt trội<br/>
-                Cho mọi nhu cầu
-              </h1>
-              <p class="banner-subtitle">
-                Máy tính - Màn hình - Linh kiện - Phụ kiện chính hãng
-              </p>
-              <a href="#featured-products" class="btn-banner-cta">
-                Khám phá ngay
-              </a>
-            </div>
-
-            <!-- Laptop Illustration on Right -->
-            <div class="banner-visual">
-              <div class="laptop-illustration">
-                <div class="laptop-display">
-                  <div class="display-inner">
-                    <div class="display-glow"></div>
-                    <span class="display-text">ONDATA</span>
-                  </div>
-                </div>
-                <div class="laptop-base">
-                  <div class="laptop-notch"></div>
-                </div>
-              </div>
-            </div>
+          <div class="main-hero-banner main-hero-banner--photo">
+            <img src="/images/banners/banner-home.jpg" alt="Ondata — Nâng cấp lên 120Hz. Màn hình nhập khẩu và phân phối chính thức." />
+            <a class="banner-hotspot" style="left:7.66%;top:73.86%;width:13.75%;height:9.65%" href="/san-pham/monitor">Xem sản phẩm</a>
+            <a class="banner-hotspot" style="left:22.55%;top:73.86%;width:14.67%;height:9.65%" href="/lien-he">Nhận báo giá sỉ</a>
           </div>
         </div>
 

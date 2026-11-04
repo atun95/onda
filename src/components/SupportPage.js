@@ -8,184 +8,8 @@
    5. Chính sách bảo mật
    ============================================================ */
 
-/* ── SVG Graphics for Support Cards & Detail Banners ─────── */
-function supportGraphic(type) {
-  switch (type) {
-    case 'hero':
-      return `
-        <svg viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" class="sp-hero-svg" style="width:100%;height:100%;object-fit:cover;display:block;">
-          <defs>
-            <linearGradient id="sp-room" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#18241b"/>
-              <stop offset="60%" stop-color="#111a14"/>
-              <stop offset="100%" stop-color="#0a0f0c"/>
-            </linearGradient>
-            <linearGradient id="sp-table" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1e2d22"/>
-              <stop offset="100%" stop-color="#121b14"/>
-            </linearGradient>
-            <linearGradient id="sp-scr" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#142c19"/>
-              <stop offset="60%" stop-color="#2a5f36"/>
-              <stop offset="100%" stop-color="#8a9b4e"/>
-            </linearGradient>
-            <radialGradient id="sun-window" cx="20%" cy="20%" r="80%">
-              <stop offset="0%" stop-color="#8a9b4e" stop-opacity="0.15"/>
-              <stop offset="60%" stop-color="#8a9b4e" stop-opacity="0.04"/>
-              <stop offset="100%" stop-color="#8a9b4e" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-
-          <!-- Ambient Room Background -->
-          <rect width="540" height="320" fill="url(#sp-room)"/>
-          <rect width="540" height="320" fill="url(#sun-window)"/>
-
-          <!-- Plant in background -->
-          <ellipse cx="110" cy="190" rx="20" ry="5" fill="#000" opacity="0.3"/>
-          <polygon points="96,140 124,140 120,188 100,188" fill="#18261c" stroke="#2e4233" stroke-width="1.2"/>
-          <path d="M 110 140 Q 95 90 80 80 Q 100 100 110 140" fill="#3b7240"/>
-          <path d="M 110 140 Q 115 80 125 70 Q 120 105 110 140" fill="#528e4e"/>
-          <path d="M 110 140 Q 130 100 145 95 Q 125 115 110 140" fill="#67a957"/>
-
-          <!-- Table Surface -->
-          <polygon points="0,185 540,185 540,320 0,320" fill="url(#sp-table)"/>
-          <line x1="0" y1="185" x2="540" y2="185" stroke="rgba(138, 155, 78, 0.25)" stroke-width="1.5"/>
-
-          <!-- Modern Laptop in Perspective -->
-          <ellipse cx="320" cy="275" rx="170" ry="14" fill="#000000" opacity="0.4"/>
-
-          <!-- Screen Lid -->
-          <polygon points="210,80 430,70 455,225 235,240" fill="#1b241e" stroke="#3d5243" stroke-width="1.2"/>
-          <polygon points="216,86 424,76 448,220 240,234" fill="#0b120c"/>
-          <polygon points="220,90 420,80 442,214 242,228" fill="url(#sp-scr)"/>
-
-          <text x="330" y="155" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="800" font-size="18" fill="#ffffff" letter-spacing="3" opacity="0.8" transform="rotate(-2 330 155)">ONDATA</text>
-
-          <!-- Base Keyboard Deck -->
-          <polygon points="170,250 235,240 455,225 510,250" fill="#d2ded5" stroke="#9bb1a1" stroke-width="1.2"/>
-          <polygon points="160,252 505,252 485,270 175,270" fill="#bac8be"/>
-          <polygon points="220,242 450,230 460,248 210,250" fill="#243026"/>
-        </svg>
-      `;
-
-    case 'shield-banner':
-      return `
-        <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-          <defs>
-            <linearGradient id="bg-sh" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#14281a"/>
-              <stop offset="50%" stop-color="#24502d"/>
-              <stop offset="100%" stop-color="#468848"/>
-            </linearGradient>
-            <radialGradient id="gl-sh" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#7ea835" stop-opacity="0.6"/>
-              <stop offset="100%" stop-color="#7ea835" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="500" height="160" fill="url(#bg-sh)"/>
-          <ellipse cx="250" cy="80" rx="120" ry="60" fill="url(#gl-sh)"/>
-          <!-- Big Shield Icon -->
-          <path d="M 250 40 Q 275 40 285 55 Q 285 95 250 120 Q 215 95 215 55 Q 225 40 250 40 Z" fill="none" stroke="#ffffff" stroke-width="4.5"/>
-          <polyline points="236,78 246,88 266,66" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      `;
-
-    case 'tech-banner':
-      return `
-        <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-          <defs>
-            <linearGradient id="bg-tc" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0f1f18"/>
-              <stop offset="60%" stop-color="#1c3e27"/>
-              <stop offset="100%" stop-color="#2d6438"/>
-            </linearGradient>
-          </defs>
-          <rect width="500" height="160" fill="url(#bg-tc)"/>
-          <!-- Circuit Lines -->
-          <line x1="40" y1="40" x2="200" y2="40" stroke="#7ea835" stroke-width="1.5" opacity="0.3"/>
-          <line x1="200" y1="40" x2="230" y2="70" stroke="#7ea835" stroke-width="1.5" opacity="0.3"/>
-          <circle cx="40" cy="40" r="4" fill="#7ea835" opacity="0.5"/>
-          <circle cx="230" cy="70" r="4" fill="#7ea835" opacity="0.5"/>
-          <!-- Wrench Tool -->
-          <g transform="translate(225, 45)">
-            <path d="M 38 12 C 34 8 28 8 24 10 L 18 16 L 34 32 L 40 26 C 42 22 42 16 38 12 Z M 14 20 L 4 30 C 1 33 1 37 4 40 C 7 43 11 43 14 40 L 24 30 Z" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round"/>
-          </g>
-        </svg>
-      `;
-
-    case 'track-banner':
-      return `
-        <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-          <defs>
-            <linearGradient id="bg-tr" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#1c2d20"/>
-              <stop offset="50%" stop-color="#2a4730"/>
-              <stop offset="100%" stop-color="#3d6c44"/>
-            </linearGradient>
-          </defs>
-          <rect width="500" height="160" fill="url(#bg-tr)"/>
-          <!-- Isometric Cardboard Package Box -->
-          <g transform="translate(220, 40)">
-            <polygon points="30,10 60,25 30,40 0,25" fill="#e2c199" stroke="#b5936d" stroke-width="1.5"/>
-            <polygon points="0,25 30,40 30,75 0,60" fill="#cca378" stroke="#b5936d" stroke-width="1.5"/>
-            <polygon points="60,25 30,40 30,75 60,60" fill="#ba9267" stroke="#b5936d" stroke-width="1.5"/>
-            <!-- Ondata tape on box -->
-            <polygon points="24,13 36,19 36,43 24,37" fill="#7ea835" opacity="0.8"/>
-          </g>
-        </svg>
-      `;
-
-    case 'contact-banner':
-      return `
-        <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-          <defs>
-            <linearGradient id="bg-ct" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#152b1b"/>
-              <stop offset="50%" stop-color="#244d2d"/>
-              <stop offset="100%" stop-color="#417947"/>
-            </linearGradient>
-          </defs>
-          <rect width="500" height="160" fill="url(#bg-ct)"/>
-          <!-- Headset Support Icon -->
-          <g transform="translate(215, 38)">
-            <path d="M 12 40 A 28 28 0 0 1 58 40" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
-            <rect x="6" y="36" width="10" height="22" rx="4" fill="#ffffff"/>
-            <rect x="54" y="36" width="10" height="22" rx="4" fill="#ffffff"/>
-            <path d="M 60 52 Q 62 68 45 70" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
-            <circle cx="42" cy="70" r="3.5" fill="#7ea835"/>
-          </g>
-        </svg>
-      `;
-
-    case 'privacy-banner':
-      return `
-        <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-          <defs>
-            <linearGradient id="bg-pr" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0e1f2b"/>
-              <stop offset="50%" stop-color="#163942"/>
-              <stop offset="100%" stop-color="#235c55"/>
-            </linearGradient>
-            <radialGradient id="gl-pr" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
-              <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="500" height="160" fill="url(#bg-pr)"/>
-          <ellipse cx="250" cy="80" rx="100" ry="50" fill="url(#gl-pr)"/>
-          <!-- Security Lock Graphic -->
-          <g transform="translate(225, 42)">
-            <rect x="10" y="30" width="34" height="30" rx="4" fill="#ffffff"/>
-            <path d="M 17 30 L 17 18 A 10 10 0 0 1 37 18 L 37 30" fill="none" stroke="#ffffff" stroke-width="3.5"/>
-            <circle cx="27" cy="43" r="3.5" fill="#163942"/>
-            <line x1="27" y1="46" x2="27" y2="52" stroke="#163942" stroke-width="2.5"/>
-          </g>
-        </svg>
-      `;
-
-    default:
-      return '';
-  }
+function supportBanner(src, alt) {
+  return `<img class="sp-banner-img" src="${src}" alt="${alt}" />`;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -195,8 +19,8 @@ export function renderMainSupportHub() {
   const cards = [
     {
       id: 'bao-hanh',
-      title: 'Chính sách bảo hành<br>& đổi trả',
-      desc: 'Thông tin chi tiết về điều kiện, quy trình bảo hành và đổi trả sản phẩm.',
+      title: 'Chính sách bảo hành',
+      desc: 'Điều kiện, thời hạn theo từng dòng sản phẩm và địa điểm bảo hành Ondata.',
       icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>`,
     },
     {
@@ -252,16 +76,12 @@ export function renderMainSupportHub() {
         </nav>
 
         <!-- 2. HERO SECTION (Split Left Text, Right Sunlit Laptop) -->
-        <div class="sp-hero-card">
-          <div class="sp-hero-left">
-            <h1 class="sp-hero-title">Hỗ trợ khách hàng</h1>
-            <p class="sp-hero-subtitle">
-              Chúng tôi luôn sẵn sàng đồng hành, giải đáp mọi thắc mắc và hỗ trợ bạn trong suốt quá trình sử dụng sản phẩm.
-            </p>
-          </div>
-          <div class="sp-hero-right">
-            ${supportGraphic('hero')}
-          </div>
+        <div class="sp-hero-banner">
+          <img src="/images/banners/banner-support.jpg" alt="Trung tâm hỗ trợ Ondata" />
+          <a class="banner-hotspot" style="left:50.56%;top:16.85%;width:20.25%;height:31.03%" href="/ho-tro/bao-hanh">Bảo hành và đổi trả</a>
+          <a class="banner-hotspot" style="left:71.92%;top:16.85%;width:20.25%;height:31.03%" href="/ho-tro/ky-thuat">Hỗ trợ kỹ thuật</a>
+          <a class="banner-hotspot" style="left:50.56%;top:51.88%;width:20.25%;height:31.27%" href="/ho-tro/tra-cuu">Tra cứu đơn hàng</a>
+          <a class="banner-hotspot" style="left:71.92%;top:51.88%;width:20.25%;height:31.27%" href="/ho-tro/lien-he">Liên hệ hỗ trợ</a>
         </div>
 
         <!-- 3. FIVE SUPPORT CARDS GRID -->
@@ -280,108 +100,166 @@ export function renderMainSupportHub() {
 export function renderSubBaoHanh() {
   return `
     <section class="sp-page" id="sp-sub-page">
-      <div class="sp-detail-container">
-        <!-- Breadcrumb -->
+      <div class="sp-detail-container sp-detail-container--policy">
         <nav class="catalog-breadcrumb sp-breadcrumb">
           <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
           <a href="/ho-tro">Hỗ trợ</a>
           <span class="crumb-sep">›</span>
-          <span class="crumb-current">Chính sách bảo hành & đổi trả</span>
+          <span class="crumb-current">Chính sách bảo hành</span>
         </nav>
 
         <div class="sp-sub-header">
-          <h1 class="sp-sub-title">Chính sách bảo hành & đổi trả</h1>
-          <p class="sp-sub-desc">Đảm bảo quyền lợi của bạn với chính sách minh bạch, rõ ràng và thuận tiện.</p>
+          <h1 class="sp-sub-title">Chính sách bảo hành sản phẩm Ondata</h1>
+          <p class="sp-sub-desc">Chính sách này áp dụng cho sản phẩm Ondata phân phối tại Việt Nam: phần quy định chung dùng cho mọi sản phẩm, phần chính sách riêng theo từng dòng sản phẩm.</p>
         </div>
 
-        <!-- Graphic Banner -->
         <div class="sp-sub-banner">
-          ${supportGraphic('shield-banner')}
+          ${supportBanner('/images/banners/banner-warranty.jpg', 'Bảo hành và đổi trả')}
         </div>
 
-        <!-- Tabs Toggle -->
-        <div class="sp-tab-toggle-bar">
-          <button class="sp-tab-pill sp-tab-pill--active" id="btn-tab-warranty" data-tab="warranty">Bảo hành</button>
-          <button class="sp-tab-pill" id="btn-tab-exchange" data-tab="exchange">Đổi trả</button>
+        <div class="sp-block">
+          <h2 class="sp-block-title">1. Quy định chung</h2>
+          <h3 class="sp-subhead">Điều kiện bảo hành</h3>
+          <p class="sp-muted">Sản phẩm được bảo hành khi đáp ứng đầy đủ các điều kiện sau:</p>
+          <ul class="sp-checklist">
+            <li><span class="sp-check">✓</span> Còn trong hạn bảo hành.</li>
+            <li><span class="sp-check">✓</span> Hư hỏng do chất lượng linh kiện hoặc lỗi kỹ thuật trong quy trình sản xuất.</li>
+            <li><span class="sp-check">✓</span> Còn nguyên dạng, không va đập, không tháo gỡ; tem bảo hành, nhãn niêm phong và nhãn nhận dạng còn nguyên trạng.</li>
+            <li><span class="sp-check">✓</span> Số series và part number trùng khớp theo model sản phẩm.</li>
+          </ul>
+
+          <h3 class="sp-subhead">Từ chối bảo hành</h3>
+          <p class="sp-muted">Sản phẩm thuộc một trong các trường hợp sau sẽ không được bảo hành:</p>
+          <ul class="sp-checklist">
+            <li><span class="sp-x">✕</span> Hết hạn bảo hành, hoặc không mua từ nguồn phân phối chính thức của Ondata.</li>
+            <li><span class="sp-x">✕</span> Rách tem, mất tem ngày tháng năm; hoặc bị thay đổi, sửa chữa ngoài Trung tâm bảo hành của Ondata.</li>
+            <li><span class="sp-x">✕</span> Hư hỏng do thiên tai, hỏa hoạn, lụt lội, sét đánh; côn trùng, động vật chui vào.</li>
+            <li><span class="sp-x">✕</span> Hư hỏng do bụi bẩn, ẩm ướt, thấm nước; có vết mốc, rỉ sét, ăn mòn, oxy hóa; biến dạng do nhiệt hoặc tác động bên ngoài.</li>
+            <li><span class="sp-x">✕</span> Hư hỏng do dùng sai điện thế, dòng điện chỉ định; lắp đặt, bảo trì, sử dụng không đúng hướng dẫn.</li>
+            <li><span class="sp-x">✕</span> Phụ kiện kèm theo như dây cáp, đầu nối tín hiệu.</li>
+          </ul>
         </div>
 
-        <!-- Tab 1: Bảo hành -->
-        <div class="sp-tab-panel" id="panel-warranty">
-          <div class="sp-block">
-            <h2 class="sp-block-title">1. Điều kiện bảo hành</h2>
-            <ul class="sp-checklist">
-              <li><span class="sp-check">✓</span> Sản phẩm còn trong thời hạn bảo hành chính hãng (12 - 36 tháng).</li>
-              <li><span class="sp-check">✓</span> Có tem bảo hành nguyên vẹn, phiếu bảo hành hoặc hóa đơn mua hàng.</li>
-              <li><span class="sp-check">✓</span> Lỗi phần cứng do nhà sản xuất, không phải do va đập, ngấm nước hoặc tác động bên ngoài.</li>
-            </ul>
+        <div class="sp-block">
+          <h2 class="sp-block-title">2. Chính sách theo sản phẩm</h2>
+          <h3 class="sp-subhead">2.1. Màn hình</h3>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead>
+                <tr>
+                  <th>Hạng mục</th>
+                  <th>Thời hạn / cam kết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Màn hình 22 – 27 inch</td>
+                  <td>3 năm</td>
+                </tr>
+                <tr>
+                  <td>Màn hình từ 32 inch trở lên</td>
+                  <td>2 năm</td>
+                </tr>
+                <tr>
+                  <td>Adaptor đi kèm LCD</td>
+                  <td>36 tháng</td>
+                </tr>
+                <tr>
+                  <td>Cam kết bảo hành toàn quốc</td>
+                  <td>3 – 7 ngày (không tính ngày nghỉ, ngày lễ)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="sp-checklist">
+            <li><span class="sp-check">✓</span> 12 tháng đầu: lỗi do nhà sản xuất được đổi 1 đổi 1 (giá trị tương đương).</li>
+            <li><span class="sp-check">✓</span> Thời gian còn lại: bảo hành các linh kiện bị lỗi kỹ thuật.</li>
+          </ul>
+
+          <h3 class="sp-subhead">Quy định điểm chết</h3>
+          <p class="sp-muted">Màn hình được bảo hành khi số điểm chết đạt mức sau:</p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead>
+                <tr>
+                  <th>Kích thước</th>
+                  <th>Số điểm chết</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Từ 19 đến 22 inch</td>
+                  <td>Từ 3 điểm trở lên</td>
+                </tr>
+                <tr>
+                  <td>Từ 23 inch trở lên</td>
+                  <td>Từ 5 điểm trở lên</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="sp-block">
-            <h2 class="sp-block-title">2. Quy trình bảo hành</h2>
-            <div class="sp-steps-list">
-              <div class="sp-step-item">
-                <span class="sp-step-num">1</span>
-                <div>
-                  <strong>Liên hệ trung tâm bảo hành hoặc hotline</strong>
-                  <p>Gọi <a href="tel:0867036698" style="color:inherit;font-weight:600;">0867036698</a> hoặc nhắn Zalo hỗ trợ để được nhân viên tiếp nhận và tư vấn.</p>
-                </div>
-              </div>
-              <div class="sp-step-item">
-                <span class="sp-step-num">2</span>
-                <div>
-                  <strong>Cung cấp thông tin sản phẩm và mô tả lỗi</strong>
-                  <p>Cung cấp mã số Serial/IMEI và triệu chứng lỗi để kỹ thuật viên chuẩn bị linh kiện.</p>
-                </div>
-              </div>
-              <div class="sp-step-item">
-                <span class="sp-step-num">3</span>
-                <div>
-                  <strong>Nhận hướng dẫn xử lý hoặc gửi máy</strong>
-                  <p>Gửi sản phẩm miễn phí qua bưu điện hoặc mang trực tiếp tới trạm bảo hành gần nhất.</p>
-                </div>
-              </div>
-              <div class="sp-step-item">
-                <span class="sp-step-num">4</span>
-                <div>
-                  <strong>Kiểm tra, sửa chữa và bàn giao</strong>
-                  <p>Bàn giao sản phẩm hoạt động hoàn hảo trong vòng 3 - 7 ngày làm việc.</p>
-                </div>
-              </div>
-            </div>
+          <h3 class="sp-subhead">Từ chối bảo hành riêng đối với màn hình</h3>
+          <p class="sp-muted">Panel trầy xước, nứt vỡ, móp méo do va chạm, tì đè, lau bằng vật cứng hoặc tác động mạnh từ bên ngoài; màn hình bị chảy mực; số điểm chết ít hơn mức quy định ở trên.</p>
+
+          <h3 class="sp-subhead">Thay panel ngoài bảo hành</h3>
+          <p class="sp-muted">Mức phí tính theo giá bán lẻ niêm yết trên website tại thời điểm thay thế:</p>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead>
+                <tr>
+                  <th>Thời điểm</th>
+                  <th>Mức phí</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12 tháng đầu</td>
+                  <td>45% giá bán lẻ</td>
+                </tr>
+                <tr>
+                  <td>24 tháng tiếp theo</td>
+                  <td>55% giá bán lẻ</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <p class="sp-muted">Không hỗ trợ thay panel với màn hình từ 30 inch trở lên. Panel thay thế được bảo hành theo thời gian bảo hành còn lại của màn hình.</p>
+
+          <h3 class="sp-subhead">2.2. Sản phẩm khác</h3>
+          <p class="sp-muted">Đang được cập nhật.</p>
         </div>
 
-        <!-- Tab 2: Đổi trả (hidden by default) -->
-        <div class="sp-tab-panel sp-tab-panel--hidden" id="panel-exchange">
-          <div class="sp-block">
-            <h2 class="sp-block-title">1. Điều kiện đổi trả</h2>
-            <ul class="sp-checklist">
-              <li><span class="sp-check">✓</span> Đổi mới 1 - 1 trong vòng 7 ngày đầu nếu phát sinh lỗi từ nhà sản xuất.</li>
-              <li><span class="sp-check">✓</span> Sản phẩm còn nguyên hộp, đầy đủ phụ kiện và quà tặng kèm theo.</li>
-              <li><span class="sp-check">✓</span> Vỏ máy không bị trầy xước, cấn móp hay biến dạng vật lý.</li>
-            </ul>
+        <div class="sp-block">
+          <h2 class="sp-block-title">3. Địa điểm bảo hành và liên hệ</h2>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead>
+                <tr>
+                  <th>Khu vực</th>
+                  <th>Địa chỉ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hà Nội</td>
+                  <td>167 Louis 1, Khu đô thị Louis City, Phường Hoàng Mai, TP. Hà Nội</td>
+                </tr>
+                <tr>
+                  <td>Hồ Chí Minh</td>
+                  <td>68 Ký Hòa, Phường Chợ Lớn, TP. Hồ Chí Minh</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="sp-block">
-            <h2 class="sp-block-title">2. Quy trình đổi trả nhanh</h2>
-            <div class="sp-steps-list">
-              <div class="sp-step-item">
-                <span class="sp-step-num">1</span>
-                <div><strong>Kiểm tra xác nhận lỗi:</strong> Kỹ thuật viên kiểm tra máy tại chỗ trong 15 phút.</div>
-              </div>
-              <div class="sp-step-item">
-                <span class="sp-step-num">2</span>
-                <div><strong>Xuất đổi máy mới:</strong> Cấp ngay sản phẩm mới nguyên seal cùng mẫu hoặc hoàn tiền 100%.</div>
-              </div>
-            </div>
-          </div>
+          <p class="sp-muted">Liên hệ: <a href="tel:0867036698" class="sp-inline-link">0867036698</a></p>
         </div>
 
-        <!-- Note Box -->
         <div class="sp-notice-box">
           <span class="sp-notice-icon">💡</span>
           <div>
-            <strong>Lưu ý:</strong> Vui lòng xem chi tiết điều kiện bảo hành và đổi trả trong phiếu bảo hành đi kèm sản phẩm hoặc liên hệ hotline để được hướng dẫn chi tiết.
+            Thương hiệu Ondata được phân phối bởi <strong>CÔNG TY TNHH MÁY TÍNH XIN CHEN</strong> tại Việt Nam.
           </div>
         </div>
 
@@ -422,7 +300,7 @@ export function renderSubKyThuat() {
 
   return `
     <section class="sp-page" id="sp-sub-page">
-      <div class="sp-detail-container">
+      <div class="sp-detail-container sp-detail-container--policy">
         <nav class="catalog-breadcrumb sp-breadcrumb">
           <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
@@ -437,7 +315,7 @@ export function renderSubKyThuat() {
         </div>
 
         <div class="sp-sub-banner">
-          ${supportGraphic('tech-banner')}
+          ${supportBanner('/images/banners/banner-tech.jpg', 'Hỗ trợ kỹ thuật')}
         </div>
 
         <div class="sp-block">
@@ -481,7 +359,7 @@ export function renderSubKyThuat() {
 export function renderSubTraCuu() {
   return `
     <section class="sp-page" id="sp-sub-page">
-      <div class="sp-detail-container">
+      <div class="sp-detail-container sp-detail-container--policy">
         <nav class="catalog-breadcrumb sp-breadcrumb">
           <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
@@ -496,7 +374,7 @@ export function renderSubTraCuu() {
         </div>
 
         <div class="sp-sub-banner">
-          ${supportGraphic('track-banner')}
+          ${supportBanner('/images/banners/banner-track.jpg', 'Tra cứu đơn hàng')}
         </div>
 
         <!-- Tracking Search Form -->
@@ -582,7 +460,7 @@ export function renderSubTraCuu() {
 export function renderSubLienHe() {
   return `
     <section class="sp-page" id="sp-sub-page">
-      <div class="sp-detail-container">
+      <div class="sp-detail-container sp-detail-container--policy">
         <nav class="catalog-breadcrumb sp-breadcrumb">
           <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
@@ -597,7 +475,7 @@ export function renderSubLienHe() {
         </div>
 
         <div class="sp-sub-banner">
-          ${supportGraphic('contact-banner')}
+          ${supportBanner('/images/banners/banner-contact.jpg', 'Liên hệ hỗ trợ')}
         </div>
 
         <!-- Channels Grid -->
@@ -674,7 +552,7 @@ export function renderSubLienHe() {
 export function renderSubBaoMat() {
   return `
     <section class="sp-page" id="sp-sub-page">
-      <div class="sp-detail-container">
+      <div class="sp-detail-container sp-detail-container--policy">
         <nav class="catalog-breadcrumb sp-breadcrumb">
           <a href="/">Trang chủ</a>
           <span class="crumb-sep">›</span>
@@ -689,7 +567,7 @@ export function renderSubBaoMat() {
         </div>
 
         <div class="sp-sub-banner">
-          ${supportGraphic('privacy-banner')}
+          ${supportBanner('/images/banners/banner-privacy.jpg', 'Chính sách bảo mật')}
         </div>
 
         <div class="sp-block">
@@ -738,7 +616,8 @@ export function renderSubBaoMat() {
    ══════════════════════════════════════════════════════ */
 export function renderSupportPage(subRoute = null) {
   switch (subRoute) {
-    case 'bao-hanh': return renderSubBaoHanh();
+    case 'bao-hanh':
+    case 'warranty': return renderSubBaoHanh();
     case 'ky-thuat': return renderSubKyThuat();
     case 'tra-cuu': return renderSubTraCuu();
     case 'lien-he': return renderSubLienHe();
