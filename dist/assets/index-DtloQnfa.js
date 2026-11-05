@@ -1525,10 +1525,16 @@
         <!-- 2. PAGE HEADER -->
         <div class="contact-header">
           <h1 class="contact-title">Liên hệ với Ondata</h1>
-          <p class="contact-subtitle">Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
         </div>
 
-        <!-- 3. THREE CONTACT INFO CARDS -->
+        <!-- 3. PARTNER / DEALER BANNER -->
+        <div class="contact-partner-banner" id="contact-partner-banner">
+          <img src="/images/banners/banner-partner.jpg" alt="Ondata — Hợp tác đại lý" />
+          <a class="banner-hotspot" style="left:6.2%;top:71%;width:16%;height:22%" href="#contact-form-section" id="btn-partner-register" aria-label="Đăng ký ngay">Đăng ký ngay</a>
+          <a class="banner-hotspot" style="left:23.5%;top:71%;width:17%;height:22%" href="tel:0916666804" aria-label="Hotline kinh doanh 0916 666 804">Hotline kinh doanh</a>
+        </div>
+
+        <!-- 4. THREE CONTACT INFO CARDS -->
         <div class="contact-cards-grid">
           <!-- Card 1: Hotline -->
           <div class="contact-info-card">
@@ -1573,13 +1579,6 @@
               <p class="contact-card-sub">KĐT mới Hoàng Văn Thụ, Hoàng Mai</p>
             </div>
           </div>
-        </div>
-
-        <!-- 4. PARTNER / DEALER BANNER -->
-        <div class="contact-partner-banner" id="contact-partner-banner">
-          <img src="/images/banners/banner-partner.jpg" alt="Ondata — Hợp tác đại lý" />
-          <a class="banner-hotspot" style="left:6.2%;top:71%;width:16%;height:22%" href="#contact-form-section" id="btn-partner-register" aria-label="Đăng ký ngay">Đăng ký ngay</a>
-          <a class="banner-hotspot" style="left:23.5%;top:71%;width:17%;height:22%" href="tel:0916666804" aria-label="Hotline kinh doanh 0916 666 804">Hotline kinh doanh</a>
         </div>
 
         <!-- 5. CONTACT FORM SECTION -->
