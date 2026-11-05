@@ -9,54 +9,9 @@ export function renderAboutPage() {
       <!-- HERO BANNER -->
       <section class="about-hero">
         <div class="container">
-          <div class="about-hero-grid">
-            <div class="about-hero-content">
-              <div class="about-badge-pill">
-                <span class="pulse-dot"></span>
-                <span>Thương hiệu công nghệ Việt Nam</span>
-              </div>
-              <h1 class="about-hero-title">
-                Kiến tạo tương lai công nghệ cùng <span class="highlight-text">ONDATA</span>
-              </h1>
-              <p class="about-hero-desc">
-                ONDATA tự hào là thương hiệu tiên phong nghiên cứu, sản xuất và phân phối các giải pháp máy tính All-in-one, màn hình chuyên nghiệp, linh kiện phần cứng và hệ sinh thái phụ kiện công nghệ đạt chuẩn chất lượng quốc tế tại Việt Nam.
-              </p>
-              <div class="about-hero-actions">
-                <a href="/san-pham/all" class="btn-about-primary">
-                  <span>Khám phá sản phẩm</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="/lien-he" class="btn-about-secondary">
-                  <span>Hợp tác & Đại lý</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="about-hero-visual">
-              <div class="about-visual-card">
-                <div class="visual-glow"></div>
-                <div class="about-brand-emblem">
-                  <div class="emblem-circle">
-                    <img src="/logo tach nen.png" alt="ONDATA" class="about-emblem-logo" onerror="this.onerror=null; this.src='/logo.png';" />
-                  </div>
-                  <div class="emblem-tag">INNOVATION & RELIABILITY</div>
-                </div>
-                <div class="floating-badge badge-top-right">
-                  <span class="fb-icon">✓</span>
-                  <div>
-                    <strong>100% Chính hãng</strong>
-                    <small>Tiêu chuẩn quốc tế</small>
-                  </div>
-                </div>
-                <div class="floating-badge badge-bottom-left">
-                  <span class="fb-icon">★</span>
-                  <div>
-                    <strong>Bảo hành 24 - 36T</strong>
-                    <small>Tận nơi trên toàn quốc</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="about-story-banner">
+            <img src="/images/banners/banner-about-story.jpg" alt="Câu chuyện thương hiệu Ondata" />
+            <a class="banner-hotspot" style="left:75.3%;top:15.5%;width:19.5%;height:70%" href="tel:0867036698" aria-label="Hotline 0867 036 698"></a>
           </div>
         </div>
       </section>
@@ -92,13 +47,7 @@ export function renderAboutPage() {
       <!-- STORY & MISSION -->
       <section class="about-story-section">
         <div class="container">
-          <!-- Banner Câu Chuyện Thương Hiệu -->
-          <div class="about-story-banner">
-            <img src="/images/banners/banner-about-story.jpg" alt="Câu chuyện thương hiệu Ondata" />
-            <a class="banner-hotspot" style="left:75.3%;top:15.5%;width:19.5%;height:70%" href="tel:0867036698" aria-label="Hotline 0867 036 698"></a>
-          </div>
-
-          <div class="about-section-header" style="margin-top: 36px;">
+          <div class="about-section-header">
             <span class="section-sub-label">SỨ MỆNH & TẦM NHÌN</span>
             <h2 class="section-main-title">Sứ Mệnh & Tầm Nhìn Của Ondata</h2>
             <p class="section-main-desc">
