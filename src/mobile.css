@@ -757,11 +757,15 @@
 
   /* ── Về Ondata ── */
   .about-hero {
-    padding: 16px 0 12px;
+    padding: 14px 0 8px;
   }
 
   .about-hero .about-story-banner {
     margin-bottom: 0 !important;
+  }
+
+  .about-stats-section {
+    padding: 8px 0 32px !important;
   }
 
   .about-story-banner {

@@ -6089,7 +6089,7 @@ body {
 
 /* Hero */
 .about-hero {
-  padding: 24px 0 20px;
+  padding: 24px 0 10px;
   position: relative;
   overflow: hidden;
 }
@@ -6309,7 +6309,7 @@ body {
 
 /* Stats */
 .about-stats-section {
-  padding: 24px 0 48px;
+  padding: 10px 0 40px;
 }
 
 .about-stats-grid {
