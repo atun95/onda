@@ -718,10 +718,11 @@
 
   .contact-cards-grid {
     grid-template-columns: 1fr !important;
+    order: 2;
   }
 
   .contact-partner-banner {
-    order: 4;
+    order: 1;
     width: calc(100% + 32px) !important;
     max-width: none !important;
     margin-left: -16px !important;
@@ -740,11 +741,11 @@
   }
 
   .contact-form-section {
-    order: 5;
+    order: 3;
   }
 
   .contact-map-section {
-    order: 6;
+    order: 4;
   }
 
   .contact-form-row {
