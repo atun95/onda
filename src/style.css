@@ -3870,16 +3870,22 @@ input {
   line-height: 1.5;
 }
 
-.sp-hero-banner {
+.sp-hero-banner,
+.about-story-banner,
+.contact-partner-banner {
   position: relative;
   width: 100%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: 32px;
+  border: 1px solid rgba(138, 155, 78, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 .sp-hero-banner img,
-.sp-banner-img {
+.sp-banner-img,
+.about-story-banner img,
+.contact-partner-banner img {
   width: 100%;
   height: auto;
   display: block;

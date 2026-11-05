@@ -92,8 +92,14 @@ export function renderAboutPage() {
       <!-- STORY & MISSION -->
       <section class="about-story-section">
         <div class="container">
-          <div class="about-section-header">
-            <span class="section-sub-label">CÂU CHUYỆN THƯƠNG HIỆU</span>
+          <!-- Banner Câu Chuyện Thương Hiệu -->
+          <div class="about-story-banner">
+            <img src="/images/banners/banner-about-story.jpg" alt="Câu chuyện thương hiệu Ondata" />
+            <a class="banner-hotspot" style="left:75.3%;top:15.5%;width:19.5%;height:70%" href="tel:0867036698" aria-label="Hotline 0867 036 698"></a>
+          </div>
+
+          <div class="about-section-header" style="margin-top: 36px;">
+            <span class="section-sub-label">SỨ MỆNH & TẦM NHÌN</span>
             <h2 class="section-main-title">Sứ Mệnh & Tầm Nhìn Của Ondata</h2>
             <p class="section-main-desc">
               Chúng tôi tin rằng công nghệ hiện đại phải đi liền với sự tối giản, bền bỉ và dễ tiếp cận cho mọi người dùng Việt.

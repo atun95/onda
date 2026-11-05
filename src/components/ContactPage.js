@@ -138,27 +138,10 @@ export function renderContactPage() {
         </div>
 
         <!-- 5. PARTNER / DEALER BANNER -->
-        <div class="contact-partner-card">
-          <div class="contact-partner-content">
-            <h2 class="contact-partner-title">Hợp tác đại lý</h2>
-            <p class="contact-partner-desc">
-              Cùng Ondata phát triển bền vững, khai thác nhiều cơ hội kinh doanh hấp dẫn.
-            </p>
-            <button type="button" class="contact-partner-btn" id="btn-partner-register">
-              Đăng ký ngay
-            </button>
-          </div>
-
-          <div class="contact-partner-visual">
-            <div class="partner-img-placeholder">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <circle cx="8.5" cy="8.5" r="1.5"/>
-                <polyline points="21 15 16 10 5 21"/>
-              </svg>
-              <span>Khung hình ảnh (thêm ảnh sau)</span>
-            </div>
-          </div>
+        <div class="contact-partner-banner" id="contact-partner-banner">
+          <img src="/images/banners/banner-partner.jpg" alt="Ondata — Hợp tác đại lý" />
+          <a class="banner-hotspot" style="left:6.2%;top:71%;width:16%;height:22%" href="#contact-form-section" id="btn-partner-register" aria-label="Đăng ký ngay">Đăng ký ngay</a>
+          <a class="banner-hotspot" style="left:23.5%;top:71%;width:17%;height:22%" href="tel:0916666804" aria-label="Hotline kinh doanh 0916 666 804">Hotline kinh doanh</a>
         </div>
 
       </div>
@@ -192,9 +175,16 @@ export function initContactPageInteractions(showToast) {
   // Partner register button
   const partnerBtn = document.getElementById('btn-partner-register');
   if (partnerBtn) {
-    partnerBtn.addEventListener('click', () => {
+    partnerBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const formSec = document.querySelector('.contact-form-section');
+      if (formSec) {
+        formSec.scrollIntoView({ behavior: 'smooth' });
+        const nameInput = document.getElementById('contact-name');
+        if (nameInput) nameInput.focus();
+      }
       if (showToast) {
-        showToast('Cảm ơn bạn đã quan tâm hợp tác! Nhân viên Ondata sẽ liên hệ trong 24 giờ.');
+        showToast('Vui lòng để lại thông tin, Ondata sẽ liên hệ tư vấn chính sách đại lý!');
       }
     });
   }
