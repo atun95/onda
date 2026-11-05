@@ -69,8 +69,15 @@ export function renderContactPage() {
           </div>
         </div>
 
-        <!-- 4. CONTACT FORM SECTION -->
-        <div class="contact-form-section">
+        <!-- 4. PARTNER / DEALER BANNER -->
+        <div class="contact-partner-banner" id="contact-partner-banner">
+          <img src="/images/banners/banner-partner.jpg" alt="Ondata — Hợp tác đại lý" />
+          <a class="banner-hotspot" style="left:6.2%;top:71%;width:16%;height:22%" href="#contact-form-section" id="btn-partner-register" aria-label="Đăng ký ngay">Đăng ký ngay</a>
+          <a class="banner-hotspot" style="left:23.5%;top:71%;width:17%;height:22%" href="tel:0916666804" aria-label="Hotline kinh doanh 0916 666 804">Hotline kinh doanh</a>
+        </div>
+
+        <!-- 5. CONTACT FORM SECTION -->
+        <div class="contact-form-section" id="contact-form-section">
           <div class="contact-form-header">
             <h2 class="contact-form-title">Gửi tin nhắn cho chúng tôi</h2>
             <p class="contact-form-subtitle">Điền thông tin bên dưới, chuyên viên Ondata sẽ liên hệ tư vấn và phản hồi nhanh chóng trong vòng 24 giờ.</p>
@@ -135,13 +142,6 @@ export function renderContactPage() {
               <span>Gửi liên hệ ngay</span>
             </button>
           </form>
-        </div>
-
-        <!-- 5. PARTNER / DEALER BANNER -->
-        <div class="contact-partner-banner" id="contact-partner-banner">
-          <img src="/images/banners/banner-partner.jpg" alt="Ondata — Hợp tác đại lý" />
-          <a class="banner-hotspot" style="left:6.2%;top:71%;width:16%;height:22%" href="#contact-form-section" id="btn-partner-register" aria-label="Đăng ký ngay">Đăng ký ngay</a>
-          <a class="banner-hotspot" style="left:23.5%;top:71%;width:17%;height:22%" href="tel:0916666804" aria-label="Hotline kinh doanh 0916 666 804">Hotline kinh doanh</a>
         </div>
 
       </div>
