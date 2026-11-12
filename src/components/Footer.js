@@ -75,7 +75,7 @@ export function renderFooter() {
         <div class="footer-bottom-bar">
           <p>© 2025 Ondata. All rights reserved.</p>
           <div class="footer-legal-links">
-            <a href="#">Chính sách bảo mật</a>
+            <a href="/ho-tro/bao-mat">Chính sách bảo mật</a>
             <span>|</span>
             <a href="#">Điều khoản sử dụng</a>
           </div>

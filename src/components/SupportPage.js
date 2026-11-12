@@ -26,7 +26,7 @@ export function renderMainSupportHub() {
     {
       id: 'ky-thuat',
       title: 'Hỗ trợ kỹ thuật',
-      desc: 'Hướng dẫn sử dụng, cài đặt, khắc phục sự cố và các yêu cầu hỗ trợ kỹ thuật.',
+      desc: 'Tư vấn, hướng dẫn sử dụng, khắc phục sự cố từ xa và thủ tục bảo hành sản phẩm Ondata.',
       icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
     },
     {
@@ -44,7 +44,7 @@ export function renderMainSupportHub() {
     {
       id: 'bao-mat',
       title: 'Chính sách bảo mật',
-      desc: 'Cam kết bảo vệ thông tin cá nhân của khách hàng.',
+      desc: 'Cách Ondata thu thập, sử dụng và bảo vệ thông tin cá nhân trên onda.vn.',
       icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#527d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
     },
   ];
@@ -257,7 +257,6 @@ export function renderSubBaoHanh() {
         </div>
 
         <div class="sp-notice-box">
-          <span class="sp-notice-icon">💡</span>
           <div>
             Thương hiệu Ondata được phân phối bởi <strong>CÔNG TY TNHH MÁY TÍNH XIN CHEN</strong> tại Việt Nam.
           </div>
@@ -275,29 +274,6 @@ export function renderSubBaoHanh() {
    3. DETAIL SUBPAGE 2: HỖ TRỢ KỸ THUẬT
    ══════════════════════════════════════════════════════ */
 export function renderSubKyThuat() {
-  const topics = [
-    {
-      title: 'Hướng dẫn sử dụng sản phẩm',
-      sub: 'Tài liệu hướng dẫn, video minh họa',
-      icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
-    },
-    {
-      title: 'Cài đặt phần mềm & driver',
-      sub: 'Tải driver, phần mềm cần thiết',
-      icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`,
-    },
-    {
-      title: 'Khắc phục sự cố thường gặp',
-      sub: 'Các lỗi phổ biến và cách xử lý',
-      icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
-    },
-    {
-      title: 'Gửi yêu cầu hỗ trợ',
-      sub: 'Điền biểu mẫu để được hỗ trợ trực tiếp',
-      icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
-    },
-  ];
-
   return `
     <section class="sp-page" id="sp-sub-page">
       <div class="sp-detail-container sp-detail-container--policy">
@@ -310,8 +286,8 @@ export function renderSubKyThuat() {
         </nav>
 
         <div class="sp-sub-header">
-          <h1 class="sp-sub-title">Hỗ trợ kỹ thuật</h1>
-          <p class="sp-sub-desc">Hướng dẫn sử dụng, cài đặt và giải quyết sự cố một cách nhanh chóng.</p>
+          <h1 class="sp-sub-title">Chính sách hỗ trợ kỹ thuật</h1>
+          <p class="sp-sub-desc">Áp dụng cho sản phẩm thương hiệu ONDATA (màn hình, máy tính All in One, máy tính để bàn, linh kiện) do Công ty TNHH Máy Tính Xin Chen phân phối tại Việt Nam.</p>
         </div>
 
         <div class="sp-sub-banner">
@@ -319,29 +295,168 @@ export function renderSubKyThuat() {
         </div>
 
         <div class="sp-block">
-          <h2 class="sp-block-title">Các hỗ trợ nổi bật</h2>
-          <div class="sp-topics-list">
-            ${topics.map(t => `
-              <div class="sp-topic-card" style="cursor:pointer;">
-                <div class="sp-topic-icon">${t.icon}</div>
-                <div class="sp-topic-info">
-                  <strong>${t.title}</strong>
-                  <span>${t.sub}</span>
-                </div>
-                <div class="sp-topic-arrow">›</div>
-              </div>
-            `).join('')}
+          <h2 class="sp-block-title">1. Mục đích và phạm vi</h2>
+          <p class="sp-muted">Hỗ trợ kỹ thuật là dịch vụ tư vấn, hướng dẫn và xử lý sự cố. Việc sửa chữa, thay thế linh kiện hoặc đổi sản phẩm được thực hiện theo <a href="/ho-tro/bao-hanh" class="sp-inline-link">Chính sách bảo hành ONDATA</a>.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">2. Nội dung hỗ trợ kỹ thuật</h2>
+          <ul class="sp-checklist">
+            <li><span class="sp-check">✓</span> Tư vấn lựa chọn sản phẩm, cấu hình và phụ kiện phù hợp với nhu cầu sử dụng.</li>
+            <li><span class="sp-check">✓</span> Hướng dẫn lắp đặt, kết nối, cài đặt và sử dụng sản phẩm ban đầu.</li>
+            <li><span class="sp-check">✓</span> Hướng dẫn kiểm tra và khắc phục sự cố từ xa (qua điện thoại, email).</li>
+            <li><span class="sp-check">✓</span> Hướng dẫn cập nhật phần mềm, trình điều khiển (driver) và tài liệu sản phẩm do nhà sản xuất cung cấp.</li>
+            <li><span class="sp-check">✓</span> Xác định lỗi sơ bộ và hướng dẫn thủ tục bảo hành khi sản phẩm cần được kiểm tra, sửa chữa hoặc thay thế.</li>
+            <li><span class="sp-check">✓</span> Hỗ trợ đại lý và khách hàng dự án về thông tin kỹ thuật, tương thích sản phẩm.</li>
+          </ul>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">3. Kênh tiếp nhận hỗ trợ</h2>
+          <div class="sp-table-wrap">
+            <table class="sp-table sp-table--channels">
+              <thead>
+                <tr>
+                  <th>Kênh</th>
+                  <th>Thông tin</th>
+                  <th>Sử dụng cho</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hotline</td>
+                  <td><a href="tel:0867036698" class="sp-inline-link">0867036698</a></td>
+                  <td>Sự cố cần hỗ trợ nhanh, hướng dẫn xử lý từ xa</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:nchieu@xinchen.vn" class="sp-inline-link">nchieu@xinchen.vn</a></td>
+                  <td>Gửi mô tả lỗi, hình ảnh/video, tài liệu kèm theo</td>
+                </tr>
+                <tr>
+                  <td>Phòng Kinh doanh</td>
+                  <td><a href="tel:0916666804" class="sp-inline-link">0916666804</a></td>
+                  <td>Tư vấn sản phẩm, báo giá, đại lý và dự án</td>
+                </tr>
+                <tr>
+                  <td>Website</td>
+                  <td><a href="https://onda.vn" class="sp-inline-link" target="_blank" rel="noopener">onda.vn</a></td>
+                  <td>Thông tin sản phẩm và chính sách</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="sp-muted">Thời gian làm việc: Thứ Hai đến hết sáng Thứ Bảy (8h30 – 12h00 và 13h30 – 18h00). Yêu cầu gửi ngoài giờ làm việc được xử lý vào ngày làm việc tiếp theo.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">4. Thông tin khách hàng cần cung cấp</h2>
+          <ul class="sp-checklist">
+            <li><span class="sp-check">✓</span> Tên sản phẩm/mã sản phẩm và số sê-ri (trên tem sản phẩm).</li>
+            <li><span class="sp-check">✓</span> Mã đơn hàng, hóa đơn hoặc phiếu bảo hành.</li>
+            <li><span class="sp-check">✓</span> Mô tả lỗi: thời điểm phát sinh, tần suất, thông báo lỗi hiển thị (nếu có).</li>
+            <li><span class="sp-check">✓</span> Môi trường sử dụng: thiết bị kết nối, cáp, nguồn điện, hệ điều hành/phần mềm liên quan.</li>
+            <li><span class="sp-check">✓</span> Hình ảnh hoặc video thể hiện lỗi (nếu có).</li>
+          </ul>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">5. Quy trình hỗ trợ kỹ thuật</h2>
+          <div class="sp-steps-list">
+            <div class="sp-step-item">
+              <span class="sp-step-num">1</span>
+              <div>Khách hàng liên hệ hotline <a href="tel:0867036698" class="sp-inline-link">0867036698</a> hoặc email <a href="mailto:nchieu@xinchen.vn" class="sp-inline-link">nchieu@xinchen.vn</a>, cung cấp thông tin theo mục 4.</div>
+            </div>
+            <div class="sp-step-item">
+              <span class="sp-step-num">2</span>
+              <div>Bộ phận kỹ thuật tiếp nhận, xác nhận thông tin sản phẩm và tình trạng bảo hành.</div>
+            </div>
+            <div class="sp-step-item">
+              <span class="sp-step-num">3</span>
+              <div>Hướng dẫn khách hàng kiểm tra và khắc phục lỗi từ xa (kiểm tra cáp, nguồn, cổng kết nối, cài đặt, driver…).</div>
+            </div>
+            <div class="sp-step-item">
+              <span class="sp-step-num">4</span>
+              <div>Nếu sự cố chưa được giải quyết, Công ty hướng dẫn gửi hoặc mang sản phẩm đến trụ sở/văn phòng Hà Nội để kiểm tra theo Chính sách bảo hành.</div>
+            </div>
+            <div class="sp-step-item">
+              <span class="sp-step-num">5</span>
+              <div>Thông báo kết quả và hướng xử lý cho khách hàng; lưu thông tin yêu cầu để theo dõi.</div>
+            </div>
           </div>
         </div>
 
-        <!-- Urgent Support Box -->
-        <div class="sp-urgent-box">
-          <div class="sp-urgent-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c5d68a" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div class="sp-block">
+          <h2 class="sp-block-title">6. Quyền và trách nhiệm</h2>
+          <h3 class="sp-subhead">Công ty</h3>
+          <p class="sp-muted">Tiếp nhận yêu cầu trong giờ làm việc, tư vấn chính xác và trung thực, thông báo rõ hướng xử lý và chi phí (nếu có) trước khi thực hiện.</p>
+          <h3 class="sp-subhead">Khách hàng</h3>
+          <p class="sp-muted">Cung cấp thông tin đầy đủ, chính xác; thực hiện theo hướng dẫn an toàn; sao lưu dữ liệu trước khi gửi sản phẩm. Công ty không chịu trách nhiệm về dữ liệu lưu trên thiết bị của khách hàng. Khách hàng không tự ý tháo, sửa chữa hoặc nâng cấp sản phẩm khi chưa có hướng dẫn của Công ty.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">7. Chi phí hỗ trợ</h2>
+          <ul class="sp-checklist">
+            <li><span class="sp-check">✓</span> Tư vấn và hướng dẫn xử lý sự cố từ xa qua hotline, email không thu phí.</li>
+            <li><span class="sp-check">✓</span> Sửa chữa, thay thế linh kiện trong thời hạn và đúng điều kiện bảo hành được miễn phí theo Chính sách bảo hành.</li>
+            <li><span class="sp-check">✓</span> Sản phẩm ngoài bảo hành hoặc không đủ điều kiện bảo hành được báo phí trước khi thực hiện.</li>
+          </ul>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">8. Liên quan đến bảo hành</h2>
+          <p class="sp-muted">Các điều kiện, trường hợp không được bảo hành, thời hạn và thời gian xử lý (thông thường từ 07 đến 15 ngày làm việc) được áp dụng theo <a href="/ho-tro/bao-hanh" class="sp-inline-link">Chính sách bảo hành</a> của ONDATA.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">Thông tin liên hệ</h2>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <tbody>
+                <tr>
+                  <td>Thương hiệu</td>
+                  <td>ONDATA</td>
+                </tr>
+                <tr>
+                  <td>Đơn vị phân phối</td>
+                  <td>Công ty TNHH Máy Tính Xin Chen (XIN CHEN Computer Company Limited)</td>
+                </tr>
+                <tr>
+                  <td>Trụ sở chính</td>
+                  <td>68 đường Ký Hoà, phường Chợ Lớn, TP. Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                  <td>Văn phòng Hà Nội</td>
+                  <td>167 Louis I, LK34, KĐT mới Hoàng Văn Thụ, Hoàng Mai, Hà Nội</td>
+                </tr>
+                <tr>
+                  <td>Hotline</td>
+                  <td><a href="tel:0867036698" class="sp-inline-link">0867036698</a></td>
+                </tr>
+                <tr>
+                  <td>Phòng Kinh doanh</td>
+                  <td><a href="tel:0916666804" class="sp-inline-link">0916666804</a></td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:nchieu@xinchen.vn" class="sp-inline-link">nchieu@xinchen.vn</a></td>
+                </tr>
+                <tr>
+                  <td>Website</td>
+                  <td><a href="https://onda.vn" class="sp-inline-link" target="_blank" rel="noopener">onda.vn</a></td>
+                </tr>
+                <tr>
+                  <td>Thời gian làm việc</td>
+                  <td>Thứ Hai đến hết sáng Thứ Bảy (8h30 – 12h00 và 13h30 – 18h00)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="sp-urgent-info">
-            <strong>Cần hỗ trợ gấp?</strong>
-            <span>Liên hệ hotline <strong>0867036698</strong> (8:00 - 22:00, tất cả các ngày)</span>
+        </div>
+
+        <div class="sp-notice-box sp-notice-box--center">
+          <div>
+            ONDATA VIỆT NAM — đơn vị vận hành: <strong>Công ty TNHH Máy Tính Xin Chen</strong>.
           </div>
         </div>
 
@@ -440,7 +555,6 @@ export function renderSubTraCuu() {
         </div>
 
         <div class="sp-notice-box">
-          <span class="sp-notice-icon">💡</span>
           <div>
             <strong>Lưu ý:</strong> Mã đơn hàng có định dạng chuẩn: <strong>OND123456</strong> (Ví dụ: OND123456).
           </div>
@@ -562,8 +676,8 @@ export function renderSubBaoMat() {
         </nav>
 
         <div class="sp-sub-header">
-          <h1 class="sp-sub-title">Chính sách bảo mật</h1>
-          <p class="sp-sub-desc">Bảo vệ thông tin cá nhân của bạn là ưu tiên hàng đầu của Ondata.</p>
+          <h1 class="sp-sub-title">Chính sách bảo mật thông tin</h1>
+          <p class="sp-sub-desc">Áp dụng cho khách hàng, đối tác và người truy cập website onda.vn. Trong chính sách này, “ONDATA” hoặc “Công ty” chỉ hoạt động kinh doanh sản phẩm thương hiệu ONDATA tại Việt Nam do Công ty TNHH Máy Tính Xin Chen thực hiện.</p>
         </div>
 
         <div class="sp-sub-banner">
@@ -571,35 +685,147 @@ export function renderSubBaoMat() {
         </div>
 
         <div class="sp-block">
-          <h2 class="sp-block-title">1. Thông tin chúng tôi thu thập</h2>
+          <h2 class="sp-block-title">1. Mục đích và phạm vi áp dụng</h2>
+          <p class="sp-muted">Công ty TNHH Máy Tính Xin Chen (đơn vị nhập khẩu, phân phối và vận hành kinh doanh thương hiệu ONDATA tại Việt Nam) coi việc bảo vệ thông tin cá nhân của khách hàng là trách nhiệm quan trọng. Chính sách này nêu rõ mục đích, phạm vi thu thập, cách sử dụng, thời gian lưu trữ và các biện pháp bảo vệ thông tin cá nhân khi khách hàng truy cập website onda.vn, liên hệ tư vấn, đăng ký làm đại lý hoặc mua sản phẩm ONDATA tại Công ty.</p>
+          <p class="sp-muted">Chính sách được xây dựng phù hợp với quy định của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân, bảo vệ quyền lợi người tiêu dùng và thương mại điện tử.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">2. Mục đích thu thập thông tin</h2>
           <ul class="sp-checklist">
-            <li><span class="sp-check">✓</span> Họ tên, số điện thoại, địa chỉ email.</li>
-            <li><span class="sp-check">✓</span> Địa chỉ giao hàng và nhận bảo hành.</li>
-            <li><span class="sp-check">✓</span> Thông tin giao dịch thanh toán (mã giao dịch, thời gian).</li>
+            <li><span class="sp-check">✓</span> Tiếp nhận, xử lý đơn hàng, báo giá, hợp đồng; giao hàng và thực hiện bảo hành, đổi trả.</li>
+            <li><span class="sp-check">✓</span> Liên hệ tư vấn sản phẩm, xác nhận thông tin đơn hàng, chăm sóc khách hàng và hỗ trợ kỹ thuật.</li>
+            <li><span class="sp-check">✓</span> Đăng ký, xét duyệt và quản lý đại lý, nhà phân phối.</li>
+            <li><span class="sp-check">✓</span> Gửi thông tin về sản phẩm, chương trình khuyến mại khi khách hàng đồng ý nhận.</li>
+            <li><span class="sp-check">✓</span> Cải thiện chất lượng website, sản phẩm và dịch vụ; phòng ngừa gian lận, bảo đảm an toàn giao dịch.</li>
+            <li><span class="sp-check">✓</span> Thực hiện nghĩa vụ kế toán, thuế và các nghĩa vụ khác theo quy định của pháp luật.</li>
           </ul>
         </div>
 
         <div class="sp-block">
-          <h2 class="sp-block-title">2. Mục đích sử dụng</h2>
+          <h2 class="sp-block-title">3. Phạm vi thông tin thu thập</h2>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <thead>
+                <tr>
+                  <th>Nhóm thông tin</th>
+                  <th>Nội dung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Thông tin định danh, liên hệ</td>
+                  <td>Họ tên, tên công ty, số điện thoại, email, địa chỉ nhận hàng, địa chỉ xuất hóa đơn.</td>
+                </tr>
+                <tr>
+                  <td>Thông tin giao dịch</td>
+                  <td>Sản phẩm đặt mua, số lượng, giá trị đơn hàng, hình thức thanh toán, lịch sử mua hàng, thông tin bảo hành.</td>
+                </tr>
+                <tr>
+                  <td>Thông tin doanh nghiệp</td>
+                  <td>Dành cho đại lý và khách hàng B2B: tên doanh nghiệp, mã số thuế, người đại diện, thông tin liên hệ phục vụ hợp đồng và hóa đơn.</td>
+                </tr>
+                <tr>
+                  <td>Thông tin kỹ thuật</td>
+                  <td>Địa chỉ IP, loại thiết bị, trình duyệt, thời gian truy cập, cookie nhằm vận hành và cải thiện website.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="sp-muted">Công ty không thu thập số thẻ thanh toán của khách hàng. Khi thanh toán chuyển khoản, khách hàng thực hiện trực tiếp qua ngân hàng của mình.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">4. Phạm vi sử dụng và chia sẻ thông tin</h2>
+          <p class="sp-muted">Công ty chỉ sử dụng thông tin cho các mục đích nêu tại mục 2. Công ty không bán, trao đổi hoặc cho thuê thông tin cá nhân của khách hàng cho bên thứ ba. Thông tin chỉ được chia sẻ trong các trường hợp:</p>
           <ul class="sp-checklist">
-            <li><span class="sp-check">✓</span> Xử lý đơn hàng, đóng gói và vận chuyển sản phẩm đến tay khách hàng.</li>
-            <li><span class="sp-check">✓</span> Hỗ trợ bảo hành, bảo trì định kỳ và chăm sóc khách hàng sau bán.</li>
-            <li><span class="sp-check">✓</span> Cải thiện chất lượng dịch vụ và gửi thông báo chương trình ưu đãi độc quyền.</li>
+            <li><span class="sp-check">✓</span> Đơn vị vận chuyển, đối tác thanh toán, đơn vị bảo hành được ủy quyền, trong phạm vi cần thiết để thực hiện đơn hàng và dịch vụ; các đơn vị này có nghĩa vụ bảo mật thông tin.</li>
+            <li><span class="sp-check">✓</span> Có sự đồng ý của khách hàng.</li>
+            <li><span class="sp-check">✓</span> Theo yêu cầu bằng văn bản của cơ quan nhà nước có thẩm quyền theo quy định của pháp luật.</li>
+            <li><span class="sp-check">✓</span> Cần thiết để bảo vệ quyền, lợi ích hợp pháp của Công ty hoặc của khách hàng khác trong trường hợp có hành vi vi phạm.</li>
           </ul>
         </div>
 
         <div class="sp-block">
-          <h2 class="sp-block-title">3. Bảo mật thông tin</h2>
+          <h2 class="sp-block-title">5. Thời gian lưu trữ</h2>
+          <p class="sp-muted">Thông tin cá nhân được lưu trữ trong thời gian cần thiết để thực hiện các mục đích nêu trên và theo thời hạn lưu trữ chứng từ kế toán, thuế theo quy định. Khi hết mục đích sử dụng hoặc khi khách hàng yêu cầu hợp lệ, Công ty sẽ xóa hoặc ẩn danh thông tin, trừ trường hợp pháp luật yêu cầu phải lưu giữ.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">6. Biện pháp bảo vệ thông tin</h2>
           <ul class="sp-checklist">
-            <li><span class="sp-check">✓</span> Áp dụng công nghệ mã hóa SSL 256-bit hiện đại.</li>
-            <li><span class="sp-check">✓</span> Tuyệt đối không chia sẻ hoặc bán dữ liệu khách hàng cho bên thứ ba.</li>
+            <li><span class="sp-check">✓</span> Dữ liệu được lưu trữ trên hệ thống có kiểm soát truy cập; chỉ nhân viên có nhiệm vụ liên quan mới được tiếp cận.</li>
+            <li><span class="sp-check">✓</span> Nhân viên được yêu cầu cam kết bảo mật thông tin khách hàng.</li>
+            <li><span class="sp-check">✓</span> Áp dụng các biện pháp kỹ thuật phù hợp (mật khẩu, phân quyền, sao lưu dữ liệu, kết nối bảo mật) để phòng ngừa truy cập trái phép, mất mát hoặc thay đổi dữ liệu.</li>
+            <li><span class="sp-check">✓</span> Khi phát hiện sự cố lộ lọt thông tin, Công ty sẽ kịp thời xử lý, thông báo cho khách hàng bị ảnh hưởng và cơ quan có thẩm quyền theo quy định.</li>
           </ul>
         </div>
 
-        <div class="sp-notice-box">
-          <span class="sp-notice-icon">🔒</span>
+        <div class="sp-block">
+          <h2 class="sp-block-title">7. Quyền của khách hàng</h2>
+          <p class="sp-muted">Khách hàng có quyền: được biết về việc xử lý thông tin của mình; đồng ý hoặc không đồng ý, rút lại sự đồng ý; truy cập, xem, chỉnh sửa thông tin; yêu cầu cung cấp, xóa, hạn chế xử lý thông tin; từ chối nhận thông tin quảng cáo; khiếu nại, tố cáo theo quy định của pháp luật.</p>
+          <p class="sp-muted">Để thực hiện các quyền này, khách hàng gửi yêu cầu về email <a href="mailto:nchieu@xinchen.vn" class="sp-inline-link">nchieu@xinchen.vn</a> hoặc gọi hotline <a href="tel:0867036698" class="sp-inline-link">0867036698</a>. Công ty sẽ phản hồi trong thời hạn quy định của pháp luật và không quá 07 ngày làm việc đối với yêu cầu thông thường.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">8. Cookie</h2>
+          <p class="sp-muted">Website có thể sử dụng cookie để ghi nhớ thiết lập của người dùng và thống kê lượng truy cập. Người dùng có thể tắt hoặc xóa cookie trong trình duyệt; việc này có thể làm một số chức năng của website hoạt động không đầy đủ.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">9. Thay đổi chính sách</h2>
+          <p class="sp-muted">Công ty có thể cập nhật chính sách này khi cần thiết. Phiên bản mới được đăng trên website onda.vn và có hiệu lực kể từ thời điểm đăng tải. Việc tiếp tục sử dụng website, dịch vụ sau thời điểm đó được hiểu là khách hàng chấp nhận nội dung cập nhật.</p>
+        </div>
+
+        <div class="sp-block">
+          <h2 class="sp-block-title">Thông tin liên hệ</h2>
+          <div class="sp-table-wrap">
+            <table class="sp-table">
+              <tbody>
+                <tr>
+                  <td>Thương hiệu</td>
+                  <td>ONDATA</td>
+                </tr>
+                <tr>
+                  <td>Đơn vị phân phối</td>
+                  <td>Công ty TNHH Máy Tính Xin Chen (XIN CHEN Computer Company Limited)</td>
+                </tr>
+                <tr>
+                  <td>Trụ sở chính</td>
+                  <td>68 đường Ký Hoà, phường Chợ Lớn, TP. Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                  <td>Văn phòng Hà Nội</td>
+                  <td>167 Louis I, LK34, KĐT mới Hoàng Văn Thụ, Hoàng Mai, Hà Nội</td>
+                </tr>
+                <tr>
+                  <td>Hotline</td>
+                  <td><a href="tel:0867036698" class="sp-inline-link">0867036698</a></td>
+                </tr>
+                <tr>
+                  <td>Phòng Kinh doanh</td>
+                  <td><a href="tel:0916666804" class="sp-inline-link">0916666804</a></td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td><a href="mailto:nchieu@xinchen.vn" class="sp-inline-link">nchieu@xinchen.vn</a></td>
+                </tr>
+                <tr>
+                  <td>Website</td>
+                  <td><a href="https://onda.vn" class="sp-inline-link" target="_blank" rel="noopener">onda.vn</a></td>
+                </tr>
+                <tr>
+                  <td>Thời gian làm việc</td>
+                  <td>Thứ Hai đến hết sáng Thứ Bảy (8h30 – 12h00 và 13h30 – 18h00)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="sp-notice-box sp-notice-box--center">
           <div>
-            <strong>Cam kết:</strong> Ondata cam kết bảo vệ thông tin cá nhân của bạn theo đúng quy định pháp luật hiện hành và tiêu chuẩn an toàn thông tin quốc tế.
+            ONDATA VIỆT NAM — đơn vị vận hành: <strong>Công ty TNHH Máy Tính Xin Chen</strong>.
           </div>
         </div>
 

@@ -1,1 +1,6 @@
 _mobile-refs/
+.aider*
+
+Dockerfile
+docker-compose.yml
+.dockerignore

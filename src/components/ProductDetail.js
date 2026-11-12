@@ -447,8 +447,8 @@ export function renderProductDetail(product) {
               </svg>
             </div>
             <div class="pd-trust-text">
-              <h4 class="pd-trust-title">Hỗ trợ kỹ thuật 24/7</h4>
-              <p class="pd-trust-sub">Tư vấn miễn phí</p>
+              <h4 class="pd-trust-title">Hỗ trợ kỹ thuật</h4>
+              <p class="pd-trust-sub">Tư vấn miễn phí trong giờ làm việc</p>
             </div>
           </div>
 

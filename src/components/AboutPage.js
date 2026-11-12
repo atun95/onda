@@ -36,9 +36,9 @@ export function renderAboutPage() {
               <p class="stat-sub">Đánh giá cao về độ ổn định và dịch vụ chăm sóc</p>
             </div>
             <div class="stat-box">
-              <div class="stat-number">24/7</div>
+              <div class="stat-number">T2–T7</div>
               <div class="stat-label">Hỗ trợ kỹ thuật</div>
-              <p class="stat-sub">Đội ngũ kỹ sư phần cứng đồng hành liên tục</p>
+              <p class="stat-sub">8h30–12h00 và 13h30–18h00, hết sáng thứ Bảy</p>
             </div>
           </div>
         </div>
@@ -50,33 +50,30 @@ export function renderAboutPage() {
           <div class="about-section-header">
             <span class="section-sub-label">SỨ MỆNH & TẦM NHÌN</span>
             <h2 class="section-main-title">Sứ Mệnh & Tầm Nhìn Của Ondata</h2>
-            <p class="section-main-desc">
-              Chúng tôi tin rằng công nghệ hiện đại phải đi liền với sự tối giản, bền bỉ và dễ tiếp cận cho mọi người dùng Việt.
-            </p>
           </div>
 
           <div class="about-story-grid">
             <div class="story-card">
               <div class="story-icon-wrap">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
               </div>
-              <h3>Tầm Nhìn Chiến Lược</h3>
+              <h3>Sứ mệnh</h3>
               <p>
-                Trở thành thương hiệu công nghệ phần cứng hàng đầu tại Việt Nam và Đông Nam Á, tiên phong định hình xu hướng máy tính All-in-one tinh gọn, bền bỉ, tiết kiệm năng lượng và thân thiện với môi trường làm việc thông minh.
+                Trở thành nền tảng phân phối công nghệ hàng đầu, xây dựng hệ sinh thái đối tác phát triển bền vững tại Việt Nam.
               </p>
             </div>
 
             <div class="story-card">
               <div class="story-icon-wrap">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
                 </svg>
               </div>
-              <h3>Sứ Mệnh Phụng Sự</h3>
+              <h3>Tầm nhìn</h3>
               <p>
-                Cung cấp hệ thống giải pháp phần cứng tối ưu chi phí đầu tư cho doanh nghiệp, cơ quan giáo dục và người dùng cá nhân. Đồng thời mang tới dịch vụ bảo hành vàng tận tâm, phản hồi nhanh chóng và minh bạch.
+                Kết nối nguồn công nghệ chất lượng, tạo giá trị và đồng hành cùng đối tác trên hành trình phát triển bền vững.
               </p>
             </div>
 
@@ -86,9 +83,9 @@ export function renderAboutPage() {
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                 </svg>
               </div>
-              <h3>Cam Kết Chất Lượng</h3>
+              <h3>Cam kết</h3>
               <p>
-                Từng sản phẩm mang thương hiệu Ondata đều trải qua quy trình kiểm thử lão hóa (Burn-in Test) nghiêm ngặt trong 72 giờ trước khi xuất xưởng, đảm bảo độ bền vượt trội và tỷ lệ lỗi kỹ thuật tiệm cận mức 0%.
+                Luôn thực hiện đúng những gì đã cam kết, đảm bảo trách nhiệm trong chất lượng sản phẩm, dịch vụ và tiến độ hợp tác. Lấy sự hài lòng và lợi ích lâu dài của khách hàng, đối tác làm thước đo cho mọi hoạt động.
               </p>
             </div>
           </div>
@@ -106,23 +103,23 @@ export function renderAboutPage() {
           <div class="values-grid">
             <div class="value-item">
               <div class="value-index">01</div>
-              <h4>Đột Phá (Innovation)</h4>
-              <p>Liên tục đổi mới thiết kế tinh giản, tích hợp công nghệ mới nhất vào từng dòng máy All-in-one và màn hình.</p>
+              <h4>Uy tín – Nền tảng niềm tin</h4>
+              <p>Minh bạch trong kinh doanh, nhất quán trong cam kết và đặt chữ tín lên hàng đầu trong mọi hoạt động.</p>
             </div>
             <div class="value-item">
               <div class="value-index">02</div>
-              <h4>Bền Bỉ (Durability)</h4>
-              <p>Linh kiện tuyển chọn chuẩn công nghiệp, hoạt động mát mẻ và ổn định liên tục 24/7 dưới mọi điều kiện thời tiết nhiệt đới.</p>
+              <h4>Cam kết – Trách nhiệm đồng hành</h4>
+              <p>Luôn có trách nhiệm với sản phẩm, dịch vụ và những giá trị đã cam kết với khách hàng, đối tác.</p>
             </div>
             <div class="value-item">
               <div class="value-index">03</div>
-              <h4>Tối Ưu (Optimization)</h4>
-              <p>Tối ưu hóa giữa chi phí và hiệu năng sử dụng thực tế, mang lại giá trị hoàn vốn cao nhất cho khách hàng doanh nghiệp.</p>
+              <h4>Kết nối – Sức mạnh hợp tác</h4>
+              <p>Kết nối nguồn cung công nghệ, khách hàng và đối tác, cùng xây dựng hệ sinh thái phân phối hiệu quả.</p>
             </div>
             <div class="value-item">
               <div class="value-index">04</div>
-              <h4>Đồng Hành (Companion)</h4>
-              <p>Chính sách bảo hành tận nơi chu đáo, đổi mới nhanh chóng và luôn lắng nghe đóng góp để hoàn thiện sản phẩm.</p>
+              <h4>Phát triển bền vững – Giá trị lâu dài</h4>
+              <p>Không ngừng đổi mới, nâng cao năng lực và tạo dựng giá trị lâu dài cho doanh nghiệp, khách hàng và đối tác.</p>
             </div>
           </div>
         </div>
@@ -134,43 +131,30 @@ export function renderAboutPage() {
           <div class="about-section-header">
             <span class="section-sub-label">HỆ SINH THÁI</span>
             <h2 class="section-main-title">Hệ Sinh Thái Sản Phẩm Toàn Diện</h2>
-            <p class="section-main-desc">Từ thiết bị chính đến phụ kiện ngoại vi, Ondata mang tới góc làm việc hiện đại và đồng bộ.</p>
           </div>
 
           <div class="ecosystem-grid">
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/aio')" style="cursor:pointer;">
               <h3>Máy tính All-in-one</h3>
-              <p>Thiết kế nguyên khối sang trọng, tích hợp CPU, loa, webcam và WiFi mượt mà trong thân máy siêu mỏng.</p>
+              <p>Máy tính tích hợp màn hình và cấu hình trong một thiết kế gọn gàng, hiện đại, tối ưu không gian làm việc.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/monitor')" style="cursor:pointer;">
-              <h3>Màn hình Ondata</h3>
-              <p>Độ phân giải 2K/4K, màn hình cong 1500R/1000R, tần số quét 100Hz – 240Hz chuẩn màu đồ họa và gaming.</p>
-              <span class="eco-link">Xem danh mục →</span>
-            </div>
-
-            <div class="ecosystem-card" onclick="window.navigate('/san-pham/keyboard')" style="cursor:pointer;">
-              <h3>Bàn phím cơ & Văn phòng</h3>
-              <p>Switch bền bỉ 100 triệu lần nhấn, cấu trúc Gasket Mount êm ái, công nghệ từ tính Rapid Trigger thi đấu.</p>
-              <span class="eco-link">Xem danh mục →</span>
-            </div>
-
-            <div class="ecosystem-card" onclick="window.navigate('/san-pham/mouse')" style="cursor:pointer;">
-              <h3>Chuột quang & Không dây</h3>
-              <p>Cảm biến PixArt chuẩn xác, thiết kế công thái học đứng chống mỏi cổ tay và nút bấm Silent giảm tiếng ồn.</p>
+              <h3>Màn hình máy tính</h3>
+              <p>Đa dạng màn hình với chất lượng hiển thị sắc nét, đáp ứng nhu cầu học tập, làm việc và giải trí.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/ram')" style="cursor:pointer;">
-              <h3>RAM Bộ nhớ cao cấp</h3>
-              <p>Chuẩn DDR4/DDR5 tốc độ cao, tản nhiệt nhôm mát lạnh, bảo hành trọn đời an tâm tuyệt đối.</p>
+              <h3>Linh kiện máy tính</h3>
+              <p>Các linh kiện thiết yếu giúp xây dựng, nâng cấp và tối ưu hiệu suất hệ thống máy tính.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
 
             <div class="ecosystem-card" onclick="window.navigate('/san-pham/accessories')" style="cursor:pointer;">
-              <h3>Phụ kiện công nghệ</h3>
-              <p>Giá treo màn hình trợ lực khí nén, Hub chuyển đổi 8-in-1 Type-C, pad chuột XXL và giá đỡ laptop nhôm.</p>
+              <h3>Phụ kiện máy tính</h3>
+              <p>Đa dạng phụ kiện hỗ trợ kết nối, vận hành và nâng cao trải nghiệm sử dụng máy tính.</p>
               <span class="eco-link">Xem danh mục →</span>
             </div>
           </div>

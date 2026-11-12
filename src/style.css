@@ -4023,6 +4023,11 @@ input {
   color: #ffffff;
 }
 
+.sp-notice-box--center {
+  justify-content: center;
+  text-align: center;
+}
+
 .sp-notice-icon {
   font-size: 1.1rem;
 }
@@ -4092,6 +4097,15 @@ input {
 .sp-table td:first-child {
   font-weight: 600;
   width: 42%;
+}
+
+.sp-table--channels td:first-child {
+  width: 24%;
+}
+
+.sp-table--channels td:nth-child(2) {
+  width: 28%;
+  white-space: nowrap;
 }
 
 .sp-inline-link {
@@ -6518,7 +6532,7 @@ body {
 
 .ecosystem-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
